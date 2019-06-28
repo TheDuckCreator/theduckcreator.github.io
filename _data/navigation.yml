@@ -1,0 +1,10 @@
+- name: หน้าแรก
+  link: /
+- name: เกี่ยวกับ
+  link: /about.html
+- name: บล็อก
+  link: /blog.html
+- name: แฟ้มผลงาน
+  link: /portfolio.html
+- name: Directory
+  link: https://theduckcreator.in.th/theethawat

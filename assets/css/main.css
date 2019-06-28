@@ -1,0 +1,93 @@
+/*Theethawat Global CSS*/
+.kanit {
+  font-family: "kanit", sans-serif;
+}
+.kanitlight {
+  font-family: "kanit", sans-serif;
+  font-weight: 300;
+}
+.acenter {
+  text-align: center;
+}
+.aright {
+  text-align: right;
+}
+.piccenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Heading tag alignment*/
+.tdc-remove-margin-bt {
+  margin-bottom: 0.1em;
+}
+.tdc-remove-margin-top {
+  margin-top: 0.1em;
+}
+.tdc-remove-padding-bt {
+  padding-bottom: 0.1em;
+}
+.tdc-remove-padding-top {
+  padding-top: 0.1em;
+}
+/*Space Managing*/
+.tdc-all-90 {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tdc-all-80 {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Margin and Padding*/
+.margin05 {
+  margin: 0.5em;
+}
+/*Frontpage CSS */
+.tdc-heading {
+  padding-top: 0.7em;
+  margin-bottom: 0.25em;
+}
+
+/*Machine CSS*/
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+  .tdc-mobile-90 {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tdc-mobile-80 {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (min-width: 991.98px) {
+  .tdc-desktop-60 {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tdc-desktop-90 {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tdc-desktop-80 {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

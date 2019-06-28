@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:300,400&display=swap" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <link rel="icon" href="/assets/web logo.png">
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        blockquote {
+            font-family: 'kanit', sans-serif;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+            padding-top: 0.4em;
+            padding-bottom: 0.4em;
+        }
+
+        img {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            max-height: 512px;
+            width: auto;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    {% include navigation.html %}
+    <section class="hero  is-warning is-bold">
+        <div class="hero-body">
+            <div class="container">
+
+                <h1 class="subtitle is-3 kanit acenter tdc-remove-margin-bt ">
+                    {{page.title}}
+                    <br>
+                    <span class="subtitle kanitlight is-5">Post Written By <strong>{{page.author}}</strong> -
+                        {{ page.date | date_to_string }}
+                    </span>
+                </h1>
+
+            </div>
+        </div>
+    </section>
+    <br>
+    <div class="container tdc-mobile-90">
+        <div class="columns">
+            <div class="column is-three-quarters">
+                <h3 class="title kanit is-3">{{page.subtitle}}
+                </h3>
+
+                <div class="is-medium">
+                    {{content}}
+                </div>
+            </div>
+            <div class="column">
+
+            </div>
+        </div>
+
+    </div>
+
+    <br><br>
+    {% include footer.html%}
+</body>
+
+</html>
