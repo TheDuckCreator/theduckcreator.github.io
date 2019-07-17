@@ -46,6 +46,7 @@ layout: default
             <blockquote class="is-5 title">ตราบใดที่มีแรงก็คงจะทำ แต่ถ้าขี้เกียจก็คงไม่ทำ ขอเพียงแต่ว่า
                 เราจะพยายามไม่ขี้เกียจ</blockquote>
         </div>
+
         <hr>
         <h1 class="title is-3 kanit acenter ">ไม่เชื่อ แต่บ้า ไม่กล้า แต่ก็ลองดู</h1>
         <nav class="level">
@@ -74,6 +75,22 @@ layout: default
                 </div>
             </div>
         </nav>
+        <hr>
+        <h3 class="title is-3 kanit tdc-remove-margin-bottom acenter">What's up now?</h3>
+        <!--Thank You https://github.com/robertgreiner/jekyll-recent-posts-->
+
+        <div class="columns">
+            {% for post in site.posts limit:3 %}
+            <div class="column is-4 box margin05">
+                <h5 class="tdc-remove-margin-bt">
+                    <a href="{{post.url}}" class=" subtitle is-4  has-text-primary kanit">
+                        {{post.title}}
+                    </a>
+                </h5>
+                <p>{{post.excerpt}} </p>
+            </div>
+            {% endfor %}
+        </div>
         <hr>
         <br>
         <div class="is-medium">
@@ -112,7 +129,7 @@ layout: default
                 <div class="column">
 
                     <img class="image piccenter" src="/assets/Port/thai league.png" style="height:256px;"><br>
-                    <h3 class="title is-5 kanit"><a href="#">Thailand
+                    <h3 class="title is-5 kanit"><a href="work/2019/06/28/thaileagueapp.html">Thailand
                             League Unofficial Application</a> <span class="tag is-warning">Fail</span></h3>
                     <p class="kanitlight">นี่คงเป็นการวางโครงสร้าง Source Code PHP ที่ดีที่สุดแล้วในตอนนั้น(มั้ง)
                         มีการใช้เฟรมเวิร์คอย่าง
@@ -149,24 +166,9 @@ layout: default
             </div>
         </div>
         <br>
-        <div class="button-area " style="width:100%;"><a href="#"><button
+        <div class="button-area " style="width:100%;"><a href="/portfolio.html"><button
                     class="button is-rounded kanitlight piccenter">อ่านเพิ่มเติม</button></a></div>
-        <hr>
-        <h3 class="title is-3 kanit tdc-remove-margin-bottom acenter">What's up now?</h3>
-        <!--Thank You https://github.com/robertgreiner/jekyll-recent-posts-->
 
-        <div class="columns">
-            {% for post in site.posts limit:5 %}
-            <div class="column is-4 box margin05">
-                <h5 class="tdc-remove-margin-bt">
-                    <a href="{{post.url}}" class=" subtitle is-4  has-text-primary kanit">
-                        {{post.title}}
-                    </a>
-                </h5>
-                <p>{{post.excerpt}} </p>
-            </div>
-            {% endfor %}
-        </div>
 
     </div>
 </body>

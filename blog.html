@@ -1,0 +1,13 @@
+---
+title: Blog - The Duck Creator
+layout: page
+---
+
+<body>
+    {% for post in site.posts %}
+    <div class="box is-medium margin05">
+        <h5 class="title is-5 kanit"><a href="{{post.url}} ">{{post.title}} </a></h5>
+        <p> {{post.excerpt}} </p>
+    </div>
+    {% endfor %}
+</body>

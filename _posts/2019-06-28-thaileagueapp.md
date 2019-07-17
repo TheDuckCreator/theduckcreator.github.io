@@ -3,6 +3,10 @@ title: ศึกษาจากความล้มเหลว(อีกแล
 subtitle: Thaileague Unofficial App (2018) แม้จะล้มเหลวแต่ภูมิใจ
 layout: post
 author: Theethawat Savastham
+category: work
+language: PHP
+git: https://github.com/TheDuckCreator/thaileague-app
+created_year: 2018
 ---
 
 ปฐมลิขิต ปกติมีมั้ย การจัดทำครั้งนี้ไม่ได้เกี่ยวข้องกับบริษัท ไทยลีก จำกัด หรือ สมาคมกีฬาฟุตบอลแห่งประเทศ
