@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-17T22:10:36+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space</subtitle><entry><title type="html">Thailand Blog Hub เว็บรวมบล็อกคนไทย ในยุคที่คนใช้โซเชี่ยล</title><link href="http://localhost:4000/work/2019/07/17/thailandbloghub.html" rel="alternate" type="text/html" title="Thailand Blog Hub เว็บรวมบล็อกคนไทย ในยุคที่คนใช้โซเชี่ยล" /><published>2019-07-17T00:00:00+07:00</published><updated>2019-07-17T00:00:00+07:00</updated><id>http://localhost:4000/work/2019/07/17/thailandbloghub</id><content type="html" xml:base="http://localhost:4000/work/2019/07/17/thailandbloghub.html">&lt;p&gt;ยังไงหละ ไม่ศึกษา Requirement มาให้ดีก่อน ดีนะที่งานเล็ก ๆ แต่อย่างน้อย เขียนโปรแกรมได้ขนาดนี้ เราแม่งก็ไม่ธรรมดา
+Pure PHP เนี่ย น่าจะเป็นงานสุดท้ายแล้วด้วย&lt;/p&gt;
+
+&lt;p&gt;เราจะเขียนบล็อก และ Doc ในแบบที่ว่า เหมือนมีใครมาสัมภาษณ์&lt;/p&gt;
+
+&lt;h2 id=&quot;คิดยังไงถึงมาทำ-thailand-blog-hub-ครับ&quot;&gt;คิดยังไงถึงมาทำ Thailand Blog Hub ครับ&lt;/h2&gt;
+
+&lt;p&gt;ก็คือว่า ผมก็เป็นคนหนึ่งครับที่ทำบล็อกอยู่ครับ ตอนนั้นถ้าจำกันได้ ก็คือเว็บไซต์บิ๊กเอเชีย ที่ bigasia.in.th ซึ่งตอนนี้ปิดไปแล้ว ซึ่งเว็บมันไม่มีคนดูครับ ผมเองก็คิดว่าบล็อกเกอร์ในปัจจุบันอาจจะประสบปัญหาแบบนี้เหมือนกัน
+เลยคิดว่า เห้ย มันน่าจะมีคอมมิวนิตี้ สำหรับคนเขียนบล็อกด้วยกันนะ เหมือนอย่างตอนผมเคยเขียนบล็อก ในปีประมาณ 2011-2012
+มันมีโครงการหนึ่งชื่อว่า &lt;b&gt;ไทยแลนด์บล็อกอวอร์ด&lt;/b&gt; ซึ่งเป็นอะไรที่ยิ่งใหญ่มาก เพราะตอนนั้นบล็อกเกอร์กำลังได้รับความนิยม
+คือผมก็ ซับมิทบทความในเว็บบล็อกของผม ในบล็อก SKIT หรือ สะกิด (ปิดตัวไปแล้ว) ถึงผมจะไม่ได้รางวัลอะไรเลย
+แต่สิ่งที่ได้กลับมาคือ เห้ย มันมีคนมาดูบล็อกเรามากขึ้นหวะ แล้วไม่ใช่แค่คนดูบล็อกเรานะ เราก็ไปดูบล็อกคนอื่นด้วย มันเป็นคอมมิวนิตี้อย่างนึงเลย&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="work" /><summary type="html">ยังไงหละ ไม่ศึกษา Requirement มาให้ดีก่อน ดีนะที่งานเล็ก ๆ แต่อย่างน้อย เขียนโปรแกรมได้ขนาดนี้ เราแม่งก็ไม่ธรรมดา Pure PHP เนี่ย น่าจะเป็นงานสุดท้ายแล้วด้วย</summary></entry><entry><title type="html">ศึกษาจากความล้มเหลว(อีกแล้ว) กับ ไทยลีกแอพ บน PHP</title><link href="http://localhost:4000/work/2019/06/28/thaileagueapp.html" rel="alternate" type="text/html" title="ศึกษาจากความล้มเหลว(อีกแล้ว) กับ ไทยลีกแอพ บน PHP" /><published>2019-06-28T00:00:00+07:00</published><updated>2019-06-28T00:00:00+07:00</updated><id>http://localhost:4000/work/2019/06/28/thaileagueapp</id><content type="html" xml:base="http://localhost:4000/work/2019/06/28/thaileagueapp.html">&lt;p&gt;ปฐมลิขิต ปกติมีมั้ย การจัดทำครั้งนี้ไม่ได้เกี่ยวข้องกับบริษัท ไทยลีก จำกัด หรือ สมาคมกีฬาฟุตบอลแห่งประเทศ
+เพียงจัดทำโดยคนๆ หนึ่งซึ่งรักในฟุตบอลไทย และอยากจะเห็นฟุตบอลไทยลีก
+กลับมาถูกพูดถึงกันอย่างกว้างขวางอีกครั้งเหมือนเมื่อหลายปีที่ผ่านมา&lt;/p&gt;
+
+&lt;h2 id=&quot;ความตั้งใจที่คิดจะมาทำ&quot;&gt;ความตั้งใจที่คิดจะมาทำ&lt;/h2&gt;
+
+&lt;p&gt;ด้วยสภาพทางเศรษฐกิจ หรือ ซุปเปอร์สตาร์ เราเข้าใจดี ว่าตอนนี้การจะให้คนมาติดตามไทยลีกระดับฟีเวอร์ อย่างที่เกิดขึ้นเมื่อ 4–5 ปีก่อน อาจจะทำได้ไม่ง่ายนัก แต่ด้วยการการบริหารที่เป็นมืออาชีพขึ้น ทั้งฝั่งลีก ฝั่งผู้จัด และสโมสร แบรนด์ดิ้ง หรือมาร์เก็ตติ้งต่างๆ เชื่อแน่ว่าไทยลีก หรือ T1 ก็จะยังคงสามารถพัฒนาต่อไปได้เรื่อยๆ ในเมื่อไทยลีก คือลีกสูงสุดเพียงลีกเดียวในประเทศไทย ผมในฐานะคนไทยคนหนึ่งก็อยากจะทำอะไรซักอย่าง เผื่อจะมีประโยชน์ไม่มากก็น้อย ต่อวงการฟุตบอลไทย จึงเป็นที่มาของ Thai League 1 Unofficial Application ที่จะรวบรวมข้อมูลเกี่ยวกับไทยลีกไว้ในแอพเดียว ซึ่งด้วยทรัพยากรคน และประสิทธิภาพในการ Coding ต่างๆ เราไม่ได้มีความสามารถเพียงพอ ดังนั้นอาจจะทำให้บางครั้งข้อมูลมีการล่าช้าบ้าง ยังเป็นเพียงแค่แอพพลิเคชั่นที่ทำงานด้วยการลิ้งค์ผ่านเว็บไซต์ แต่ก็มีแผนที่จะปรับปรุง และพัฒนา เพื่อให้ได้เป็นแอพพลิเคชั่นจริงๆ และมีประสิทธิภาพในอนาคต จนกว่าทางไทยลีก จะออก Official Application ออกมา&lt;/p&gt;
+
+&lt;div class=&quot;columns&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;img class=&quot;image&quot; src=&quot;/assets/thaileague/1.png&quot; /&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;img class=&quot;image&quot; src=&quot;/assets/thaileague/2.png&quot; /&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;img class=&quot;image&quot; src=&quot;/assets/thaileague/3.png&quot; /&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;ปัญหา-และ-สิ่งที่ได้รับ&quot;&gt;ปัญหา และ สิ่งที่ได้รับ&lt;/h2&gt;
+
+&lt;p&gt;เราได้ลงแอพพลิเคชั่นนี้ใน Google Play เมื่อวันที่ 5 กันยายน 2561 ซึ่งเป็นวันแรกที่ไทยลีกกลับมาเตะอีกครั้งในรอบ 1 เดือนที่หยุดให้กับมหกรรมกีฬา Asian Games หลังจากการลงแอพพลิเคชั่นของเรา แอพพลิเคชั่น ขึ้นอยู่ในอันดับ 1 ของการ Search คำว่า thaileague1 ใน Playstore และมียอดดาวน์โหลดกว่า 9 ราย ถึงแม้จะมีการลบก็ตาม แต่เนื่องจากแอพพลิเคชั่นของเราไม่ใช่ Native Android Application หรือ แอพพลิเคชั่นแอนดรอยด์แท้ๆ เป็นเพียง Shortcut จากเว็บไซต์ซึ่งเขียนด้วย PHP / Laravel Framework อัพโหลดไปที่ Hosting และใช้ Appgeyser แปลงออกมาเป็น .apk file ซึ่งแน่นอนว่าการตอบสนองต่อ Server จะหนักกว่า การใช้ Javascript&lt;/p&gt;
+
+&lt;p&gt;PHP ยังเป็นภาษาเขียนเว็บไซต์ที่ได้รับความนิยมในปัจจุบัน และ Laravel น่าจะเป็นรุ่น 6 หรือ 7 นี่แหละ ก็ทำให้เขียนเว็บได้ง่ายมากๆ กว่า pure php เยอะ แต่คงไม่เหมาะสมสำหรับการทำ Application แบบ Real Time และอีกทั้งแอพพลิเคชั่นนี้ใช้ระบบการป้อนข้อมูล ผ่าน Admin คนเดียว เนื่องจากระบบยังไม่พร้อมที่จะให้ผู้อื่นช่วยแก้ไข เนื่องจาก มี Bug จำนวนมาก&lt;/p&gt;
+
+&lt;div class=&quot;columns&quot;&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;img class=&quot;image&quot; src=&quot;/assets/thaileague/4.png&quot; /&gt;&lt;/div&gt;
+    &lt;div class=&quot;column&quot;&gt;&lt;img class=&quot;image&quot; src=&quot;/assets/thaileague/5.png&quot; /&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;bug-และ-ปัญหาที่พบ&quot;&gt;Bug และ ปัญหาที่พบ&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;ต้องทำการอัพเดทด้วย Mozilla Firefox เท่านั้น (ถึงแม้จะใช้ Firefox ผ่านมือถือได้)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ต้องมีการกด Refresh ซึ่งเจ้าของเท่านั้นที่จะรู้ว่าตรงไหนคือ คือจุดที่มี Bug ซึ่งจริงๆ ในระบบ Blackend ก็บอกไว้ เพียงแต่อาจจะไม่สะดวกต่อการ Edit มากนัก การพัฒนาด้วยระบบนี้ทำให้ผู้ใช้ต้อง Refresh หรือ เราตั้งโปรแกรมให้เว็บแอพพลิเคชั่น Refresh ตัวเองขึ้นมา ซึ่งมันเป็นเทคโนโลยีที่อาจจะล้าสมัย เปลืองทรัพยากร และ อาจจะไม่ตอบสนองต่อความต้องการ&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/thaileague/sc1.png&quot; alt=&quot;หน้าจอ Backend ของแอพพลิเคชั่น&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ซึ่งทั้งสองข้อนี้มันเกิดมาจากการใช้ PHP ร่วมกับ JavaScript และ ตัว Library อย่าง Jquery และที่สำคัญเลยคือเว็บมันค่อนข้างช้า ต้องการความเร็วอินเตอร์เน็ตสูง (โดยเฉพาะ Frontend) ส่วน Backend ผมว่าผมออกแบบ UI พอใช้ได้อยู่นะ ใช้ Bootstrap 4.1 ครับ พอดีถนัด แต่นั่นแหละ ระบบมันยังไม่พร้อมสำหรับการที่ให้คนอื่นมาช่วยทำไง และมันไม่ใครที่สามารถว่างเวลา 18.00–22.00 ทุกวันเสาร์ อาทิตย์ หรือวันพุธที่มีแมตซ์กลางสัปดาห์ ซึ่งนี่คือจุดสำคัญที่เราอาจจะไม่สามารถพัฒนาแอพพลิเคชั่น ใน Platform นี้ต่อไปได้&lt;/p&gt;
+
+&lt;p&gt;ในฐานะ Web Developer คนหนึ่ง ผมดีใจมากที่มีคนมาโหลดใช้แอพพลิเคชั่นของผมถึง 9 คน ทั้งในไทย และ ในประเทศอาเซียนบางประเทศ ซึ่งมากที่สุดที่ผมเคยทำได้ และแสดงว่ากระแสฟุตบอลไทยยังคงน่าสนใจ ผมก็ต้องอภัยทุกท่านเป็นอย่างยิ่งที่ไม่สามารถพัฒนาเว็บไซต์นี้ต่อไปได้ ระบบเป็นสิ่งสำคัญที่จะต้องถูกพัฒนาขึ้นใหม่ ด้วยเทคโนโลยีที่ทันสมัยขึ้นเพื่อที่จะเปิดโอกาสให้คนอื่นๆ มาร่วมอัพเดทได้ และ มีระบบที่เป็นแอพพลิเคชั่นจริงๆ ในอนาคต&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/thaileague/sc2.png&quot; alt=&quot;หน้าจอ Backend ของแอพพลิเคชั่น&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;สิ่งที่จะเป็นข้อแนะนำ-ในการพัฒนาต่อไป&quot;&gt;สิ่งที่จะเป็นข้อแนะนำ ในการพัฒนาต่อไป&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;พัฒนาระบบด้วยภาษา JavaScript เป็นหลัก โดยเน้นไปที่ Library React และ React Native&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ใช้เทคโนโลยีฐานข้อมูลแบบ NoSQL แทน MySQL เพื่อที่จะเข้าถึง JavaScript ได้ดียิ่งขึ้น เช่น พวก Firebase ซึ่งผมยังทำไอพวกนี้ไม่เป็นหรอก แต่คงจะหาเวลาฝึกต่อไป เพราะมันคือภาษาที่ทันสมัย และ มีประโยชน์แน่ๆ ในอนาคต&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;เนื่องจากยังไม่มีแอพพลิเคชั่นใดในไทยที่สามารถรวบรวมข้อมูลทุกๆ อย่างของการแข่งขันในแต่ละแมตซ์ได้อย่างละเอียดเหมือนแอพพลิเคชั่น ของ Premier League หรือ FIFA World Cup 2018 ที่ผ่านมา ดังนั้นเราจะมีการดำเนินการแบบนี้ต่อไป โดยอาจจะใช้ระบบของ RSS หรือ ดึงข้อมูลอัพเดทจากเฟสบุ๊ค หรือ ทวิตเตอร์ ของสโมสรต่างๆ มา เพื่อประหยัดการทำงานของผู้ดูแลระบบ&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ทำ Application ที่เหมาะกับ Real Time Process และ การแจ้งเตือน และเบาต่อการใช้งาน&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ก่อนส่งท้าย&quot;&gt;ก่อนส่งท้าย&lt;/h2&gt;
+
+&lt;p&gt;เออ ลืมบอกไป เรื่องฐานข้อมูล ผมก็เรียนวิชาฐานข้อมูลอยู่นะเทอมนี้ เลยรู้ว่าฐานข้อมูลของเว็บผมนี้แม่งโคตรห่วยเลย 555 อย่างนี้แหละครับการเริ่มต้น ถ้าเราวางฐานข้อมูลดี จัดระบบโค้ดดิ้งดีผมว่ามันจะทำให้อะไรง่ายขึ้นหลายอย่าง ไม่เชื่อไปดูวีดีโอ BNK48 X CodingThailand ดูสิครับ&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/thaileague/sc3.png&quot; alt=&quot;หน้าจอ Coding ของแอพพลิเคชั่น&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;สุดท้ายนี้ ผมขอขอบคุณทุกท่านที่มีส่วนสนับสนุน และ ทดลองใช้งาน Beta Application ของเรา ผมรู้สึกเป็นเกียรติเป็นอย่างยิ่ง และขอขอบคุณทุกๆ ท่าน เราจะกลับมาแน่นอน อย่างช้าน่าจะเป็นก่อนเปิดฤดูกาลหน้า ในแบบเต็มรูปแบบ หรือ ถ้าทางบริษัท ไทยลีก จำกัด หรือ ผู้ที่เกี่ยวข้อง เห็นความสำคัญ ก็ทำแอพพลิเคชั่นขึ้นมาเลยครับ แอพพลิเคชั่นนี้ไม่เป็นไร และผมขอเป็นกำลังใจให้กับวงการฟุตบอลไทย และวงการ Coding ของไทยต่อไปนะครับ&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="work" /><summary type="html">ปฐมลิขิต ปกติมีมั้ย การจัดทำครั้งนี้ไม่ได้เกี่ยวข้องกับบริษัท ไทยลีก จำกัด หรือ สมาคมกีฬาฟุตบอลแห่งประเทศ เพียงจัดทำโดยคนๆ หนึ่งซึ่งรักในฟุตบอลไทย และอยากจะเห็นฟุตบอลไทยลีก กลับมาถูกพูดถึงกันอย่างกว้างขวางอีกครั้งเหมือนเมื่อหลายปีที่ผ่านมา</summary></entry><entry><title type="html">First Time on React | Card Game BNK48</title><link href="http://localhost:4000/work/2019/06/20/reactgame.html" rel="alternate" type="text/html" title="First Time on React | Card Game BNK48" /><published>2019-06-20T00:00:00+07:00</published><updated>2019-06-20T00:00:00+07:00</updated><id>http://localhost:4000/work/2019/06/20/reactgame</id><content type="html" xml:base="http://localhost:4000/work/2019/06/20/reactgame.html">&lt;p&gt;คงเป็นความภูมิใจเล็ก ๆ ที่วันหนึ่งเราได้ก้าวมาสู่ภาษาสมัยใหม่ที่ได้รับความนิยมอย่าง Javascript สักที
+และก็เป็นครั้งแรกที่เขียน Javascript ES6 on Framework เต็มรูปแบบ ได้เข้าใจการวาง Component,Stage,Props ถึงแม้จะเป็นการสั่งงานในห้องเรียนก็ตาม และใข้ BNK48 มาเป็นพร็อพในงานครั้งนี้&lt;/p&gt;
+
+&lt;h2 id=&quot;bug-exchange-thank-you&quot;&gt;Bug Exchange Thank You&lt;/h2&gt;
+
+&lt;p&gt;ขอขอบคุณไอเดียบางอย่างจาก GitHub ของเพื่อนผมครับ จาก GitHub &lt;a href=&quot;https://github.com/sunisathammasoon/&quot;&gt;sunisathammasoon&lt;/a&gt;
+หวังว่าอาจารย์คงไม่ว่าอะไรนะครับ เนื่องจากมันเป็นประโยชน์สำคัญของ GitHubโดยเอามาตรงที่&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  constructor(props){
+      super(props)
+      this.state = prepareStateFromWord(this.props.value)
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ขอขอบคุณไอเดียจาก GitHub ของเพื่อนผม จาก GitHub &lt;a href=&quot;https://github.com/Ikhalas/&quot;&gt;Ikhalas&lt;/a&gt;
+โดยเอามาตรงที่(ใน WordCard.js ครับ)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    { Array.from(this.state.chars).map(
+    (c,i)=&amp;gt; &amp;lt;CharacterCard value = {c} key = {i} attempt={this.state.attempt}
+                activateHandler={this.activateHandler}/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;dependency-install&quot;&gt;Dependency Install&lt;/h2&gt;
+
+&lt;p&gt;ถ้าระบบไม่รู้จัก _ หรือ lodash ให้พิมพ์คำสั่ง&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    npm i -g npm
+    npm i --save lodash
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ใน Command Prompt หรือ Terminal (ตอนนั้นชี้อยู่ที่ card-game กล่าวคือ D:/card-game แล้วพิมพ์ npm i -g npm …..)
+โดยมันจะเอา lodash มาติดตั้งให้&lt;/p&gt;
+
+&lt;h2 id=&quot;css-library-ที่ใช้ได้แก่&quot;&gt;CSS Library ที่ใช้ได้แก่&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://getbootstrap.com&quot;&gt;Bootstrap 4.1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://fonts.google.com&quot;&gt;Google Fonts&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://fontawesome.io&quot;&gt;Fontawesome&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;deployment-and-view&quot;&gt;Deployment and View&lt;/h2&gt;
+
+&lt;p&gt;เข้าชมเว็บไซต์ได้ที่ &lt;a href=&quot;https://theethawat.github.io/card-game&quot;&gt;theethawat.github.io/card-game&lt;/a&gt; โดยการให้มัน deploy websiteใช้คำสั่ง&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    npm install gh-pages --save-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ก่อนที่จะแก้ไขข้อมูลในไฟล์ package.json ให้มัน deploy ใน githubusername.github.io/card-game&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    yarn build
+    yarn run deploy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;แล้วมาที่ Repository ของ GitHub อันนี้ ไปที่ Setting &amp;gt; GitHub Page แล้วเลือก branch gh-pages branch แล้ว save เป็นบริการฟรีของ GitHub&lt;/p&gt;
+
+&lt;h2 id=&quot;thank-you&quot;&gt;Thank you&lt;/h2&gt;
+
+&lt;p&gt;ขอบคุณที่มาจาก &lt;a href=&quot;https://github.com/gitname/react-gh-pages&quot;&gt;react-gh-pages&lt;/a&gt;
+ขอขอบคุณภาพจาก &lt;a href=&quot;https://www.bnk48.com/#/Member&quot;&gt;BNK48 Office&lt;/a&gt; ทำเพื่อการศึกษา มิได้มีเจตนาละเมิดลิขสิทธิ์&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Made with Love and Assigned from Theethawat Savastham&lt;/td&gt;
+      &lt;td&gt;ธีร์ธวัช สวาสดิ์ธรรม CoE’28 PSU&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>Theethawat Savastham</name></author><category term="work" /><summary type="html">คงเป็นความภูมิใจเล็ก ๆ ที่วันหนึ่งเราได้ก้าวมาสู่ภาษาสมัยใหม่ที่ได้รับความนิยมอย่าง Javascript สักที และก็เป็นครั้งแรกที่เขียน Javascript ES6 on Framework เต็มรูปแบบ ได้เข้าใจการวาง Component,Stage,Props ถึงแม้จะเป็นการสั่งงานในห้องเรียนก็ตาม และใข้ BNK48 มาเป็นพร็อพในงานครั้งนี้</summary></entry></feed>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ศึกษาจากความล้มเหลว(อีกแล้ว) กับ ไทยลีกแอพ บน PHP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:300,400&display=swap" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <link rel="icon" href="/assets/web logo.png">
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        blockquote {
+            font-family: 'kanit', sans-serif;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+            padding-top: 0.4em;
+            padding-bottom: 0.4em;
+        }
+
+        img {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            max-height: 512px;
+            width: auto;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <img class="image" src="/assets/TDC Logo black.png" width="75">
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start kanitlight">
+            
+            <a  class="navbar-item " 
+                href="/ ">
+                หน้าแรก
+            </a>
+            
+            <a  class="navbar-item " 
+                href="/about.html ">
+                เกี่ยวกับ
+            </a>
+            
+            <a  class="navbar-item " 
+                href="/blog.html ">
+                บล็อก
+            </a>
+            
+            <a  class="navbar-item " 
+                href="/portfolio.html ">
+                แฟ้มผลงาน
+            </a>
+            
+            <a  class="navbar-item " 
+                href="https://theduckcreator.in.th/theethawat ">
+                Directory
+            </a>
+            
+        </div>
+
+    </div>
+</nav>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+        }
+
+    });
+</script>
+    <section class="hero  is-warning is-bold">
+        <div class="hero-body">
+            <div class="container">
+
+                <h1 class="subtitle is-3 kanit acenter tdc-remove-margin-bt ">
+                    ศึกษาจากความล้มเหลว(อีกแล้ว) กับ ไทยลีกแอพ บน PHP
+                    <br>
+                    <span class="subtitle kanitlight is-5">Post Written By <strong>Theethawat Savastham</strong> -
+                        28 Jun 2019
+                    </span>
+                </h1>
+
+            </div>
+        </div>
+    </section>
+    <br>
+    <div class="container tdc-mobile-90">
+        <div class="columns">
+            <div class="column is-three-quarters">
+                <h3 class="title kanit is-3">Thaileague Unofficial App (2018) แม้จะล้มเหลวแต่ภูมิใจ
+                </h3>
+
+                <div class="is-medium">
+                    <p>ปฐมลิขิต ปกติมีมั้ย การจัดทำครั้งนี้ไม่ได้เกี่ยวข้องกับบริษัท ไทยลีก จำกัด หรือ สมาคมกีฬาฟุตบอลแห่งประเทศ
+เพียงจัดทำโดยคนๆ หนึ่งซึ่งรักในฟุตบอลไทย และอยากจะเห็นฟุตบอลไทยลีก
+กลับมาถูกพูดถึงกันอย่างกว้างขวางอีกครั้งเหมือนเมื่อหลายปีที่ผ่านมา</p>
+
+<h2 id="ความตั้งใจที่คิดจะมาทำ">ความตั้งใจที่คิดจะมาทำ</h2>
+
+<p>ด้วยสภาพทางเศรษฐกิจ หรือ ซุปเปอร์สตาร์ เราเข้าใจดี ว่าตอนนี้การจะให้คนมาติดตามไทยลีกระดับฟีเวอร์ อย่างที่เกิดขึ้นเมื่อ 4–5 ปีก่อน อาจจะทำได้ไม่ง่ายนัก แต่ด้วยการการบริหารที่เป็นมืออาชีพขึ้น ทั้งฝั่งลีก ฝั่งผู้จัด และสโมสร แบรนด์ดิ้ง หรือมาร์เก็ตติ้งต่างๆ เชื่อแน่ว่าไทยลีก หรือ T1 ก็จะยังคงสามารถพัฒนาต่อไปได้เรื่อยๆ ในเมื่อไทยลีก คือลีกสูงสุดเพียงลีกเดียวในประเทศไทย ผมในฐานะคนไทยคนหนึ่งก็อยากจะทำอะไรซักอย่าง เผื่อจะมีประโยชน์ไม่มากก็น้อย ต่อวงการฟุตบอลไทย จึงเป็นที่มาของ Thai League 1 Unofficial Application ที่จะรวบรวมข้อมูลเกี่ยวกับไทยลีกไว้ในแอพเดียว ซึ่งด้วยทรัพยากรคน และประสิทธิภาพในการ Coding ต่างๆ เราไม่ได้มีความสามารถเพียงพอ ดังนั้นอาจจะทำให้บางครั้งข้อมูลมีการล่าช้าบ้าง ยังเป็นเพียงแค่แอพพลิเคชั่นที่ทำงานด้วยการลิ้งค์ผ่านเว็บไซต์ แต่ก็มีแผนที่จะปรับปรุง และพัฒนา เพื่อให้ได้เป็นแอพพลิเคชั่นจริงๆ และมีประสิทธิภาพในอนาคต จนกว่าทางไทยลีก จะออก Official Application ออกมา</p>
+
+<div class="columns">
+    <div class="column"><img class="image" src="/assets/thaileague/1.png" /></div>
+    <div class="column"><img class="image" src="/assets/thaileague/2.png" /></div>
+    <div class="column"><img class="image" src="/assets/thaileague/3.png" /></div>
+</div>
+
+<h2 id="ปัญหา-และ-สิ่งที่ได้รับ">ปัญหา และ สิ่งที่ได้รับ</h2>
+
+<p>เราได้ลงแอพพลิเคชั่นนี้ใน Google Play เมื่อวันที่ 5 กันยายน 2561 ซึ่งเป็นวันแรกที่ไทยลีกกลับมาเตะอีกครั้งในรอบ 1 เดือนที่หยุดให้กับมหกรรมกีฬา Asian Games หลังจากการลงแอพพลิเคชั่นของเรา แอพพลิเคชั่น ขึ้นอยู่ในอันดับ 1 ของการ Search คำว่า thaileague1 ใน Playstore และมียอดดาวน์โหลดกว่า 9 ราย ถึงแม้จะมีการลบก็ตาม แต่เนื่องจากแอพพลิเคชั่นของเราไม่ใช่ Native Android Application หรือ แอพพลิเคชั่นแอนดรอยด์แท้ๆ เป็นเพียง Shortcut จากเว็บไซต์ซึ่งเขียนด้วย PHP / Laravel Framework อัพโหลดไปที่ Hosting และใช้ Appgeyser แปลงออกมาเป็น .apk file ซึ่งแน่นอนว่าการตอบสนองต่อ Server จะหนักกว่า การใช้ Javascript</p>
+
+<p>PHP ยังเป็นภาษาเขียนเว็บไซต์ที่ได้รับความนิยมในปัจจุบัน และ Laravel น่าจะเป็นรุ่น 6 หรือ 7 นี่แหละ ก็ทำให้เขียนเว็บได้ง่ายมากๆ กว่า pure php เยอะ แต่คงไม่เหมาะสมสำหรับการทำ Application แบบ Real Time และอีกทั้งแอพพลิเคชั่นนี้ใช้ระบบการป้อนข้อมูล ผ่าน Admin คนเดียว เนื่องจากระบบยังไม่พร้อมที่จะให้ผู้อื่นช่วยแก้ไข เนื่องจาก มี Bug จำนวนมาก</p>
+
+<div class="columns">
+    <div class="column"><img class="image" src="/assets/thaileague/4.png" /></div>
+    <div class="column"><img class="image" src="/assets/thaileague/5.png" /></div>
+</div>
+
+<h2 id="bug-และ-ปัญหาที่พบ">Bug และ ปัญหาที่พบ</h2>
+
+<ul>
+  <li>
+    <p>ต้องทำการอัพเดทด้วย Mozilla Firefox เท่านั้น (ถึงแม้จะใช้ Firefox ผ่านมือถือได้)</p>
+  </li>
+  <li>
+    <p>ต้องมีการกด Refresh ซึ่งเจ้าของเท่านั้นที่จะรู้ว่าตรงไหนคือ คือจุดที่มี Bug ซึ่งจริงๆ ในระบบ Blackend ก็บอกไว้ เพียงแต่อาจจะไม่สะดวกต่อการ Edit มากนัก การพัฒนาด้วยระบบนี้ทำให้ผู้ใช้ต้อง Refresh หรือ เราตั้งโปรแกรมให้เว็บแอพพลิเคชั่น Refresh ตัวเองขึ้นมา ซึ่งมันเป็นเทคโนโลยีที่อาจจะล้าสมัย เปลืองทรัพยากร และ อาจจะไม่ตอบสนองต่อความต้องการ</p>
+  </li>
+</ul>
+
+<p><img src="/assets/thaileague/sc1.png" alt="หน้าจอ Backend ของแอพพลิเคชั่น" /></p>
+
+<p>ซึ่งทั้งสองข้อนี้มันเกิดมาจากการใช้ PHP ร่วมกับ JavaScript และ ตัว Library อย่าง Jquery และที่สำคัญเลยคือเว็บมันค่อนข้างช้า ต้องการความเร็วอินเตอร์เน็ตสูง (โดยเฉพาะ Frontend) ส่วน Backend ผมว่าผมออกแบบ UI พอใช้ได้อยู่นะ ใช้ Bootstrap 4.1 ครับ พอดีถนัด แต่นั่นแหละ ระบบมันยังไม่พร้อมสำหรับการที่ให้คนอื่นมาช่วยทำไง และมันไม่ใครที่สามารถว่างเวลา 18.00–22.00 ทุกวันเสาร์ อาทิตย์ หรือวันพุธที่มีแมตซ์กลางสัปดาห์ ซึ่งนี่คือจุดสำคัญที่เราอาจจะไม่สามารถพัฒนาแอพพลิเคชั่น ใน Platform นี้ต่อไปได้</p>
+
+<p>ในฐานะ Web Developer คนหนึ่ง ผมดีใจมากที่มีคนมาโหลดใช้แอพพลิเคชั่นของผมถึง 9 คน ทั้งในไทย และ ในประเทศอาเซียนบางประเทศ ซึ่งมากที่สุดที่ผมเคยทำได้ และแสดงว่ากระแสฟุตบอลไทยยังคงน่าสนใจ ผมก็ต้องอภัยทุกท่านเป็นอย่างยิ่งที่ไม่สามารถพัฒนาเว็บไซต์นี้ต่อไปได้ ระบบเป็นสิ่งสำคัญที่จะต้องถูกพัฒนาขึ้นใหม่ ด้วยเทคโนโลยีที่ทันสมัยขึ้นเพื่อที่จะเปิดโอกาสให้คนอื่นๆ มาร่วมอัพเดทได้ และ มีระบบที่เป็นแอพพลิเคชั่นจริงๆ ในอนาคต</p>
+
+<p><img src="/assets/thaileague/sc2.png" alt="หน้าจอ Backend ของแอพพลิเคชั่น" /></p>
+
+<h2 id="สิ่งที่จะเป็นข้อแนะนำ-ในการพัฒนาต่อไป">สิ่งที่จะเป็นข้อแนะนำ ในการพัฒนาต่อไป</h2>
+
+<ul>
+  <li>
+    <p>พัฒนาระบบด้วยภาษา JavaScript เป็นหลัก โดยเน้นไปที่ Library React และ React Native</p>
+  </li>
+  <li>
+    <p>ใช้เทคโนโลยีฐานข้อมูลแบบ NoSQL แทน MySQL เพื่อที่จะเข้าถึง JavaScript ได้ดียิ่งขึ้น เช่น พวก Firebase ซึ่งผมยังทำไอพวกนี้ไม่เป็นหรอก แต่คงจะหาเวลาฝึกต่อไป เพราะมันคือภาษาที่ทันสมัย และ มีประโยชน์แน่ๆ ในอนาคต</p>
+  </li>
+  <li>
+    <p>เนื่องจากยังไม่มีแอพพลิเคชั่นใดในไทยที่สามารถรวบรวมข้อมูลทุกๆ อย่างของการแข่งขันในแต่ละแมตซ์ได้อย่างละเอียดเหมือนแอพพลิเคชั่น ของ Premier League หรือ FIFA World Cup 2018 ที่ผ่านมา ดังนั้นเราจะมีการดำเนินการแบบนี้ต่อไป โดยอาจจะใช้ระบบของ RSS หรือ ดึงข้อมูลอัพเดทจากเฟสบุ๊ค หรือ ทวิตเตอร์ ของสโมสรต่างๆ มา เพื่อประหยัดการทำงานของผู้ดูแลระบบ</p>
+  </li>
+  <li>
+    <p>ทำ Application ที่เหมาะกับ Real Time Process และ การแจ้งเตือน และเบาต่อการใช้งาน</p>
+  </li>
+</ul>
+
+<h2 id="ก่อนส่งท้าย">ก่อนส่งท้าย</h2>
+
+<p>เออ ลืมบอกไป เรื่องฐานข้อมูล ผมก็เรียนวิชาฐานข้อมูลอยู่นะเทอมนี้ เลยรู้ว่าฐานข้อมูลของเว็บผมนี้แม่งโคตรห่วยเลย 555 อย่างนี้แหละครับการเริ่มต้น ถ้าเราวางฐานข้อมูลดี จัดระบบโค้ดดิ้งดีผมว่ามันจะทำให้อะไรง่ายขึ้นหลายอย่าง ไม่เชื่อไปดูวีดีโอ BNK48 X CodingThailand ดูสิครับ</p>
+
+<p><img src="/assets/thaileague/sc3.png" alt="หน้าจอ Coding ของแอพพลิเคชั่น" /></p>
+
+<p>สุดท้ายนี้ ผมขอขอบคุณทุกท่านที่มีส่วนสนับสนุน และ ทดลองใช้งาน Beta Application ของเรา ผมรู้สึกเป็นเกียรติเป็นอย่างยิ่ง และขอขอบคุณทุกๆ ท่าน เราจะกลับมาแน่นอน อย่างช้าน่าจะเป็นก่อนเปิดฤดูกาลหน้า ในแบบเต็มรูปแบบ หรือ ถ้าทางบริษัท ไทยลีก จำกัด หรือ ผู้ที่เกี่ยวข้อง เห็นความสำคัญ ก็ทำแอพพลิเคชั่นขึ้นมาเลยครับ แอพพลิเคชั่นนี้ไม่เป็นไร และผมขอเป็นกำลังใจให้กับวงการฟุตบอลไทย และวงการ Coding ของไทยต่อไปนะครับ</p>
+
+                </div>
+            </div>
+            <div class="column">
+
+            </div>
+        </div>
+
+    </div>
+
+    <br><br>
+    <footer class="footer">
+    <div class="content has-text-centered">
+        <p class="kanitlight">
+            <strong>The Duck Creator</strong> by <a href="https://theethawatspace.in.th">Theethawat</a> 2019, Web
+            Content is licensed by <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+                4.0 BY International</a>
+            <br>Front Page Made by <a href="https://jekyllrb.com">Jekyll </a>Server By <a
+                href="https://nginx.com">Nginx</a> on <a href="https://digitalocean.com">DigitalOcean</a>
+
+        </p>
+    </div>
+</footer>
+    <script src="https://kit.fontawesome.com/942c2b45e2.js"></script>
+
+</body>
+
+</html>

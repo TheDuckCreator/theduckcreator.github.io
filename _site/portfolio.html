@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio- The Duck Creator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:300,400&display=swap" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <link rel="icon" href="/assets/web logo.png">
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        blockquote {
+            font-family: 'kanit', sans-serif;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+            padding-top: 0.4em;
+            padding-bottom: 0.4em;
+        }
+
+        img {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            max-height: 512px;
+            width: auto;
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <img class="image" src="/assets/TDC Logo black.png" width="75">
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start kanitlight">
+            
+            <a  class="navbar-item " 
+                href="/ ">
+                หน้าแรก
+            </a>
+            
+            <a  class="navbar-item " 
+                href="/about.html ">
+                เกี่ยวกับ
+            </a>
+            
+            <a  class="navbar-item " 
+                href="/blog.html ">
+                บล็อก
+            </a>
+            
+            <a  class="navbar-item is-active" 
+                href="/portfolio.html ">
+                แฟ้มผลงาน
+            </a>
+            
+            <a  class="navbar-item " 
+                href="https://theduckcreator.in.th/theethawat ">
+                Directory
+            </a>
+            
+        </div>
+
+    </div>
+</nav>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+        }
+
+    });
+</script>
+    <section class="hero  is-warning is-bold">
+        <div class="hero-body">
+            <div class="container">
+
+                <h1 class="subtitle is-3 kanit acenter tdc-remove-margin-bt ">
+                    Portfolio- The Duck Creator
+                    <br>
+                </h1>
+
+            </div>
+        </div>
+    </section>
+    <br>
+    <div class="container tdc-mobile-90">
+        <div class="columns">
+            <div class="column is-three-quarters">
+                <!-- <h3 class="title kanit is-3">
+                </h3> -->
+
+                <div class="is-medium">
+                    <body>
+    
+    
+    <div class="box is-medium margin05">
+        <h5 class="title is-5 kanit"><a href="/work/2019/07/17/thailandbloghub.html ">Thailand Blog Hub เว็บรวมบล็อกคนไทย ในยุคที่คนใช้โซเชี่ยล </a></h5>
+        <p> <p>ยังไงหละ ไม่ศึกษา Requirement มาให้ดีก่อน ดีนะที่งานเล็ก ๆ แต่อย่างน้อย เขียนโปรแกรมได้ขนาดนี้ เราแม่งก็ไม่ธรรมดา
+Pure PHP เนี่ย น่าจะเป็นงานสุดท้ายแล้วด้วย</p>
+
+ </p>
+
+        <div class="field is-grouped kanitlight">
+            <p class="control">
+                <a class="button is-rounded is-primary">
+                    2018
+                </a>
+            </p>
+            <p class="control">
+                <a class="button is-rounded is-success">
+                    <span class="icon">
+                        <i class="fas fa-code"></i>
+                    </span>
+                    <span> PHP </span>
+                </a>
+            </p>
+            <p class="control">
+                <a class="button is-rounded" href="https://github.com/theethawat/Thailandbloghub ">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                </a>
+            </p>
+        </div>
+    </div>
+    
+    
+    
+    <div class="box is-medium margin05">
+        <h5 class="title is-5 kanit"><a href="/work/2019/06/28/thaileagueapp.html ">ศึกษาจากความล้มเหลว(อีกแล้ว) กับ ไทยลีกแอพ บน PHP </a></h5>
+        <p> <p>ปฐมลิขิต ปกติมีมั้ย การจัดทำครั้งนี้ไม่ได้เกี่ยวข้องกับบริษัท ไทยลีก จำกัด หรือ สมาคมกีฬาฟุตบอลแห่งประเทศ
+เพียงจัดทำโดยคนๆ หนึ่งซึ่งรักในฟุตบอลไทย และอยากจะเห็นฟุตบอลไทยลีก
+กลับมาถูกพูดถึงกันอย่างกว้างขวางอีกครั้งเหมือนเมื่อหลายปีที่ผ่านมา</p>
+
+ </p>
+
+        <div class="field is-grouped kanitlight">
+            <p class="control">
+                <a class="button is-rounded is-primary">
+                    2018
+                </a>
+            </p>
+            <p class="control">
+                <a class="button is-rounded is-success">
+                    <span class="icon">
+                        <i class="fas fa-code"></i>
+                    </span>
+                    <span> PHP </span>
+                </a>
+            </p>
+            <p class="control">
+                <a class="button is-rounded" href="https://github.com/TheDuckCreator/thaileague-app ">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                </a>
+            </p>
+        </div>
+    </div>
+    
+    
+    
+    <div class="box is-medium margin05">
+        <h5 class="title is-5 kanit"><a href="/work/2019/06/20/reactgame.html ">First Time on React | Card Game BNK48 </a></h5>
+        <p> <p>คงเป็นความภูมิใจเล็ก ๆ ที่วันหนึ่งเราได้ก้าวมาสู่ภาษาสมัยใหม่ที่ได้รับความนิยมอย่าง Javascript สักที
+และก็เป็นครั้งแรกที่เขียน Javascript ES6 on Framework เต็มรูปแบบ ได้เข้าใจการวาง Component,Stage,Props ถึงแม้จะเป็นการสั่งงานในห้องเรียนก็ตาม และใข้ BNK48 มาเป็นพร็อพในงานครั้งนี้</p>
+
+ </p>
+
+        <div class="field is-grouped kanitlight">
+            <p class="control">
+                <a class="button is-rounded is-primary">
+                    2018
+                </a>
+            </p>
+            <p class="control">
+                <a class="button is-rounded is-success">
+                    <span class="icon">
+                        <i class="fas fa-code"></i>
+                    </span>
+                    <span> Javascript </span>
+                </a>
+            </p>
+            <p class="control">
+                <a class="button is-rounded" href="https://github.com/theethawat/card-game ">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                </a>
+            </p>
+        </div>
+    </div>
+    
+    
+</body>
+                </div>
+            </div>
+            <div class="column">
+
+            </div>
+        </div>
+
+    </div>
+
+    <br><br>
+    <footer class="footer">
+    <div class="content has-text-centered">
+        <p class="kanitlight">
+            <strong>The Duck Creator</strong> by <a href="https://theethawatspace.in.th">Theethawat</a> 2019, Web
+            Content is licensed by <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+                4.0 BY International</a>
+            <br>Front Page Made by <a href="https://jekyllrb.com">Jekyll </a>Server By <a
+                href="https://nginx.com">Nginx</a> on <a href="https://digitalocean.com">DigitalOcean</a>
+
+        </p>
+    </div>
+</footer>
+    <script src="https://kit.fontawesome.com/942c2b45e2.js"></script>
+
+</body>
+
+</html>
