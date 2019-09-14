@@ -80,8 +80,8 @@ layout: default
         <!--Thank You https://github.com/robertgreiner/jekyll-recent-posts-->
 
         <div class="columns">
-            {% for post in site.posts limit:3 %}
-            <div class="column is-4 box margin05">
+            {% for post in site.posts limit:4 %}
+            <div class="column  box margin05">
                 <h5 class="tdc-remove-margin-bt">
                     <a href="{{post.url}}" class=" subtitle is-4  has-text-primary kanit">
                         {{post.title}}
@@ -91,6 +91,8 @@ layout: default
             </div>
             {% endfor %}
         </div>
+        <div class="button-area " style="width:100%;"><a href="/blog.html"><button
+            class="button is-rounded kanitlight piccenter">บทความอื่น ๆ</button></a></div>
         <hr>
         <br>
         <div class="is-medium">
