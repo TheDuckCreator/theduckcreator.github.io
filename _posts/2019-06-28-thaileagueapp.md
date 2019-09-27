@@ -7,6 +7,7 @@ category: work
 language: PHP
 git: https://github.com/TheDuckCreator/thaileague-app
 created_year: 2018
+comments: true
 ---
 
 ปฐมลิขิต ปกติมีมั้ย การจัดทำครั้งนี้ไม่ได้เกี่ยวข้องกับบริษัท ไทยลีก จำกัด หรือ สมาคมกีฬาฟุตบอลแห่งประเทศ

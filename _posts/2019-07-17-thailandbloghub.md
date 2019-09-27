@@ -7,6 +7,7 @@ category: work
 language: PHP
 git: https://github.com/theethawat/Thailandbloghub
 created_year: 2018
+comments: true
 ---
 
 ยังไงหละ ไม่ศึกษา Requirement มาให้ดีก่อน ดีนะที่งานเล็ก ๆ แต่อย่างน้อย เขียนโปรแกรมได้ขนาดนี้ เราแม่งก็ไม่ธรรมดา

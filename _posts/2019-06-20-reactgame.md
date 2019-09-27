@@ -7,6 +7,7 @@ category: work
 language: Javascript
 git: https://github.com/theethawat/card-game
 created_year: 2018
+comments: true
 ---
 
 คงเป็นความภูมิใจเล็ก ๆ ที่วันหนึ่งเราได้ก้าวมาสู่ภาษาสมัยใหม่ที่ได้รับความนิยมอย่าง Javascript สักที

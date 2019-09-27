@@ -1,85 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{page.title}}</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
-    <link href="https://fonts.googleapis.com/css?family=Kanit:300,400&display=swap" rel="stylesheet">
-    <link href="/assets/css/main.css" rel="stylesheet">
-    <link rel="icon" href="/assets/web logo.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ page.title }}</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kanit:300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/assets/css/main.css" rel="stylesheet" />
+    <link rel="icon" href="/assets/web logo.png" />
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v4.0&appId=389712018153235&autoLogAppEvents=1"
+    ></script>
     <style>
-        h1,
-        h2,
-        h3,
-        h4,
-        blockquote {
-            font-family: 'kanit', sans-serif;
-        }
+      h1,
+      h2,
+      h3,
+      h4,
+      blockquote {
+        font-family: "kanit", sans-serif;
+      }
 
-        h1 {
-            font-size: 32px;
-        }
+      h1 {
+        font-size: 32px;
+      }
 
-        h2 {
-            font-size: 28px;
-            font-weight: bold;
-            padding-top: 0.4em;
-            padding-bottom: 0.4em;
-        }
+      h2 {
+        font-size: 28px;
+        font-weight: bold;
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+      }
 
-        img {
-            display: block;
-            margin-right: auto;
-            margin-left: auto;
-            max-height: 512px;
-            width: auto;
-        }
+      img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 512px;
+        width: auto;
+      }
 
-        p {
-            margin-bottom: 1em;
-        }
+      p {
+        margin-bottom: 1em;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     {% include navigation.html %}
     <section class="hero  is-warning is-bold">
-        <div class="hero-body">
-            <div class="container">
-
-                <h1 class="subtitle is-3 kanit acenter tdc-remove-margin-bt ">
-                    {{page.title}}
-                    <br>
-                </h1>
-
-            </div>
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="subtitle is-3 kanit acenter tdc-remove-margin-bt ">
+            {{ page.title }}
+            <br />
+          </h1>
         </div>
+      </div>
     </section>
-    <br>
+    <br />
     <div class="container tdc-mobile-90">
-        <div class="columns">
-            <div class="column is-three-quarters">
-                <!-- <h3 class="title kanit is-3">{{page.subtitle}}
+      <div class="columns">
+        <div class="column is-three-quarters">
+          <!-- <h3 class="title kanit is-3">{{page.subtitle}}
                 </h3> -->
 
-                <div class="is-medium">
-                    {{content}}
-                </div>
-            </div>
-            <div class="column">
-
-            </div>
+          <div class="is-medium">
+            {{ content }}
+          </div>
         </div>
-
+        <div class="column">
+            <h3 class="title is-5 kanit">ติดตามเราได้ที่</h3>
+          <div
+            class="fb-page"
+            data-href="https://www.facebook.com/theduckcreatorthailand"
+            data-tabs="timeline"
+            data-width=""
+            data-height=""
+            data-small-header="false"
+            data-adapt-container-width="true"
+            data-hide-cover="false"
+            data-show-facepile="true"
+          >
+        </div>
+      </div>
     </div>
 
-    <br><br>
+    <br /><br />
     {% include footer.html%}
     <script src="https://kit.fontawesome.com/942c2b45e2.js"></script>
-
-</body>
-
+  </body>
 </html>

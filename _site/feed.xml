@@ -1,4 +1,290 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-27T14:25:28+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space</subtitle><entry><title type="html">ชีวิตแบบเป็ด ๆ ของโปรแกรมเมอร์บ้า ๆ บอ ๆ คนนี้</title><link href="http://localhost:4000/life/2019/09/14/programingday.html" rel="alternate" type="text/html" title="ชีวิตแบบเป็ด ๆ ของโปรแกรมเมอร์บ้า ๆ บอ ๆ คนนี้" /><published>2019-09-14T00:00:00+07:00</published><updated>2019-09-14T00:00:00+07:00</updated><id>http://localhost:4000/life/2019/09/14/programingday</id><content type="html" xml:base="http://localhost:4000/life/2019/09/14/programingday.html">&lt;p&gt;ผมเป็นคนนึงที่ใช้ชีวิตแบบ Duck Learning มาก จึงเป็นที่มาของไอ เดอะดักส์ครีเอเตอร์นี่ไง ดักส์คืออะไรนั่นเหรอ คือทำนุ่นทำนี่เล็ก ๆ น้อย ๆ ได้หลายอย่าง แต่แม่งไม่เก่งซักอย่าง บทความนี้สาระไม่ค่อยมีนะครับ เน้นระบาย อ่านรู้เรื่องก็อ่านนะครับ&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-27T16:09:13+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space</subtitle><entry><title type="html">Kotlin In My Note</title><link href="http://localhost:4000/work/2019/09/27/introtokotlin.html" rel="alternate" type="text/html" title="Kotlin In My Note" /><published>2019-09-27T00:00:00+07:00</published><updated>2019-09-27T00:00:00+07:00</updated><id>http://localhost:4000/work/2019/09/27/introtokotlin</id><content type="html" xml:base="http://localhost:4000/work/2019/09/27/introtokotlin.html">&lt;p&gt;นี่คือโน้ตที่ผมเขียนไว้ตอนผมเรียนคอทลิน ประกอบกับแอนดรอยด์ไปด้วย เพื่อที่จะทำโปรเจกต์ของผม ผมเองก็โน้ตเก็บเป็น Markdown ไว้ แล้วก็มาเผยแพร่ให้ดู เป็นภาษาอังกฤษนะครับ ว่าง ๆ จะมาแปลไทยให้อ่าน&lt;/p&gt;
+
+&lt;h2 id=&quot;คุยกันก่อน&quot;&gt;คุยกันก่อน&lt;/h2&gt;
+
+&lt;p&gt;Kotlin เป็นภาษาตัวหนึ่งที่รันอยู่บน Java Virtual Machine(JVM) ได้ พัฒนาโดยกลุ่มที่ได้รับการสนับสนุนจากบริษัท Jetbrains ผู้พััฒนา IntelliJ Idea และ Android Studio ซึ่งผมเองต้องเขียน Android ดังนั้นผมจึงต้องมีพื้นฐาน Kotlin หน่อย ๆ Kotlin ตอนแรกเนี่ยเขาคิดว่าจะทำมาเป็น Library ของ Java แต่ตอนหลังแล้ว พอเขาคิดว่าการทำ Library พวกนี้มันต้อง Compatible กับอะไรแบบเดิม ก็เลยเขียนภาษาขึ้นมาใหม่ดีกว่า ชื่อภาษา Kotlin เป็นที่นิยม และ ตัวที่ Google เองก็เชียร์ให้เขียน Android กับ Kotlin ด้วย ถ้าใครเขียนพวก OOP อย่าง Java, C# มาก่อน Kotlin ไม่ยากครับ ง่ายกว่าแน่นอน หรือถ้าใครไม่เคยเขียน มันก็ไม่ยากนะ แค่มันอาจจะงง ๆ หน่อย ตามประสาของภาษาโปรแกรมมิ่งสมัยใหม่&lt;/p&gt;
+
+&lt;h2 id=&quot;เริ่มต้นกับคอทลิน&quot;&gt;เริ่มต้นกับคอทลิน&lt;/h2&gt;
+
+&lt;p&gt;ถ้ามว่าจะเริ่มต้นยังไงเหรอ ลองไปดูที่ https://kotlinlang.org ก็ได้ แนะนำเลยคือ ติดตั้ง IntelliJ Idea ครับ จบ หรือถ้าใช้ Ecilipse ก็ใช้ได้นะ ตอนแรกผมก็ทำกับ Ecilipse ซึ่งอาจจะต้องลง JRE หรือ JDK หรือเปล่านั้น จำไม่ได้ เพราะตอนนั้นรู้สึกว่าเครื่องผมอ่ะพร้อมอยู่แล้ว แต่ถ้ามัน Require อะไร มันคงแจ้งเตือนเรามาเองแหละครับ แต่ส่วนใหญ่ก็ไม่ค่อยมีคนเขียน Native Kotlin นะ จะเป็นการฝึกหน่อย ๆ แล้วนำไปใช้ต่อในการเขียนพวก Android หรือเว็บแอพ อะไรอย่างนี้ครับ&lt;/p&gt;
+
+&lt;p&gt;โอเค เริ่มละนะ ว่างเมื่อไหร่ เดี๋ยวมาแปลเป็นภาษาไทยให้&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;intro-to-kotlin&quot;&gt;Intro To Kotlin&lt;/h1&gt;
+
+&lt;p&gt;&lt;b&gt;Learn Kotlin: &lt;/b&gt; &lt;a href=&quot;https://kotlinlang.org/docs/reference&quot;&gt;Official Kotlin Doc&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is only my note during learning and coding something may be mistake. At first I cannot typing in Thai in Ecilipse IDE Now I learn in IntelliJ IDEA it can type in Thai but I’m idle.&lt;/p&gt;
+
+&lt;h2 id=&quot;structure&quot;&gt;Structure&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Don’t Need a Pre-processor because Kotlin is initial itself at the begining from IDE&lt;/li&gt;
+  &lt;li&gt;Don’t worry about package name, It nescessory only to show that it are in the same domain. In file system they don’t show in class view but in IDE it will show you the structure of class&lt;/li&gt;
+  &lt;li&gt;Function Initial run with main&lt;/li&gt;
+  &lt;li&gt;No Semicolon needed in Kotlin&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;table-of-content&quot;&gt;Table of Content&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#basic-syntax&quot;&gt;Basic Syntax&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#function&quot;&gt;Function&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#variable&quot;&gt;Variable&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#string-management&quot;&gt;String Management&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#array&quot;&gt;Array&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#class&quot;&gt;Class&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;basic-syntax&quot;&gt;Basic Syntax&lt;/h2&gt;
+
+&lt;h3 id=&quot;printing-out-the-word&quot;&gt;printing out the word&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//using print or println
+print(&quot;Hello World&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;printing-out-the-value-of-variable&quot;&gt;printing out the value of variable&lt;/h3&gt;
+
+&lt;p&gt;It can be inside the double quote with $ sign using variable Name&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;print(&quot; $variablename &quot;)
+//If have any calculating
+print(&quot; ${variableName1 + variableName2}&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;function&quot;&gt;Function&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;To call using like in C Language&lt;/li&gt;
+  &lt;li&gt;Using &lt;b&gt;fun&lt;/b&gt; to initial the function&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;function-prototype&quot;&gt;Function Prototype&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fun functionName(parameterName:ParameterType): Returntype{
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Example for Very Basic Function (don’t have return)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fun sum(a:Int,b:Int){
+	println(&quot;a is $a  b is $b&quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;call-function-to-use-return-value&quot;&gt;Call function to use Return Value&lt;/h3&gt;
+
+&lt;p&gt;In variable define or redefine&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	var x = functionName(Parameter)
+	var y:Int
+	y = functionName(Parameter)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Beware Function and Properties are not the same&lt;/p&gt;
+
+&lt;h3 id=&quot;using-the-properties&quot;&gt;Using the properties&lt;/h3&gt;
+
+&lt;p&gt;In Properties we use to get something from variable you can using Kotlin Library properties&lt;/p&gt;
+
+&lt;h4 id=&quot;calling-properties&quot;&gt;Calling Properties&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	var testLengthVariable = &quot;Theethawat&quot;
+	var theethawatLength =&quot;Theethawat&quot;.length
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;or-calling-in-print-statement&quot;&gt;Or calling in print statement&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	println(&quot;Variable of testLengthVariable is ${testLengthVariable.length}&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;variable&quot;&gt;Variable&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Using &lt;b&gt;val&lt;/b&gt; can be assign a value only once&lt;/li&gt;
+  &lt;li&gt;Using &lt;b&gt;var&lt;/b&gt; can be reassign&lt;/li&gt;
+  &lt;li&gt;Can use both Type define or not, if you not define a type you must initial value in the declare variable part and Kotlin will assign the type automatically&lt;/li&gt;
+  &lt;li&gt;Type Define and value Define is optional All are correct&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var a:Int =1
+var a = 2
+var a:Int
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This is example that &lt;b&gt;Incorrect&lt;/b&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var a
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Variable can define both in global and local (Private to function) if it be global it can be modify by any function without re parameter-initial like&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var x = 0
+fun incrementX() {
+   x += 1
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;string-management&quot;&gt;String Management&lt;/h2&gt;
+
+&lt;h3 id=&quot;triming-margin&quot;&gt;Triming Margin&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Can use trimMargin using with prefix ‘&lt;/td&gt;
+      &lt;td&gt;’ only if use another prefix using trimMargin(‘Prefix’)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;val str3 = &quot;&quot;&quot; #Hello World&quot;&quot;&quot;.trimMargin()
+val str4 = &quot;&quot;&quot; #Hello World &quot;&quot;&quot;.trimMargin(&quot;#&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Can use &lt;code class=&quot;highlighter-rouge&quot;&gt;.trimIndent&lt;/code&gt; for trim white space before text like a white space
+and Can use triple quote “”” for let string in the string can be multiple line as we code&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;array&quot;&gt;Array&lt;/h2&gt;
+
+&lt;h3 id=&quot;array-declaring&quot;&gt;Array Declaring&lt;/h3&gt;
+
+&lt;p&gt;Can Creating Array with Initial Value , Initial Value Using Function or Uninitialized using normal form &lt;code class=&quot;highlighter-rouge&quot;&gt;arrayOf&lt;/code&gt;
+if you initial value&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;val a = intArrayOf(11,13,15,17,12)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;or using Specific type of Array&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;BooleanArray &lt;code class=&quot;highlighter-rouge&quot;&gt;booleanArrayOf(true, false)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;ByteArray &lt;code class=&quot;highlighter-rouge&quot;&gt;byteArrayOf(1, 2, 3)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;CharArray &lt;code class=&quot;highlighter-rouge&quot;&gt;charArrayOf('a', 'b', 'c')&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;DoubleArray &lt;code class=&quot;highlighter-rouge&quot;&gt;doubleArrayOf(1.2, 5.0)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;FloatArray &lt;code class=&quot;highlighter-rouge&quot;&gt;floatArrayOf(1.2, 5.0)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;IntArray &lt;code class=&quot;highlighter-rouge&quot;&gt;intArrayOf(1, 2, 3)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;LongArray &lt;code class=&quot;highlighter-rouge&quot;&gt;longArrayOf(1, 2, 3)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;ShortArray &lt;code class=&quot;highlighter-rouge&quot;&gt;shortArrayOf(1, 2, 3)&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;or can design array by using function like&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;val asc = Array(5,init = {i-&amp;gt;i+1})
+ for (b in asc){
+     println(b)
+ }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;array-properties&quot;&gt;Array Properties&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Properties that can use when declare an Array
+&lt;code class=&quot;highlighter-rouge&quot;&gt;sortedArray(), sortedArrayDescending()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Properties that can use when we using function
+&lt;code class=&quot;highlighter-rouge&quot;&gt;sort(), sortDescending() , min(), max(),first(), last()&lt;/code&gt; it will return a view of the things
+that you want in array (some only for Int or Number Variables)
+for example
+println(“List of Array B is ${b.sorted()}”)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;collection&quot;&gt;Collection&lt;/h3&gt;
+
+&lt;p&gt;Collection is like array but it’s the tool that can easier management&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;List use &lt;code class=&quot;highlighter-rouge&quot;&gt;Listof()&lt;/code&gt; (Can replace string with other type)&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;val  myList = listOf&amp;lt;String&amp;gt;(&quot;Theethawat&quot;,&quot;Songpon&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Map use &lt;code class=&quot;highlighter-rouge&quot;&gt;mapOf()&lt;/code&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; val myMap = mapOf&amp;lt;Int,String&amp;gt;(Pair(1,&quot;Theethawat&quot;), Pair(2,&quot;Theematach&quot;))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Set use &lt;code class=&quot;highlighter-rouge&quot;&gt;setOf()&lt;/code&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;val mySet = setOf&amp;lt;String&amp;gt;(&quot;Theethawat&quot;,&quot;Sirinuch&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;using 3 types of collection and other type of Array can be random access&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;class&quot;&gt;Class&lt;/h2&gt;
+
+&lt;h3 id=&quot;basic-concept-of-class&quot;&gt;Basic Concept of Class&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It’s like class in Java and sometime it’s like stucture in C
+in my own opinion&lt;/li&gt;
+  &lt;li&gt;Use function (main or any) to call a class&lt;/li&gt;
+  &lt;li&gt;If Compare to Java it has 3 part
+    &lt;ul&gt;
+      &lt;li&gt;Field for variable declare and initial (Java divide into
+field and Constructor) and can use argument &lt;code class=&quot;highlighter-rouge&quot;&gt;also()&lt;/code&gt; to make this variable call the function like &lt;code class=&quot;highlighter-rouge&quot;&gt;val nameInput = &quot;The Input value is $name&quot;.also(::println)&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;init()&lt;/code&gt; can use for initial, set value and call function in class&lt;/li&gt;
+      &lt;li&gt;function &lt;code class=&quot;highlighter-rouge&quot;&gt;fun()&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Everythings contain public, protected, private same like other OOP&lt;/li&gt;
+  &lt;li&gt;Can use dot(.) for go to the attribute like in C or Java&lt;/li&gt;
+  &lt;li&gt;For Example in file Address.kt&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;object&quot;&gt;Object&lt;/h2&gt;
+
+&lt;h3 id=&quot;companion-object&quot;&gt;Companion object&lt;/h3&gt;
+
+&lt;p&gt;If your class have a Companion object show that you can implement or adding the function to that object like&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class MyClass {
+	companion object { }  // will be called &quot;Companion&quot;
+	}
+
+	fun MyClass.Companion.printCompanion() { println(&quot;theethawat&quot;) }
+
+	fun main() {
+	MyClass.printCompanion()
+	}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You will got an output “Theethawat”, i pick it from official Document at &lt;a href=&quot;https://kotlinlang.org/docs/reference/object-declarations.html#companion-objects&quot;&gt;Object Documents in Kotlin&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;basic-function-and-library&quot;&gt;Basic Function and library&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Kotlin will add Basic Library name kotlin.* if you use IDE or compiler&lt;/li&gt;
+  &lt;li&gt;There include many function inside&lt;/li&gt;
+  &lt;li&gt;String Function Reference is located at &lt;a href=&quot;https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html&quot;&gt;Kotlin Function Reference&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Theethawat Savastham</name></author><category term="work" /><summary type="html">นี่คือโน้ตที่ผมเขียนไว้ตอนผมเรียนคอทลิน ประกอบกับแอนดรอยด์ไปด้วย เพื่อที่จะทำโปรเจกต์ของผม ผมเองก็โน้ตเก็บเป็น Markdown ไว้ แล้วก็มาเผยแพร่ให้ดู เป็นภาษาอังกฤษนะครับ ว่าง ๆ จะมาแปลไทยให้อ่าน</summary></entry><entry><title type="html">ชีวิตแบบเป็ด ๆ ของโปรแกรมเมอร์บ้า ๆ บอ ๆ คนนี้</title><link href="http://localhost:4000/life/2019/09/14/programingday.html" rel="alternate" type="text/html" title="ชีวิตแบบเป็ด ๆ ของโปรแกรมเมอร์บ้า ๆ บอ ๆ คนนี้" /><published>2019-09-14T00:00:00+07:00</published><updated>2019-09-14T00:00:00+07:00</updated><id>http://localhost:4000/life/2019/09/14/programingday</id><content type="html" xml:base="http://localhost:4000/life/2019/09/14/programingday.html">&lt;p&gt;ผมเป็นคนนึงที่ใช้ชีวิตแบบ Duck Learning มาก จึงเป็นที่มาของไอ เดอะดักส์ครีเอเตอร์นี่ไง ดักส์คืออะไรนั่นเหรอ คือทำนุ่นทำนี่เล็ก ๆ น้อย ๆ ได้หลายอย่าง แต่แม่งไม่เก่งซักอย่าง บทความนี้สาระไม่ค่อยมีนะครับ เน้นระบาย อ่านรู้เรื่องก็อ่านนะครับ&lt;/p&gt;
 
 &lt;h2 id=&quot;ไหน-ๆ-แล้วก็รู้จักผมซะเลย&quot;&gt;ไหน ๆ แล้วก็รู้จักผมซะเลย&lt;/h2&gt;
 
