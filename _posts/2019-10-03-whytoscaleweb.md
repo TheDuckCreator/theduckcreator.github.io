@@ -3,7 +3,7 @@ title: ทำไมเราต้องสเกลแอพ และเตร
 subtitle: ทำไมเราต้องเตรียมแอพพลิเคชั่น เตรียมเว็บไซต์ต่าง ๆ ให้สามารถ Scale Up ได้ แม้ว่าผู้ใช้งานของเราก็ยังคงเท่าเดิม
 layout: post
 author: Theethawat Savastham
-category: life
+category: work
 created_year: 2019
 comments: true
 ---
