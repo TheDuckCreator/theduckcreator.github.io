@@ -1,4 +1,100 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-03T23:00:46+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space</subtitle><entry><title type="html">ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)</title><link href="http://localhost:4000/work/2019/10/03/whytoscaleweb.html" rel="alternate" type="text/html" title="ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/work/2019/10/03/whytoscaleweb</id><content type="html" xml:base="http://localhost:4000/work/2019/10/03/whytoscaleweb.html">&lt;p&gt;บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-11T17:03:24+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space</subtitle><entry><title type="html">Android with Databinding in Kotlin (Note)</title><link href="http://localhost:4000/work/2019/10/11/AndroidKotlinwithDatabinding.html" rel="alternate" type="text/html" title="Android with Databinding in Kotlin (Note)" /><published>2019-10-11T00:00:00+07:00</published><updated>2019-10-11T00:00:00+07:00</updated><id>http://localhost:4000/work/2019/10/11/AndroidKotlinwithDatabinding</id><content type="html" xml:base="http://localhost:4000/work/2019/10/11/AndroidKotlinwithDatabinding.html">&lt;p&gt;Kotlin the new 1st class language in Android. And today the trend name databinding is so amazing more than using findViewById right? it handle Smoother.&lt;/p&gt;
+
+&lt;p&gt;While I study in this for my project, I has taked a note in Markdown and I will show you about my note but I recommend you to go to Android Codelab &lt;a href=&quot;https://codelabs.developers.google.com/android-kotlin-fundamentals/&quot;&gt;Kotlin Fundamental Course&lt;/a&gt; to learn it. This is only my note taking use sometimes it can help you if you cannot remember all like me&lt;/p&gt;
+
+&lt;h1 id=&quot;android-with-kotlin-databinding&quot;&gt;Android with Kotlin Databinding&lt;/h1&gt;
+
+&lt;h2 id=&quot;pre-request&quot;&gt;Pre-Request&lt;/h2&gt;
+
+&lt;p&gt;Active Android-X in your Android Studio&lt;/p&gt;
+
+&lt;h3 id=&quot;activatate-databinding&quot;&gt;Activatate Databinding&lt;/h3&gt;
+
+&lt;p&gt;Enable Databinding in &lt;code class=&quot;highlighter-rouge&quot;&gt;build.gradle&lt;/code&gt; file that app part inside &lt;code class=&quot;highlighter-rouge&quot;&gt;android{}&lt;/code&gt; tag&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dataBinding {
+    enabled = true
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After That Sync your app&lt;/p&gt;
+
+&lt;h2 id=&quot;basic-viewbinding&quot;&gt;Basic Viewbinding&lt;/h2&gt;
+
+&lt;h3 id=&quot;layout-compatible&quot;&gt;Layout Compatible&lt;/h3&gt;
+
+&lt;p&gt;if you using linear layout add layout &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;layout&amp;gt; .... linear layout ..... &amp;lt;/layout&amp;gt;&lt;/code&gt; over there
+and move layout name space like &lt;code class=&quot;highlighter-rouge&quot;&gt;xmlns:android=&quot;......&quot;&lt;/code&gt; to this layout and &lt;b&gt;Build your App&lt;/b&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;programing&quot;&gt;Programing&lt;/h3&gt;
+
+&lt;p&gt;go to &lt;code class=&quot;highlighter-rouge&quot;&gt;MainActivity.kt&lt;/code&gt; or other program file&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Active Binding Variable using &lt;code class=&quot;highlighter-rouge&quot;&gt;lateinit&lt;/code&gt; that is predefine without value initial like
+private lateinit var binding: ActivityMainBinding&lt;/li&gt;
+  &lt;li&gt;Set Content View Using Data Binding everything using the attribute of variable that have define in the previous step
+binding = DataBindingUtil.setContentView(this,R.layout.activity_main)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; tell you that ‘this activity’ and R.layout.activity_main show that layout that you want to bind or showing&lt;/p&gt;
+
+&lt;p&gt;Databinding will generate A Specific Variable Name of Attribute like &lt;code class=&quot;highlighter-rouge&quot;&gt;nickname_show&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;nicknameShow&lt;/code&gt; using Camel Case that
+automatically making by an IDE&lt;/p&gt;
+
+&lt;h3 id=&quot;activity-recieving&quot;&gt;Activity Recieving&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Using Binding Variable in this code using bind in syntax using dot method like&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  binding.doneButton.setOnClickListener {
+      addNickname(it)
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;it&lt;/code&gt; in Kotlin like &lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; in Java to call compiler that I want to make function on this class&lt;/p&gt;
+
+&lt;h3 id=&quot;managing-activity&quot;&gt;Managing Activity&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Using Binding Variable and dot syntax like
+binding.nicknameShow.text = binding.nicknameInput.text&lt;/li&gt;
+  &lt;li&gt;Using &lt;code class=&quot;highlighter-rouge&quot;&gt;binding.apply{...}&lt;/code&gt; to easy managing code (binding is Binding Variable)&lt;/li&gt;
+  &lt;li&gt;Using &lt;code class=&quot;highlighter-rouge&quot;&gt;invalidateAll()&lt;/code&gt; to invaluate data (Get new data) when Refresh UI&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Example on this program&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   binding.apply {
+      binding.nicknameShow.text = binding.nicknameInput.text
+      invalidateAll() /_ to invaluate data (Get new data) when Refresh UI _/
+      binding.nicknameInput.visibility = View.GONE
+      binding.doneButton.visibility = View.GONE
+      binding.nicknameShow.visibility = View.VISIBLE
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;Using Attribute As same as using findViewById&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;recommended-data-binding&quot;&gt;Recommended Data-Binding&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Using Data Class (in Another Kotlin File) for keep the object type variable like the stuct in C or can use any class instead of data class&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Link The Layout to that class&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &amp;lt;data&amp;gt;
+      &amp;lt;variable name=&quot;myName&quot; type=&quot;com.example.aboutme.MyName&quot;/&amp;gt;
+  &amp;lt;/data&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The name of the variable you can define but link to your data class or Any structure class.&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="work" /><summary type="html">Kotlin the new 1st class language in Android. And today the trend name databinding is so amazing more than using findViewById right? it handle Smoother.</summary></entry><entry><title type="html">ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)</title><link href="http://localhost:4000/work/2019/10/03/whytoscaleweb.html" rel="alternate" type="text/html" title="ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/work/2019/10/03/whytoscaleweb</id><content type="html" xml:base="http://localhost:4000/work/2019/10/03/whytoscaleweb.html">&lt;p&gt;บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง
 การสเกลคืออะไร เตรียมการสเกลไว้ดีมั้ย ทำไมต้องทำด้วย ไม่ทำได้มั้ย&lt;/p&gt;
 
 &lt;p&gt;คำตอบทั้งหมดคงจะตอบว่า ได้ครับ แน่นอนว่าทุกอย่างถ้าเราอยู่ในทรัพยากรที่จำกัดมาก ๆ บางทีการวางโครงสร้างของเราอาจจะไม่ต้องทำให้มันรองรับการ Scale Up ก็ได้ แต่ถ้าเราสามารถที่จะเขียนได้หละ สามารถเขียนเปิดทางแอพพลิเคชั่นให้มันเปิดทางการสเกล หรือ การขยายได้หละ มันจะดีกว่ามั้ย&lt;/p&gt;
