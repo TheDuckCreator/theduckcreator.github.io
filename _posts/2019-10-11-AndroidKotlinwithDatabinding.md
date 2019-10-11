@@ -4,6 +4,7 @@ subtitle: Android With Kotlin Note use Databinding
 layout: post
 author: Theethawat Savastham
 category: work
+language: Kotlin
 git: https://github.com/theethawat/AndroidLayoutWithDatabinding
 created_year: 2019
 comments: true

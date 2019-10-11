@@ -1,9 +1,9 @@
 ---
 title: ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)
 subtitle: ทำไมเราต้องเตรียมแอพพลิเคชั่น เตรียมเว็บไซต์ต่าง ๆ ให้สามารถ Scale Up ได้ แม้ว่าผู้ใช้งานของเราก็ยังคงเท่าเดิม
-layout: post
+layout: post-it-blog
 author: Theethawat Savastham
-category: work
+category: it-blog
 created_year: 2019
 comments: true
 ---

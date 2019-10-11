@@ -1,9 +1,9 @@
 ---
 title: วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica
 subtitle: ลองใช้ MongoDB ดูการทำงานที่ตอบสนอง High Availability และ Fault Tolerance
-layout: post
+layout: post-it-blog
 author: Theethawat Savastham
-category: work
+category: it-blog
 created_year: 2019
 comments: true
 ---
