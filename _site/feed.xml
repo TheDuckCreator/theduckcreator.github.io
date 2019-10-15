@@ -1,4 +1,228 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-11T17:22:54+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space</subtitle><entry><title type="html">Android with Databinding in Kotlin (Note)</title><link href="http://localhost:4000/work/2019/10/11/AndroidKotlinwithDatabinding.html" rel="alternate" type="text/html" title="Android with Databinding in Kotlin (Note)" /><published>2019-10-11T00:00:00+07:00</published><updated>2019-10-11T00:00:00+07:00</updated><id>http://localhost:4000/work/2019/10/11/AndroidKotlinwithDatabinding</id><content type="html" xml:base="http://localhost:4000/work/2019/10/11/AndroidKotlinwithDatabinding.html">&lt;p&gt;Kotlin the new 1st class language in Android. And today the trend name databinding is so amazing more than using findViewById right? it handle Smoother.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-15T14:06:51+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space</subtitle><entry><title type="html">การใช้ Room Database เบื้องต้นใน Android</title><link href="http://localhost:4000/it-blog/2019/10/15/roomdatabase.html" rel="alternate" type="text/html" title="การใช้ Room Database เบื้องต้นใน Android" /><published>2019-10-15T00:00:00+07:00</published><updated>2019-10-15T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/15/roomdatabase</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/15/roomdatabase.html">&lt;p&gt;การจัดเก็บข้อมูลเป็นสิ่งสำคัญสำหรับทุก ๆ การพัฒนาแอพพลิเคชั่น สำหรับแอนดรอยด์ มันมี By Default อยู่แล้วคือ SQLite Database ซึ่งเป็นฐานข้อมูลแบบ Relational Database วันนี้ผมจะเอาประสบการณ์ที่ผมไปทำใน Code Lab มาอธิบายการทำงานคร่าว ๆ ของ Room Persistance Library หรือ Room Database กัน&lt;/p&gt;
+
+&lt;h2 id=&quot;room-persistance-library&quot;&gt;Room Persistance Library&lt;/h2&gt;
+
+&lt;p&gt;Room Persistance Library จะเป็นตัวสร้าง Database ขึ้นมา เรียกว่า Room Database จากนั้นผู้พัฒนาแอพพลิเคชั่นไม่จำเป็นต้องติดต่อกับฐานข้อมูลโดยตรง แต่จะใช้วิธีการสร้าง Data Access Object หรือ DAO เข้ามาแทน&lt;/p&gt;
+
+&lt;p&gt;การใช้ Room Database นี้เราสามารถเขียนได้บน Android ทั้งภาษาจาวา และ คอทลิน แต่ที่จะทำนี้จะใช้ภาษา Kotlin เป็นหลักก่อน ที่ผมเขียนเป็นบทความ เพราะเอาไว้โน้ตของผมเองด้วยนะ กลัวจะลืม&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/android/roomdb.jpg&quot; alt=&quot;Room Database Architecure&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;หมายเหตุ ที่จะมาเล่านี้อ้างอิงจาก Android with Kotlin Fundamental Course ใน Google Codelab นะครับ สามารถเข้าไปดูและเรียนได้ ฟรี&lt;/p&gt;
+
+&lt;h2 id=&quot;สร้างโปรเจกต์-และจัดการ-buildgradle&quot;&gt;สร้างโปรเจกต์ และจัดการ Build.Gradle&lt;/h2&gt;
+
+&lt;p&gt;เริ่มจากสร้างโปรเจกต์ใน Android Studio แล้วทำการเพิ่ม dependency ลงไปใน Build.gradle ใน Module “app” การเพิ่ม dependency ลงไป มันก็คล้าย ๆ กับการติดตั้ง Library ต่าง ๆ เหมือนใน Node.js ก็จะมี npm install อันนี้ก็คล้าย ๆ กัน โดยเราจะต้องมา define ก่อนว่า จะเอา roomDB เวอร์ชั่นไหน จะได้เป็นตัวแปล จะได้ไม่ต้องเขียนซ้ำหลายครั้ง&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    dependencies {
+        def room_version = &quot;2.2.0&quot;
+
+        //Room Database
+        implementation &quot;androidx.room:room-runtime:$room_version&quot;
+        annotationProcessor &quot;androidx.room:room-compiler:$room_version&quot;
+
+        //Kotlin Exentension for room
+        implementation &quot;androidx.room:room-ktx:$room_version&quot;
+
+        //.....Dependencies อื่น ๆ ....
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;ก็จะเป็นการ implementation runtime worker และ annotate ตัวคอมไพเลอร์&lt;/p&gt;
+
+&lt;h2 id=&quot;ไฟล์สำคัญสำหรับการสร้าง-และจัดการ-database&quot;&gt;ไฟล์สำคัญสำหรับการสร้าง และจัดการ Database&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-data-class-เพื่อเตรียมไว้ใช้ในการสร้าง-table&quot;&gt;1. Data Class เพื่อเตรียมไว้ใช้ในการสร้าง Table&lt;/h3&gt;
+
+&lt;h4 id=&quot;เตรียมสร้าง-data-class&quot;&gt;เตรียมสร้าง Data Class&lt;/h4&gt;
+
+&lt;p&gt;เริ่มจากสร้างไฟล์ Kotlin (.kt) เปล่า ๆ มาตัวหนึ่ง แล้วเราก็มีตัวแปล หรือ Entity ต่าง ๆ อยู่ในสมอง เราสามารถตั้งชื่อไฟล์นี้ แทนชื่อตารางแบบง่าย ๆ ก็ได้ เช่นผมตั้งว่า &lt;code class=&quot;highlighter-rouge&quot;&gt;SleepNight.kt&lt;/code&gt; เราทราบอยู่แล้วว่าในภาษา Kotlin นั้นชื่อไฟล์กับชื่อคลาส ไม่จำเป็นต้องตรงกันก็ได้ ไม่เหมือนใน Java แต่ว่า ตรงกันไว้ก็ดี จากนั้น เราก็เริ่มทำการ Implement dataclass โดยใส่ตัวแปล ที่เราต้องการให้มันเป็น column ใน Database ลงไป&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    data class SleepNight(
+        var nightId: Long = 0L,
+        val startTimeMilli:Long = System.currentTimeMillis(),
+        var endtimeMilli: Long = startTimeMilli,
+        var sleepQuality: Int = -1
+    )
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Initial ค่าไปเลยก็ดี จะเห็นว่า data class ใน Kotlin นั้น เราใส่ตัวแปลลงในส่วนของพารามิเตอร์รับค่าเลย data class ในความคิดของผม ผมมองว่าคล้าย ๆ เราสร้าง Stucture ในภาษา C หรือ อื่น ๆ&lt;/p&gt;
+
+&lt;h4 id=&quot;บอกกับแอนดรอยด์ให้รู้ว่าส่วนนี้ของ-data-class-คือส่วนใดของ-table-ใน-database&quot;&gt;บอกกับแอนดรอยด์ให้รู้ว่าส่วนนี้ของ Data Class คือส่วนใดของ Table ใน Database&lt;/h4&gt;
+
+&lt;p&gt;เราจะต้อง define บอกมันให้รู้ว่าส่วนตรงนี้คืออะไร เช่น Attribute นี้เป็น Primary Key หรืออะไรต่าง ๆ เป็นต้น&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;data class ของเราเป็น entity set หรือ เป็นตารางนั้นเอง เราต้องบอกให้มันรู้ว่ามันเป็นตาราง โดยการเขียนไว้ข้างหน้าว่า&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  @Entity(tableName = &quot;daily_sleep_quality_table&quot;)
+  data class SleepNight { .... }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;กำหนด Primary Key โดย เราจะบอกว่า ตัวนี้เป็น primary key หน้าตัวแปลของเรา แล้วเราจะใส่ Attribute ควบคุมต่าง ๆ ข้างในวงเล็บ เช่นในตัวอย่างนี้เป็น &lt;code class=&quot;highlighter-rouge&quot;&gt;autoGenerate = true&lt;/code&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  @PrimaryKey(autoGenerate = true)
+  var nightId:Long = 0L,
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;กำหนด ColumnInfo ให้กับตัวคอลัมม์อื่น ๆ ที่ไม่ใช่ Primary Key โดยใช้แทก &lt;code class=&quot;highlighter-rouge&quot;&gt;@ColumnInfo&lt;/code&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    @ColumnInfo(name=&quot;start_time_milli&quot;)
+    val startTimeMilli:Long = System.currentTimeMillis(),
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;อย่างน้อยที่สุดก็คือ ใส่ชื่อให้มัน&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;จะสังเกตุว่าตัวแปลต่าง ๆ ที่เขียนใน Java, Kotlin เราจะเขียนเป็น Camel Case อยู่แล้ว แต่ถ้ามันไปอยู่ในมุมของ Physical หรือ ในมุมที่มันจะไปสร้างใน Database เรามักจะเขียนกลับไปเป็นแบบเดิม เช่นมี Underscore หรือ อะไรต่าง ๆ คล้าย ๆ กับภาษา C หรือ รักษา SQL เอาไว้ เพราะมันอาจจะ Implement ได้ง่านกว่า ในตรงนั้น&lt;/p&gt;
+
+&lt;p&gt;เมื่อถึงขั้นตอนนี้ โค้ดทั้งหมด ก็จะเป็นประมาณนี้&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/theethawat/f8b4840225756d51540495ab3d50cdb3.js?file=SleepNight.kt&quot;&gt;&lt;/script&gt;
+
+&lt;h3 id=&quot;2-สร้าง-data-access-object-dao&quot;&gt;2. สร้าง Data Access Object (Dao)&lt;/h3&gt;
+
+&lt;p&gt;ตรงนี้คือการสร้างฟังก์ชั่น ขึ้นมา Reference คอมมานด์ หรือ ที่เราเรียกว่า Queries ต่าง ๆ ใน Relational Database นั่นเอง กล่าวคือ Data Access Object จะช่วยให้เราไม่ต้องเขียน Query ยาว ๆ เพียงแต่เรียกเป็นฟังก์ชันสั้น ๆ แค่นั้นเอง โดย Data Access Object จะสร้างอยู่ในรูปแบบของ Interface&lt;/p&gt;
+
+&lt;p&gt;ถ้าตามหลักของ OOP Interface คือ โครงสร้างของ Class อันนี้ก็เช่นเดียวกัน คือ มีความสามารถ มี Method อะไรบ้าง Return ค่ามั้ย ถ้า Return จะกลับมาเป็นอะไร รับค่ามั้ย เราจะให้พารามิเตอร์มันชื่ออะไร เป็นลักษณะแบบไหน Int, Float, Char หรือ เป็น User Define Type อย่างที่เราทำ Class, Data Class เราใส่ไปให้หมด โดยไม่ต้อง Implement Method (ที่ Kotlin เรียก fun ) ข้างใน&lt;/p&gt;
+
+&lt;h4 id=&quot;interface-feature-listing&quot;&gt;Interface Feature Listing&lt;/h4&gt;
+
+&lt;p&gt;ต้องการฟีเจอร์ หรือ Queries อะไรกับ Database บ้าง ลองลิสต์ลงมาก่อนเลย โดยชื่อไฟล์ยังเป็นไฟล์ .kt เหมือนเดิม แต่นิยมตั้งเป็น Dao ตามหลังเช่น &lt;code class=&quot;highlighter-rouge&quot;&gt;SleepDatabaseDao.kt&lt;/code&gt; เป็นต้น&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    interface SleepDatabaseDao{
+        fun insert(night:SleepNight)
+        fun update(night:SleepNight)
+        fun clear()
+        fun get(key:Long):SleepNight?
+        fun getTonight():SleepNight?
+        fun getAllNight():LiveData&amp;lt;List&amp;lt;SleepNight&amp;gt;&amp;gt;
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;บอกให้มันรู้ว่าตรงนี้-เป็นส่วนใดของ-query-เป็นส่วนใดของ-database&quot;&gt;บอกให้มันรู้ว่าตรงนี้ เป็นส่วนใดของ Query เป็นส่วนใดของ Database&lt;/h4&gt;
+
+&lt;p&gt;เหมือนอย่างในขั้นตอนที่แล้ว เราก็จะมี Annotate หน้า Class หรือ Function ตอนนี้ก็เช่นกัน&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;กำหนดว่า interface นี้ เป็น Data Access Object (Dao) นะ เราก็ใส่ &lt;code class=&quot;highlighter-rouge&quot;&gt;@Dao&lt;/code&gt; ไปข้างบน Interface&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  @Dao
+  interface SleepDatabaseDao ( ...)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;การใส่ Query ให้มัน ให้ถูกต้อง ใช่เนื่องจากมันเป็น Interface เราจะไปสั่งอะไรใน Function / Method มันหละ เราจะใช้วิธีนี้ในการบอกมันก่อนเลยว่า เออ เจอคนสั่งฟังก์ชันนี้มาทำยังไง มีด้วยกัน 2 แบบ คือ ใช้ Query สามัญ ๆ ที่มันมีไว้ให้แล้ว กับเขียน Query ขึ้นเอง เริ่มด้วยสามัญ ๆ&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  @insert
+  fun insert(night:SleepNight)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;ต่อไปมาดูคิวรี่ที่เราสามารถเขียนไปเองได้ โดยเราเองสามารถเอาตัวแปล ที่เราประกาศเป็นตัวรับค่าในฟังก์ชันนั้น มาใช้ได้ โดยใช้เครื่องหมาย : นำหน้าชื่อตัวแปล เช่น &lt;code class=&quot;highlighter-rouge&quot;&gt;:key&lt;/code&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  @Query(&quot;SELECT * FROM daily_sleep_quality_table WHERE nightId = :key &quot;)
+  fun get(key:Long):SleepNighit?
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;โดยสามารถใช้ SQL Command ต่าง ๆ ได้อยู่แล้ว ถึงตอนนี้ของผมจะได้โค้ดประมาณนี้ แล้วเดี๋ยวเราจะมาสร้าง Database ลงในมือถือของเรากัน&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/theethawat/f8b4840225756d51540495ab3d50cdb3.js?file=SleepDatabaseDao.kt&quot;&gt;&lt;/script&gt;
+
+&lt;h3 id=&quot;3-การเอา-database-ไปสร้างขึ้นอยู่บนอุปกรณ์แอนดรอยด์&quot;&gt;3. การเอา Database ไปสร้างขึ้นอยู่บนอุปกรณ์แอนดรอยด์&lt;/h3&gt;
+
+&lt;p&gt;หลังจากเราวางโครงสร้างของ Database เรียบร้อยแล้ว แต่เรายังไม่สร้าง เราก็จะไปกำหนดคอนฟิก ให้มันสร้าง Database ขึ้นมา คือมันไม่จำเป็นที่จะต้องสร้าง Data base ใหม่ทุกครั้ง ไม่นั้นเครื่อง Client คงความจำเต็มตายเลย&lt;/p&gt;
+
+&lt;h4 id=&quot;abstract-class-creation&quot;&gt;Abstract Class Creation&lt;/h4&gt;
+
+&lt;p&gt;ต่อมาเราจะสร้าง Database โดยการสร้าง Abstract Class ซึ่ง Abstract Class ใน OOP คือ Class ที่ไม่สามารถสร้าง Object ได้โดยตรง แต่สามารถให้มีการถ่ายทอดไปยัง Class ลูกก่อน แล้ว Class ลูกก็จะ Implement Abstract Method จากนั้น ก็จัดการได้เลย ใน Abstract Class จะมีอย่างน้อย 1 Abstract Method ที่ว่าง ๆ เลย ให้ Class ลูก ไปจัดการ Implement เอาเอง และ Method อื่น ๆ เราสามารถเขียนต่าง ๆ ลงใน Method ได้เลย ว่าจะให้ Method นี้ทำงานอะไร ซึ่งตรงนี้เองที่ทำให้ Abstract Class แตกต่างจาก Interface&lt;/p&gt;
+
+&lt;p&gt;ดังนั้นเราจะมาเริ่มสร้าง Database ของเราโดยเริ่มจากสร้าง Class ที่ extend RoomDatabase&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    abstract class SleepDatabase:RoomDatabase(){
+        ...
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;implement-database-class&quot;&gt;Implement Database Class&lt;/h4&gt;
+
+&lt;p&gt;หลังจากนั้นก็จะมีขั้นตอนต่าง ๆ ใน การ Implement Database ของเราดังนี้&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;บอกว่า Class นี้คือ Database แน่นอนว่าเราจำเป็นที่จะต้อง Annotate เหมือนทุก ๆ อันที่ผ่านมา โดยครั้งนี้เราต้อง &lt;strong&gt;บอก&lt;/strong&gt; ด้วยว่าเราจะสร้างจาก Class อะไร (ซึ่งก็คือ Class นี้) มี Properties อะไรบ้าง โดยใช้ &lt;code class=&quot;highlighter-rouge&quot;&gt;@Database(entities = [...] , version = ... , exportSchema = ...&lt;/code&gt; ดังนี้&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  @Database(entities = [SleepDatabase::class],version = 1 ,exportSchema = false)
+  abstract class SleepDatabase:RoomDatabase(){
+
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;เอา Data Access Object หรือแหล่งรวม Query ในรูปแบบกำหนดเป็นชื่อฟังก์ชันของเรามาใส่ โดยเราต้องใส่ในรูปแบบของ Abstract Variable ก็ถ้า Abstract Class ไม่มีอะไรเป็น Abstract แล้วเราจะสร้างมันเป็น Abstract ทำไมหละ&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  abstract val sleepDatabaseDao:SleepDatabaseDao
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;สร้าง Companion Object มาใช้ในการให้ไฟล์อื่น ๆ สามารถเจ้าถึง Database หรือ จะ Initial Database ได้ โดยที่ไม่ต้องไปสร้างเป็นตัวอย่าง หรือ เป็น Instance เอง คือผมพูดถูกมั้ย คือเราสร้าง Instance ไปเลย และให่เขาเรียกใช้ได่เลย ไม่ต้องมาสร้าง Instance เองอยู่&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  companion object{
+
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;สร้างตัวแปรตัวอย่างของเรา หรือ INSTANCE ของเราขึ้นมา อย่างที่บอกไว้คือ ตัวลูก ไม่ต้องสร้างเอง เราสร้างไว้ตรงนี้เลย โดยตัวแปลของ INSTANCE ของเราจะเป็นชนิด &lt;code class=&quot;highlighter-rouge&quot;&gt;SleepDatabase&lt;/code&gt; ก็คือ เรากำลังสร้าง Database ที่มี Table SleepDatabase ที่เราเขียนโครงสร้างของตารางมาแล้วด้านบน&lt;/p&gt;
+
+    &lt;p&gt;โดยเราจะมีการกำหนดนิดนึงว่า ตัวแปลรัวนี้จะเป็นตัวแปรรูปแบบ &lt;code class=&quot;highlighter-rouge&quot;&gt;@Volatile&lt;/code&gt; คือ เราจะไม่ขออยู่ใน Cache ขออยู่ใน Memory ไปเลย จะทำให้ ตัวแปร INSTANCE หรือ ตัวแปรแทนโครงสร้างตารางเนี่ย ไม่อยู่ใน Cache เราจะได้ไม่ต้องกลัวปัญหาว่า มันจะตรงกันหรือเปล่า ใน Cache กับ ใน RAM เรายอมอาจจะช้าลงนิดนึง แต่ชั่วร์&lt;/p&gt;
+
+    &lt;p&gt;โดยเราจะสร้างตัวแปรเป็น &lt;code class=&quot;highlighter-rouge&quot;&gt;Nullable&lt;/code&gt; และ ตั้งค่าเริ่มต้นเป็น &lt;code class=&quot;highlighter-rouge&quot;&gt;null&lt;/code&gt; และเป็นตัวแปรแบบเปลี่ยนค่าได้&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  private var INSTANCE : SleepDatabase? = null
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;ที่เราตั้งเป็น Null ก็เพราะว่า โอเค ตอนนี้ INSTANCE เทียบได้กับDatabase ที่เราจะสร้างแล้ว แต่ว่า เราจะยังไม่สร้าง เราจะตรวจสอบก่อนว่าตอนนี้ มันมีอยู่แล้ว หรือ ไม่ อย่าลืมว่า เราอาจจะไม่ได้ build หรือ Install / Run App นี้ครั้งเดียว ในระหว่าง การพัฒนา ดังนั้น เราจะเช็คก่อนว่า Database มีอยู่แล้วหรือไม่ ถ้ามีก็ไม่ต้องสร้าง ถ้าไม่มี ก็สร้าง จะได้ไม่ซับซ้อนด้วย&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Synchronyze Program แล้วดูว่า instance ของเรามีอยู่หรือไม่ เราจะใช้การ Smart Cast สร้างตัวแปลใน loop ไม่สิ ใน Function นี้อีกตัว เป็นการ Copy มาจะได้ไม่มีปัญหาค่าซ้ำซ้อนของตัวแปร แล้วค่อยส่งค่ากลับไป&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  synchronized(this){
+      var instance = INSTANCE
+
+      ...
+
+      return instance
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;เช็คว่า Database ถูกสร้างแล้วหรือยัง ข้างต้นนี้ คือ Database ถูกสร้างแล้ว Return มันกลับไปเลย แต่ถ้า instance เป็น null เราจะสร้าง Database มันขึ้นมา โดยสิ่งต่อไปนี้ยังอยู่ใน Scope ของ &lt;code class=&quot;highlighter-rouge&quot;&gt;synchronized(this){ }&lt;/code&gt; นะ ก่อน &lt;code class=&quot;highlighter-rouge&quot;&gt;return&lt;/code&gt; ด้วย&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  if(instance == null){
+      instance = Room.databaseBuilder(
+          context.applicationContext,
+          SleepDatabase::class.java,
+          &quot;sleep_history_database&quot;
+      ).fallbackToDestructiveMigration().build()
+  }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;ดูจากโค้ดเราก็จะพบว่า เราจะสร้าง instance ให้เป็นค่าใดค่าหนึ่ง นั่นก็คือ เป็น Room และเรียกใช้ DatabaseBuilder โดยยึดจาก Class SleepDatabase ก็คือ Class นี้ และใช้ชื่อ &lt;code class=&quot;highlighter-rouge&quot;&gt;sleep_history_database&lt;/code&gt; จากนั้นจึงสั่ง &lt;code class=&quot;highlighter-rouge&quot;&gt;fallbackToDestructiveMigration()&lt;/code&gt; และ &lt;code class=&quot;highlighter-rouge&quot;&gt;build()&lt;/code&gt; ก่อนจะ Return ออกไป เป็น Instance&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;จากขั้นตอนทั้งหมด ของส่วนที่ 3 นี้ จะมี Source Code ทั้งหมดเป็นดังนี้&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/theethawat/f8b4840225756d51540495ab3d50cdb3.js?file=SleepDatabase.kt&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;ทั้งหมดนี้ ก็คือการสร้าง Database เริ่มต้นในโปรแกรมของเรา โดยสร้างผ่าน Room Database บน Android ตรงนี้ยังไม่พูดถึงการใช้ UI จากฝั่งผู้ใช้มา Connect หรือ Interact กับโปรแกรมของเรา ซึ่งตรงนี้เราก็อาจจะไปดีไซด์ Layout แล้ว ใช้รูปแบบต่าง ๆ ในการ Map View ของเรา เข้ากับ Model ของเราตรงนี้ ได้ ไม่ว่าจะเป็น Model View Controller (MVC), Model View Presenter (MVP) หรือ Model View ViewModel (MVVM) ก็ได้&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">การจัดเก็บข้อมูลเป็นสิ่งสำคัญสำหรับทุก ๆ การพัฒนาแอพพลิเคชั่น สำหรับแอนดรอยด์ มันมี By Default อยู่แล้วคือ SQLite Database ซึ่งเป็นฐานข้อมูลแบบ Relational Database วันนี้ผมจะเอาประสบการณ์ที่ผมไปทำใน Code Lab มาอธิบายการทำงานคร่าว ๆ ของ Room Persistance Library หรือ Room Database กัน</summary></entry><entry><title type="html">Android with Databinding in Kotlin (Note)</title><link href="http://localhost:4000/work/2019/10/11/AndroidKotlinwithDatabinding.html" rel="alternate" type="text/html" title="Android with Databinding in Kotlin (Note)" /><published>2019-10-11T00:00:00+07:00</published><updated>2019-10-11T00:00:00+07:00</updated><id>http://localhost:4000/work/2019/10/11/AndroidKotlinwithDatabinding</id><content type="html" xml:base="http://localhost:4000/work/2019/10/11/AndroidKotlinwithDatabinding.html">&lt;p&gt;Kotlin the new 1st class language in Android. And today the trend name databinding is so amazing more than using findViewById right? it handle Smoother.&lt;/p&gt;
 
 &lt;p&gt;While I study in this for my project, I has taked a note in Markdown and I will show you about my note but I recommend you to go to Android Codelab &lt;a href=&quot;https://codelabs.developers.google.com/android-kotlin-fundamentals/&quot;&gt;Kotlin Fundamental Course&lt;/a&gt; to learn it. This is only my note taking use sometimes it can help you if you cannot remember all like me&lt;/p&gt;
 
@@ -94,7 +318,62 @@ binding.nicknameShow.text = binding.nicknameInput.text&lt;/li&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The name of the variable you can define but link to your data class or Any structure class.&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="work" /><summary type="html">Kotlin the new 1st class language in Android. And today the trend name databinding is so amazing more than using findViewById right? it handle Smoother.</summary></entry><entry><title type="html">ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)</title><link href="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html" rel="alternate" type="text/html" title="ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/whytoscaleweb</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html">&lt;p&gt;บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง
+&lt;p&gt;The name of the variable you can define but link to your data class or Any structure class.&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="work" /><summary type="html">Kotlin the new 1st class language in Android. And today the trend name databinding is so amazing more than using findViewById right? it handle Smoother.</summary></entry><entry><title type="html">วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica</title><link href="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html" rel="alternate" type="text/html" title="วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/mongoreplica</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html">&lt;p&gt;ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT&lt;/p&gt;
+
+&lt;h2 id=&quot;mongodb-replica&quot;&gt;MongoDB Replica&lt;/h2&gt;
+
+&lt;p&gt;MongoDB Replica เป็นการทำ Replication ของฐานข้อมูลแบบ NoSQL อันหนึ่งก็คือ MongoDB โดยเราจะต้องเตรียมโหนดสำหรับ MongoDB ไว้ เป็นจำนวนเลขคี่ หรือ เริ่มต้นก็คือ 3 Node , 5 Node เป็นต้น เราสามารถจำลองสร้างขึ้นมาทั้งอยู่บนเซิร์ฟเวอร์เดียวกัน คนละพอร์ต อยู่คนละเซิร์ฟเวอร์กัน หรือ อย่างไรก็ได้ โดยหลักการทำงานของ MongoDB Replica นั้น Client คือผู้เขียนหรือผู้อ่านข้อมูล ในที่นี้ก็รวมถึงแอดมินที่เขียนข้อมูลลงในดาตาเบสด้วย จะ Read and Write ไปที่ Primary Node ก่อนที่ระบบมันจะทำ Replication ไปยัง Secondary Node ทั้งสอง หรือ 4 โหนด และมีการทำ Heartbeat คุยกัน&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://docs.mongodb.com/manual/_images/replica-set-read-write-operations-primary.bakedsvg.svg&quot; alt=&quot;Mongo DB Replica Working Model&quot; /&gt;
+รูปจาก Official Documents ของ MongoDB&lt;/p&gt;
+
+&lt;!-- ### ทำไมจำนวนโหนดต้องเป็นเลขคี่ด้วยหละ
+
+นี่คือสิ่งที่อธิบายต่อไป เนื่องจากโอเค เพื่อทำการให้ระบบของเราทนต่อความขัดข้อง หรือ จัดการเพื่อตอบสนอง Fault Tolerance โหนดที่เป็น Secondary จะมีการทำ Replication อยู่ตลอดจาก Primary อยู่แล้ว และทันทีที่ Primary Node เกิดการล่มสลายไป Secondary Node พวกนี้จะต้องทำการ Vote เพื่อเลือกว่าตัวไหน จะเป็น Primary ตัวต่อไป โดยการที่จะโหวตกันได้เนี่ยจำนวนโหนดที่เหลืออยู่ จะต้องเกินกึ่งหนึ่ง (ครึ่งหนึ่ง) ของสมาชิกทั้งหมดที่เราประกาศไว้ เช่น เราเล่น 3 Nodes มีโหนดหนึ่งตายไป เหลือ 2 Node ที่ Avaliable อยู่ ซึ่งมากกว่าครึ่งของ 3 Nodes จึงโหวตกันได้
+
+กรณีถ้าเรามี 4 Nodes   --&gt;
+
+&lt;h3 id=&quot;ลองเล่น-mongodb-replica-กัน-บน-docker&quot;&gt;ลองเล่น MongoDB Replica กัน บน Docker&lt;/h3&gt;
+
+&lt;p&gt;เนื่องจากมีทรัพยากรไม่มาก ผมจะเล่น 3 Module Replica set แล้วกันนะครับ ผมขี้เกียจจะเปิด Linux มาแล้ว ผมจะเข้าไปสร้างบน Server ผม ซึ่งเป็น Linux อยู่แล้ว โดยสร้าง Docker Compose ไว้ สร้าง 3 Node ผมจะสร้าง Directory ขึ้นมา แล้วใน Directory นั้น จะสร้างไฟล์ &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; ขึ้น&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo1.jpg&quot; alt=&quot;Docker Compose.yml File&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ในรูปผิดอยู่ เอาตาม โค้ดใน Gist ของ Github ข้างล่างนะ&lt;/p&gt;
+
+&lt;p&gt;ในที่นี้ผมสร้างใน IP เดียวกันก่อน ยังไม่ได้ตั้ง Private Network แต่เอามันมาลงที่คนละพอร์ต คือ Forward Default Port ของ MongoDB คือ 27017 มาที่พอร์ต 4041,4042 และ 4043 โดยที่ผมเองจะให้ Volumn กับมันไป พอร์ตละ Folder ละกัน โดย By default ของ MongoDB บน Docker Ubuntu Bionic จะอยู่ที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/mongodb&lt;/code&gt; ซึ่งรู้สึกว่ามันก็ต่างกันอยู่นะ กับการลง MongoDB Native บนเครื่อง Ubuntu หรือ Directory เดียวกัน อันนี้ไม่มั่นใจ แล้วเราจะสร้าง Config File เอาตามชื่อของมันแล้วกัน ก็คือ &lt;code class=&quot;highlighter-rouge&quot;&gt;mongod.conf&lt;/code&gt; ซึ่งผมจะให้มันไปอยู่ที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/mongod.conf&lt;/code&gt; ซึ่งอันนี้รู้สึกว่าเหมือนกันทั้งค่า Default ของเครื่อง Linux และ Linux บน Docker&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=docker-compose.yml&quot;&gt;&lt;/script&gt;
+
+&lt;h3 id=&quot;สร้างไฟล์-และ-โฟลเดอร์-ก่อนที่จะให้-docker-access&quot;&gt;สร้างไฟล์ และ โฟลเดอร์ ก่อนที่จะให้ Docker Access&lt;/h3&gt;
+
+&lt;p&gt;แน่นอนครับ แม้ว่าเราจะมีไฟล์คอนฟิกแล้ว แต่เราบอกให้ Pass Volumn และ Pass File ไป แต่เรายังไม่ได้สร้างไฟล์ที่จะให้ Pass ไปเลย ไฟล์ที่เราจะไปกำหนดการ Replication จะอยู่ใน &lt;code class=&quot;highlighter-rouge&quot;&gt;mongod.conf&lt;/code&gt; ครับ ถ้าใครลง MongoDB ใน Linux ตัวเองลองเปิด ไม่ว่าจะ GUI,CLI ดูก็ได้ครับ ซึ่งตอนนี้ผมไม่ได้ลง ผมเลยไป Search ดูใน Google ไฟล์ก็จะเป็นตามนี้ครับ &lt;a href=&quot;https://github.com/mongodb/mongo/blob/master/rpm/mongod.conf&quot;&gt;MongoDB conf.d Original from GitHub &lt;/a&gt;
+่
+&lt;img src=&quot;/assets/internetprograming/mongo2.jpg&quot; alt=&quot;Folder Making&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;จากเดิมที่ไม่มีอะไร เราสร้าง Directory ขึ้นมา 3 Directory ก่อนที่จะสร้างไฟล์ conf.d แล้ว copy โครงพื้นฐานของมัน จากลิงค์ที่ให้ไปข้างบนนี้มาใส่ได้เลยย เราจะได้ไฟล์ของเรามา อย่างนี้เลย&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo3.jpg&quot; alt=&quot;File Making&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ทีนี้ เราจะโฟกัสที่ สองตัวคือ storage ซึ่งเป็นสีขาว ๆ เลยกับ replication ซึ่งมัน comment อยู่ ดังรูปด้านบน อย่างแรกเลย คือใน docker-compose.yml เราส่ง Storage ไปที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/mongodb&lt;/code&gt; ใช่มั้ยหละ แต่ตรงนี้เป็น mongo โอเค แก้ให้มันเหมือนกันครับ จะแก้ที่ docker-compose file หรือ แก้ที่นี่ก็ได้เหมือนกัน ตัวผมแก้ที่นี่แล้วกันนะ&lt;/p&gt;
+
+&lt;h3 id=&quot;การตั้งค่า-replicaset&quot;&gt;การตั้งค่า ReplicaSet&lt;/h3&gt;
+
+&lt;p&gt;ทีนี้คือจุดสำคัญที่เราเฝ้ารอมานานคือการตั้ง replica set เรา uncomment ที่ replication ออกได้เลย และ เราก็เขียนเป็นชื่อ &lt;code class=&quot;highlighter-rouge&quot;&gt;replSetName:&quot;อะไรก็ได้&quot;&lt;/code&gt; แค่ทั้ง 3 Nodes นี่ต้องตั้งให้เหมือนกันนะ ส่วนตัวเราจะใช้เป็น rs0 แล้วกัน&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo4.jpg&quot; alt=&quot;Replication Setting&quot; /&gt;&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=mongod.conf&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;และเราก็ทำแบบนี้กับทั้ง 3 อัน ก่อนที่เราจะมา up compose กัน&lt;/p&gt;
+
+&lt;h3 id=&quot;docker-compose-up&quot;&gt;Docker-compose up&lt;/h3&gt;
+
+&lt;p&gt;รันคำสั่ง &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo docker-compose up&lt;/code&gt; หรือ &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose up&lt;/code&gt; ก็ได้ถ้าเป็น root อยู่แล้ว&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo5.jpg&quot; alt=&quot;Docker Compose Up&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;จากนั้นจะพบว่าของผม Error เต็มเลย น่าจะผิดตรงตั้งค่า Docker อะไรซักอย่างเนี่ย เดี๋ยวมาเขียนต่อละกัน วันนี้หยุดก่อน&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT</summary></entry><entry><title type="html">ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)</title><link href="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html" rel="alternate" type="text/html" title="ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/whytoscaleweb</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html">&lt;p&gt;บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง
 การสเกลคืออะไร เตรียมการสเกลไว้ดีมั้ย ทำไมต้องทำด้วย ไม่ทำได้มั้ย&lt;/p&gt;
 
 &lt;p&gt;คำตอบทั้งหมดคงจะตอบว่า ได้ครับ แน่นอนว่าทุกอย่างถ้าเราอยู่ในทรัพยากรที่จำกัดมาก ๆ บางทีการวางโครงสร้างของเราอาจจะไม่ต้องทำให้มันรองรับการ Scale Up ก็ได้ แต่ถ้าเราสามารถที่จะเขียนได้หละ สามารถเขียนเปิดทางแอพพลิเคชั่นให้มันเปิดทางการสเกล หรือ การขยายได้หละ มันจะดีกว่ามั้ย&lt;/p&gt;
@@ -196,62 +475,7 @@ binding.nicknameShow.text = binding.nicknameInput.text&lt;/li&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;เอกสารอ้างอิง
-Fernando Doglio. Scaling Your Node.js Apps. Appress,2018 - &lt;a href=&quot;https://books.google.co.th/books/about/Scaling_Your_Node_js_Apps.html?id=noF8DwAAQBAJ&amp;amp;source=kp_cover&amp;amp;redir_esc=y&quot;&gt;Scaling Your Node.js App in Google Books&lt;/a&gt;&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง การสเกลคืออะไร เตรียมการสเกลไว้ดีมั้ย ทำไมต้องทำด้วย ไม่ทำได้มั้ย</summary></entry><entry><title type="html">วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica</title><link href="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html" rel="alternate" type="text/html" title="วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/mongoreplica</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html">&lt;p&gt;ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT&lt;/p&gt;
-
-&lt;h2 id=&quot;mongodb-replica&quot;&gt;MongoDB Replica&lt;/h2&gt;
-
-&lt;p&gt;MongoDB Replica เป็นการทำ Replication ของฐานข้อมูลแบบ NoSQL อันหนึ่งก็คือ MongoDB โดยเราจะต้องเตรียมโหนดสำหรับ MongoDB ไว้ เป็นจำนวนเลขคี่ หรือ เริ่มต้นก็คือ 3 Node , 5 Node เป็นต้น เราสามารถจำลองสร้างขึ้นมาทั้งอยู่บนเซิร์ฟเวอร์เดียวกัน คนละพอร์ต อยู่คนละเซิร์ฟเวอร์กัน หรือ อย่างไรก็ได้ โดยหลักการทำงานของ MongoDB Replica นั้น Client คือผู้เขียนหรือผู้อ่านข้อมูล ในที่นี้ก็รวมถึงแอดมินที่เขียนข้อมูลลงในดาตาเบสด้วย จะ Read and Write ไปที่ Primary Node ก่อนที่ระบบมันจะทำ Replication ไปยัง Secondary Node ทั้งสอง หรือ 4 โหนด และมีการทำ Heartbeat คุยกัน&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://docs.mongodb.com/manual/_images/replica-set-read-write-operations-primary.bakedsvg.svg&quot; alt=&quot;Mongo DB Replica Working Model&quot; /&gt;
-รูปจาก Official Documents ของ MongoDB&lt;/p&gt;
-
-&lt;!-- ### ทำไมจำนวนโหนดต้องเป็นเลขคี่ด้วยหละ
-
-นี่คือสิ่งที่อธิบายต่อไป เนื่องจากโอเค เพื่อทำการให้ระบบของเราทนต่อความขัดข้อง หรือ จัดการเพื่อตอบสนอง Fault Tolerance โหนดที่เป็น Secondary จะมีการทำ Replication อยู่ตลอดจาก Primary อยู่แล้ว และทันทีที่ Primary Node เกิดการล่มสลายไป Secondary Node พวกนี้จะต้องทำการ Vote เพื่อเลือกว่าตัวไหน จะเป็น Primary ตัวต่อไป โดยการที่จะโหวตกันได้เนี่ยจำนวนโหนดที่เหลืออยู่ จะต้องเกินกึ่งหนึ่ง (ครึ่งหนึ่ง) ของสมาชิกทั้งหมดที่เราประกาศไว้ เช่น เราเล่น 3 Nodes มีโหนดหนึ่งตายไป เหลือ 2 Node ที่ Avaliable อยู่ ซึ่งมากกว่าครึ่งของ 3 Nodes จึงโหวตกันได้
-
-กรณีถ้าเรามี 4 Nodes   --&gt;
-
-&lt;h3 id=&quot;ลองเล่น-mongodb-replica-กัน-บน-docker&quot;&gt;ลองเล่น MongoDB Replica กัน บน Docker&lt;/h3&gt;
-
-&lt;p&gt;เนื่องจากมีทรัพยากรไม่มาก ผมจะเล่น 3 Module Replica set แล้วกันนะครับ ผมขี้เกียจจะเปิด Linux มาแล้ว ผมจะเข้าไปสร้างบน Server ผม ซึ่งเป็น Linux อยู่แล้ว โดยสร้าง Docker Compose ไว้ สร้าง 3 Node ผมจะสร้าง Directory ขึ้นมา แล้วใน Directory นั้น จะสร้างไฟล์ &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; ขึ้น&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo1.jpg&quot; alt=&quot;Docker Compose.yml File&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ในรูปผิดอยู่ เอาตาม โค้ดใน Gist ของ Github ข้างล่างนะ&lt;/p&gt;
-
-&lt;p&gt;ในที่นี้ผมสร้างใน IP เดียวกันก่อน ยังไม่ได้ตั้ง Private Network แต่เอามันมาลงที่คนละพอร์ต คือ Forward Default Port ของ MongoDB คือ 27017 มาที่พอร์ต 4041,4042 และ 4043 โดยที่ผมเองจะให้ Volumn กับมันไป พอร์ตละ Folder ละกัน โดย By default ของ MongoDB บน Docker Ubuntu Bionic จะอยู่ที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/mongodb&lt;/code&gt; ซึ่งรู้สึกว่ามันก็ต่างกันอยู่นะ กับการลง MongoDB Native บนเครื่อง Ubuntu หรือ Directory เดียวกัน อันนี้ไม่มั่นใจ แล้วเราจะสร้าง Config File เอาตามชื่อของมันแล้วกัน ก็คือ &lt;code class=&quot;highlighter-rouge&quot;&gt;mongod.conf&lt;/code&gt; ซึ่งผมจะให้มันไปอยู่ที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/mongod.conf&lt;/code&gt; ซึ่งอันนี้รู้สึกว่าเหมือนกันทั้งค่า Default ของเครื่อง Linux และ Linux บน Docker&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=docker-compose.yml&quot;&gt;&lt;/script&gt;
-
-&lt;h3 id=&quot;สร้างไฟล์-และ-โฟลเดอร์-ก่อนที่จะให้-docker-access&quot;&gt;สร้างไฟล์ และ โฟลเดอร์ ก่อนที่จะให้ Docker Access&lt;/h3&gt;
-
-&lt;p&gt;แน่นอนครับ แม้ว่าเราจะมีไฟล์คอนฟิกแล้ว แต่เราบอกให้ Pass Volumn และ Pass File ไป แต่เรายังไม่ได้สร้างไฟล์ที่จะให้ Pass ไปเลย ไฟล์ที่เราจะไปกำหนดการ Replication จะอยู่ใน &lt;code class=&quot;highlighter-rouge&quot;&gt;mongod.conf&lt;/code&gt; ครับ ถ้าใครลง MongoDB ใน Linux ตัวเองลองเปิด ไม่ว่าจะ GUI,CLI ดูก็ได้ครับ ซึ่งตอนนี้ผมไม่ได้ลง ผมเลยไป Search ดูใน Google ไฟล์ก็จะเป็นตามนี้ครับ &lt;a href=&quot;https://github.com/mongodb/mongo/blob/master/rpm/mongod.conf&quot;&gt;MongoDB conf.d Original from GitHub &lt;/a&gt;
-่
-&lt;img src=&quot;/assets/internetprograming/mongo2.jpg&quot; alt=&quot;Folder Making&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;จากเดิมที่ไม่มีอะไร เราสร้าง Directory ขึ้นมา 3 Directory ก่อนที่จะสร้างไฟล์ conf.d แล้ว copy โครงพื้นฐานของมัน จากลิงค์ที่ให้ไปข้างบนนี้มาใส่ได้เลยย เราจะได้ไฟล์ของเรามา อย่างนี้เลย&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo3.jpg&quot; alt=&quot;File Making&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ทีนี้ เราจะโฟกัสที่ สองตัวคือ storage ซึ่งเป็นสีขาว ๆ เลยกับ replication ซึ่งมัน comment อยู่ ดังรูปด้านบน อย่างแรกเลย คือใน docker-compose.yml เราส่ง Storage ไปที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/mongodb&lt;/code&gt; ใช่มั้ยหละ แต่ตรงนี้เป็น mongo โอเค แก้ให้มันเหมือนกันครับ จะแก้ที่ docker-compose file หรือ แก้ที่นี่ก็ได้เหมือนกัน ตัวผมแก้ที่นี่แล้วกันนะ&lt;/p&gt;
-
-&lt;h3 id=&quot;การตั้งค่า-replicaset&quot;&gt;การตั้งค่า ReplicaSet&lt;/h3&gt;
-
-&lt;p&gt;ทีนี้คือจุดสำคัญที่เราเฝ้ารอมานานคือการตั้ง replica set เรา uncomment ที่ replication ออกได้เลย และ เราก็เขียนเป็นชื่อ &lt;code class=&quot;highlighter-rouge&quot;&gt;replSetName:&quot;อะไรก็ได้&quot;&lt;/code&gt; แค่ทั้ง 3 Nodes นี่ต้องตั้งให้เหมือนกันนะ ส่วนตัวเราจะใช้เป็น rs0 แล้วกัน&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo4.jpg&quot; alt=&quot;Replication Setting&quot; /&gt;&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=mongod.conf&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;และเราก็ทำแบบนี้กับทั้ง 3 อัน ก่อนที่เราจะมา up compose กัน&lt;/p&gt;
-
-&lt;h3 id=&quot;docker-compose-up&quot;&gt;Docker-compose up&lt;/h3&gt;
-
-&lt;p&gt;รันคำสั่ง &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo docker-compose up&lt;/code&gt; หรือ &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose up&lt;/code&gt; ก็ได้ถ้าเป็น root อยู่แล้ว&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo5.jpg&quot; alt=&quot;Docker Compose Up&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;จากนั้นจะพบว่าของผม Error เต็มเลย น่าจะผิดตรงตั้งค่า Docker อะไรซักอย่างเนี่ย เดี๋ยวมาเขียนต่อละกัน วันนี้หยุดก่อน&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT</summary></entry><entry><title type="html">Kotlin In My Note</title><link href="http://localhost:4000/work/2019/09/27/introtokotlin.html" rel="alternate" type="text/html" title="Kotlin In My Note" /><published>2019-09-27T00:00:00+07:00</published><updated>2019-09-27T00:00:00+07:00</updated><id>http://localhost:4000/work/2019/09/27/introtokotlin</id><content type="html" xml:base="http://localhost:4000/work/2019/09/27/introtokotlin.html">&lt;p&gt;นี่คือโน้ตที่ผมเขียนไว้ตอนผมเรียนคอทลิน ประกอบกับแอนดรอยด์ไปด้วย เพื่อที่จะทำโปรเจกต์ของผม ผมเองก็โน้ตเก็บเป็น Markdown ไว้ แล้วก็มาเผยแพร่ให้ดู เป็นภาษาอังกฤษนะครับ ว่าง ๆ จะมาแปลไทยให้อ่าน&lt;/p&gt;
+Fernando Doglio. Scaling Your Node.js Apps. Appress,2018 - &lt;a href=&quot;https://books.google.co.th/books/about/Scaling_Your_Node_js_Apps.html?id=noF8DwAAQBAJ&amp;amp;source=kp_cover&amp;amp;redir_esc=y&quot;&gt;Scaling Your Node.js App in Google Books&lt;/a&gt;&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง การสเกลคืออะไร เตรียมการสเกลไว้ดีมั้ย ทำไมต้องทำด้วย ไม่ทำได้มั้ย</summary></entry><entry><title type="html">Kotlin In My Note</title><link href="http://localhost:4000/work/2019/09/27/introtokotlin.html" rel="alternate" type="text/html" title="Kotlin In My Note" /><published>2019-09-27T00:00:00+07:00</published><updated>2019-09-27T00:00:00+07:00</updated><id>http://localhost:4000/work/2019/09/27/introtokotlin</id><content type="html" xml:base="http://localhost:4000/work/2019/09/27/introtokotlin.html">&lt;p&gt;นี่คือโน้ตที่ผมเขียนไว้ตอนผมเรียนคอทลิน ประกอบกับแอนดรอยด์ไปด้วย เพื่อที่จะทำโปรเจกต์ของผม ผมเองก็โน้ตเก็บเป็น Markdown ไว้ แล้วก็มาเผยแพร่ให้ดู เป็นภาษาอังกฤษนะครับ ว่าง ๆ จะมาแปลไทยให้อ่าน&lt;/p&gt;
 
 &lt;h2 id=&quot;คุยกันก่อน&quot;&gt;คุยกันก่อน&lt;/h2&gt;
 
