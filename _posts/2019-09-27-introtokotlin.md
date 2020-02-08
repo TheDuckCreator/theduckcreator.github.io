@@ -3,7 +3,7 @@ title: Kotlin In My Note
 subtitle: โน้ต Syntax ต่างๆ ของภาษาคอทลิน เพื่อเตรียมสำหรับทำโปรเจกต์ของผมเอง
 layout: post
 author: Theethawat Savastham
-category: work
+category: it-blog
 language: Kotlin
 git: https://github.com/theethawat/HelloKotlin2
 created_year: 2019

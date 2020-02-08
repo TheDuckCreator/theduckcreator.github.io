@@ -125,6 +125,44 @@ layout: default
 
       <hr />
       <br />
+      <div class="is-medium">
+        <h3 class="title is-3 kanit tdc-remove-margin-bottom acenter">
+          Creator and Developer
+        </h3>
+        <br />
+        <div class="columns">
+          <div class="column is-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="columns">
+                  <div class="column">
+                    <img
+                      style="height: 200px; padding-top:1em;"
+                      src="assets/profile/tin.jpg"
+                      class="image piccenter"
+                    />
+                  </div>
+                  <div class="column mobile-acenter">
+                    <h5 class="title is-4 kanit ">
+                      <a href="theethawat.html"> Theethawat Savastham</a>
+                    </h5>
+                    <h4 class="subtitle is-5 kanitlight ">
+                      ธีร์ธวัช สวาสดิ์ธรรม
+                    </h4>
+                    <p class="content">
+                      Student at Computer Engineering, Prince of Songkla
+                      University Founder and only one developer of The Duck
+                      Creator
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <br />
 
       <div class="is-medium">
         <h3 class="title is-3 kanit tdc-remove-margin-bottom acenter">
@@ -134,65 +172,44 @@ layout: default
           >
         </h3>
 
-        <div class="columns acenter">
-          <div class="column">
-            <img
-              class="image piccenter"
-              src="/assets/Port/baa.jpg"
-              style="height:256px;"
-            /><br />
-            <h3 class="title is-5 kanit">
-              <a href="#">Big Asia App </a
-              ><span class="tag is-warning">Fail</span>
-            </h3>
-            <p class="kanitlight">
-              ถ้าพูดถึงว่าตรงไหนเป็นจุดเริ่มต้นจริง ๆ ก็คงเป็นตรงนี้
-              หลังจากเป็นแอดมินเพจบิ๊กเอเชีย และทำเว็บ และบล็อกเกี่ยวกับเอเชีย
-              ด้วยความรักและสนใจในประวัติศาสตร์ ที่จะทำแอพพลิเคชั่นสำหรับ
-              คนที่สนใจด้านเอเชียสักแอพหนึ่ง เป็นเว็บแอพพลิเคชั่น
-              ระบบมันยังไม่สามารถ Responsive หรือ เราหมดยุคของ Micromedia
-              อย่างบล็อก เป็นยุคของ Social Media แล้ว
-            </p>
+        <div class="columns  ">
+          <div class="column is-3 piccenter">
+            <h3 class="title is-4 kanit">PHP</h3>
+            <hr />
+            {% for post in site.posts %} {% if post.language == "PHP"%}
+            <li>
+              <a href="{{ post.url }}">{{post.title}} </a>
+            </li>
+            {%endif%} {%endfor%}
+            <br />
+            <h3 class="title is-4 kanit">Kotlin</h3>
+            <hr />
+            {% for post in site.posts %} {% if post.language == "Kotlin"%}
+            <li>
+              <a href="{{ post.url }}">{{post.title}} </a>
+            </li>
+            {%endif%} {%endfor%}
           </div>
-          <div class="column">
-            <img
-              class="image piccenter"
-              src="/assets/Port/thai league.png"
-              style="height:256px;"
-            /><br />
-            <h3 class="title is-5 kanit">
-              <a href="work/2019/06/28/thaileagueapp.html"
-                >Thailand League Unofficial Application</a
-              >
-              <span class="tag is-warning">Fail</span>
-            </h3>
-            <p class="kanitlight">
-              นี่คงเป็นการวางโครงสร้าง Source Code PHP
-              ที่ดีที่สุดแล้วในตอนนั้น(มั้ง) มีการใช้เฟรมเวิร์คอย่าง Laravel ใช้
-              Git อย่าถูกวิธี แต่มันผิดตั้งแต่เลือกใช้ PHP ทำแอพพลิเคชั่นแบบ
-              Real Time แล้ว การตอบรับเกินคาด แต่ด้วยโปรแกรมที่ออกแบบมา
-              มันไม่สามารถทำให้เราทำงาน และพัฒนาต่อได้
-            </p>
+
+          <div class="column is-3 piccenter">
+            <h3 class="title is-4 kanit">Javascript</h3>
+            <hr />
+            {% for post in site.posts %} {% if post.language == "Javascript"%}
+            <li>
+              <a href="{{ post.url }}">{{post.title}} </a>
+            </li>
+            {%endif%} {%endfor%}
           </div>
-          <div class="column">
-            <img
-              class="image piccenter"
-              src="/assets/Port/tagrun.png"
-              style="height:256px;"
-            /><br />
-            <h3 class="title is-5 kanit">
-              <a href="#">Tag Run Serial No QR Code</a>
-              <span class="tag is-success">Success</span>
-            </h3>
-            <p class="kanitlight">
-              ถ้าเงินไม่ใช่ทางออกของการสร้างความประทับใจ การสร้างอะไร ๆ
-              ด้วยวิธีที่แม้ไม่ได้ Perfect แต่การสร้างความแตกต่าง
-              ด้วยความรู้ที่เราทำได้ งานนี้เป็นการปล่อย QR ตั้งแต่เลข 1 - 30
-              ก่อนที่เราจะมีหน้า Home สำหรับ Map คำอวยพรใน Database กับเลข
-              Serial No. ทีเราต้องการ ถึงแม้วิธีการนี้ปัจจุบันผมจะไม่ได้ใช้แล้ว
-              เพราะใช้ Huge Framework ไปหน่อย
-              แต่ครั้งหนึ่งก็เคยสร้างความประทับใจให้กับหลายคนได้
-            </p>
+          <div class="column is-3 piccenter">
+            <h3 class="title is-4 kanit">Other</h3>
+            <hr />
+            {% for post in site.posts %} {% if post.category == "work" and
+            post.language != "Kotlin" and post.language != "Javascript"and
+            post.language != "PHP"%}
+            <li>
+              <a href="{{ post.url }}">{{post.title}} </a>
+            </li>
+            {%endif%} {%endfor%}
           </div>
         </div>
       </div>
