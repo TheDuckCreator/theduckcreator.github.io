@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-05T17:36:36+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space</subtitle><entry><title type="html">1 ปีกว่ากับโปรเจกต์ที่ไม่รู้ว่ามีอะไร และ ไม่รู้ว่าจะออกมายังไง</title><link href="http://localhost:4000/it-blog/2020/05/03/senior-project-talk.html" rel="alternate" type="text/html" title="1 ปีกว่ากับโปรเจกต์ที่ไม่รู้ว่ามีอะไร และ ไม่รู้ว่าจะออกมายังไง" /><published>2020-05-03T00:00:00+07:00</published><updated>2020-05-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2020/05/03/senior-project-talk</id><content type="html" xml:base="http://localhost:4000/it-blog/2020/05/03/senior-project-talk.html">&lt;p&gt;เคยมั้ยครับที่เราเองก็ไม่รู้ว่าตอนจบ ไม่สิ ตอนต่อไปของเรื่องจะเป็นยังไง เราจะเจออะไรบ้าง เราจะมีความสุข จะทุกข์ จะอะไรก็ตามที่เราจินตนาการไม่ถูก ถ้าเรายังไม่เห็นมัน&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-05T22:12:27+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space</subtitle><entry><title type="html">1 ปีกว่ากับโปรเจกต์ที่ไม่รู้ว่ามีอะไร และ ไม่รู้ว่าจะออกมายังไง</title><link href="http://localhost:4000/it-blog/2020/06/05/senior-project-talk.html" rel="alternate" type="text/html" title="1 ปีกว่ากับโปรเจกต์ที่ไม่รู้ว่ามีอะไร และ ไม่รู้ว่าจะออกมายังไง" /><published>2020-06-05T00:00:00+07:00</published><updated>2020-06-05T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2020/06/05/senior-project-talk</id><content type="html" xml:base="http://localhost:4000/it-blog/2020/06/05/senior-project-talk.html">&lt;p&gt;เคยมั้ยครับที่เราเองก็ไม่รู้ว่าตอนจบ ไม่สิ ตอนต่อไปของเรื่องจะเป็นยังไง เราจะเจออะไรบ้าง เราจะมีความสุข จะทุกข์ จะอะไรก็ตามที่เราจินตนาการไม่ถูก ถ้าเรายังไม่เห็นมัน&lt;/p&gt;
 
 &lt;p&gt;ผมเองก็เป็นเหมือนกัน และเป็นบ่อยด้วยในช่วงที่เราต้องเจออะไรใหม่ ๆ ทั้งตอนไปฝึกงาน ที่ตอนนั้นเขียน Postcard ไปที่บ้านของตัวเองเพื่อจะอ่านตอนฝึกงานเสร็จ เพราะคือไม่รู้เลยว่าเราจะเจออะไรบ้าง และอีกอย่างนึงก็คือ โปรเจกต์ผมเนี่ยแหละ โอเคก่อนแหละเรารู้ว่าเราจะได้อะไรมา เพราะมันคือผลลัพธ์ของโปรเจกต์ แต่เราไม่รู้เลยว่า เราต้องเขียนโค้ดยังไง ทำอะไรบ้าง จนกว่าเราจะได้มันมา แน่นอนนะครับในการเขียนบทความนี้ผมจะไม่ให้กระทบใครอยู่แล้ว อ่านแล้วก็อาจจะมึน ๆ หน่อยนะครับ เพราะคนเขียนตอนเขียนก็มึน&lt;/p&gt;
 
@@ -48,7 +48,62 @@
 
 &lt;p&gt;ผมเองพบว่าปัญหามันเกิดจาก 2 ส่วน ข้อมูลที่มันเป็นสตรีมของอุปกรณ์ตัวนี้ แต่ตัวอื่น ๆ ข้อมูลมันเป็นดิสครีต แน่นอนเราจะเก็บสตรีมที่มาเรื่อย ๆ ในรูปของดิสครีตก็คงไม่ได้ ทำได้เพียง เลือกจุดที่เหมาะสมที่สุดในสตรีม เป็นตัวแทนของข้อมูลสตรีมนั้น อีกส่วนคือ ระบบยังไม่สามารถ detect ได้เนี่ยเองว่า อุปกรณ์นี้นะ มันให้ค่าที่ระบบต้องการได้นะ You ไปเก็บข้อมูลสิ&lt;/p&gt;
 
-&lt;p&gt;ยังเขียนไม่เสร็จ แต่ Push ลง Git ก่อน&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">เคยมั้ยครับที่เราเองก็ไม่รู้ว่าตอนจบ ไม่สิ ตอนต่อไปของเรื่องจะเป็นยังไง เราจะเจออะไรบ้าง เราจะมีความสุข จะทุกข์ จะอะไรก็ตามที่เราจินตนาการไม่ถูก ถ้าเรายังไม่เห็นมัน</summary></entry><entry><title type="html">การใช้ Room Database เบื้องต้นใน Android</title><link href="http://localhost:4000/it-blog/2019/10/15/roomdatabase.html" rel="alternate" type="text/html" title="การใช้ Room Database เบื้องต้นใน Android" /><published>2019-10-15T00:00:00+07:00</published><updated>2019-10-15T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/15/roomdatabase</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/15/roomdatabase.html">&lt;p&gt;การจัดเก็บข้อมูลเป็นสิ่งสำคัญสำหรับทุก ๆ การพัฒนาแอพพลิเคชั่น สำหรับแอนดรอยด์ มันมี By Default อยู่แล้วคือ SQLite Database ซึ่งเป็นฐานข้อมูลแบบ Relational Database วันนี้ผมจะเอาประสบการณ์ที่ผมไปทำใน Code Lab มาอธิบายการทำงานคร่าว ๆ ของ Room Persistance Library หรือ Room Database กัน&lt;/p&gt;
+&lt;p&gt;นั่นคือ Part แรกของโปรเจกต์ครับ พาร์ทที่ใหญ่ที่สุด แต่งานที่ออกมาอาจจะดูเล็ก ๆ&lt;/p&gt;
+
+&lt;h2 id=&quot;แล้วเราจะ-report-อะไร&quot;&gt;แล้วเราจะ Report อะไร&lt;/h2&gt;
+
+&lt;p&gt;ต่อให้ Backend ดีแค่ไหน ถ้าเข้าใช้ไม่ได้ ถ้าได้แค่ดูค่า มันก็ไม่รู้ว่าจะเอาไว้ใช้ทำอะไรสินะครับ แล้วกับระบบที่ผมทำไม่ค่อยดีเท่าไหร่แล้วด้วย ดังนั้นงานผมจึง… เดี๋ยว ยังไม่เสร็จ&lt;/p&gt;
+
+&lt;p&gt;ในส่วนต่อไปคือการทำ Frontend หรือ ส่วนของ Report ต่าง ๆ เป็นความไม่ถูกต้องของการเขียนโปรแกรมคอมพิวเตอร์ของผมอีกอันหนึ่งแหละครับ ก็คือการทำ UI เสมือน แอพใหม่ครอบลงแอพเก่า เนื่องจากผมเองบอกตั้งแต่ต้นว่าไม่อยากจะจับ Dagger หรือ ReactiveX ถ้าไม่จำเป็นอีก โถ.. โชคดีที่การวางแอพพลิเคชั่นเดิมของพี่เขาดีมาก คือการตัดขาดกันเลยสำหรับส่วนที่รับข้อมูล กับ ส่วนแสดงผลข้อมูล ซึ่งมีตัวที่แยกจากกันก็คือ ฐานข้อมูล (Database) ด้านบนผมได้บอกมาแล้วว่ามันคือ Cloud Firestore ใช่มั้ยครับ แต่นั่นคือสิ่งที่ผมรู้ หลังจากผ่านอะไรมาเยอะแล้ว&lt;/p&gt;
+
+&lt;h3 id=&quot;โอ้ข้อมูล-เจ้าอยู่ที่ไหน&quot;&gt;โอ้ข้อมูล เจ้าอยู่ที่ไหน&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/senior-project/me-and-mycom.jpg&quot; alt=&quot;รูปผมกับคอมพิวเตอร์ที่ใช้ทำงาน&quot; /&gt;
+&lt;strong&gt;&lt;em&gt;แชะรูปกับโต๊ะโปรเจกต์หน่อย&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;มันเป็นความผิดพลาด และความบ้าบอของเราเองด้วยส่วนหนึ่ง ฮา.. ที่ทำไมไม่ถาม แต่จริง ๆ น่าจะเป็นเพราะมั่นใจมาตลอดมากกว่าว่าข้อมูลเนี้ยเก็บอยู่ในตัวเครื่อง ที่เรียกว่า Room Database จะเห็นได้ว่าผมเองได้เขียนบทความเกี่ยวกับ Room Database เอาไว้ด้วย เพราะว่าตอนนั้นเรากำลังโฟกัสตรงนี้มาก ๆ ผมทั้งทำ Demo Fragment ที่ดึงข้อมูลออกมาจาก DB ดึงหมดบ้าง Specific บ้าง โดยใช้หลักการเข้าถึงของ Kotlin Coroutines &amp;amp; Live Data นะครับ (ตอนแรกว่าจะทำแบบดึงจาก RxJava แบบที่พี่เขาทำ สุดท้าย เออวิธีนี้แล้วกัน) ผมค้นยังไง เอ้ มันก็ไม่เจอ เอ้ ผิดตรงไหนป่าวว่ะ&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;เออ นอกจากนี้แล้ว เรายังทำ Note การทำ Android ผ่าน Coroutines, LiveData ลงในบล็อกด้วยนะ ดูที่นี่เลย &lt;a href=&quot;https://www.theduckcreator.in.th/tin-android-docs/&quot;&gt;Tin Android Doc&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;ผมเองก็จำไม่ได้เหมือนกันว่าผมคิดได้ตอนไหน หรืออะไรมันมาดลใจให้ผมเปลี่ยนใจไปที่ Firebase คือ ผมไม่ทราบว่าผมไปเจอโค้ดส่วนไหนเข้า จึงรู้ว่า เห้ยหรือว่าข้อมูลมันเก็บบน Firebase ว่ะ ผมเลยลองดึงข้อมูลจาก Firebase เอ้าเห้ย ปรากฏการณ์มหัสจรรย์ ได้เฉย&lt;/p&gt;
+
+&lt;p&gt;คืออยากบอกก่อนนะว่า ตอนนั้นผมยังไม่ได้มีสิทธิในการเข้าถึง Firebase Console ในเว็บ หรือ ในที่ใดก็แล้วแต่ ผมเองเลยไม่ทราบตรงนี้ ตอนนั้นผมใช้ Credential ที่มันฝังอยู่ในแอพอยู่แล้วในการเชื่อมต่อไป แต่ตอนนี้ผมขอเข้าถึงแล้วนะ&lt;/p&gt;
+
+&lt;h3 id=&quot;firebase-ให้หมด-&quot;&gt;Firebase ให้หมด ?&lt;/h3&gt;
+
+&lt;p&gt;บอกก่อนนะครับ ว่ามันไม่ใช่หนทางที่ดีเท่าไหร่ (หรืออาจจะไม่ดีเลย) ที่ผมเห็นว่าในเมื่อข้อมูลทั้งหมดอยู่บน Cloud Firestore แล้ว ก็เก็บข้อมูลอื่น ๆ ลงใน Firestore ด้วยสิ ในความคิดของผมตอนนั้นก็คือ เราจะได้ให้ข้อมูลที่เป็น Application Logic มันเปลี่ยนได้ง่าย ซึ่งตอนนี้ผมพิสูจน์แล้วว่า เออ ผมคิดผิด แต่ตอนนี้ตัวแอพก็ยังทำงานโดยใช้หลักการนี้อยู่นะครับ&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/senior-project/covid-escape.jpg&quot; alt=&quot;ติดป้ายขออนุญาติกลับบ้าน หนี COVID-19&quot; /&gt;
+&lt;strong&gt;&lt;em&gt;ตอนนั้นติดป้ายหนีโควิดเอาไว้ บอกว่าจะลาแค่อาทิตย์เดียว จนถึงบัดนี้ ยังไม่ได้กลับไปถอดป้ายเลยจ้า&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ในการ Indicate ข้อมูลสุขภาพว่าอยู่ในระดับปลอดภัย เสี่ยง อันตราย และ Fetch คำแนะนำให้กับผู้ใช้ อย่างแรกเลยใช่ไหมครับมันต้องมีเกณฑ์ ซึ่งผมเองเลือกเก็บเกณฑ์ไว้ใน Online เกือบทั้งหมด (ซึ่งจริง ๆ ส่วนนี้มันควรจะเก็บบนเครื่องอาจจะดีกว่า ) ถ้าไม่นับ Cache ที่ Cloud Firestore เก็บไว้ในโทรศัพท์อัตโนมัติให้ผมแล้ว (ซึ่งมันน้อยนะ มันเก็บนั่นแหละ แต่มันไม่ได้สามารถไว้ใจได้ขนาดนั้น ผมไว้ใจมันเกินไป) เราจะต้องดึง Logic พวกเกณฑ์การจำแนกทั้งหมด จาก Internet ทุก ๆ ครั้ง ที่จะมีการวิเคราะห์ หรือ ทุก ๆ ครั้งที่เราจะแสดง Data แสดงกราฟ ที่มีเส้นขีดอันตราย ขีดเสี่ยงด้วยเนี่ย เราจะต้องใช้เวลาที่นาน และอาจจะบอกว่า เราใช้ Bandwidth ในการลิงค์กับ Server โดยป่าวประโยชน์ไปรึเปล่านะ ด้วยซ้ำ และแน่นอนถึงมันจะช้าเพียงแค่ไม่กี่วินาที แต่มันก็เพียงพอที่จะทำให้ Logic ใน App ของผม คาดเคลื่อนได้ และ มันก็เกิด Deadlock ขึ้นมาด้วย&lt;/p&gt;
+
+&lt;p&gt;การทำตรงนี้ คงต้องประเมินให้ดี ๆ นะครับ ว่าส่วนไหนควรเก็บเป็น Application Logic Hard Code ไปเลย ควรเก็บใน Internal Database หรือควรเก็บใน External Database มันต้องแบ่งกันให้ดีกว่านี้อ่ะครับ&lt;/p&gt;
+
+&lt;h3 id=&quot;แล้วต้องเพิ่มฟีเจอร์อะไรอีก&quot;&gt;แล้วต้องเพิ่มฟีเจอร์อะไรอีก&lt;/h3&gt;
+
+&lt;p&gt;ถามว่าแค่นี้พอหรือไม่ คงไม่ต้องถามหรอกครับ มันยังคงดูน้อยไปไงครับในรูปของ Senior Project โชคดีครับที่ผมได้ไปเจอข้อมูลของ NHES (National Health Examination Survey) ครั้งล่าสุดของไทย จากกรมควบคุมโรค ในเว็บของกองโรคไม่ติดต่อ ซึ่งทำไว้ในปี 2557 มันจะมีข้อมูลเปิดเผยที่เป็นสถิติประชากร เกินความชุคโรค ค่าเฉลี่ยของตัวชี้วัดทางสุขภาพต่าง ๆ พอให้ผมได้เอามาใช้บ้างกับแอพพลิเคชั่น โครงงานของผม เลยดูพอมีประโชยน์บ้าง&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/n3t4zmdihQ0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;นี่เป็นวีดีโอพรีเซนต์นะครับ ในโพสที่เขียนมานี้อาจจะไม่ค่อยมีสาระอะไรเท่าไหร่ เล่าความรู้สึกเสียมากกว่า ในรายละเอียด ดูที่วีดีโอได้เลยครับ&lt;/p&gt;
+
+&lt;h2 id=&quot;รายงานเสร็จแล้วยัง&quot;&gt;รายงานเสร็จแล้วยัง&lt;/h2&gt;
+
+&lt;p&gt;เสียงของพ่อผมเรียกมา ในหลาย ๆ ครั้ง หลังจากเห็นผมบ่นเรื่องนี้เป็นปี 5555 จริง ๆ มันไม่ใช่รายงานนะ มันคือโครงงาน แต่ก็ช่างเถอะ พ่อผมเรียกแบบนี้ไปแล้ว ผมเองก็อยากให้มันเสร็จนะ แต่โดยสภาพของเทคโนโลยี โอเค เราส่ง แต่งานเราก็ยังไม่เสร็จอยู่ดี ถึงแม้ไม่มีสัญญา Maintenance อะไร แต่มันก็เป็นสัญญาที่ให้ไว้แล้วท่ามกลางการสอบ เอ้า ไปสัญญาอะไรไว้หละ โอเค โปรเจกต์อ่ะส่งได้ แต่ท้ายที่สุด งานที่มันจะใช้ได้จริง ๆ ไม่ใข่ผลจากโครงงานหรอก เพราะ งานเราอาจถูกจำกัดด้วยเวลา และความสามารถอันเล็กน้อยของเราในตอนนั้น แต่เวลาใช้งานจริง ๆ ของแอพพลิเคชั่น หรือ ผลผลิตของ Developer ทั้งหลาย มันก็เหมือนกับลูกที่เราต้องไปคอยแก้บั๊ก ขจัดตัดแต่ง ให้มันใช้งานกับผู้ใช้งานได้ แล้วผมก็หวังว่า ผมจะทำ Production Version ออกมาได้ เร็ว ๆ นี้&lt;/p&gt;
+
+&lt;p&gt;เอ้าเพลงมา เราจะทำตามสัญญา….. (เออ ผมว่าเราจบบทความนี้แค่นี้ดีกว่านะครับ)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/senior-project/dook.jpg&quot; alt=&quot;ดุก แมวที่ภาควิชา&quot; /&gt;
+&lt;strong&gt;&lt;em&gt;ไอดุกครับ แมวที่ภาควิชา ชอบมานอนหน้าห้องบ่อย ๆ&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;และต่อให้ออก Production และ Maintenance ก็คงต้องตามเก็บไปเรื่อย ๆ หากมีใครใช้แล้ว ประสบปัญหา หรือ Complaint มา แต่อย่างไรก็ดี ถ้ามันมีประโยชน์กับใครซักคน ผมว่า ผมก็คงภูมิใจนะ&lt;/p&gt;
+
+&lt;p&gt;ใช้กับใครดีหละ อะไรนะ ใช้กับเรานี่แหละ ได้ข่าวว่าอ้วนจังแล้ว&lt;/p&gt;
+
+&lt;p&gt;ยังเขียนไม่เสร็จ แต่ Push ลง Git ก่อน&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><category term="healthcare" /><category term="android" /><category term="project" /><summary type="html">เคยมั้ยครับที่เราเองก็ไม่รู้ว่าตอนจบ ไม่สิ ตอนต่อไปของเรื่องจะเป็นยังไง เราจะเจออะไรบ้าง เราจะมีความสุข จะทุกข์ จะอะไรก็ตามที่เราจินตนาการไม่ถูก ถ้าเรายังไม่เห็นมัน</summary></entry><entry><title type="html">การใช้ Room Database เบื้องต้นใน Android</title><link href="http://localhost:4000/it-blog/2019/10/15/roomdatabase.html" rel="alternate" type="text/html" title="การใช้ Room Database เบื้องต้นใน Android" /><published>2019-10-15T00:00:00+07:00</published><updated>2019-10-15T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/15/roomdatabase</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/15/roomdatabase.html">&lt;p&gt;การจัดเก็บข้อมูลเป็นสิ่งสำคัญสำหรับทุก ๆ การพัฒนาแอพพลิเคชั่น สำหรับแอนดรอยด์ มันมี By Default อยู่แล้วคือ SQLite Database ซึ่งเป็นฐานข้อมูลแบบ Relational Database วันนี้ผมจะเอาประสบการณ์ที่ผมไปทำใน Code Lab มาอธิบายการทำงานคร่าว ๆ ของ Room Persistance Library หรือ Room Database กัน&lt;/p&gt;
 
 &lt;h2 id=&quot;room-persistance-library&quot;&gt;Room Persistance Library&lt;/h2&gt;
 
