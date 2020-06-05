@@ -1,3 +1,10 @@
+/*Override Bulma Intial Config*/
+code,
+pre {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: "Menlo", "Consolas", Courier, "Liberation Mono", monospace;
+}
 /*Theethawat Global CSS*/
 .kanit {
   font-family: "kanit", sans-serif;

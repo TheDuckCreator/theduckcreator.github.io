@@ -1,7 +1,7 @@
 - name: หน้าแรก
   link: /
 - name: เกี่ยวกับ
-  link: /theethawat.html
+  link: /about
 - name: บล็อก
   link: /blog.html
 - name: แฟ้มผลงาน
