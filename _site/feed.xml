@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-05T22:16:41+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space</subtitle><entry><title type="html">1 ปีกว่ากับโปรเจกต์ที่ไม่รู้ว่ามีอะไร และ ไม่รู้ว่าจะออกมายังไง</title><link href="http://localhost:4000/it-blog/2020/06/05/senior-project-talk.html" rel="alternate" type="text/html" title="1 ปีกว่ากับโปรเจกต์ที่ไม่รู้ว่ามีอะไร และ ไม่รู้ว่าจะออกมายังไง" /><published>2020-06-05T00:00:00+07:00</published><updated>2020-06-05T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2020/06/05/senior-project-talk</id><content type="html" xml:base="http://localhost:4000/it-blog/2020/06/05/senior-project-talk.html">&lt;p&gt;เคยมั้ยครับที่เราเองก็ไม่รู้ว่าตอนจบ ไม่สิ ตอนต่อไปของเรื่องจะเป็นยังไง เราจะเจออะไรบ้าง เราจะมีความสุข จะทุกข์ จะอะไรก็ตามที่เราจินตนาการไม่ถูก ถ้าเรายังไม่เห็นมัน&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-14T23:09:55+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space</subtitle><entry><title type="html">มา Deploy API Server บน Azure App Service โดยใช้ GitHub Action กัน</title><link href="http://localhost:4000/it-blog/2020/06/14/deploy-app-to-azure-appservice.html" rel="alternate" type="text/html" title="มา Deploy API Server บน Azure App Service โดยใช้ GitHub Action กัน" /><published>2020-06-14T00:00:00+07:00</published><updated>2020-06-14T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2020/06/14/deploy-app-to-azure-appservice</id><content type="html" xml:base="http://localhost:4000/it-blog/2020/06/14/deploy-app-to-azure-appservice.html">&lt;p&gt;การ Deploy งานของเราใน Platform as a Service ค่อนข้างได้รับความนิยมขึ้นมากในโลกปัจจุบัน แทนที่ของการเอาไปลงแบบ IaaS ซึ่งจริง ๆ ถามว่าอะไรง่ายกว่าเนี่ย ก็อยู่ที่คนถนัดนะครับ เพราะตอนผมเองเริ่มต้น Deploy ใน IaaS ผมเองก็ใช้เวลาน้อยกว่าการทำบน PaaS แต่ด้วยการจัดการความคุ้มค่าต่องบประมาณ (Cost Effectiveness) และการที่เทรนด์การแยกแต่ละส่วนของระบบเป็น Microservice เพื่อการบริหารจัดการที่ง่ายกว่า ทำ CI/CD ได้ง่ายกว่า กำลังได้รับความนิยม ทำให้การปล่อยของบน PaaS ได้รับความนิยมขึ้นเรื่อย ๆ เช่นกัน&lt;/p&gt;
+
+&lt;h2 id=&quot;paas-ใน-nodejs-app&quot;&gt;PaaS ใน Node.js App&lt;/h2&gt;
+
+&lt;p&gt;จริง ๆ แล้วก็มีหลายผู้ให้บริการเลย ที่เปิดพื้นที่ให้ปล่อยของกันสำหรับใครที่ทำ Node.js และต้องการปล่อยบน PaaS เช่นอย่าง &lt;a href=&quot;https://www.heroku.com/&quot;&gt;Heroku&lt;/a&gt; ที่จะได้รับการพูดถึงเป็นอย่างแรก ๆ แล้วผมก็จะไปลองดูและเปรียบเทียบเหมือนกัน หรืออย่างของใหม่มาแรงอย่าง &lt;a href=&quot;https://vercel.com&quot;&gt;Vercel&lt;/a&gt; ซึ่งผมเองก็ใช้ในการ Deploy เว็บส่วนตัวผมเหมือนกัน &lt;a href=&quot;https://theethawat.theduckcreator.in.th&quot;&gt;Theethawat Personal Site&lt;/a&gt; ซึ่งเดิมชื่อว่า Zeit Now ใช้ง่ายมาก ๆ คุณภาพอย่างดี นอกจากนั้นยังมีที่เราสามารถประยุกต์ไป Host App ได้ เช่น Firebase, Github Pages หรือบริการ App Service ในผู้ให้บริการ Cloud อย่างทั้ง AWS และ GCP และที่ผมกล่าวมาทั้งหมดนี้ มีบริการฟรี สำหรับคนที่จะเข้าไปเล่นระดับผมอยู่แล้ว&lt;/p&gt;
+
+&lt;h3 id=&quot;azure-web-apps&quot;&gt;Azure Web Apps&lt;/h3&gt;
+
+&lt;p&gt;ในบทความนี้จะมาบอกถึงการใช้ Platform Azure App Service / Azure Webapp ของ Microsoft Azure ซึ่งผมเองก็ไม่ได้บอกว่ามันดี ราคาดี หรือ ง่ายกว่าที่กล่าวมานะ (อาจจะด้อยกว่าในบางเรื่องด้วยซ้ำ) แต่พอดีพอเสิร์จเรื่องนี้ บทความภาษาไทยยังมีไม่ค่อยมากเท่าไหร่ ดังนั้น เออคงมีคนอ่านบ้างแหละ บทความนี้คงมีประโยชน์บ้าง และเผื่อใครที่ใช้ Stack ของ Azure อยู่แล้ว จะหาที่ปล่อย Node.js App ให้มันอยู่ในบริการเดียวกัน&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ที่มาทำพวกนี้ เรากำลัง Cost Effective อยู่คร้าบ หลังจากเครดิต Azure เรารั่วไปกับ Application Gateway กับ Virtual Gateway ของ Azure นี่แหละ ไหลรวม ๆ 2 วัน กินไปเกือบ 25 US$ ผมนี่รีบลบอย่างไว หมดตูดแล้ววว ตอนนี้เราเลยมาหาวิธีถูก ๆ หรือวิธีฟรี ๆ เล่นกัน&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;แอพที่จะมา-deploy&quot;&gt;แอพที่จะมา Deploy&lt;/h3&gt;
+
+&lt;p&gt;ก็จะเป็น App ทำ Open REST API ธรรมดา ๆ นี่แหละครับ เขียนกับ Javascript Node.JS + Express แล้วมีการเชื่อมข้อมูลจาก MongoDB Cluster ที่รันอยู่บน Cloud ของ Mongo DB Atlas ครับ&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/az-app-services/appcode-preview.png&quot; alt=&quot;บางส่วนของ Code App ที่จะมา Deploy&quot; /&gt;
+&lt;strong&gt;&lt;em&gt;ตัวอย่างโค้ดในแอพครับผม&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;แต่ผมจะมีการเอาข้อมูลที่เป็น Sensitive Data ออกมาอยู่ในไฟล์ &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt; นะครับ แล้วใช้ package &lt;code class=&quot;highlighter-rouge&quot;&gt;dotenv&lt;/code&gt; เข้าไปดึงข้อมูลเหล่านี้มานะครับ ในเครื่องที่เรารันแอพ หรือ ทดสอบ เราใส่ไฟล์ &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt; ไปเลย แต่ใน server เราจะ deploy ผ่าน Source Code ใน GitHub จึงไม่ค่อยดีเท่าไหร่ที่เราจะปล่อยพวก Sensitive Data เหล่านี้ เราจะเก็บไว้ในบริการที่ Server ทำให้ จะกล่าวถึงต่อไปครับ&lt;/p&gt;
+
+&lt;h2 id=&quot;มาเริ่ม-deploy-กัน&quot;&gt;มาเริ่ม Deploy กัน&lt;/h2&gt;
+
+&lt;p&gt;เราจะติ๊งต่างว่าเราได้เขียนโค้ดและเทสบนเครื่องของเราเรียบร้อยแล้วนะครับ เราจะมาเริ่ม Deploy โดยเราจะให้เป็นการส่ง Continuous Delivery มาจาก &lt;a href=&quot;https://github.com/features/actions&quot;&gt;GitHub Action&lt;/a&gt; เราก็จะเริ่มจาก Push โค้ดที่เราเขียนแล้ว มาที่ GitHub กันเลยครับ ถ้าเป็น Public Repository ส่วนนี้จะฟรีทั้งหมดนะครับ&lt;/p&gt;
+
+&lt;h3 id=&quot;สร้าง-resource-ใน-azure&quot;&gt;สร้าง Resource ใน Azure&lt;/h3&gt;
+
+&lt;p&gt;หลังจากนั้นเราจะเริ่มมาที่ Azure Portal หรือ ใครจะถนัด CLI ก็แล้วแต่เลยครับ เราจะมาเริ่มการสร้าง โดยไปที่่ New Resource หรือ Marketplace ก็ได้ แล้วหาคำว่า Web Apps จากนั้นเราก็มา Setting Resource ของเรากันเลย&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/az-app-services/1-Search-Marketplace.png&quot; alt=&quot;ค้นหาใน Marketplace&quot; /&gt;
+&lt;strong&gt;&lt;em&gt;ค้นหา Web App หรือจะพิมพ์ App Service ในการสร้าง Resource ใหม่&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/az-app-services/3-Runtime-Stack.png&quot; alt=&quot;Config Runtime Stack&quot; /&gt;
+&lt;strong&gt;&lt;em&gt;ตั้งค่า Name ที่จะกลายไปเป็น URL เลือก Runtime Stack, OS, ที่ตั้งของ Server, วิธีการจะ Publish ลงไป&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ในที่นี้จะใช้ Node.js Version 12 LTS และจะเลือกรันบน Linux นะครับ เพราะว่าผมเองเคยลองเลือกรันบน Windows มาแล้ว ใช้ยากมาก Windows เอาไว้รัน Dotnet App แล้วกัน (หรือภาษาอื่น ๆ ก็ได้นะครับ) ที่ตั้งผมจะเลือกเป็น Southeast Asia และจะส่งไปเป็น Code นะครับ ใครจะตั้งเป็นอย่างไร สุดแล้วแต่เลยครับ&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/az-app-services/4-Default-Size.png&quot; alt=&quot;Default App Size&quot; /&gt;
+&lt;strong&gt;&lt;em&gt;App Service Plan และ Size ของ Application เริ่มแรก&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;App Service Plan นี่เราต้องมีอยู่แล้วละนะ ถ้าใครไม่มีก็ให้มันสร้างใหม่มาแบบผมก็ได้ มันจะเอาไว้ช่วยบริหารจัดการพวกราคาต่าง ๆ ให้เรา ตัวเริ่มต้นเราไม่ต้องเสียเงินอยู่แล้วนะครับ แต่ตัวสำคัญคือ SKU and Size ครับ มีหลายอันให้เราเลือก แต่ที่ผมจะใช้ เราจะใช้แบบ Dev/Test F1 Basic ที่เป็นแบบฟรีก่อนครับ เขาจะมีแรมให้ 1GB และให้เรา Compute ได้ 60 นาทีต่อวัน&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/az-app-services/5-Select-Size.png&quot; alt=&quot;Select wanted Size&quot; /&gt;
+&lt;strong&gt;&lt;em&gt;เลือก Size ของ Applicaion ตามที่เราต้องการ โดยเราสามารถเพิ่มหรือลดได้ภายหลัง&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;เขียนยังไม่เสร็จเลย Push มาก่อนอีกละ&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><category term="api" /><category term="azure" /><summary type="html">การ Deploy งานของเราใน Platform as a Service ค่อนข้างได้รับความนิยมขึ้นมากในโลกปัจจุบัน แทนที่ของการเอาไปลงแบบ IaaS ซึ่งจริง ๆ ถามว่าอะไรง่ายกว่าเนี่ย ก็อยู่ที่คนถนัดนะครับ เพราะตอนผมเองเริ่มต้น Deploy ใน IaaS ผมเองก็ใช้เวลาน้อยกว่าการทำบน PaaS แต่ด้วยการจัดการความคุ้มค่าต่องบประมาณ (Cost Effectiveness) และการที่เทรนด์การแยกแต่ละส่วนของระบบเป็น Microservice เพื่อการบริหารจัดการที่ง่ายกว่า ทำ CI/CD ได้ง่ายกว่า กำลังได้รับความนิยม ทำให้การปล่อยของบน PaaS ได้รับความนิยมขึ้นเรื่อย ๆ เช่นกัน</summary></entry><entry><title type="html">1 ปีกว่ากับโปรเจกต์ที่ไม่รู้ว่ามีอะไร และ ไม่รู้ว่าจะออกมายังไง</title><link href="http://localhost:4000/it-blog/2020/06/05/senior-project-talk.html" rel="alternate" type="text/html" title="1 ปีกว่ากับโปรเจกต์ที่ไม่รู้ว่ามีอะไร และ ไม่รู้ว่าจะออกมายังไง" /><published>2020-06-05T00:00:00+07:00</published><updated>2020-06-05T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2020/06/05/senior-project-talk</id><content type="html" xml:base="http://localhost:4000/it-blog/2020/06/05/senior-project-talk.html">&lt;p&gt;เคยมั้ยครับที่เราเองก็ไม่รู้ว่าตอนจบ ไม่สิ ตอนต่อไปของเรื่องจะเป็นยังไง เราจะเจออะไรบ้าง เราจะมีความสุข จะทุกข์ จะอะไรก็ตามที่เราจินตนาการไม่ถูก ถ้าเรายังไม่เห็นมัน&lt;/p&gt;
 
 &lt;p&gt;ผมเองก็เป็นเหมือนกัน และเป็นบ่อยด้วยในช่วงที่เราต้องเจออะไรใหม่ ๆ ทั้งตอนไปฝึกงาน ที่ตอนนั้นเขียน Postcard ไปที่บ้านของตัวเองเพื่อจะอ่านตอนฝึกงานเสร็จ เพราะคือไม่รู้เลยว่าเราจะเจออะไรบ้าง และอีกอย่างนึงก็คือ โปรเจกต์ผมเนี่ยแหละ โอเคก่อนแหละเรารู้ว่าเราจะได้อะไรมา เพราะมันคือผลลัพธ์ของโปรเจกต์ แต่เราไม่รู้เลยว่า เราต้องเขียนโค้ดยังไง ทำอะไรบ้าง จนกว่าเราจะได้มันมา แน่นอนนะครับในการเขียนบทความนี้ผมจะไม่ให้กระทบใครอยู่แล้ว อ่านแล้วก็อาจจะมึน ๆ หน่อยนะครับ เพราะคนเขียนตอนเขียนก็มึน&lt;/p&gt;
 
@@ -101,9 +148,7 @@
 
 &lt;p&gt;และต่อให้ออก Production และ Maintenance ก็คงต้องตามเก็บไปเรื่อย ๆ หากมีใครใช้แล้ว ประสบปัญหา หรือ Complaint มา แต่อย่างไรก็ดี ถ้ามันมีประโยชน์กับใครซักคน ผมว่า ผมก็คงภูมิใจนะ&lt;/p&gt;
 
-&lt;p&gt;ใช้กับใครดีหละ อะไรนะ ใช้กับเรานี่แหละ ได้ข่าวว่าอ้วนจังแล้ว&lt;/p&gt;
-
-&lt;p&gt;ยังเขียนไม่เสร็จ แต่ Push ลง Git ก่อน&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><category term="healthcare" /><category term="android" /><category term="project" /><summary type="html">เคยมั้ยครับที่เราเองก็ไม่รู้ว่าตอนจบ ไม่สิ ตอนต่อไปของเรื่องจะเป็นยังไง เราจะเจออะไรบ้าง เราจะมีความสุข จะทุกข์ จะอะไรก็ตามที่เราจินตนาการไม่ถูก ถ้าเรายังไม่เห็นมัน</summary></entry><entry><title type="html">การใช้ Room Database เบื้องต้นใน Android</title><link href="http://localhost:4000/it-blog/2019/10/15/roomdatabase.html" rel="alternate" type="text/html" title="การใช้ Room Database เบื้องต้นใน Android" /><published>2019-10-15T00:00:00+07:00</published><updated>2019-10-15T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/15/roomdatabase</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/15/roomdatabase.html">&lt;p&gt;การจัดเก็บข้อมูลเป็นสิ่งสำคัญสำหรับทุก ๆ การพัฒนาแอพพลิเคชั่น สำหรับแอนดรอยด์ มันมี By Default อยู่แล้วคือ SQLite Database ซึ่งเป็นฐานข้อมูลแบบ Relational Database วันนี้ผมจะเอาประสบการณ์ที่ผมไปทำใน Code Lab มาอธิบายการทำงานคร่าว ๆ ของ Room Persistance Library หรือ Room Database กัน&lt;/p&gt;
+&lt;p&gt;ใช้กับใครดีหละ อะไรนะ ใช้กับเรานี่แหละ ได้ข่าวว่าอ้วนจังแล้ว&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><category term="healthcare" /><category term="android" /><category term="project" /><summary type="html">เคยมั้ยครับที่เราเองก็ไม่รู้ว่าตอนจบ ไม่สิ ตอนต่อไปของเรื่องจะเป็นยังไง เราจะเจออะไรบ้าง เราจะมีความสุข จะทุกข์ จะอะไรก็ตามที่เราจินตนาการไม่ถูก ถ้าเรายังไม่เห็นมัน</summary></entry><entry><title type="html">การใช้ Room Database เบื้องต้นใน Android</title><link href="http://localhost:4000/it-blog/2019/10/15/roomdatabase.html" rel="alternate" type="text/html" title="การใช้ Room Database เบื้องต้นใน Android" /><published>2019-10-15T00:00:00+07:00</published><updated>2019-10-15T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/15/roomdatabase</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/15/roomdatabase.html">&lt;p&gt;การจัดเก็บข้อมูลเป็นสิ่งสำคัญสำหรับทุก ๆ การพัฒนาแอพพลิเคชั่น สำหรับแอนดรอยด์ มันมี By Default อยู่แล้วคือ SQLite Database ซึ่งเป็นฐานข้อมูลแบบ Relational Database วันนี้ผมจะเอาประสบการณ์ที่ผมไปทำใน Code Lab มาอธิบายการทำงานคร่าว ๆ ของ Room Persistance Library หรือ Room Database กัน&lt;/p&gt;
 
 &lt;h2 id=&quot;room-persistance-library&quot;&gt;Room Persistance Library&lt;/h2&gt;
 
@@ -423,62 +468,7 @@ binding.nicknameShow.text = binding.nicknameInput.text&lt;/li&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The name of the variable you can define but link to your data class or Any structure class.&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">Kotlin the new 1st class language in Android. And today the trend name databinding is so amazing more than using findViewById right? it handle Smoother.</summary></entry><entry><title type="html">วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica</title><link href="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html" rel="alternate" type="text/html" title="วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/mongoreplica</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html">&lt;p&gt;ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT&lt;/p&gt;
-
-&lt;h2 id=&quot;mongodb-replica&quot;&gt;MongoDB Replica&lt;/h2&gt;
-
-&lt;p&gt;MongoDB Replica เป็นการทำ Replication ของฐานข้อมูลแบบ NoSQL อันหนึ่งก็คือ MongoDB โดยเราจะต้องเตรียมโหนดสำหรับ MongoDB ไว้ เป็นจำนวนเลขคี่ หรือ เริ่มต้นก็คือ 3 Node , 5 Node เป็นต้น เราสามารถจำลองสร้างขึ้นมาทั้งอยู่บนเซิร์ฟเวอร์เดียวกัน คนละพอร์ต อยู่คนละเซิร์ฟเวอร์กัน หรือ อย่างไรก็ได้ โดยหลักการทำงานของ MongoDB Replica นั้น Client คือผู้เขียนหรือผู้อ่านข้อมูล ในที่นี้ก็รวมถึงแอดมินที่เขียนข้อมูลลงในดาตาเบสด้วย จะ Read and Write ไปที่ Primary Node ก่อนที่ระบบมันจะทำ Replication ไปยัง Secondary Node ทั้งสอง หรือ 4 โหนด และมีการทำ Heartbeat คุยกัน&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://docs.mongodb.com/manual/_images/replica-set-read-write-operations-primary.bakedsvg.svg&quot; alt=&quot;Mongo DB Replica Working Model&quot; /&gt;
-รูปจาก Official Documents ของ MongoDB&lt;/p&gt;
-
-&lt;!-- ### ทำไมจำนวนโหนดต้องเป็นเลขคี่ด้วยหละ
-
-นี่คือสิ่งที่อธิบายต่อไป เนื่องจากโอเค เพื่อทำการให้ระบบของเราทนต่อความขัดข้อง หรือ จัดการเพื่อตอบสนอง Fault Tolerance โหนดที่เป็น Secondary จะมีการทำ Replication อยู่ตลอดจาก Primary อยู่แล้ว และทันทีที่ Primary Node เกิดการล่มสลายไป Secondary Node พวกนี้จะต้องทำการ Vote เพื่อเลือกว่าตัวไหน จะเป็น Primary ตัวต่อไป โดยการที่จะโหวตกันได้เนี่ยจำนวนโหนดที่เหลืออยู่ จะต้องเกินกึ่งหนึ่ง (ครึ่งหนึ่ง) ของสมาชิกทั้งหมดที่เราประกาศไว้ เช่น เราเล่น 3 Nodes มีโหนดหนึ่งตายไป เหลือ 2 Node ที่ Avaliable อยู่ ซึ่งมากกว่าครึ่งของ 3 Nodes จึงโหวตกันได้
-
-กรณีถ้าเรามี 4 Nodes   --&gt;
-
-&lt;h3 id=&quot;ลองเล่น-mongodb-replica-กัน-บน-docker&quot;&gt;ลองเล่น MongoDB Replica กัน บน Docker&lt;/h3&gt;
-
-&lt;p&gt;เนื่องจากมีทรัพยากรไม่มาก ผมจะเล่น 3 Module Replica set แล้วกันนะครับ ผมขี้เกียจจะเปิด Linux มาแล้ว ผมจะเข้าไปสร้างบน Server ผม ซึ่งเป็น Linux อยู่แล้ว โดยสร้าง Docker Compose ไว้ สร้าง 3 Node ผมจะสร้าง Directory ขึ้นมา แล้วใน Directory นั้น จะสร้างไฟล์ &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; ขึ้น&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo1.jpg&quot; alt=&quot;Docker Compose.yml File&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ในรูปผิดอยู่ เอาตาม โค้ดใน Gist ของ Github ข้างล่างนะ&lt;/p&gt;
-
-&lt;p&gt;ในที่นี้ผมสร้างใน IP เดียวกันก่อน ยังไม่ได้ตั้ง Private Network แต่เอามันมาลงที่คนละพอร์ต คือ Forward Default Port ของ MongoDB คือ 27017 มาที่พอร์ต 4041,4042 และ 4043 โดยที่ผมเองจะให้ Volumn กับมันไป พอร์ตละ Folder ละกัน โดย By default ของ MongoDB บน Docker Ubuntu Bionic จะอยู่ที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/mongodb&lt;/code&gt; ซึ่งรู้สึกว่ามันก็ต่างกันอยู่นะ กับการลง MongoDB Native บนเครื่อง Ubuntu หรือ Directory เดียวกัน อันนี้ไม่มั่นใจ แล้วเราจะสร้าง Config File เอาตามชื่อของมันแล้วกัน ก็คือ &lt;code class=&quot;highlighter-rouge&quot;&gt;mongod.conf&lt;/code&gt; ซึ่งผมจะให้มันไปอยู่ที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/mongod.conf&lt;/code&gt; ซึ่งอันนี้รู้สึกว่าเหมือนกันทั้งค่า Default ของเครื่อง Linux และ Linux บน Docker&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=docker-compose.yml&quot;&gt;&lt;/script&gt;
-
-&lt;h3 id=&quot;สร้างไฟล์-และ-โฟลเดอร์-ก่อนที่จะให้-docker-access&quot;&gt;สร้างไฟล์ และ โฟลเดอร์ ก่อนที่จะให้ Docker Access&lt;/h3&gt;
-
-&lt;p&gt;แน่นอนครับ แม้ว่าเราจะมีไฟล์คอนฟิกแล้ว แต่เราบอกให้ Pass Volumn และ Pass File ไป แต่เรายังไม่ได้สร้างไฟล์ที่จะให้ Pass ไปเลย ไฟล์ที่เราจะไปกำหนดการ Replication จะอยู่ใน &lt;code class=&quot;highlighter-rouge&quot;&gt;mongod.conf&lt;/code&gt; ครับ ถ้าใครลง MongoDB ใน Linux ตัวเองลองเปิด ไม่ว่าจะ GUI,CLI ดูก็ได้ครับ ซึ่งตอนนี้ผมไม่ได้ลง ผมเลยไป Search ดูใน Google ไฟล์ก็จะเป็นตามนี้ครับ &lt;a href=&quot;https://github.com/mongodb/mongo/blob/master/rpm/mongod.conf&quot;&gt;MongoDB conf.d Original from GitHub &lt;/a&gt;
-่
-&lt;img src=&quot;/assets/internetprograming/mongo2.jpg&quot; alt=&quot;Folder Making&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;จากเดิมที่ไม่มีอะไร เราสร้าง Directory ขึ้นมา 3 Directory ก่อนที่จะสร้างไฟล์ conf.d แล้ว copy โครงพื้นฐานของมัน จากลิงค์ที่ให้ไปข้างบนนี้มาใส่ได้เลยย เราจะได้ไฟล์ของเรามา อย่างนี้เลย&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo3.jpg&quot; alt=&quot;File Making&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ทีนี้ เราจะโฟกัสที่ สองตัวคือ storage ซึ่งเป็นสีขาว ๆ เลยกับ replication ซึ่งมัน comment อยู่ ดังรูปด้านบน อย่างแรกเลย คือใน docker-compose.yml เราส่ง Storage ไปที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/mongodb&lt;/code&gt; ใช่มั้ยหละ แต่ตรงนี้เป็น mongo โอเค แก้ให้มันเหมือนกันครับ จะแก้ที่ docker-compose file หรือ แก้ที่นี่ก็ได้เหมือนกัน ตัวผมแก้ที่นี่แล้วกันนะ&lt;/p&gt;
-
-&lt;h3 id=&quot;การตั้งค่า-replicaset&quot;&gt;การตั้งค่า ReplicaSet&lt;/h3&gt;
-
-&lt;p&gt;ทีนี้คือจุดสำคัญที่เราเฝ้ารอมานานคือการตั้ง replica set เรา uncomment ที่ replication ออกได้เลย และ เราก็เขียนเป็นชื่อ &lt;code class=&quot;highlighter-rouge&quot;&gt;replSetName:&quot;อะไรก็ได้&quot;&lt;/code&gt; แค่ทั้ง 3 Nodes นี่ต้องตั้งให้เหมือนกันนะ ส่วนตัวเราจะใช้เป็น rs0 แล้วกัน&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo4.jpg&quot; alt=&quot;Replication Setting&quot; /&gt;&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=mongod.conf&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;และเราก็ทำแบบนี้กับทั้ง 3 อัน ก่อนที่เราจะมา up compose กัน&lt;/p&gt;
-
-&lt;h3 id=&quot;docker-compose-up&quot;&gt;Docker-compose up&lt;/h3&gt;
-
-&lt;p&gt;รันคำสั่ง &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo docker-compose up&lt;/code&gt; หรือ &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose up&lt;/code&gt; ก็ได้ถ้าเป็น root อยู่แล้ว&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo5.jpg&quot; alt=&quot;Docker Compose Up&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;จากนั้นจะพบว่าของผม Error เต็มเลย น่าจะผิดตรงตั้งค่า Docker อะไรซักอย่างเนี่ย เดี๋ยวมาเขียนต่อละกัน วันนี้หยุดก่อน&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT</summary></entry><entry><title type="html">ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)</title><link href="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html" rel="alternate" type="text/html" title="ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/whytoscaleweb</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html">&lt;p&gt;บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง
+&lt;p&gt;The name of the variable you can define but link to your data class or Any structure class.&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">Kotlin the new 1st class language in Android. And today the trend name databinding is so amazing more than using findViewById right? it handle Smoother.</summary></entry><entry><title type="html">ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)</title><link href="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html" rel="alternate" type="text/html" title="ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/whytoscaleweb</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html">&lt;p&gt;บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง
 การสเกลคืออะไร เตรียมการสเกลไว้ดีมั้ย ทำไมต้องทำด้วย ไม่ทำได้มั้ย&lt;/p&gt;
 
 &lt;p&gt;คำตอบทั้งหมดคงจะตอบว่า ได้ครับ แน่นอนว่าทุกอย่างถ้าเราอยู่ในทรัพยากรที่จำกัดมาก ๆ บางทีการวางโครงสร้างของเราอาจจะไม่ต้องทำให้มันรองรับการ Scale Up ก็ได้ แต่ถ้าเราสามารถที่จะเขียนได้หละ สามารถเขียนเปิดทางแอพพลิเคชั่นให้มันเปิดทางการสเกล หรือ การขยายได้หละ มันจะดีกว่ามั้ย&lt;/p&gt;
@@ -580,7 +570,62 @@ binding.nicknameShow.text = binding.nicknameInput.text&lt;/li&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;เอกสารอ้างอิง
-Fernando Doglio. Scaling Your Node.js Apps. Appress,2018 - &lt;a href=&quot;https://books.google.co.th/books/about/Scaling_Your_Node_js_Apps.html?id=noF8DwAAQBAJ&amp;amp;source=kp_cover&amp;amp;redir_esc=y&quot;&gt;Scaling Your Node.js App in Google Books&lt;/a&gt;&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง การสเกลคืออะไร เตรียมการสเกลไว้ดีมั้ย ทำไมต้องทำด้วย ไม่ทำได้มั้ย</summary></entry><entry><title type="html">Kotlin In My Note</title><link href="http://localhost:4000/it-blog/2019/09/27/introtokotlin.html" rel="alternate" type="text/html" title="Kotlin In My Note" /><published>2019-09-27T00:00:00+07:00</published><updated>2019-09-27T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/09/27/introtokotlin</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/09/27/introtokotlin.html">&lt;p&gt;นี่คือโน้ตที่ผมเขียนไว้ตอนผมเรียนคอทลิน ประกอบกับแอนดรอยด์ไปด้วย เพื่อที่จะทำโปรเจกต์ของผม ผมเองก็โน้ตเก็บเป็น Markdown ไว้ แล้วก็มาเผยแพร่ให้ดู เป็นภาษาอังกฤษนะครับ ว่าง ๆ จะมาแปลไทยให้อ่าน&lt;/p&gt;
+Fernando Doglio. Scaling Your Node.js Apps. Appress,2018 - &lt;a href=&quot;https://books.google.co.th/books/about/Scaling_Your_Node_js_Apps.html?id=noF8DwAAQBAJ&amp;amp;source=kp_cover&amp;amp;redir_esc=y&quot;&gt;Scaling Your Node.js App in Google Books&lt;/a&gt;&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง การสเกลคืออะไร เตรียมการสเกลไว้ดีมั้ย ทำไมต้องทำด้วย ไม่ทำได้มั้ย</summary></entry><entry><title type="html">วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica</title><link href="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html" rel="alternate" type="text/html" title="วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/mongoreplica</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html">&lt;p&gt;ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT&lt;/p&gt;
+
+&lt;h2 id=&quot;mongodb-replica&quot;&gt;MongoDB Replica&lt;/h2&gt;
+
+&lt;p&gt;MongoDB Replica เป็นการทำ Replication ของฐานข้อมูลแบบ NoSQL อันหนึ่งก็คือ MongoDB โดยเราจะต้องเตรียมโหนดสำหรับ MongoDB ไว้ เป็นจำนวนเลขคี่ หรือ เริ่มต้นก็คือ 3 Node , 5 Node เป็นต้น เราสามารถจำลองสร้างขึ้นมาทั้งอยู่บนเซิร์ฟเวอร์เดียวกัน คนละพอร์ต อยู่คนละเซิร์ฟเวอร์กัน หรือ อย่างไรก็ได้ โดยหลักการทำงานของ MongoDB Replica นั้น Client คือผู้เขียนหรือผู้อ่านข้อมูล ในที่นี้ก็รวมถึงแอดมินที่เขียนข้อมูลลงในดาตาเบสด้วย จะ Read and Write ไปที่ Primary Node ก่อนที่ระบบมันจะทำ Replication ไปยัง Secondary Node ทั้งสอง หรือ 4 โหนด และมีการทำ Heartbeat คุยกัน&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://docs.mongodb.com/manual/_images/replica-set-read-write-operations-primary.bakedsvg.svg&quot; alt=&quot;Mongo DB Replica Working Model&quot; /&gt;
+รูปจาก Official Documents ของ MongoDB&lt;/p&gt;
+
+&lt;!-- ### ทำไมจำนวนโหนดต้องเป็นเลขคี่ด้วยหละ
+
+นี่คือสิ่งที่อธิบายต่อไป เนื่องจากโอเค เพื่อทำการให้ระบบของเราทนต่อความขัดข้อง หรือ จัดการเพื่อตอบสนอง Fault Tolerance โหนดที่เป็น Secondary จะมีการทำ Replication อยู่ตลอดจาก Primary อยู่แล้ว และทันทีที่ Primary Node เกิดการล่มสลายไป Secondary Node พวกนี้จะต้องทำการ Vote เพื่อเลือกว่าตัวไหน จะเป็น Primary ตัวต่อไป โดยการที่จะโหวตกันได้เนี่ยจำนวนโหนดที่เหลืออยู่ จะต้องเกินกึ่งหนึ่ง (ครึ่งหนึ่ง) ของสมาชิกทั้งหมดที่เราประกาศไว้ เช่น เราเล่น 3 Nodes มีโหนดหนึ่งตายไป เหลือ 2 Node ที่ Avaliable อยู่ ซึ่งมากกว่าครึ่งของ 3 Nodes จึงโหวตกันได้
+
+กรณีถ้าเรามี 4 Nodes   --&gt;
+
+&lt;h3 id=&quot;ลองเล่น-mongodb-replica-กัน-บน-docker&quot;&gt;ลองเล่น MongoDB Replica กัน บน Docker&lt;/h3&gt;
+
+&lt;p&gt;เนื่องจากมีทรัพยากรไม่มาก ผมจะเล่น 3 Module Replica set แล้วกันนะครับ ผมขี้เกียจจะเปิด Linux มาแล้ว ผมจะเข้าไปสร้างบน Server ผม ซึ่งเป็น Linux อยู่แล้ว โดยสร้าง Docker Compose ไว้ สร้าง 3 Node ผมจะสร้าง Directory ขึ้นมา แล้วใน Directory นั้น จะสร้างไฟล์ &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; ขึ้น&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo1.jpg&quot; alt=&quot;Docker Compose.yml File&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ในรูปผิดอยู่ เอาตาม โค้ดใน Gist ของ Github ข้างล่างนะ&lt;/p&gt;
+
+&lt;p&gt;ในที่นี้ผมสร้างใน IP เดียวกันก่อน ยังไม่ได้ตั้ง Private Network แต่เอามันมาลงที่คนละพอร์ต คือ Forward Default Port ของ MongoDB คือ 27017 มาที่พอร์ต 4041,4042 และ 4043 โดยที่ผมเองจะให้ Volumn กับมันไป พอร์ตละ Folder ละกัน โดย By default ของ MongoDB บน Docker Ubuntu Bionic จะอยู่ที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/mongodb&lt;/code&gt; ซึ่งรู้สึกว่ามันก็ต่างกันอยู่นะ กับการลง MongoDB Native บนเครื่อง Ubuntu หรือ Directory เดียวกัน อันนี้ไม่มั่นใจ แล้วเราจะสร้าง Config File เอาตามชื่อของมันแล้วกัน ก็คือ &lt;code class=&quot;highlighter-rouge&quot;&gt;mongod.conf&lt;/code&gt; ซึ่งผมจะให้มันไปอยู่ที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/mongod.conf&lt;/code&gt; ซึ่งอันนี้รู้สึกว่าเหมือนกันทั้งค่า Default ของเครื่อง Linux และ Linux บน Docker&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=docker-compose.yml&quot;&gt;&lt;/script&gt;
+
+&lt;h3 id=&quot;สร้างไฟล์-และ-โฟลเดอร์-ก่อนที่จะให้-docker-access&quot;&gt;สร้างไฟล์ และ โฟลเดอร์ ก่อนที่จะให้ Docker Access&lt;/h3&gt;
+
+&lt;p&gt;แน่นอนครับ แม้ว่าเราจะมีไฟล์คอนฟิกแล้ว แต่เราบอกให้ Pass Volumn และ Pass File ไป แต่เรายังไม่ได้สร้างไฟล์ที่จะให้ Pass ไปเลย ไฟล์ที่เราจะไปกำหนดการ Replication จะอยู่ใน &lt;code class=&quot;highlighter-rouge&quot;&gt;mongod.conf&lt;/code&gt; ครับ ถ้าใครลง MongoDB ใน Linux ตัวเองลองเปิด ไม่ว่าจะ GUI,CLI ดูก็ได้ครับ ซึ่งตอนนี้ผมไม่ได้ลง ผมเลยไป Search ดูใน Google ไฟล์ก็จะเป็นตามนี้ครับ &lt;a href=&quot;https://github.com/mongodb/mongo/blob/master/rpm/mongod.conf&quot;&gt;MongoDB conf.d Original from GitHub &lt;/a&gt;
+่
+&lt;img src=&quot;/assets/internetprograming/mongo2.jpg&quot; alt=&quot;Folder Making&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;จากเดิมที่ไม่มีอะไร เราสร้าง Directory ขึ้นมา 3 Directory ก่อนที่จะสร้างไฟล์ conf.d แล้ว copy โครงพื้นฐานของมัน จากลิงค์ที่ให้ไปข้างบนนี้มาใส่ได้เลยย เราจะได้ไฟล์ของเรามา อย่างนี้เลย&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo3.jpg&quot; alt=&quot;File Making&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ทีนี้ เราจะโฟกัสที่ สองตัวคือ storage ซึ่งเป็นสีขาว ๆ เลยกับ replication ซึ่งมัน comment อยู่ ดังรูปด้านบน อย่างแรกเลย คือใน docker-compose.yml เราส่ง Storage ไปที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/mongodb&lt;/code&gt; ใช่มั้ยหละ แต่ตรงนี้เป็น mongo โอเค แก้ให้มันเหมือนกันครับ จะแก้ที่ docker-compose file หรือ แก้ที่นี่ก็ได้เหมือนกัน ตัวผมแก้ที่นี่แล้วกันนะ&lt;/p&gt;
+
+&lt;h3 id=&quot;การตั้งค่า-replicaset&quot;&gt;การตั้งค่า ReplicaSet&lt;/h3&gt;
+
+&lt;p&gt;ทีนี้คือจุดสำคัญที่เราเฝ้ารอมานานคือการตั้ง replica set เรา uncomment ที่ replication ออกได้เลย และ เราก็เขียนเป็นชื่อ &lt;code class=&quot;highlighter-rouge&quot;&gt;replSetName:&quot;อะไรก็ได้&quot;&lt;/code&gt; แค่ทั้ง 3 Nodes นี่ต้องตั้งให้เหมือนกันนะ ส่วนตัวเราจะใช้เป็น rs0 แล้วกัน&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo4.jpg&quot; alt=&quot;Replication Setting&quot; /&gt;&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=mongod.conf&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;และเราก็ทำแบบนี้กับทั้ง 3 อัน ก่อนที่เราจะมา up compose กัน&lt;/p&gt;
+
+&lt;h3 id=&quot;docker-compose-up&quot;&gt;Docker-compose up&lt;/h3&gt;
+
+&lt;p&gt;รันคำสั่ง &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo docker-compose up&lt;/code&gt; หรือ &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose up&lt;/code&gt; ก็ได้ถ้าเป็น root อยู่แล้ว&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo5.jpg&quot; alt=&quot;Docker Compose Up&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;จากนั้นจะพบว่าของผม Error เต็มเลย น่าจะผิดตรงตั้งค่า Docker อะไรซักอย่างเนี่ย เดี๋ยวมาเขียนต่อละกัน วันนี้หยุดก่อน&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT</summary></entry><entry><title type="html">Kotlin In My Note</title><link href="http://localhost:4000/it-blog/2019/09/27/introtokotlin.html" rel="alternate" type="text/html" title="Kotlin In My Note" /><published>2019-09-27T00:00:00+07:00</published><updated>2019-09-27T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/09/27/introtokotlin</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/09/27/introtokotlin.html">&lt;p&gt;นี่คือโน้ตที่ผมเขียนไว้ตอนผมเรียนคอทลิน ประกอบกับแอนดรอยด์ไปด้วย เพื่อที่จะทำโปรเจกต์ของผม ผมเองก็โน้ตเก็บเป็น Markdown ไว้ แล้วก็มาเผยแพร่ให้ดู เป็นภาษาอังกฤษนะครับ ว่าง ๆ จะมาแปลไทยให้อ่าน&lt;/p&gt;
 
 &lt;h2 id=&quot;คุยกันก่อน&quot;&gt;คุยกันก่อน&lt;/h2&gt;
 
@@ -866,13 +911,13 @@ field and Constructor) and can use argument &lt;code class=&quot;highlighter-rou
   &lt;li&gt;Kotlin will add Basic Library name kotlin.* if you use IDE or compiler&lt;/li&gt;
   &lt;li&gt;There include many function inside&lt;/li&gt;
   &lt;li&gt;String Function Reference is located at &lt;a href=&quot;https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html&quot;&gt;Kotlin Function Reference&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">นี่คือโน้ตที่ผมเขียนไว้ตอนผมเรียนคอทลิน ประกอบกับแอนดรอยด์ไปด้วย เพื่อที่จะทำโปรเจกต์ของผม ผมเองก็โน้ตเก็บเป็น Markdown ไว้ แล้วก็มาเผยแพร่ให้ดู เป็นภาษาอังกฤษนะครับ ว่าง ๆ จะมาแปลไทยให้อ่าน</summary></entry><entry><title type="html">ชีวิตแบบเป็ด ๆ ของโปรแกรมเมอร์บ้า ๆ บอ ๆ คนนี้</title><link href="http://localhost:4000/life/2019/09/14/programingday.html" rel="alternate" type="text/html" title="ชีวิตแบบเป็ด ๆ ของโปรแกรมเมอร์บ้า ๆ บอ ๆ คนนี้" /><published>2019-09-14T00:00:00+07:00</published><updated>2019-09-14T00:00:00+07:00</updated><id>http://localhost:4000/life/2019/09/14/programingday</id><content type="html" xml:base="http://localhost:4000/life/2019/09/14/programingday.html">&lt;p&gt;ผมเป็นคนนึงที่ใช้ชีวิตแบบ Duck Learning มาก จึงเป็นที่มาของไอ เดอะดักส์ครีเอเตอร์นี่ไง ดักส์คืออะไรนั่นเหรอ คือทำนุ่นทำนี่เล็ก ๆ น้อย ๆ ได้หลายอย่าง แต่แม่งไม่เก่งซักอย่าง บทความนี้สาระไม่ค่อยมีนะครับ เน้นระบาย อ่านรู้เรื่องก็อ่านนะครับ&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">นี่คือโน้ตที่ผมเขียนไว้ตอนผมเรียนคอทลิน ประกอบกับแอนดรอยด์ไปด้วย เพื่อที่จะทำโปรเจกต์ของผม ผมเองก็โน้ตเก็บเป็น Markdown ไว้ แล้วก็มาเผยแพร่ให้ดู เป็นภาษาอังกฤษนะครับ ว่าง ๆ จะมาแปลไทยให้อ่าน</summary></entry><entry><title type="html">ชีวิตแบบเป็ด ๆ ของโปรแกรมเมอร์บ้า ๆ บอ ๆ คนนี้</title><link href="http://localhost:4000/life/2019/09/14/programingday.html" rel="alternate" type="text/html" title="ชีวิตแบบเป็ด ๆ ของโปรแกรมเมอร์บ้า ๆ บอ ๆ คนนี้" /><published>2019-09-14T00:00:00+07:00</published><updated>2019-09-14T00:00:00+07:00</updated><id>http://localhost:4000/life/2019/09/14/programingday</id><content type="html" xml:base="http://localhost:4000/life/2019/09/14/programingday.html">&lt;p&gt;ผมเป็นคนนึงที่ใช้ชีวิตแบบ Duck Learning มาก จึงเป็นที่มาของไอ เดอะดักส์ครีเอเตอร์นี่ไง ดักส์คืออะไรนั่นเหรอ คือทำนุ่นทำนี่เล็ก ๆ น้อย ๆ ได้หลายอย่าง แต่ไม่เก่งซักอย่าง บทความนี้สาระไม่ค่อยมีนะครับ เน้นระบาย อ่านรู้เรื่องก็อ่านนะครับ&lt;/p&gt;
 
 &lt;h2 id=&quot;ไหน-ๆ-แล้วก็รู้จักผมซะเลย&quot;&gt;ไหน ๆ แล้วก็รู้จักผมซะเลย&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/profile/tin.jpg&quot; alt=&quot;รูปผมเองแหละ&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;ผมชื่อตินครับ ธีร์ธวัช สวาสดิ์ธรรม ครับ อายุ 21 ปี ตอนนี้เรียนอยู่วิศวะคอมปี 4 วิชาโท Network Engineering ซึ่งผมบอกเลยว่า &lt;i&gt;“กูคอนฟิกส์เน็ตเวิร์คไม่เป็น TTT 5555”&lt;/i&gt; มาเข้าสายนี้ทำไมเนี่ย แต่จริง ๆ มันก็สนุกดีนะ ผมเองก็เป็นคนสนใจการทำโปรแกรมแบบ Micro Service เช่นพวก Javascript,TypeScript พวก MongoDB, Firebase, ElectronJS อะไรพวกนี้ ยิ่งไอ Electron + TypeScript เป็น Stack ที่ผมอยากทำมาก
+&lt;p&gt;ผมชื่อตินครับ ธีร์ธวัช สวาสดิ์ธรรม ครับ อายุ 21 ปี ตอนนี้เรียนอยู่วิศวะคอมปี 4 วิชาโท Network Engineering ซึ่งผมบอกเลยว่า &lt;i&gt;“ผมคอนฟิกส์เน็ตเวิร์คไม่ค่อยเป็น TTT 5555”&lt;/i&gt; มาเข้าสายนี้ทำไมเนี่ย แต่จริง ๆ มันก็สนุกดีนะ ผมเองก็เป็นคนสนใจการทำโปรแกรมแบบ Micro Service เช่นพวก Javascript,TypeScript พวก MongoDB, Firebase, ElectronJS อะไรพวกนี้ ยิ่งไอ Electron + TypeScript เป็น Stack ที่ผมอยากทำมาก
 แล้วก็พวก Cloud ต่าง ๆ แล้วมีแอบสนใจสาย .NET Framework ของ Microsoft ด้วย ผมยังชอบการทำ Server ด้วยนะ ตอนนี้ผมมี Digital Ocean อยู่ 1 Droplet เป็น Ubuntu และเคยมี VM Windows Server ที่ Azure อยู่ มันเป็นของฟรีที่มหาวิทยาลัยให้มา แต่ตอนนี้ลบไปละ เพราะไม่ได้ใช้ และถึงจะให้ใช้ฟรีแบบไม่ต้องกรอกบัตรเครดิต แต่มันก็ให้เราในรูปแบบเครดิต คือ ให้เครดิตเราประมาณ 100USD มั้ง คนที่ใช้ Cloud พวกนี้น่าจะรู้ดี ก็ถ้าเราปล่อย Virtual Machine (จำไม่ได้แล้วเขาเรียกว่ายังไงใน Azure) มันก็จะกินเครดิตไปด้วย โดยที่เราไม่ได้ใช้ ดังนั้นเบรกไว้ก่อน ใน Digital Ocean ผมคอนฟิก DNS เองนะคร้าบ (เออ แล้วไงมันยากตรงไหนเหรอ 5555) ใน Windows Server ก็เหมือนกัน เคยใช้มาหมดแล้วทั้ง Apache, Nginx, IIS แต่นั่นแหละ รู้แค่พื้น ๆ กลับมาที่หัวข้อ ก็ยังคงเป็นเป็ดเหมือนเดิม&lt;/p&gt;
 
 &lt;h2 id=&quot;ก็มัน-distributed-อ่ะ&quot;&gt;ก็มัน Distributed อ่ะ&lt;/h2&gt;
@@ -899,7 +944,7 @@ field and Constructor) and can use argument &lt;code class=&quot;highlighter-rou
 
 &lt;h2 id=&quot;ทำนู่นทำนี่ไม่เก่งไม่เป็นไร-แต่ความเสถียร-จำเป็นนะ&quot;&gt;ทำนู่นทำนี่ไม่เก่งไม่เป็นไร แต่ความเสถียร จำเป็นนะ&lt;/h2&gt;
 
-&lt;p&gt;คนเป็นเรื่องที่เถียงไม่ขึ้นสำหรับคนเป็ด ๆ อย่างผม ก็คือ แล้วถ้าเราได้รับโจทย์ที่ต้องการเสถียรภาพสูงหละ เราจะทำยังไง เราจะลองนู่นลองนี่อ่ะ เป็นเรื่องดี แต่สุดท้าย มันต้องมีซักภาษาป่าวว่ะ หรือ ซักเรื่องป่าววะ ที่เราสามารถทำให้เป็นระดับ Enterprise ได้ เขาสามารถจ้างเราทำได้ ทุกคนว่าจริงมั้ย ยังไงก็เป็นกำลังใจให้ผมด้วยละกันนะครับ น้อ ฝากติดตามผลงานด้วย จบดื้อ ๆ แบบนี้เลยเหรอ เออ ใช่สิ&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="life" /><summary type="html">ผมเป็นคนนึงที่ใช้ชีวิตแบบ Duck Learning มาก จึงเป็นที่มาของไอ เดอะดักส์ครีเอเตอร์นี่ไง ดักส์คืออะไรนั่นเหรอ คือทำนุ่นทำนี่เล็ก ๆ น้อย ๆ ได้หลายอย่าง แต่แม่งไม่เก่งซักอย่าง บทความนี้สาระไม่ค่อยมีนะครับ เน้นระบาย อ่านรู้เรื่องก็อ่านนะครับ</summary></entry><entry><title type="html">Thailand Blog Hub เว็บรวมบล็อกคนไทย ในยุคที่คนใช้โซเชี่ยล</title><link href="http://localhost:4000/work/2019/07/17/thailandbloghub.html" rel="alternate" type="text/html" title="Thailand Blog Hub เว็บรวมบล็อกคนไทย ในยุคที่คนใช้โซเชี่ยล" /><published>2019-07-17T00:00:00+07:00</published><updated>2019-07-17T00:00:00+07:00</updated><id>http://localhost:4000/work/2019/07/17/thailandbloghub</id><content type="html" xml:base="http://localhost:4000/work/2019/07/17/thailandbloghub.html">&lt;p&gt;ยังไงหละ ไม่ศึกษา Requirement มาให้ดีก่อน ดีนะที่งานเล็ก ๆ แต่อย่างน้อย เขียนโปรแกรมได้ขนาดนี้ เราแม่งก็ไม่ธรรมดา
+&lt;p&gt;คนเป็นเรื่องที่เถียงไม่ขึ้นสำหรับคนเป็ด ๆ อย่างผม ก็คือ แล้วถ้าเราได้รับโจทย์ที่ต้องการเสถียรภาพสูงหละ เราจะทำยังไง เราจะลองนู่นลองนี่อ่ะ เป็นเรื่องดี แต่สุดท้าย มันต้องมีซักภาษาป่าวว่ะ หรือ ซักเรื่องป่าววะ ที่เราสามารถทำให้เป็นระดับ Enterprise ได้ เขาสามารถจ้างเราทำได้ ทุกคนว่าจริงมั้ย ยังไงก็เป็นกำลังใจให้ผมด้วยละกันนะครับ น้อ ฝากติดตามผลงานด้วย จบดื้อ ๆ แบบนี้เลยเหรอ เออ ใช่สิ&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="life" /><summary type="html">ผมเป็นคนนึงที่ใช้ชีวิตแบบ Duck Learning มาก จึงเป็นที่มาของไอ เดอะดักส์ครีเอเตอร์นี่ไง ดักส์คืออะไรนั่นเหรอ คือทำนุ่นทำนี่เล็ก ๆ น้อย ๆ ได้หลายอย่าง แต่ไม่เก่งซักอย่าง บทความนี้สาระไม่ค่อยมีนะครับ เน้นระบาย อ่านรู้เรื่องก็อ่านนะครับ</summary></entry><entry><title type="html">Thailand Blog Hub เว็บรวมบล็อกคนไทย ในยุคที่คนใช้โซเชี่ยล</title><link href="http://localhost:4000/work/2019/07/17/thailandbloghub.html" rel="alternate" type="text/html" title="Thailand Blog Hub เว็บรวมบล็อกคนไทย ในยุคที่คนใช้โซเชี่ยล" /><published>2019-07-17T00:00:00+07:00</published><updated>2019-07-17T00:00:00+07:00</updated><id>http://localhost:4000/work/2019/07/17/thailandbloghub</id><content type="html" xml:base="http://localhost:4000/work/2019/07/17/thailandbloghub.html">&lt;p&gt;ยังไงหละ ไม่ศึกษา Requirement มาให้ดีก่อน ดีนะที่งานเล็ก ๆ แต่อย่างน้อย เขียนโปรแกรมได้ขนาดนี้ เราแม่งก็ไม่ธรรมดา
 Pure PHP เนี่ย น่าจะเป็นงานสุดท้ายแล้วด้วย&lt;/p&gt;
 
 &lt;p&gt;เราจะเขียนบล็อก และ Doc ในแบบที่ว่า เหมือนมีใครมาสัมภาษณ์&lt;/p&gt;
@@ -977,72 +1022,4 @@ Pure PHP เนี่ย น่าจะเป็นงานสุดท้า�
 
 &lt;p&gt;&lt;img src=&quot;/assets/thaileague/sc3.png&quot; alt=&quot;หน้าจอ Coding ของแอพพลิเคชั่น&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;สุดท้ายนี้ ผมขอขอบคุณทุกท่านที่มีส่วนสนับสนุน และ ทดลองใช้งาน Beta Application ของเรา ผมรู้สึกเป็นเกียรติเป็นอย่างยิ่ง และขอขอบคุณทุกๆ ท่าน เราจะกลับมาแน่นอน อย่างช้าน่าจะเป็นก่อนเปิดฤดูกาลหน้า ในแบบเต็มรูปแบบ หรือ ถ้าทางบริษัท ไทยลีก จำกัด หรือ ผู้ที่เกี่ยวข้อง เห็นความสำคัญ ก็ทำแอพพลิเคชั่นขึ้นมาเลยครับ แอพพลิเคชั่นนี้ไม่เป็นไร และผมขอเป็นกำลังใจให้กับวงการฟุตบอลไทย และวงการ Coding ของไทยต่อไปนะครับ&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="work" /><summary type="html">ปฐมลิขิต ปกติมีมั้ย การจัดทำครั้งนี้ไม่ได้เกี่ยวข้องกับบริษัท ไทยลีก จำกัด หรือ สมาคมกีฬาฟุตบอลแห่งประเทศ เพียงจัดทำโดยคนๆ หนึ่งซึ่งรักในฟุตบอลไทย และอยากจะเห็นฟุตบอลไทยลีก กลับมาถูกพูดถึงกันอย่างกว้างขวางอีกครั้งเหมือนเมื่อหลายปีที่ผ่านมา</summary></entry><entry><title type="html">First Time on React | Card Game BNK48</title><link href="http://localhost:4000/work/2019/06/20/reactgame.html" rel="alternate" type="text/html" title="First Time on React | Card Game BNK48" /><published>2019-06-20T00:00:00+07:00</published><updated>2019-06-20T00:00:00+07:00</updated><id>http://localhost:4000/work/2019/06/20/reactgame</id><content type="html" xml:base="http://localhost:4000/work/2019/06/20/reactgame.html">&lt;p&gt;คงเป็นความภูมิใจเล็ก ๆ ที่วันหนึ่งเราได้ก้าวมาสู่ภาษาสมัยใหม่ที่ได้รับความนิยมอย่าง Javascript สักที
-และก็เป็นครั้งแรกที่เขียน Javascript ES6 on Framework เต็มรูปแบบ ได้เข้าใจการวาง Component,Stage,Props ถึงแม้จะเป็นการสั่งงานในห้องเรียนก็ตาม และใข้ BNK48 มาเป็นพร็อพในงานครั้งนี้&lt;/p&gt;
-
-&lt;h2 id=&quot;bug-exchange-thank-you&quot;&gt;Bug Exchange Thank You&lt;/h2&gt;
-
-&lt;p&gt;ขอขอบคุณไอเดียบางอย่างจาก GitHub ของเพื่อนผมครับ จาก GitHub &lt;a href=&quot;https://github.com/sunisathammasoon/&quot;&gt;sunisathammasoon&lt;/a&gt;
-หวังว่าอาจารย์คงไม่ว่าอะไรนะครับ เนื่องจากมันเป็นประโยชน์สำคัญของ GitHubโดยเอามาตรงที่&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  constructor(props){
-      super(props)
-      this.state = prepareStateFromWord(this.props.value)
-  }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;ขอขอบคุณไอเดียจาก GitHub ของเพื่อนผม จาก GitHub &lt;a href=&quot;https://github.com/Ikhalas/&quot;&gt;Ikhalas&lt;/a&gt;
-โดยเอามาตรงที่(ใน WordCard.js ครับ)&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    { Array.from(this.state.chars).map(
-    (c,i)=&amp;gt; &amp;lt;CharacterCard value = {c} key = {i} attempt={this.state.attempt}
-                activateHandler={this.activateHandler}/&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;dependency-install&quot;&gt;Dependency Install&lt;/h2&gt;
-
-&lt;p&gt;ถ้าระบบไม่รู้จัก _ หรือ lodash ให้พิมพ์คำสั่ง&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    npm i -g npm
-    npm i --save lodash
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;ใน Command Prompt หรือ Terminal (ตอนนั้นชี้อยู่ที่ card-game กล่าวคือ D:/card-game แล้วพิมพ์ npm i -g npm …..)
-โดยมันจะเอา lodash มาติดตั้งให้&lt;/p&gt;
-
-&lt;h2 id=&quot;css-library-ที่ใช้ได้แก่&quot;&gt;CSS Library ที่ใช้ได้แก่&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://getbootstrap.com&quot;&gt;Bootstrap 4.1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://fonts.google.com&quot;&gt;Google Fonts&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://fontawesome.io&quot;&gt;Fontawesome&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;deployment-and-view&quot;&gt;Deployment and View&lt;/h2&gt;
-
-&lt;p&gt;เข้าชมเว็บไซต์ได้ที่ &lt;a href=&quot;https://theethawat.github.io/card-game&quot;&gt;theethawat.github.io/card-game&lt;/a&gt; โดยการให้มัน deploy websiteใช้คำสั่ง&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    npm install gh-pages --save-dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;ก่อนที่จะแก้ไขข้อมูลในไฟล์ package.json ให้มัน deploy ใน githubusername.github.io/card-game&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    yarn build
-    yarn run deploy
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;แล้วมาที่ Repository ของ GitHub อันนี้ ไปที่ Setting &amp;gt; GitHub Page แล้วเลือก branch gh-pages branch แล้ว save เป็นบริการฟรีของ GitHub&lt;/p&gt;
-
-&lt;h2 id=&quot;thank-you&quot;&gt;Thank you&lt;/h2&gt;
-
-&lt;p&gt;ขอบคุณที่มาจาก &lt;a href=&quot;https://github.com/gitname/react-gh-pages&quot;&gt;react-gh-pages&lt;/a&gt;
-ขอขอบคุณภาพจาก &lt;a href=&quot;https://www.bnk48.com/#/Member&quot;&gt;BNK48 Office&lt;/a&gt; ทำเพื่อการศึกษา มิได้มีเจตนาละเมิดลิขสิทธิ์&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Made with Love and Assigned from Theethawat Savastham&lt;/td&gt;
-      &lt;td&gt;ธีร์ธวัช สวาสดิ์ธรรม CoE’28 PSU&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>Theethawat Savastham</name></author><category term="work" /><summary type="html">คงเป็นความภูมิใจเล็ก ๆ ที่วันหนึ่งเราได้ก้าวมาสู่ภาษาสมัยใหม่ที่ได้รับความนิยมอย่าง Javascript สักที และก็เป็นครั้งแรกที่เขียน Javascript ES6 on Framework เต็มรูปแบบ ได้เข้าใจการวาง Component,Stage,Props ถึงแม้จะเป็นการสั่งงานในห้องเรียนก็ตาม และใข้ BNK48 มาเป็นพร็อพในงานครั้งนี้</summary></entry></feed>
+&lt;p&gt;สุดท้ายนี้ ผมขอขอบคุณทุกท่านที่มีส่วนสนับสนุน และ ทดลองใช้งาน Beta Application ของเรา ผมรู้สึกเป็นเกียรติเป็นอย่างยิ่ง และขอขอบคุณทุกๆ ท่าน เราจะกลับมาแน่นอน อย่างช้าน่าจะเป็นก่อนเปิดฤดูกาลหน้า ในแบบเต็มรูปแบบ หรือ ถ้าทางบริษัท ไทยลีก จำกัด หรือ ผู้ที่เกี่ยวข้อง เห็นความสำคัญ ก็ทำแอพพลิเคชั่นขึ้นมาเลยครับ แอพพลิเคชั่นนี้ไม่เป็นไร และผมขอเป็นกำลังใจให้กับวงการฟุตบอลไทย และวงการ Coding ของไทยต่อไปนะครับ&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="work" /><summary type="html">ปฐมลิขิต ปกติมีมั้ย การจัดทำครั้งนี้ไม่ได้เกี่ยวข้องกับบริษัท ไทยลีก จำกัด หรือ สมาคมกีฬาฟุตบอลแห่งประเทศ เพียงจัดทำโดยคนๆ หนึ่งซึ่งรักในฟุตบอลไทย และอยากจะเห็นฟุตบอลไทยลีก กลับมาถูกพูดถึงกันอย่างกว้างขวางอีกครั้งเหมือนเมื่อหลายปีที่ผ่านมา</summary></entry></feed>
