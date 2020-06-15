@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-14T23:09:55+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space</subtitle><entry><title type="html">มา Deploy API Server บน Azure App Service โดยใช้ GitHub Action กัน</title><link href="http://localhost:4000/it-blog/2020/06/14/deploy-app-to-azure-appservice.html" rel="alternate" type="text/html" title="มา Deploy API Server บน Azure App Service โดยใช้ GitHub Action กัน" /><published>2020-06-14T00:00:00+07:00</published><updated>2020-06-14T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2020/06/14/deploy-app-to-azure-appservice</id><content type="html" xml:base="http://localhost:4000/it-blog/2020/06/14/deploy-app-to-azure-appservice.html">&lt;p&gt;การ Deploy งานของเราใน Platform as a Service ค่อนข้างได้รับความนิยมขึ้นมากในโลกปัจจุบัน แทนที่ของการเอาไปลงแบบ IaaS ซึ่งจริง ๆ ถามว่าอะไรง่ายกว่าเนี่ย ก็อยู่ที่คนถนัดนะครับ เพราะตอนผมเองเริ่มต้น Deploy ใน IaaS ผมเองก็ใช้เวลาน้อยกว่าการทำบน PaaS แต่ด้วยการจัดการความคุ้มค่าต่องบประมาณ (Cost Effectiveness) และการที่เทรนด์การแยกแต่ละส่วนของระบบเป็น Microservice เพื่อการบริหารจัดการที่ง่ายกว่า ทำ CI/CD ได้ง่ายกว่า กำลังได้รับความนิยม ทำให้การปล่อยของบน PaaS ได้รับความนิยมขึ้นเรื่อย ๆ เช่นกัน&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-15T23:55:33+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space</subtitle><entry><title type="html">มา Deploy API Server บน Azure App Service โดยใช้ GitHub Actions กัน</title><link href="http://localhost:4000/it-blog/2020/06/14/deploy-app-to-azure-appservice.html" rel="alternate" type="text/html" title="มา Deploy API Server บน Azure App Service โดยใช้ GitHub Actions กัน" /><published>2020-06-14T00:00:00+07:00</published><updated>2020-06-14T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2020/06/14/deploy-app-to-azure-appservice</id><content type="html" xml:base="http://localhost:4000/it-blog/2020/06/14/deploy-app-to-azure-appservice.html">&lt;p&gt;การ Deploy งานของเราใน Platform as a Service ค่อนข้างได้รับความนิยมขึ้นมากในโลกปัจจุบัน แทนที่ของการเอาไปลงแบบ IaaS ซึ่งจริง ๆ ถามว่าอะไรง่ายกว่าเนี่ย ก็อยู่ที่คนถนัดนะครับ เพราะตอนผมเองเริ่มต้น Deploy ใน IaaS ผมเองก็ใช้เวลาน้อยกว่าการทำบน PaaS แต่ด้วยการจัดการความคุ้มค่าต่องบประมาณ (Cost Effectiveness) และการที่เทรนด์การแยกแต่ละส่วนของระบบเป็น Microservice เพื่อการบริหารจัดการที่ง่ายกว่า ทำ CI/CD ได้ง่ายกว่า กำลังได้รับความนิยม ทำให้การปล่อยของบน PaaS ได้รับความนิยมขึ้นเรื่อย ๆ เช่นกัน&lt;/p&gt;
+
+&lt;h3 id=&quot;content&quot;&gt;Content&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#paas-ใน-node.js-app&quot;&gt;PaaS ใน Node.js App&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#มาเริ่มสร้าง-resource-กัน&quot;&gt;มาเริ่มสร้าง Resource กัน&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#deploy-with-github-actions&quot;&gt;Deploy With GitHub Actions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#เช็คงานใน-azure&quot;&gt;เช็คงานใน Azure&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;paas-ใน-nodejs-app&quot;&gt;PaaS ใน Node.js App&lt;/h2&gt;
 
@@ -21,7 +30,9 @@
 
 &lt;p&gt;แต่ผมจะมีการเอาข้อมูลที่เป็น Sensitive Data ออกมาอยู่ในไฟล์ &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt; นะครับ แล้วใช้ package &lt;code class=&quot;highlighter-rouge&quot;&gt;dotenv&lt;/code&gt; เข้าไปดึงข้อมูลเหล่านี้มานะครับ ในเครื่องที่เรารันแอพ หรือ ทดสอบ เราใส่ไฟล์ &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt; ไปเลย แต่ใน server เราจะ deploy ผ่าน Source Code ใน GitHub จึงไม่ค่อยดีเท่าไหร่ที่เราจะปล่อยพวก Sensitive Data เหล่านี้ เราจะเก็บไว้ในบริการที่ Server ทำให้ จะกล่าวถึงต่อไปครับ&lt;/p&gt;
 
-&lt;h2 id=&quot;มาเริ่ม-deploy-กัน&quot;&gt;มาเริ่ม Deploy กัน&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;มาเริ่มสร้าง-resource-กัน&quot;&gt;มาเริ่มสร้าง Resource กัน&lt;/h2&gt;
 
 &lt;p&gt;เราจะติ๊งต่างว่าเราได้เขียนโค้ดและเทสบนเครื่องของเราเรียบร้อยแล้วนะครับ เราจะมาเริ่ม Deploy โดยเราจะให้เป็นการส่ง Continuous Delivery มาจาก &lt;a href=&quot;https://github.com/features/actions&quot;&gt;GitHub Action&lt;/a&gt; เราก็จะเริ่มจาก Push โค้ดที่เราเขียนแล้ว มาที่ GitHub กันเลยครับ ถ้าเป็น Public Repository ส่วนนี้จะฟรีทั้งหมดนะครับ&lt;/p&gt;
 
@@ -45,7 +56,98 @@
 &lt;p&gt;&lt;img src=&quot;/assets/az-app-services/5-Select-Size.png&quot; alt=&quot;Select wanted Size&quot; /&gt;
 &lt;strong&gt;&lt;em&gt;เลือก Size ของ Applicaion ตามที่เราต้องการ โดยเราสามารถเพิ่มหรือลดได้ภายหลัง&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;เขียนยังไม่เสร็จเลย Push มาก่อนอีกละ&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><category term="api" /><category term="azure" /><summary type="html">การ Deploy งานของเราใน Platform as a Service ค่อนข้างได้รับความนิยมขึ้นมากในโลกปัจจุบัน แทนที่ของการเอาไปลงแบบ IaaS ซึ่งจริง ๆ ถามว่าอะไรง่ายกว่าเนี่ย ก็อยู่ที่คนถนัดนะครับ เพราะตอนผมเองเริ่มต้น Deploy ใน IaaS ผมเองก็ใช้เวลาน้อยกว่าการทำบน PaaS แต่ด้วยการจัดการความคุ้มค่าต่องบประมาณ (Cost Effectiveness) และการที่เทรนด์การแยกแต่ละส่วนของระบบเป็น Microservice เพื่อการบริหารจัดการที่ง่ายกว่า ทำ CI/CD ได้ง่ายกว่า กำลังได้รับความนิยม ทำให้การปล่อยของบน PaaS ได้รับความนิยมขึ้นเรื่อย ๆ เช่นกัน</summary></entry><entry><title type="html">1 ปีกว่ากับโปรเจกต์ที่ไม่รู้ว่ามีอะไร และ ไม่รู้ว่าจะออกมายังไง</title><link href="http://localhost:4000/it-blog/2020/06/05/senior-project-talk.html" rel="alternate" type="text/html" title="1 ปีกว่ากับโปรเจกต์ที่ไม่รู้ว่ามีอะไร และ ไม่รู้ว่าจะออกมายังไง" /><published>2020-06-05T00:00:00+07:00</published><updated>2020-06-05T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2020/06/05/senior-project-talk</id><content type="html" xml:base="http://localhost:4000/it-blog/2020/06/05/senior-project-talk.html">&lt;p&gt;เคยมั้ยครับที่เราเองก็ไม่รู้ว่าตอนจบ ไม่สิ ตอนต่อไปของเรื่องจะเป็นยังไง เราจะเจออะไรบ้าง เราจะมีความสุข จะทุกข์ จะอะไรก็ตามที่เราจินตนาการไม่ถูก ถ้าเรายังไม่เห็นมัน&lt;/p&gt;
+&lt;p&gt;จากนั้นเราก็ Review และ Create เลย&lt;/p&gt;
+
+&lt;h3 id=&quot;ดูผลงานและเตรียมการ-deploy&quot;&gt;ดูผลงานและเตรียมการ Deploy&lt;/h3&gt;
+
+&lt;p&gt;หลังจากที่เรา Create ได้แล้ว เราจะเข้ามาที่ Dashboard ของ Web App ของเรา เราจะเห็นข้อมูลต่าง ๆ เช่นพวก IP ที่ได้ Dynamic Allocation มา Status, Package ต่าง ๆ และเราสามารถที่จะกด Browse เพื่อที่จะไปที่ URL ที่เราสร้างขึ้นมา&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/az-app-services/7-Dashboard.png&quot; alt=&quot;Azure Web App Dashboard&quot; /&gt;
+&lt;strong&gt;&lt;em&gt;หน้าสรุปข้อมูลของ App Service ที่เราสร้างขึ้นมา&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/az-app-services/8-Browse.png&quot; alt=&quot;Basic Browse App&quot; /&gt;
+&lt;strong&gt;&lt;em&gt;หน้า Web Application ที่ขึ้นมาโดยที่ยังไม่ได้ Push อะไรลงไป&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;deploy-with-github-actions&quot;&gt;Deploy With GitHub Actions&lt;/h2&gt;
+
+&lt;p&gt;เราจะ Deploy มันด้วย GitHub Actions ถึงแม้มันจะเป็น Preview อยู่ใน Azure แต่เนื่องจากงานของเราไม่ได้ Production อะไรมาก เราก็จะใช้นะ ถ้าใครใช้งาน Production จริง ๆ อาจจะลองหาวิธีอื่นดูนะครับ&lt;/p&gt;
+
+&lt;h3 id=&quot;setup-deployment-source&quot;&gt;Setup Deployment Source&lt;/h3&gt;
+
+&lt;p&gt;ไปที่ Deployment Center ครับ จากนั้นเราเริ่มจากการเลือกว่า Source Code ของเรานั้นอยู่ในตัวจัดการ Repository อันไหน มีทั้ง Azure Repos, GitHub, Bitbucket หรือ Local Git ในที่นี้ผมจะเลือกเป็น GitHub นะครับ จากนั้นมาถึงส่วนสำคัญคือเลือก Build Provider เราจะเลือด &lt;strong&gt;GitHub Action&lt;/strong&gt; ครับ&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/az-app-services/9-Repo-Source.png&quot; alt=&quot;Repository Source&quot; /&gt;
+&lt;strong&gt;&lt;em&gt;การเลือกผู้ให้บริการเก็บ Repository&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/az-app-services/10-Build-Provider.png&quot; alt=&quot;Build Provider&quot; /&gt;
+&lt;strong&gt;&lt;em&gt;เลือกวิธีในการ Build Source Code โดยที่นี้จะเลือก GitHub Actions&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;เราทำการ Config ต่าง ๆ นะครับ เช่น Repository ชื่ออะไร Build Environment จะเป็นอย่างไร จากนั้นมันจะ Generate YAML File ที่เอาไว้เป็น Workflow ให้เราครับ เราไม่ต้องคัดลอก แล้วไปใส่ใน Repository เรานะครับ มันจะจัดการให้เอง โดยจะอยู่ในโฟลเดอร์ &lt;code class=&quot;highlighter-rouge&quot;&gt;.github/workflows&lt;/code&gt; ซึ่งต่อไปเมื่อเรา Pull Repository นั้นมา เราก็จะเอามาแก้ไขไฟล์ Workflow ใน Editor ของเราได้ หรือจะแก้ไขใน UI ของ GitHub เลยก็ได้ครับ&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/az-app-services/12-Workflow.png&quot; alt=&quot;GitHub Action Workflow&quot; /&gt;
+&lt;strong&gt;&lt;em&gt;Workflow ที่เราได้เพื่อไป Build ใน GitHub Actions&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ตรวจงาน-build-ใน-github&quot;&gt;ตรวจงาน Build ใน GitHub&lt;/h3&gt;
+
+&lt;p&gt;GitHub จะทำการ Build ให้เราตาม Workflow ที่เราให้ ทุก ๆ ครั้งที่เรา Commit หรือ ที่เราตั้งค่าไว้ ถ้าหากมี Log อะไรระหว่างการ Build หรือมี Error มันก็จะขึ้นมาในตัว GitHub มีให้ Badge ด้วยนะว่า Build สำเร็จหรือไม่ โดยเราจะออกจาก Azure แล้วไปที่ GitHub Repository ของเราเลย&lt;/p&gt;
+
+&lt;p&gt;เมื่อเราไปที่ Repository และเราทำการ Commit ใหม่ (ที่จริงการ Add Workflow ก็เป็นการ Commit แล้วนะ) มันก็จะเริ่ม Build โดยที่ มันจะขึ้นอยู่ที่แถบด้านบนของ Repository นั้น&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/az-app-services/13-Commit-Action-1.png&quot; alt=&quot;Workflow Running Status&quot; /&gt;
+&lt;strong&gt;&lt;em&gt;สัญลักษณ์ที่แสดงผลว่า Workflow กำลังทำงานอยู่&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;เราสามารถคลิกตรงนั้น หรือ คลิกไปที่ &lt;strong&gt;Actions&lt;/strong&gt; ด้านบนก็ได้ แล้วเราจะเห็นผลงานที่เราทำไว้ ใน Workflow ก่อน ๆ ใน Repository นี้ (ถ้าเริ่มทำครั้งแรกมันก็จะยังมีแค่อันเดียวนี่แหละ อันนี้ Deploy มาหลายครั้งแล้ว)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/az-app-services/14-Commit-Action-2.png&quot; alt=&quot;GitHub Action Workflow Result List&quot; /&gt;
+&lt;strong&gt;&lt;em&gt;List งานที่ GitHub Actions ทำให้เรา&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;คลิกเข้าไปที่ Event นั้น ๆ เราจะเห็นว่าตอนนี้เขากำลังทำในขึ้นตอนไหนอยู่ ผลการ Run เป็นยังไงบ้าง จากนั้นพอมันเสร็จแล้ว มันจะ Push ไปที่ Azure&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/az-app-services/15-Action-Running.png&quot; alt=&quot;GitHub Action Working Process&quot; /&gt;
+&lt;strong&gt;&lt;em&gt;งานที่ GitHub Actions กำลังทำให้เราอยู่&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;เช็คงานใน-azure&quot;&gt;เช็คงานใน Azure&lt;/h2&gt;
+
+&lt;p&gt;เมื่อเรา Build ผ่าน มีการ Push ไฟล์มาที่ Azure App Service แล้ว ทีนี้มันก็จะเอา Code ของเรานี่แหละ ไปทำการ Deploy โดยถ้ามันจะเสมือนรันคำสั่ง &lt;code class=&quot;highlighter-rouge&quot;&gt;npm start&lt;/code&gt; กล่าวคือ มันจะทำงานตามคำสั่งที่เราเขียนให้กับ Script Start ใน &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt; ดังนั้นเราก็ดูให้ดีนะว่าเราได้สร้าง Production Build ไว้หรือเปล่า ถ้าอยากให้มันรันจาก Production Build เราจะเขียนคำสั่งยังไง ถ้าต้องการให้มันรันแบบนั้นแบบนี้จะต้องใส่คำสั่งใด เป็นต้น&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Azure App Service จะถือเอาคำสั่งใน &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt; ตรงที่ start เป็นคำสั่งที่จะใช้ในการดำเนินการ&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;เช็คการ-commit-งาน&quot;&gt;เช็คการ Commit งาน&lt;/h3&gt;
+
+&lt;p&gt;เราสามารถเช็คสถานะการส่ง CI/CD จาก GitHub มาที่ Azure ได้โดยเปิดไปที่ Deployment Center&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/az-app-services/17-Deployment-Status.png&quot; alt=&quot;Azure App Service Deployment Status&quot; /&gt;
+&lt;strong&gt;&lt;em&gt;เช็คสถานะการส่งขึ้นมา Deploy ที่ Deployment Center&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;ถ้าใครสถานะที่ดี และไม่มีการกำหนด Environment Variable อะไร ก็ลองไป Browse หน้าเว็บดูได้นะ แต่ถ้าใครที่มี Environment Variable เหมือนเรา ยังก่อน เราจะมาแก้ Environment เราก่อน&lt;/p&gt;
+
+&lt;h3 id=&quot;ตั้งค่า-environment-variable&quot;&gt;ตั้งค่า Environment Variable&lt;/h3&gt;
+
+&lt;p&gt;เราจะไปตั้งค่าสิ่งเดียวกับที่เราเก็บไว้ในไฟล์ &lt;code class=&quot;highlighter-rouge&quot;&gt;.env&lt;/code&gt; บนเครื่อง โดยเราจะไปที่ &lt;strong&gt;Configuration&lt;/strong&gt; และใส่ Application String เข้าไป&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/az-app-services/18-ENV-Dash.png&quot; alt=&quot;App Service Configuration&quot; /&gt;
+&lt;strong&gt;&lt;em&gt;หน้า Config Environment Variable&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/az-app-services/19-Edit-ENV.png&quot; alt=&quot;Environment Variables Configuration&quot; /&gt;
+&lt;strong&gt;&lt;em&gt;การใส่ หรือ แก้ไข Environment Variable โดยจะเป็นลักษณะของ Key-Value&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;จากนั้น เราสามารถไปเช็คงานเราใน Website ของเรา หรือผ่านช่องทางอื่น ๆ ซึ่งอยากบอกว่ามันไม่ได้ Take Effect ทันทีนะ หรือไม่ก็อาจจะมี Cache ของบราวเซอร์ หรือ อื่น ๆ ด้วย พอร์ตต่าง ๆ ที่ให้แสดงออกดูให้ดีด้วยนะครับ รู้สึกว่าเขาจะตั้ง Default ไว้ที่ 8080 แล้วมันจะ Mapping มาที่ 80,443 หรือวิธีหนึ่งที่จะทำให้รู้ข้อผิดพลาด คือไปที่ &lt;strong&gt;Diagnose and Solve Problem&lt;/strong&gt; แล้วเข้าไปดู Application Log ก็ได้นะ&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;บทส่งท้าย&quot;&gt;บทส่งท้าย&lt;/h2&gt;
+
+&lt;p&gt;ก็ถือว่าวิธีนี้เป็นวิธีหนึ่งนะครับ อาจจะมีรายละเอียดปรีกย่อยค่อนข้างมากหน่อย หรือ การจัดสเปค แพ็คเกจ ค่าใช้จ่าย ที่อาจจะมีค่ายอื่นที่เป็นพื้นที่ให้ Deploy Node.JS Application โดยตรงทำได้ได้เปรียบกว่าบ้าง (อย่างโดยส่วนตัวคิดว่า Vercel ง่ายกว่า ประสิทธิภาพดีกว่า แถมใช้ Domain ตัวเองได้ด้วย มี Cert Gen ให้อีกต่างหาก แต่เครื่องมือบางส่วนทางนี้อาจจะมีมากกว่า) แต่วิธีนี้ก็เป็นอีกวิธีหนึ่งนะครับ&lt;/p&gt;
+
+&lt;p&gt;มีข้อดีคือเราสามารถบริหารจัดการร่วมกับ Resource อื่น ๆ และ ใช้ Command Line ในการทำพวก Deploy Infrastructure, Scale, Autoscale หรือ อื่น ๆ ได้ และเริ่มต้นที่ไม่ต้องเสียค่าใช้จ่ายใด ๆ และใช้ได้ค่อนข้างเยอะนะ ยังไง ๆ ใครมีประสบการณ์ คำแนะนำอะไร บอกมาได้นะครับ ส่วนเราเหลือแต่ Heroku ตัวนึงที่ได้รับความนิยมมาก แต่ผมยังไม่ได้ลองใช้ ไว้จะลองเล่นดูนะครับ&lt;/p&gt;
+
+&lt;p&gt;สามารถใช้ API ตัวนี้ของผมได้ที่ &lt;a href=&quot;https://theethawat-api.azurewebsites.net/&quot;&gt;Theethawat API&lt;/a&gt; และสามารถดู Doc ของ API และ Source Code ได้ที่ &lt;a href=&quot;https://github.com/theethawat/personal-data-api&quot;&gt;GitHub&lt;/a&gt; Repository นี้เลยครับ&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><category term="api" /><category term="azure" /><summary type="html">การ Deploy งานของเราใน Platform as a Service ค่อนข้างได้รับความนิยมขึ้นมากในโลกปัจจุบัน แทนที่ของการเอาไปลงแบบ IaaS ซึ่งจริง ๆ ถามว่าอะไรง่ายกว่าเนี่ย ก็อยู่ที่คนถนัดนะครับ เพราะตอนผมเองเริ่มต้น Deploy ใน IaaS ผมเองก็ใช้เวลาน้อยกว่าการทำบน PaaS แต่ด้วยการจัดการความคุ้มค่าต่องบประมาณ (Cost Effectiveness) และการที่เทรนด์การแยกแต่ละส่วนของระบบเป็น Microservice เพื่อการบริหารจัดการที่ง่ายกว่า ทำ CI/CD ได้ง่ายกว่า กำลังได้รับความนิยม ทำให้การปล่อยของบน PaaS ได้รับความนิยมขึ้นเรื่อย ๆ เช่นกัน</summary></entry><entry><title type="html">1 ปีกว่ากับโปรเจกต์ที่ไม่รู้ว่ามีอะไร และ ไม่รู้ว่าจะออกมายังไง</title><link href="http://localhost:4000/it-blog/2020/06/05/senior-project-talk.html" rel="alternate" type="text/html" title="1 ปีกว่ากับโปรเจกต์ที่ไม่รู้ว่ามีอะไร และ ไม่รู้ว่าจะออกมายังไง" /><published>2020-06-05T00:00:00+07:00</published><updated>2020-06-05T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2020/06/05/senior-project-talk</id><content type="html" xml:base="http://localhost:4000/it-blog/2020/06/05/senior-project-talk.html">&lt;p&gt;เคยมั้ยครับที่เราเองก็ไม่รู้ว่าตอนจบ ไม่สิ ตอนต่อไปของเรื่องจะเป็นยังไง เราจะเจออะไรบ้าง เราจะมีความสุข จะทุกข์ จะอะไรก็ตามที่เราจินตนาการไม่ถูก ถ้าเรายังไม่เห็นมัน&lt;/p&gt;
 
 &lt;p&gt;ผมเองก็เป็นเหมือนกัน และเป็นบ่อยด้วยในช่วงที่เราต้องเจออะไรใหม่ ๆ ทั้งตอนไปฝึกงาน ที่ตอนนั้นเขียน Postcard ไปที่บ้านของตัวเองเพื่อจะอ่านตอนฝึกงานเสร็จ เพราะคือไม่รู้เลยว่าเราจะเจออะไรบ้าง และอีกอย่างนึงก็คือ โปรเจกต์ผมเนี่ยแหละ โอเคก่อนแหละเรารู้ว่าเราจะได้อะไรมา เพราะมันคือผลลัพธ์ของโปรเจกต์ แต่เราไม่รู้เลยว่า เราต้องเขียนโค้ดยังไง ทำอะไรบ้าง จนกว่าเราจะได้มันมา แน่นอนนะครับในการเขียนบทความนี้ผมจะไม่ให้กระทบใครอยู่แล้ว อ่านแล้วก็อาจจะมึน ๆ หน่อยนะครับ เพราะคนเขียนตอนเขียนก็มึน&lt;/p&gt;
 
