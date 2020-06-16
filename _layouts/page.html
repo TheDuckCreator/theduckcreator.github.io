@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{{ page.title }}</title>
+    <meta property="description" content="{{page.subtitle}}" />
+    <meta property="og:title" content="{{page.title}}" />
+    <meta property="og:type" content="text/html" />
+    <meta property="og:locale" content="th_TH" />
+    <meta property="og:description" content="{{page.subtitle}}" />
+    <meta
+      property="og:image"
+      content="https://www.theduckcreator.in.th/assets/ogtag.jpg"
+    />
+    <link
+      rel="icon"
+      href="https://www.theduckcreator.in.th/assets/web logo.png"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
@@ -99,5 +112,19 @@
     <br /><br />
     {% include footer.html%}
     <script src="https://kit.fontawesome.com/942c2b45e2.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-104473772-5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+
+      gtag("config", "UA-104473772-5")
+    </script>
   </body>
 </html>
