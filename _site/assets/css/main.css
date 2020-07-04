@@ -108,3 +108,7 @@ pre {
     margin-right: auto;
   }
 }
+
+.campaign-title {
+  max-height: min-content;
+}
