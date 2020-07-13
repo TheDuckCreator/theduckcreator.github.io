@@ -8,159 +8,174 @@ layout: default
 <!DOCTYPE html>
 <html lang="th">
   <body>
-    <section class="hero is-dark is-bold">
+    <section class="hero tdc-hero">
       <div class="hero-body">
-        <div class="container">
-          <figure>
-            <img
-              class="image piccenter"
-              style="height: 100px;"
-              src="assets/TDC Logo.png"
-            />
-          </figure>
-
-          <h1 class="subtitle is-3 kanit tdc-heading acenter">
-            The Duck Creator | เดอะดักส์ครีเอเตอร์
-          </h1>
-          <h2 class="subtitle kanitlight tdc-remove-margin-top acenter">
-            No-body wanted Creativity Studio, It's not a company it just a
-            space.
-          </h2>
+        <div class="container columns">
+          <div class="column is-two-third"></div>
+          <div class="column is-one-third">
+            <figure>
+              <img
+                class="image piccenter"
+                style="height: 80px;"
+                src="assets/TDC Logo.png"
+              />
+            </figure>
+            <h1 class="subtitle is-4 kanit acenter has-text-light">
+              The Duck Creator <br /><span class="kanitlight"
+                >เดอะดักส์ครีเอเตอร์ />
+              </span>
+            </h1>
+          </div>
         </div>
       </div>
     </section>
     <br />
 
-    <div class="container tdc-mobile-90">
-      <div class="is-medium acenter kanitlight">
-        <h3 class="title is-3 kanit tdc-remove-margin-bottom acenter">
-          What's up now ?
-        </h3>
+    <div class="container">
+      <!--Thank You https://github.com/robertgreiner/jekyll-recent-posts-->
+      <section class="section">
+        <div class="columns">
+          <div class="column is-three-quarters">
+            <h3 class="title is-3 kanit mb-3">>>> Wrap Up</h3>
+            {% for post in site.posts limit:4 %}
 
-        <!--Thank You https://github.com/robertgreiner/jekyll-recent-posts-->
+            <div class="mb-3 pb-3">
+              <h5 class="subtitle is-4 kanit pb-1 mb-1">
+                <span class="has-text-danger"> # </span
+                ><a href="{{ post.url }}">
+                  {{ post.title }}
+                </a>
+              </h5>
+              <p class="">{{ post.excerpt | truncate: 300 }}</p>
+              <div class="field is-grouped kanitlight">
+                <p class="control">
+                  <a class="tag is-small is-rounded is-bold is-primary">
+                    {{post.created_year}}
+                  </a>
+                </p>
+                <p class="control">
+                  <a class="tag is-small is-rounded is-bold is-warning">
+                    <span class="icon">
+                      <i class="fas fa-code"></i>
+                    </span>
+                    <span> {{post.language}} </span>
+                  </a>
+                </p>
+                <p class="control">
+                  <a
+                    class="tag is-small is-rounded is-bold"
+                    href="{{post.git}} "
+                  >
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <hr />
+            {% endfor %}
+
+            <div class="button-area" style="width: 100%;">
+              <a href="/blog.html"
+                ><button
+                  class="button kanitlight is-rounded is-outlined is-danger"
+                >
+                  บทความอื่น ๆ <i class="fas fa-arrow-right"></i></button
+              ></a>
+            </div>
+          </div>
+          <div class="is-one-quarter">
+            <h3 class="title is-5 kanit">ติดตามเราได้ที่</h3>
+            <div
+              class="fb-page"
+              data-href="https://www.facebook.com/theduckcreatorthailand"
+              data-tabs="timeline"
+              data-width=""
+              data-height=""
+              data-small-header="false"
+              data-adapt-container-width="true"
+              data-hide-cover="false"
+              data-show-facepile="true"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <h3 class="title is-3 kanit mb-3">>>> What we have done?</h3>
+        <blockquote
+          class="is-5 subtitle kanit is-italic"
+          style="margin-top: 0.2em;"
+        >
+          "ตราบใดที่มีแรงก็คงจะทำ แต่ถ้าขี้เกียจก็คงไม่ทำ ขอเพียงแต่ว่า
+          เราจะพยายามไม่ขี้เกียจ"
+        </blockquote>
+
+        <br />
 
         <div class="columns">
-          {% for post in site.posts limit:5 %}
-          <div class="column card tdc-card-post margin05">
-            <h5
-              class="tdc-remove-margin-bt subtitle is-4 has-text-danger kanit"
-            >
-              <a href="{{ post.url }}">
-                {{ post.title }}
-              </a>
-            </h5>
-            <p>{{ post.excerpt | truncate: 100 }}</p>
+          <div class="column is-3 piccenter">
+            <div class="panel is-link">
+              <p class="panel-heading kanit is-italic"># PHP</p>
+
+              {% for post in site.posts %} {% if post.language == "PHP"%}
+
+              <a class="panel-block" href="{{ post.url }}">{{post.title}} </a>
+
+              {%endif%} {%endfor%}
+            </div>
+
+            <div class="panel is-danger">
+              <p class="panel-heading kanit is-italic"># Kotlin</p>
+              {% for post in site.posts %} {% if post.language == "Kotlin"%}
+
+              <a class="panel-block" href="{{ post.url }}">{{post.title}} </a>
+
+              {%endif%} {%endfor%}
+            </div>
           </div>
-          {% endfor %}
+
+          <div class="column is-3 piccenter">
+            <div class="panel is-warning">
+              <p class="panel-heading kanit is-italic"># JavaScript</p>
+
+              {% for post in site.posts %} {% if post.language == "Javascript"%}
+
+              <a href="{{ post.url }}" class="panel-block">{{post.title}} </a>
+
+              {%endif%} {%endfor%}
+            </div>
+          </div>
+          <div class="column is-3 piccenter">
+            <div class="panel is-primary">
+              <p class="panel-heading kanit is-italic"># Other</p>
+
+              {% for post in site.posts %} {% if post.category == "work" and
+              post.language != "Kotlin" and post.language != "Javascript"and
+              post.language != "PHP"%}
+
+              <a class="panel-block" href="{{ post.url }}">{{post.title}} </a>
+
+              {%endif%} {%endfor%}
+            </div>
+          </div>
         </div>
-        <div class="button-area" style="width: 100%;">
-          <a href="/blog.html"
-            ><button class="button is-rounded is-primary kanitlight piccenter">
-              บทความอื่น ๆ <i class="fas fa-arrow-right"></i></button
+
+        <br />
+        <div>
+          <a href="/portfolio.html"
+            ><button class="button is-rounded is-outlined is-danger kanitlight">
+              อ่านเพิ่มเติม <i class="fas fa-arrow-right"></i></button
           ></a>
         </div>
-
-        <!-- 
-        <blockquote
-          class="is-4 title kanit acenter has-text-danger"
-          style="margin-top:0.2em;"
-        >
-          ตราบใดที่มีแรงก็คงจะทำ แต่ถ้าขี้เกียจก็คงไม่ทำ ขอเพียงแต่ว่า
-          เราจะพยายามไม่ขี้เกียจ
-        </blockquote> -->
-      </div>
-      <br />
-      <hr />
-
-      <h1 class="title is-3 kanit acenter">
-        ไม่เชื่อ แต่บ้า ไม่กล้า แต่ก็ลองดู
-      </h1>
-      <nav class="level">
-        <div class="level-item has-text-centered">
-          <div>
-            <p class="heading">Now and Past Focusing Project</p>
-            <p class="title">11</p>
-          </div>
-        </div>
-        <div class="level-item has-text-centered">
-          <div>
-            <p class="heading">Trying Repository</p>
-            <p class="title">16+</p>
-          </div>
-        </div>
-        <div class="level-item has-text-centered">
-          <div>
-            <p class="heading">Followers on Facebook</p>
-            <p class="title">80+</p>
-          </div>
-        </div>
-        <div class="level-item has-text-centered">
-          <div>
-            <p class="heading">Used, Success Project</p>
-            <p class="title">4+</p>
-          </div>
-        </div>
-      </nav>
-
-      <hr />
-      <br />
-
-      <div class="is-medium">
-        <h3 class="title is-3 kanit tdc-remove-margin-bottom acenter">
-          What we have done?<br /><span class="subtitle is-5 kanitlight"
-            >ทำอะไร ทำไปทำไม ถามว่าสำเร็จมั้ย คำตอบเดียวเลยคือ
-            "ยังไม่ถึงเวลา"</span
-          >
-        </h3>
-
-        <div class="columns">
-          <div class="column is-3 piccenter">
-            <h3 class="title is-4 kanit">PHP</h3>
-            <hr />
-            {% for post in site.posts %} {% if post.language == "PHP"%}
-            <li>
-              <a href="{{ post.url }}">{{post.title}} </a>
-            </li>
-            {%endif%} {%endfor%}
-            <br />
-            <h3 class="title is-4 kanit">Kotlin</h3>
-            <hr />
-            {% for post in site.posts %} {% if post.language == "Kotlin"%}
-            <li>
-              <a href="{{ post.url }}">{{post.title}} </a>
-            </li>
-            {%endif%} {%endfor%}
-          </div>
-
-          <div class="column is-3 piccenter">
-            <h3 class="title is-4 kanit">Javascript</h3>
-            <hr />
-            {% for post in site.posts %} {% if post.language == "Javascript"%}
-            <li>
-              <a href="{{ post.url }}">{{post.title}} </a>
-            </li>
-            {%endif%} {%endfor%}
-          </div>
-          <div class="column is-3 piccenter">
-            <h3 class="title is-4 kanit">Other</h3>
-            <hr />
-            {% for post in site.posts %} {% if post.category == "work" and
-            post.language != "Kotlin" and post.language != "Javascript"and
-            post.language != "PHP"%}
-            <li>
-              <a href="{{ post.url }}">{{post.title}} </a>
-            </li>
-            {%endif%} {%endfor%}
-          </div>
-        </div>
-      </div>
-      <br />
-      <div class="button-area" style="width: 100%;">
-        <a href="/portfolio.html"
-          ><button class="button is-rounded is-primary kanitlight piccenter">
-            อ่านเพิ่มเติม <i class="fas fa-arrow-right"></i></button
-        ></a>
-      </div>
+      </section>
     </div>
   </body>
+  <script
+    async
+    defer
+    crossorigin="anonymous"
+    src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v4.0&appId=389712018153235&autoLogAppEvents=1"
+  ></script>
 </html>

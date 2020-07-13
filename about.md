@@ -69,7 +69,7 @@ TDC ที่อาจจะประสบความสำเร็จบ้�
                   </div>
                   <div class="column mobile-acenter">
                     <h5 class="title is-4 kanit">
-                      <a href="theethawat.html"> Theethawat Savastham</a>
+                      <a href="../theethawat.html"> Theethawat Savastham</a>
                     </h5>
                     <h4 class="subtitle is-5 kanitlight">
                       ธีร์ธวัช สวาสดิ์ธรรม
