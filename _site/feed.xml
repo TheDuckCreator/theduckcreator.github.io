@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-13T23:19:59+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space</subtitle><entry><title type="html">มา Deploy API Server บน Azure App Service โดยใช้ GitHub Actions กัน</title><link href="http://localhost:4000/it-blog/2020/06/14/deploy-app-to-azure-appservice.html" rel="alternate" type="text/html" title="มา Deploy API Server บน Azure App Service โดยใช้ GitHub Actions กัน" /><published>2020-06-14T00:00:00+07:00</published><updated>2020-06-14T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2020/06/14/deploy-app-to-azure-appservice</id><content type="html" xml:base="http://localhost:4000/it-blog/2020/06/14/deploy-app-to-azure-appservice.html">&lt;p&gt;การ Deploy งานของเราใน Platform as a Service ค่อนข้างได้รับความนิยมขึ้นมากในโลกปัจจุบัน แทนที่ของการเอาไปลงแบบ IaaS ซึ่งจริง ๆ ถามว่าอะไรง่ายกว่าเนี่ย ก็อยู่ที่คนถนัดนะครับ เพราะตอนผมเองเริ่มต้น Deploy ใน IaaS ผมเองก็ใช้เวลาน้อยกว่าการทำบน PaaS แต่ด้วยการจัดการความคุ้มค่าต่องบประมาณ (Cost Effectiveness) และการที่เทรนด์การแยกแต่ละส่วนของระบบเป็น Microservice เพื่อการบริหารจัดการที่ง่ายกว่า ทำ CI/CD ได้ง่ายกว่า กำลังได้รับความนิยม ทำให้การปล่อยของบน PaaS ได้รับความนิยมขึ้นเรื่อย ๆ เช่นกัน&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-15T22:48:25+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space</subtitle><entry><title type="html">สิ่งหนึ่งที่อาจจะขาดไปในการจัดการโควิด 19 ของไทย</title><link href="http://localhost:4000/life/2020/07/15/politic-over-covid-th.html" rel="alternate" type="text/html" title="สิ่งหนึ่งที่อาจจะขาดไปในการจัดการโควิด 19 ของไทย" /><published>2020-07-15T00:00:00+07:00</published><updated>2020-07-15T00:00:00+07:00</updated><id>http://localhost:4000/life/2020/07/15/politic-over-covid-th</id><content type="html" xml:base="http://localhost:4000/life/2020/07/15/politic-over-covid-th.html">&lt;p&gt;ผมจะพยายามพูดเป็นกลางที่สุดละกันนะครับ หลังจากที่อารมณ์หลาย ๆ คน รวมทั้งผมเริ่มจะเย็นลงแล้ว จึงอยากให้คนฝั่งหนึ่งได้เข้าใจคนฝั่งหนึ่ง และ คนอีกฝั่งหนึ่ง เข้าใจคนอีกฝ่ายหนึ่งนะครับ
+ที่คนหลายคนโกรธ ทั้งเพจที่อาจจะเชียร์รัฐบาล หรือ เป็นกลาง ออกมาแสดงความรู้สึก&lt;/p&gt;
+
+&lt;h2 id=&quot;เรายึดติดกับตัวเลข-0-ไป-ไม่ดีเหรอ&quot;&gt;เรายึดติดกับตัวเลข 0 ไป ไม่ดีเหรอ&lt;/h2&gt;
+
+&lt;p&gt;ต้นเหตุของการแสดงความรู้สึกอาจเป็นเพราะ เรารู้สึกว่าเมืองไทยใช้มาตรการเข้มข้นเกินไปหรือเปล่า ทั้งการเว้นระยะห่างจนพื้นที่ไม่พอ หรือ การเรียนที่ต้องมาเรียนออนไลน์ต่างๆ อย่างที่บางคนมองว่าทำไมเราต้องรักษารักษาเลข 0 ไว้ตลอด เพราะ หลัง ๆ หลายประเทศอย่างญี่ปุ่น เขามีผู้ป่วยสองหลัก แต่มีการผ่อนคลายต่าง ๆ มากกว่าเรา ซึ่งผมเองก็คิดอย่างงั้นนะ แต่ก็เข้าใจ แล้วก็ไม่ได้เสนอ ไม่ได้ว่าอะไรไป เพราะว่า หลาย ๆ ประเทศอีกเหมือนกันที่ประสบความสำเร็จ หรือ รอดจากโควิดก่อนเรา อย่างไต้หวัน นิวซีแลนด์ เวียดนาม เขาก็ใช้นโยบายตัวเลขเป็น 0 แบบนี้เหมือนกัน&lt;/p&gt;
+
+&lt;p&gt;ไต้หวัน นิวซีแลนด์พบเชื้อ import แบบนี้ อยู่ ๆ มา +2 +3 เขาก็โกรธเหมือนกัน หรือไต้หวันที่เอาส้มโอมาตั้งไว้ทุก ๆ วันที่เป็นมีเชื้อเป็น 0 มีการเปิดไฟแปลอักษร เฉลิมฉลอง Zero to Hero เพราะเขามองว่านี่คือโอกาสสำคัญที่จะให้คนทั้งโลก ได้เข้าใจและเห็นใจสถานะของไต้หวันบ้าง วันหนึ่งกองทัพการ์ดตก ไต้หวัน + 2 +3 ขึ้นมาปธน. ยังต้องขอให้ รมต. กลาโหมลาออกเลย (ที่ไต้หวันนี่เกิดนานแล้วนะครับ ช่วง พ.ค. ส่วนที่นิวซีแลนด์ เพิ่งได้ข่าวประมาณเดือนนึงครับ)&lt;/p&gt;
+
+&lt;p&gt;ดังนั้นประเทศไทย ที่เป็นประเทศที่ปลอดภัยจากโควิดเป็นประเทศกลาง ๆ หรือ ค่อนไปทางแรก ๆ จึงอยู่ก้ำกึ่ง ด้วยสภาวะการณ์ทางสังคมเนี่ย คนในสังคมมันเปลี่ยนความคิดได้ตลอดเวลา จริงครับว่ามีการปั่นข่าวจากฝั่งตรงข้ามรัฐบาลอยู่บ้างด้วย&lt;/p&gt;
+
+&lt;h2 id=&quot;มันเป็นเรื่องปกติที่ทัวร์จะลง&quot;&gt;มันเป็นเรื่องปกติที่ทัวร์จะลง&lt;/h2&gt;
+
+&lt;p&gt;ดังนั้น ถ้าคนฟังสิ่งที่รัฐบาลสื่อ แล้วมองว่า เราใช้นโยบายเลข 0 จึงไม่แปลกครับ ที่เหตุการณ์เมื่อพลาด แบบรัฐบาลพลาดเสียเอง จะเกิดปรากฏการณ์ที่เรียกว่า ทัวร์ลงแบบนี้ ไม่ต่างกันกับที่นิวซีแลนด์ หรือ ไต้หวัน ในเวลานั้น แต่มันก็ชั่วคราว คนไต้หวันก็กลับมาเชียร์ ปธน. เขา นิวซีแลนด์ก็มาเชียร์ นายก เขาเหมือนเดิม คนที่ไม่ชอบก็ยังไม่ชอบเหมือนเดิม อาจจะเพราะวิธีการสร้างความมั่นใจ หรือ อย่างอื่นด้วยนะ&lt;/p&gt;
+
+&lt;p&gt;ดังนั้นหลายคนที่มองว่า ทำไมเขาถึงว่ารัฐบาลกันขนาดนั้น ต้องลาออกกันเลยเหรอ ทำไมไม่ศึกษาสาเหตุก่อน ทำดีมาตั้งเยอะไม่ชม อยากจะเรียนว่า มันคือความรู้สึกครับ บวกกับ ความไม่แน่ใจว่ารัฐบาลจะเลือกทางไหน เราจะทำยังไงกับคนที่ต้องรับผลกระทบ จะมีล็อกดาวน์อีกมั้ย เศรษฐกิจเป็นไง พอผ่านไปสักวันสองวัน เราก็จะเข้าใจเหตุผล หรือ กระบวนการต่าง ๆ มากขึ้น&lt;/p&gt;
+
+&lt;h2 id=&quot;ทำไมเราอยู่ในจุดที่ทั่วโลกชื่นชม-ทำไมเราไม่ได้รู้สึกภูมิใจอะไร&quot;&gt;ทำไมเราอยู่ในจุดที่ทั่วโลกชื่นชม ทำไมเราไม่ได้รู้สึกภูมิใจอะไร&lt;/h2&gt;
+
+&lt;p&gt;ดังนั้นสิ่งที่รัฐบาลขาดมากที่สุด คือ การสร้างความเชื่อมั่น และ สร้างความรู้สึกที่ดีครับ ผมเองถึงอาจไม่ได้อยู่ฝั่งรัฐบาล แต่ผมก็กล้าพอที่จะบอกว่า ผมขอชื่นชมความสามารถของรัฐบาลในการแก้ปัญหาการระบาดของ COVID-19 ในประเทศไทยครับ และภูมิใจที่วิธี Thai Style บางอย่างของเรา ประสบความสำเร็จ&lt;/p&gt;
+
+&lt;p&gt;แต่รัฐบาลก็ต้องช่วยผมด้วย ผมอาจจะไม่ค่อยได้รับผลกระทบ แต่ผมเองดูจะไม่ค่อยมีความสุขเลย เวลาตามข่าวการเมือง เพราะว่าข่าวที่มันมากระทบกับผม (ที่พยายามบล็อกเพจที่เสนอข่าวแบบเข้าข้างจัด ๆ ทั้งสองฝ่าย หรือ พวกปล่อย Hate Speech มาหลายคนแล้ว คือผมไม่ได้ไม่รักประเทศนะ แต่ผมก็ห่วงสุขภาพจิตตัวเองเหมือนกัน) ผมเองยังได้รับข่าวที่ทำให้เรารู้สึก ไม่มั่นใจ กับการบริหารของรัฐบาล หรือ ไม่มั่นใจเกี่ยวกับ สถานการณ์ในวันข้างหน้า ว่ามันจะเป็นยังไง จากสื่อกลาง ๆ หรือ เลือกข้างอ่อน ๆ อยู่ หรือ จากสภาวะสังคมรอบ ๆ&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;สิ่งที่รัฐบาลขาดมากที่สุด คือ การสร้างความเชื่อมั่น ถ้ารัฐบาลมั่นใจว่าสิ่งที่ทำมันถูกต้อง และมองว่า อีกฝ่ายต้องการทำร้าย คุณต้องกล้า Feed กลับเขาสิ&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;ดังนั้น ถ้ารัฐบาลมั่นใจว่าสิ่งที่ทำมันถูกต้อง และอีกฝ่ายต้องการทำร้าย คุณก็ทำให้เสียงของคุณ “ดังกว่าข่าวที่โง่เขลา” จะแก้ด้วยการปิดกั้นมันไม่ส่งผลดีหรอก คุณต้อง Feed กลับสิ เขาตั้งแฮชแทกว่า เขาสามารถทำให้คนที่คิดเหมือนเขาแสดงออกได้ คุณก็ปั่นกลับบ้างสิ คุณจะมี IO (Information Operation) บ้าง มี Propagonda บ้างแบบเนียน ๆ แอบเล่น Soft Power แบบเนียน ๆ บ้าง ถ้าท่านคิดว่าอีกฝั่งมี ผมเองก็ไม่เคยว่าเลย เป็นบางประเทศ ถ้าติดเชื้อเป็น 0 ครั้งแรกเขาจุดพรุฉลองกันแล้ว&lt;/p&gt;
+
+&lt;h2 id=&quot;เกลือจิ้มเกลือ-สงครามข่าวสาร-กับ-การสร้างความมั่นใจ&quot;&gt;“เกลือจิ้มเกลือ” สงครามข่าวสาร กับ การสร้างความมั่นใจ&lt;/h2&gt;
+
+&lt;p&gt;ผมเองไม่เคยว่าคนที่คิดตรงข้ามกับผมว่าเป็นคนที่มีศักดิ์ทางสังคม หรือ ความเป็นมนุษย์ต่างกับผมเลย เพราะผมก็มองว่าทุกคนล้วนเป็นผ้าขาวที่ถูกใส่สีมาให้คิดอย่างนั่น ผมเอง PC คำว่า /…./ กับ /…./ ด้วยซ้ำ
+ดังนั้นมันอยู่ที่ว่าคุณจะป้อนชุดความคิดแบบไหน ในสังคมที่ทุกอย่างสามารถเข้าถึงได้อย่างเปิดเผย ทั้งเรื่องจริง และ เรื่องโกหก โดยเฉพาะคนกลาง ๆ หรือ เอียงอ่อน ๆ เนี่ย จะอ่อนไหวที่สุด&lt;/p&gt;
+
+&lt;p&gt;ดังนั้นเนี่ยถ้ารัฐบาลไม่สามารถเอาชนะสงครามข่าวสารได้ในแบบที่ต่างชั้นเกินไป มันจึงไม่แปลกที่ เราอาจจะดูไม่มั่นใจว่าการบริหารจะเป็นไงบ้างได้ไง
+เพราะสุดท้ายแล้วเราต้องการความสุข และ ความมั่นใจ ว่าเราจะำปสู่จุดหมายเดียวกันได้ อย่างที่ผมไม่ค่อยแสดงความเห็น จะว่าผม Ignorance บ้างก็ไม่ว่านะ เพราะผมเองก็อาจอยาก save ทรัพยากรของประเทศอย่าง สมองของตัวผมเองไว้ ไม่ให้บ้าตายเหมือนกัน&lt;/p&gt;
+
+&lt;h2 id=&quot;พยายามเข้าใจ-ดีกว่าการตัดสิน&quot;&gt;พยายามเข้าใจ ดีกว่าการตัดสิน&lt;/h2&gt;
+
+&lt;p&gt;ผมเองไม่เคยคิดจะแช่งใครให้ล้มเหลว เพื่อเอาสิ่งที่ชอบเข้าไปแทนหรอกครับ ผมมีแต่เป็นกำลังใจว่าขอให้ออกมาดี เราจะได้ก้าวต่อไปได้&lt;/p&gt;
+
+&lt;p&gt;ที่อยากออกมาแสดงความเห็นไม่ใช่อะไรหรอกครับ เผื่อทั้งสองฝ่ายจะได้อ่าน เราจะได้เข้าใจกันมากขึ้น เพราะตอนนี้ต่างฝ่ายต่างเสพสื่อกันคนละแบบ มันเลยอาจเกิดถ้อยคำ ที่ทำให้แบบ มองหน้ากันไม่ติด บนโซเชี่ยลบ้าง
+ขอให้ทุกอย่างผ่านพ้นไปด้วยดีครับ&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="life" /><summary type="html">ผมจะพยายามพูดเป็นกลางที่สุดละกันนะครับ หลังจากที่อารมณ์หลาย ๆ คน รวมทั้งผมเริ่มจะเย็นลงแล้ว จึงอยากให้คนฝั่งหนึ่งได้เข้าใจคนฝั่งหนึ่ง และ คนอีกฝั่งหนึ่ง เข้าใจคนอีกฝ่ายหนึ่งนะครับ ที่คนหลายคนโกรธ ทั้งเพจที่อาจจะเชียร์รัฐบาล หรือ เป็นกลาง ออกมาแสดงความรู้สึก</summary></entry><entry><title type="html">มา Deploy API Server บน Azure App Service โดยใช้ GitHub Actions กัน</title><link href="http://localhost:4000/it-blog/2020/06/14/deploy-app-to-azure-appservice.html" rel="alternate" type="text/html" title="มา Deploy API Server บน Azure App Service โดยใช้ GitHub Actions กัน" /><published>2020-06-14T00:00:00+07:00</published><updated>2020-06-14T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2020/06/14/deploy-app-to-azure-appservice</id><content type="html" xml:base="http://localhost:4000/it-blog/2020/06/14/deploy-app-to-azure-appservice.html">&lt;p&gt;การ Deploy งานของเราใน Platform as a Service ค่อนข้างได้รับความนิยมขึ้นมากในโลกปัจจุบัน แทนที่ของการเอาไปลงแบบ IaaS ซึ่งจริง ๆ ถามว่าอะไรง่ายกว่าเนี่ย ก็อยู่ที่คนถนัดนะครับ เพราะตอนผมเองเริ่มต้น Deploy ใน IaaS ผมเองก็ใช้เวลาน้อยกว่าการทำบน PaaS แต่ด้วยการจัดการความคุ้มค่าต่องบประมาณ (Cost Effectiveness) และการที่เทรนด์การแยกแต่ละส่วนของระบบเป็น Microservice เพื่อการบริหารจัดการที่ง่ายกว่า ทำ CI/CD ได้ง่ายกว่า กำลังได้รับความนิยม ทำให้การปล่อยของบน PaaS ได้รับความนิยมขึ้นเรื่อย ๆ เช่นกัน&lt;/p&gt;
 
 &lt;h3 id=&quot;content&quot;&gt;Content&lt;/h3&gt;
 
@@ -570,7 +612,62 @@ binding.nicknameShow.text = binding.nicknameInput.text&lt;/li&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The name of the variable you can define but link to your data class or Any structure class.&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">Kotlin the new 1st class language in Android. And today the trend name databinding is so amazing more than using findViewById right? it handle Smoother.</summary></entry><entry><title type="html">ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)</title><link href="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html" rel="alternate" type="text/html" title="ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/whytoscaleweb</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html">&lt;p&gt;บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง
+&lt;p&gt;The name of the variable you can define but link to your data class or Any structure class.&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">Kotlin the new 1st class language in Android. And today the trend name databinding is so amazing more than using findViewById right? it handle Smoother.</summary></entry><entry><title type="html">วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica</title><link href="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html" rel="alternate" type="text/html" title="วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/mongoreplica</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html">&lt;p&gt;ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT&lt;/p&gt;
+
+&lt;h2 id=&quot;mongodb-replica&quot;&gt;MongoDB Replica&lt;/h2&gt;
+
+&lt;p&gt;MongoDB Replica เป็นการทำ Replication ของฐานข้อมูลแบบ NoSQL อันหนึ่งก็คือ MongoDB โดยเราจะต้องเตรียมโหนดสำหรับ MongoDB ไว้ เป็นจำนวนเลขคี่ หรือ เริ่มต้นก็คือ 3 Node , 5 Node เป็นต้น เราสามารถจำลองสร้างขึ้นมาทั้งอยู่บนเซิร์ฟเวอร์เดียวกัน คนละพอร์ต อยู่คนละเซิร์ฟเวอร์กัน หรือ อย่างไรก็ได้ โดยหลักการทำงานของ MongoDB Replica นั้น Client คือผู้เขียนหรือผู้อ่านข้อมูล ในที่นี้ก็รวมถึงแอดมินที่เขียนข้อมูลลงในดาตาเบสด้วย จะ Read and Write ไปที่ Primary Node ก่อนที่ระบบมันจะทำ Replication ไปยัง Secondary Node ทั้งสอง หรือ 4 โหนด และมีการทำ Heartbeat คุยกัน&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://docs.mongodb.com/manual/_images/replica-set-read-write-operations-primary.bakedsvg.svg&quot; alt=&quot;Mongo DB Replica Working Model&quot; /&gt;
+รูปจาก Official Documents ของ MongoDB&lt;/p&gt;
+
+&lt;!-- ### ทำไมจำนวนโหนดต้องเป็นเลขคี่ด้วยหละ
+
+นี่คือสิ่งที่อธิบายต่อไป เนื่องจากโอเค เพื่อทำการให้ระบบของเราทนต่อความขัดข้อง หรือ จัดการเพื่อตอบสนอง Fault Tolerance โหนดที่เป็น Secondary จะมีการทำ Replication อยู่ตลอดจาก Primary อยู่แล้ว และทันทีที่ Primary Node เกิดการล่มสลายไป Secondary Node พวกนี้จะต้องทำการ Vote เพื่อเลือกว่าตัวไหน จะเป็น Primary ตัวต่อไป โดยการที่จะโหวตกันได้เนี่ยจำนวนโหนดที่เหลืออยู่ จะต้องเกินกึ่งหนึ่ง (ครึ่งหนึ่ง) ของสมาชิกทั้งหมดที่เราประกาศไว้ เช่น เราเล่น 3 Nodes มีโหนดหนึ่งตายไป เหลือ 2 Node ที่ Avaliable อยู่ ซึ่งมากกว่าครึ่งของ 3 Nodes จึงโหวตกันได้
+
+กรณีถ้าเรามี 4 Nodes   --&gt;
+
+&lt;h3 id=&quot;ลองเล่น-mongodb-replica-กัน-บน-docker&quot;&gt;ลองเล่น MongoDB Replica กัน บน Docker&lt;/h3&gt;
+
+&lt;p&gt;เนื่องจากมีทรัพยากรไม่มาก ผมจะเล่น 3 Module Replica set แล้วกันนะครับ ผมขี้เกียจจะเปิด Linux มาแล้ว ผมจะเข้าไปสร้างบน Server ผม ซึ่งเป็น Linux อยู่แล้ว โดยสร้าง Docker Compose ไว้ สร้าง 3 Node ผมจะสร้าง Directory ขึ้นมา แล้วใน Directory นั้น จะสร้างไฟล์ &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; ขึ้น&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo1.jpg&quot; alt=&quot;Docker Compose.yml File&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ในรูปผิดอยู่ เอาตาม โค้ดใน Gist ของ Github ข้างล่างนะ&lt;/p&gt;
+
+&lt;p&gt;ในที่นี้ผมสร้างใน IP เดียวกันก่อน ยังไม่ได้ตั้ง Private Network แต่เอามันมาลงที่คนละพอร์ต คือ Forward Default Port ของ MongoDB คือ 27017 มาที่พอร์ต 4041,4042 และ 4043 โดยที่ผมเองจะให้ Volumn กับมันไป พอร์ตละ Folder ละกัน โดย By default ของ MongoDB บน Docker Ubuntu Bionic จะอยู่ที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/mongodb&lt;/code&gt; ซึ่งรู้สึกว่ามันก็ต่างกันอยู่นะ กับการลง MongoDB Native บนเครื่อง Ubuntu หรือ Directory เดียวกัน อันนี้ไม่มั่นใจ แล้วเราจะสร้าง Config File เอาตามชื่อของมันแล้วกัน ก็คือ &lt;code class=&quot;highlighter-rouge&quot;&gt;mongod.conf&lt;/code&gt; ซึ่งผมจะให้มันไปอยู่ที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/mongod.conf&lt;/code&gt; ซึ่งอันนี้รู้สึกว่าเหมือนกันทั้งค่า Default ของเครื่อง Linux และ Linux บน Docker&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=docker-compose.yml&quot;&gt;&lt;/script&gt;
+
+&lt;h3 id=&quot;สร้างไฟล์-และ-โฟลเดอร์-ก่อนที่จะให้-docker-access&quot;&gt;สร้างไฟล์ และ โฟลเดอร์ ก่อนที่จะให้ Docker Access&lt;/h3&gt;
+
+&lt;p&gt;แน่นอนครับ แม้ว่าเราจะมีไฟล์คอนฟิกแล้ว แต่เราบอกให้ Pass Volumn และ Pass File ไป แต่เรายังไม่ได้สร้างไฟล์ที่จะให้ Pass ไปเลย ไฟล์ที่เราจะไปกำหนดการ Replication จะอยู่ใน &lt;code class=&quot;highlighter-rouge&quot;&gt;mongod.conf&lt;/code&gt; ครับ ถ้าใครลง MongoDB ใน Linux ตัวเองลองเปิด ไม่ว่าจะ GUI,CLI ดูก็ได้ครับ ซึ่งตอนนี้ผมไม่ได้ลง ผมเลยไป Search ดูใน Google ไฟล์ก็จะเป็นตามนี้ครับ &lt;a href=&quot;https://github.com/mongodb/mongo/blob/master/rpm/mongod.conf&quot;&gt;MongoDB conf.d Original from GitHub &lt;/a&gt;
+่
+&lt;img src=&quot;/assets/internetprograming/mongo2.jpg&quot; alt=&quot;Folder Making&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;จากเดิมที่ไม่มีอะไร เราสร้าง Directory ขึ้นมา 3 Directory ก่อนที่จะสร้างไฟล์ conf.d แล้ว copy โครงพื้นฐานของมัน จากลิงค์ที่ให้ไปข้างบนนี้มาใส่ได้เลยย เราจะได้ไฟล์ของเรามา อย่างนี้เลย&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo3.jpg&quot; alt=&quot;File Making&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ทีนี้ เราจะโฟกัสที่ สองตัวคือ storage ซึ่งเป็นสีขาว ๆ เลยกับ replication ซึ่งมัน comment อยู่ ดังรูปด้านบน อย่างแรกเลย คือใน docker-compose.yml เราส่ง Storage ไปที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/mongodb&lt;/code&gt; ใช่มั้ยหละ แต่ตรงนี้เป็น mongo โอเค แก้ให้มันเหมือนกันครับ จะแก้ที่ docker-compose file หรือ แก้ที่นี่ก็ได้เหมือนกัน ตัวผมแก้ที่นี่แล้วกันนะ&lt;/p&gt;
+
+&lt;h3 id=&quot;การตั้งค่า-replicaset&quot;&gt;การตั้งค่า ReplicaSet&lt;/h3&gt;
+
+&lt;p&gt;ทีนี้คือจุดสำคัญที่เราเฝ้ารอมานานคือการตั้ง replica set เรา uncomment ที่ replication ออกได้เลย และ เราก็เขียนเป็นชื่อ &lt;code class=&quot;highlighter-rouge&quot;&gt;replSetName:&quot;อะไรก็ได้&quot;&lt;/code&gt; แค่ทั้ง 3 Nodes นี่ต้องตั้งให้เหมือนกันนะ ส่วนตัวเราจะใช้เป็น rs0 แล้วกัน&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo4.jpg&quot; alt=&quot;Replication Setting&quot; /&gt;&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=mongod.conf&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;และเราก็ทำแบบนี้กับทั้ง 3 อัน ก่อนที่เราจะมา up compose กัน&lt;/p&gt;
+
+&lt;h3 id=&quot;docker-compose-up&quot;&gt;Docker-compose up&lt;/h3&gt;
+
+&lt;p&gt;รันคำสั่ง &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo docker-compose up&lt;/code&gt; หรือ &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose up&lt;/code&gt; ก็ได้ถ้าเป็น root อยู่แล้ว&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo5.jpg&quot; alt=&quot;Docker Compose Up&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;จากนั้นจะพบว่าของผม Error เต็มเลย น่าจะผิดตรงตั้งค่า Docker อะไรซักอย่างเนี่ย เดี๋ยวมาเขียนต่อละกัน วันนี้หยุดก่อน&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT</summary></entry><entry><title type="html">ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)</title><link href="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html" rel="alternate" type="text/html" title="ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/whytoscaleweb</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html">&lt;p&gt;บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง
 การสเกลคืออะไร เตรียมการสเกลไว้ดีมั้ย ทำไมต้องทำด้วย ไม่ทำได้มั้ย&lt;/p&gt;
 
 &lt;p&gt;คำตอบทั้งหมดคงจะตอบว่า ได้ครับ แน่นอนว่าทุกอย่างถ้าเราอยู่ในทรัพยากรที่จำกัดมาก ๆ บางทีการวางโครงสร้างของเราอาจจะไม่ต้องทำให้มันรองรับการ Scale Up ก็ได้ แต่ถ้าเราสามารถที่จะเขียนได้หละ สามารถเขียนเปิดทางแอพพลิเคชั่นให้มันเปิดทางการสเกล หรือ การขยายได้หละ มันจะดีกว่ามั้ย&lt;/p&gt;
@@ -672,62 +769,7 @@ binding.nicknameShow.text = binding.nicknameInput.text&lt;/li&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;เอกสารอ้างอิง
-Fernando Doglio. Scaling Your Node.js Apps. Appress,2018 - &lt;a href=&quot;https://books.google.co.th/books/about/Scaling_Your_Node_js_Apps.html?id=noF8DwAAQBAJ&amp;amp;source=kp_cover&amp;amp;redir_esc=y&quot;&gt;Scaling Your Node.js App in Google Books&lt;/a&gt;&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง การสเกลคืออะไร เตรียมการสเกลไว้ดีมั้ย ทำไมต้องทำด้วย ไม่ทำได้มั้ย</summary></entry><entry><title type="html">วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica</title><link href="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html" rel="alternate" type="text/html" title="วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/mongoreplica</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html">&lt;p&gt;ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT&lt;/p&gt;
-
-&lt;h2 id=&quot;mongodb-replica&quot;&gt;MongoDB Replica&lt;/h2&gt;
-
-&lt;p&gt;MongoDB Replica เป็นการทำ Replication ของฐานข้อมูลแบบ NoSQL อันหนึ่งก็คือ MongoDB โดยเราจะต้องเตรียมโหนดสำหรับ MongoDB ไว้ เป็นจำนวนเลขคี่ หรือ เริ่มต้นก็คือ 3 Node , 5 Node เป็นต้น เราสามารถจำลองสร้างขึ้นมาทั้งอยู่บนเซิร์ฟเวอร์เดียวกัน คนละพอร์ต อยู่คนละเซิร์ฟเวอร์กัน หรือ อย่างไรก็ได้ โดยหลักการทำงานของ MongoDB Replica นั้น Client คือผู้เขียนหรือผู้อ่านข้อมูล ในที่นี้ก็รวมถึงแอดมินที่เขียนข้อมูลลงในดาตาเบสด้วย จะ Read and Write ไปที่ Primary Node ก่อนที่ระบบมันจะทำ Replication ไปยัง Secondary Node ทั้งสอง หรือ 4 โหนด และมีการทำ Heartbeat คุยกัน&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://docs.mongodb.com/manual/_images/replica-set-read-write-operations-primary.bakedsvg.svg&quot; alt=&quot;Mongo DB Replica Working Model&quot; /&gt;
-รูปจาก Official Documents ของ MongoDB&lt;/p&gt;
-
-&lt;!-- ### ทำไมจำนวนโหนดต้องเป็นเลขคี่ด้วยหละ
-
-นี่คือสิ่งที่อธิบายต่อไป เนื่องจากโอเค เพื่อทำการให้ระบบของเราทนต่อความขัดข้อง หรือ จัดการเพื่อตอบสนอง Fault Tolerance โหนดที่เป็น Secondary จะมีการทำ Replication อยู่ตลอดจาก Primary อยู่แล้ว และทันทีที่ Primary Node เกิดการล่มสลายไป Secondary Node พวกนี้จะต้องทำการ Vote เพื่อเลือกว่าตัวไหน จะเป็น Primary ตัวต่อไป โดยการที่จะโหวตกันได้เนี่ยจำนวนโหนดที่เหลืออยู่ จะต้องเกินกึ่งหนึ่ง (ครึ่งหนึ่ง) ของสมาชิกทั้งหมดที่เราประกาศไว้ เช่น เราเล่น 3 Nodes มีโหนดหนึ่งตายไป เหลือ 2 Node ที่ Avaliable อยู่ ซึ่งมากกว่าครึ่งของ 3 Nodes จึงโหวตกันได้
-
-กรณีถ้าเรามี 4 Nodes   --&gt;
-
-&lt;h3 id=&quot;ลองเล่น-mongodb-replica-กัน-บน-docker&quot;&gt;ลองเล่น MongoDB Replica กัน บน Docker&lt;/h3&gt;
-
-&lt;p&gt;เนื่องจากมีทรัพยากรไม่มาก ผมจะเล่น 3 Module Replica set แล้วกันนะครับ ผมขี้เกียจจะเปิด Linux มาแล้ว ผมจะเข้าไปสร้างบน Server ผม ซึ่งเป็น Linux อยู่แล้ว โดยสร้าง Docker Compose ไว้ สร้าง 3 Node ผมจะสร้าง Directory ขึ้นมา แล้วใน Directory นั้น จะสร้างไฟล์ &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; ขึ้น&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo1.jpg&quot; alt=&quot;Docker Compose.yml File&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ในรูปผิดอยู่ เอาตาม โค้ดใน Gist ของ Github ข้างล่างนะ&lt;/p&gt;
-
-&lt;p&gt;ในที่นี้ผมสร้างใน IP เดียวกันก่อน ยังไม่ได้ตั้ง Private Network แต่เอามันมาลงที่คนละพอร์ต คือ Forward Default Port ของ MongoDB คือ 27017 มาที่พอร์ต 4041,4042 และ 4043 โดยที่ผมเองจะให้ Volumn กับมันไป พอร์ตละ Folder ละกัน โดย By default ของ MongoDB บน Docker Ubuntu Bionic จะอยู่ที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/mongodb&lt;/code&gt; ซึ่งรู้สึกว่ามันก็ต่างกันอยู่นะ กับการลง MongoDB Native บนเครื่อง Ubuntu หรือ Directory เดียวกัน อันนี้ไม่มั่นใจ แล้วเราจะสร้าง Config File เอาตามชื่อของมันแล้วกัน ก็คือ &lt;code class=&quot;highlighter-rouge&quot;&gt;mongod.conf&lt;/code&gt; ซึ่งผมจะให้มันไปอยู่ที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/mongod.conf&lt;/code&gt; ซึ่งอันนี้รู้สึกว่าเหมือนกันทั้งค่า Default ของเครื่อง Linux และ Linux บน Docker&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=docker-compose.yml&quot;&gt;&lt;/script&gt;
-
-&lt;h3 id=&quot;สร้างไฟล์-และ-โฟลเดอร์-ก่อนที่จะให้-docker-access&quot;&gt;สร้างไฟล์ และ โฟลเดอร์ ก่อนที่จะให้ Docker Access&lt;/h3&gt;
-
-&lt;p&gt;แน่นอนครับ แม้ว่าเราจะมีไฟล์คอนฟิกแล้ว แต่เราบอกให้ Pass Volumn และ Pass File ไป แต่เรายังไม่ได้สร้างไฟล์ที่จะให้ Pass ไปเลย ไฟล์ที่เราจะไปกำหนดการ Replication จะอยู่ใน &lt;code class=&quot;highlighter-rouge&quot;&gt;mongod.conf&lt;/code&gt; ครับ ถ้าใครลง MongoDB ใน Linux ตัวเองลองเปิด ไม่ว่าจะ GUI,CLI ดูก็ได้ครับ ซึ่งตอนนี้ผมไม่ได้ลง ผมเลยไป Search ดูใน Google ไฟล์ก็จะเป็นตามนี้ครับ &lt;a href=&quot;https://github.com/mongodb/mongo/blob/master/rpm/mongod.conf&quot;&gt;MongoDB conf.d Original from GitHub &lt;/a&gt;
-่
-&lt;img src=&quot;/assets/internetprograming/mongo2.jpg&quot; alt=&quot;Folder Making&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;จากเดิมที่ไม่มีอะไร เราสร้าง Directory ขึ้นมา 3 Directory ก่อนที่จะสร้างไฟล์ conf.d แล้ว copy โครงพื้นฐานของมัน จากลิงค์ที่ให้ไปข้างบนนี้มาใส่ได้เลยย เราจะได้ไฟล์ของเรามา อย่างนี้เลย&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo3.jpg&quot; alt=&quot;File Making&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ทีนี้ เราจะโฟกัสที่ สองตัวคือ storage ซึ่งเป็นสีขาว ๆ เลยกับ replication ซึ่งมัน comment อยู่ ดังรูปด้านบน อย่างแรกเลย คือใน docker-compose.yml เราส่ง Storage ไปที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/mongodb&lt;/code&gt; ใช่มั้ยหละ แต่ตรงนี้เป็น mongo โอเค แก้ให้มันเหมือนกันครับ จะแก้ที่ docker-compose file หรือ แก้ที่นี่ก็ได้เหมือนกัน ตัวผมแก้ที่นี่แล้วกันนะ&lt;/p&gt;
-
-&lt;h3 id=&quot;การตั้งค่า-replicaset&quot;&gt;การตั้งค่า ReplicaSet&lt;/h3&gt;
-
-&lt;p&gt;ทีนี้คือจุดสำคัญที่เราเฝ้ารอมานานคือการตั้ง replica set เรา uncomment ที่ replication ออกได้เลย และ เราก็เขียนเป็นชื่อ &lt;code class=&quot;highlighter-rouge&quot;&gt;replSetName:&quot;อะไรก็ได้&quot;&lt;/code&gt; แค่ทั้ง 3 Nodes นี่ต้องตั้งให้เหมือนกันนะ ส่วนตัวเราจะใช้เป็น rs0 แล้วกัน&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo4.jpg&quot; alt=&quot;Replication Setting&quot; /&gt;&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=mongod.conf&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;และเราก็ทำแบบนี้กับทั้ง 3 อัน ก่อนที่เราจะมา up compose กัน&lt;/p&gt;
-
-&lt;h3 id=&quot;docker-compose-up&quot;&gt;Docker-compose up&lt;/h3&gt;
-
-&lt;p&gt;รันคำสั่ง &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo docker-compose up&lt;/code&gt; หรือ &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose up&lt;/code&gt; ก็ได้ถ้าเป็น root อยู่แล้ว&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo5.jpg&quot; alt=&quot;Docker Compose Up&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;จากนั้นจะพบว่าของผม Error เต็มเลย น่าจะผิดตรงตั้งค่า Docker อะไรซักอย่างเนี่ย เดี๋ยวมาเขียนต่อละกัน วันนี้หยุดก่อน&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT</summary></entry><entry><title type="html">Kotlin In My Note</title><link href="http://localhost:4000/it-blog/2019/09/27/introtokotlin.html" rel="alternate" type="text/html" title="Kotlin In My Note" /><published>2019-09-27T00:00:00+07:00</published><updated>2019-09-27T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/09/27/introtokotlin</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/09/27/introtokotlin.html">&lt;p&gt;นี่คือโน้ตที่ผมเขียนไว้ตอนผมเรียนคอทลิน ประกอบกับแอนดรอยด์ไปด้วย เพื่อที่จะทำโปรเจกต์ของผม ผมเองก็โน้ตเก็บเป็น Markdown ไว้ แล้วก็มาเผยแพร่ให้ดู เป็นภาษาอังกฤษนะครับ ว่าง ๆ จะมาแปลไทยให้อ่าน&lt;/p&gt;
+Fernando Doglio. Scaling Your Node.js Apps. Appress,2018 - &lt;a href=&quot;https://books.google.co.th/books/about/Scaling_Your_Node_js_Apps.html?id=noF8DwAAQBAJ&amp;amp;source=kp_cover&amp;amp;redir_esc=y&quot;&gt;Scaling Your Node.js App in Google Books&lt;/a&gt;&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง การสเกลคืออะไร เตรียมการสเกลไว้ดีมั้ย ทำไมต้องทำด้วย ไม่ทำได้มั้ย</summary></entry><entry><title type="html">Kotlin In My Note</title><link href="http://localhost:4000/it-blog/2019/09/27/introtokotlin.html" rel="alternate" type="text/html" title="Kotlin In My Note" /><published>2019-09-27T00:00:00+07:00</published><updated>2019-09-27T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/09/27/introtokotlin</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/09/27/introtokotlin.html">&lt;p&gt;นี่คือโน้ตที่ผมเขียนไว้ตอนผมเรียนคอทลิน ประกอบกับแอนดรอยด์ไปด้วย เพื่อที่จะทำโปรเจกต์ของผม ผมเองก็โน้ตเก็บเป็น Markdown ไว้ แล้วก็มาเผยแพร่ให้ดู เป็นภาษาอังกฤษนะครับ ว่าง ๆ จะมาแปลไทยให้อ่าน&lt;/p&gt;
 
 &lt;h2 id=&quot;คุยกันก่อน&quot;&gt;คุยกันก่อน&lt;/h2&gt;
 
@@ -1057,71 +1099,4 @@ Pure PHP เนี่ย น่าจะเป็นงานสุดท้า�
 เลยคิดว่า เห้ย มันน่าจะมีคอมมิวนิตี้ สำหรับคนเขียนบล็อกด้วยกันนะ เหมือนอย่างตอนผมเคยเขียนบล็อก ในปีประมาณ 2011-2012
 มันมีโครงการหนึ่งชื่อว่า &lt;b&gt;ไทยแลนด์บล็อกอวอร์ด&lt;/b&gt; ซึ่งเป็นอะไรที่ยิ่งใหญ่มาก เพราะตอนนั้นบล็อกเกอร์กำลังได้รับความนิยม
 คือผมก็ ซับมิทบทความในเว็บบล็อกของผม ในบล็อก SKIT หรือ สะกิด (ปิดตัวไปแล้ว) ถึงผมจะไม่ได้รางวัลอะไรเลย
-แต่สิ่งที่ได้กลับมาคือ เห้ย มันมีคนมาดูบล็อกเรามากขึ้นหวะ แล้วไม่ใช่แค่คนดูบล็อกเรานะ เราก็ไปดูบล็อกคนอื่นด้วย มันเป็นคอมมิวนิตี้อย่างนึงเลย&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="work" /><summary type="html">ยังไงหละ ไม่ศึกษา Requirement มาให้ดีก่อน ดีนะที่งานเล็ก ๆ แต่อย่างน้อย เขียนโปรแกรมได้ขนาดนี้ เราแม่งก็ไม่ธรรมดา Pure PHP เนี่ย น่าจะเป็นงานสุดท้ายแล้วด้วย</summary></entry><entry><title type="html">ศึกษาจากความล้มเหลว(อีกแล้ว) กับ ไทยลีกแอพ บน PHP</title><link href="http://localhost:4000/work/2019/06/28/thaileagueapp.html" rel="alternate" type="text/html" title="ศึกษาจากความล้มเหลว(อีกแล้ว) กับ ไทยลีกแอพ บน PHP" /><published>2019-06-28T00:00:00+07:00</published><updated>2019-06-28T00:00:00+07:00</updated><id>http://localhost:4000/work/2019/06/28/thaileagueapp</id><content type="html" xml:base="http://localhost:4000/work/2019/06/28/thaileagueapp.html">&lt;p&gt;ปฐมลิขิต ปกติมีมั้ย การจัดทำครั้งนี้ไม่ได้เกี่ยวข้องกับบริษัท ไทยลีก จำกัด หรือ สมาคมกีฬาฟุตบอลแห่งประเทศ
-เพียงจัดทำโดยคนๆ หนึ่งซึ่งรักในฟุตบอลไทย และอยากจะเห็นฟุตบอลไทยลีก
-กลับมาถูกพูดถึงกันอย่างกว้างขวางอีกครั้งเหมือนเมื่อหลายปีที่ผ่านมา&lt;/p&gt;
-
-&lt;h2 id=&quot;ความตั้งใจที่คิดจะมาทำ&quot;&gt;ความตั้งใจที่คิดจะมาทำ&lt;/h2&gt;
-
-&lt;p&gt;ด้วยสภาพทางเศรษฐกิจ หรือ ซุปเปอร์สตาร์ เราเข้าใจดี ว่าตอนนี้การจะให้คนมาติดตามไทยลีกระดับฟีเวอร์ อย่างที่เกิดขึ้นเมื่อ 4–5 ปีก่อน อาจจะทำได้ไม่ง่ายนัก แต่ด้วยการการบริหารที่เป็นมืออาชีพขึ้น ทั้งฝั่งลีก ฝั่งผู้จัด และสโมสร แบรนด์ดิ้ง หรือมาร์เก็ตติ้งต่างๆ เชื่อแน่ว่าไทยลีก หรือ T1 ก็จะยังคงสามารถพัฒนาต่อไปได้เรื่อยๆ ในเมื่อไทยลีก คือลีกสูงสุดเพียงลีกเดียวในประเทศไทย ผมในฐานะคนไทยคนหนึ่งก็อยากจะทำอะไรซักอย่าง เผื่อจะมีประโยชน์ไม่มากก็น้อย ต่อวงการฟุตบอลไทย จึงเป็นที่มาของ Thai League 1 Unofficial Application ที่จะรวบรวมข้อมูลเกี่ยวกับไทยลีกไว้ในแอพเดียว ซึ่งด้วยทรัพยากรคน และประสิทธิภาพในการ Coding ต่างๆ เราไม่ได้มีความสามารถเพียงพอ ดังนั้นอาจจะทำให้บางครั้งข้อมูลมีการล่าช้าบ้าง ยังเป็นเพียงแค่แอพพลิเคชั่นที่ทำงานด้วยการลิ้งค์ผ่านเว็บไซต์ แต่ก็มีแผนที่จะปรับปรุง และพัฒนา เพื่อให้ได้เป็นแอพพลิเคชั่นจริงๆ และมีประสิทธิภาพในอนาคต จนกว่าทางไทยลีก จะออก Official Application ออกมา&lt;/p&gt;
-
-&lt;div class=&quot;columns&quot;&gt;
-    &lt;div class=&quot;column&quot;&gt;&lt;img class=&quot;image&quot; src=&quot;/assets/thaileague/1.png&quot; /&gt;&lt;/div&gt;
-    &lt;div class=&quot;column&quot;&gt;&lt;img class=&quot;image&quot; src=&quot;/assets/thaileague/2.png&quot; /&gt;&lt;/div&gt;
-    &lt;div class=&quot;column&quot;&gt;&lt;img class=&quot;image&quot; src=&quot;/assets/thaileague/3.png&quot; /&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;ปัญหา-และ-สิ่งที่ได้รับ&quot;&gt;ปัญหา และ สิ่งที่ได้รับ&lt;/h2&gt;
-
-&lt;p&gt;เราได้ลงแอพพลิเคชั่นนี้ใน Google Play เมื่อวันที่ 5 กันยายน 2561 ซึ่งเป็นวันแรกที่ไทยลีกกลับมาเตะอีกครั้งในรอบ 1 เดือนที่หยุดให้กับมหกรรมกีฬา Asian Games หลังจากการลงแอพพลิเคชั่นของเรา แอพพลิเคชั่น ขึ้นอยู่ในอันดับ 1 ของการ Search คำว่า thaileague1 ใน Playstore และมียอดดาวน์โหลดกว่า 9 ราย ถึงแม้จะมีการลบก็ตาม แต่เนื่องจากแอพพลิเคชั่นของเราไม่ใช่ Native Android Application หรือ แอพพลิเคชั่นแอนดรอยด์แท้ๆ เป็นเพียง Shortcut จากเว็บไซต์ซึ่งเขียนด้วย PHP / Laravel Framework อัพโหลดไปที่ Hosting และใช้ Appgeyser แปลงออกมาเป็น .apk file ซึ่งแน่นอนว่าการตอบสนองต่อ Server จะหนักกว่า การใช้ Javascript&lt;/p&gt;
-
-&lt;p&gt;PHP ยังเป็นภาษาเขียนเว็บไซต์ที่ได้รับความนิยมในปัจจุบัน และ Laravel น่าจะเป็นรุ่น 6 หรือ 7 นี่แหละ ก็ทำให้เขียนเว็บได้ง่ายมากๆ กว่า pure php เยอะ แต่คงไม่เหมาะสมสำหรับการทำ Application แบบ Real Time และอีกทั้งแอพพลิเคชั่นนี้ใช้ระบบการป้อนข้อมูล ผ่าน Admin คนเดียว เนื่องจากระบบยังไม่พร้อมที่จะให้ผู้อื่นช่วยแก้ไข เนื่องจาก มี Bug จำนวนมาก&lt;/p&gt;
-
-&lt;div class=&quot;columns&quot;&gt;
-    &lt;div class=&quot;column&quot;&gt;&lt;img class=&quot;image&quot; src=&quot;/assets/thaileague/4.png&quot; /&gt;&lt;/div&gt;
-    &lt;div class=&quot;column&quot;&gt;&lt;img class=&quot;image&quot; src=&quot;/assets/thaileague/5.png&quot; /&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;bug-และ-ปัญหาที่พบ&quot;&gt;Bug และ ปัญหาที่พบ&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;ต้องทำการอัพเดทด้วย Mozilla Firefox เท่านั้น (ถึงแม้จะใช้ Firefox ผ่านมือถือได้)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;ต้องมีการกด Refresh ซึ่งเจ้าของเท่านั้นที่จะรู้ว่าตรงไหนคือ คือจุดที่มี Bug ซึ่งจริงๆ ในระบบ Blackend ก็บอกไว้ เพียงแต่อาจจะไม่สะดวกต่อการ Edit มากนัก การพัฒนาด้วยระบบนี้ทำให้ผู้ใช้ต้อง Refresh หรือ เราตั้งโปรแกรมให้เว็บแอพพลิเคชั่น Refresh ตัวเองขึ้นมา ซึ่งมันเป็นเทคโนโลยีที่อาจจะล้าสมัย เปลืองทรัพยากร และ อาจจะไม่ตอบสนองต่อความต้องการ&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/thaileague/sc1.png&quot; alt=&quot;หน้าจอ Backend ของแอพพลิเคชั่น&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ซึ่งทั้งสองข้อนี้มันเกิดมาจากการใช้ PHP ร่วมกับ JavaScript และ ตัว Library อย่าง Jquery และที่สำคัญเลยคือเว็บมันค่อนข้างช้า ต้องการความเร็วอินเตอร์เน็ตสูง (โดยเฉพาะ Frontend) ส่วน Backend ผมว่าผมออกแบบ UI พอใช้ได้อยู่นะ ใช้ Bootstrap 4.1 ครับ พอดีถนัด แต่นั่นแหละ ระบบมันยังไม่พร้อมสำหรับการที่ให้คนอื่นมาช่วยทำไง และมันไม่ใครที่สามารถว่างเวลา 18.00–22.00 ทุกวันเสาร์ อาทิตย์ หรือวันพุธที่มีแมตซ์กลางสัปดาห์ ซึ่งนี่คือจุดสำคัญที่เราอาจจะไม่สามารถพัฒนาแอพพลิเคชั่น ใน Platform นี้ต่อไปได้&lt;/p&gt;
-
-&lt;p&gt;ในฐานะ Web Developer คนหนึ่ง ผมดีใจมากที่มีคนมาโหลดใช้แอพพลิเคชั่นของผมถึง 9 คน ทั้งในไทย และ ในประเทศอาเซียนบางประเทศ ซึ่งมากที่สุดที่ผมเคยทำได้ และแสดงว่ากระแสฟุตบอลไทยยังคงน่าสนใจ ผมก็ต้องอภัยทุกท่านเป็นอย่างยิ่งที่ไม่สามารถพัฒนาเว็บไซต์นี้ต่อไปได้ ระบบเป็นสิ่งสำคัญที่จะต้องถูกพัฒนาขึ้นใหม่ ด้วยเทคโนโลยีที่ทันสมัยขึ้นเพื่อที่จะเปิดโอกาสให้คนอื่นๆ มาร่วมอัพเดทได้ และ มีระบบที่เป็นแอพพลิเคชั่นจริงๆ ในอนาคต&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/thaileague/sc2.png&quot; alt=&quot;หน้าจอ Backend ของแอพพลิเคชั่น&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;สิ่งที่จะเป็นข้อแนะนำ-ในการพัฒนาต่อไป&quot;&gt;สิ่งที่จะเป็นข้อแนะนำ ในการพัฒนาต่อไป&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;พัฒนาระบบด้วยภาษา JavaScript เป็นหลัก โดยเน้นไปที่ Library React และ React Native&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;ใช้เทคโนโลยีฐานข้อมูลแบบ NoSQL แทน MySQL เพื่อที่จะเข้าถึง JavaScript ได้ดียิ่งขึ้น เช่น พวก Firebase ซึ่งผมยังทำไอพวกนี้ไม่เป็นหรอก แต่คงจะหาเวลาฝึกต่อไป เพราะมันคือภาษาที่ทันสมัย และ มีประโยชน์แน่ๆ ในอนาคต&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;เนื่องจากยังไม่มีแอพพลิเคชั่นใดในไทยที่สามารถรวบรวมข้อมูลทุกๆ อย่างของการแข่งขันในแต่ละแมตซ์ได้อย่างละเอียดเหมือนแอพพลิเคชั่น ของ Premier League หรือ FIFA World Cup 2018 ที่ผ่านมา ดังนั้นเราจะมีการดำเนินการแบบนี้ต่อไป โดยอาจจะใช้ระบบของ RSS หรือ ดึงข้อมูลอัพเดทจากเฟสบุ๊ค หรือ ทวิตเตอร์ ของสโมสรต่างๆ มา เพื่อประหยัดการทำงานของผู้ดูแลระบบ&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;ทำ Application ที่เหมาะกับ Real Time Process และ การแจ้งเตือน และเบาต่อการใช้งาน&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;ก่อนส่งท้าย&quot;&gt;ก่อนส่งท้าย&lt;/h2&gt;
-
-&lt;p&gt;เออ ลืมบอกไป เรื่องฐานข้อมูล ผมก็เรียนวิชาฐานข้อมูลอยู่นะเทอมนี้ เลยรู้ว่าฐานข้อมูลของเว็บผมนี้แม่งโคตรห่วยเลย 555 อย่างนี้แหละครับการเริ่มต้น ถ้าเราวางฐานข้อมูลดี จัดระบบโค้ดดิ้งดีผมว่ามันจะทำให้อะไรง่ายขึ้นหลายอย่าง ไม่เชื่อไปดูวีดีโอ BNK48 X CodingThailand ดูสิครับ&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/thaileague/sc3.png&quot; alt=&quot;หน้าจอ Coding ของแอพพลิเคชั่น&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;สุดท้ายนี้ ผมขอขอบคุณทุกท่านที่มีส่วนสนับสนุน และ ทดลองใช้งาน Beta Application ของเรา ผมรู้สึกเป็นเกียรติเป็นอย่างยิ่ง และขอขอบคุณทุกๆ ท่าน เราจะกลับมาแน่นอน อย่างช้าน่าจะเป็นก่อนเปิดฤดูกาลหน้า ในแบบเต็มรูปแบบ หรือ ถ้าทางบริษัท ไทยลีก จำกัด หรือ ผู้ที่เกี่ยวข้อง เห็นความสำคัญ ก็ทำแอพพลิเคชั่นขึ้นมาเลยครับ แอพพลิเคชั่นนี้ไม่เป็นไร และผมขอเป็นกำลังใจให้กับวงการฟุตบอลไทย และวงการ Coding ของไทยต่อไปนะครับ&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="work" /><summary type="html">ปฐมลิขิต ปกติมีมั้ย การจัดทำครั้งนี้ไม่ได้เกี่ยวข้องกับบริษัท ไทยลีก จำกัด หรือ สมาคมกีฬาฟุตบอลแห่งประเทศ เพียงจัดทำโดยคนๆ หนึ่งซึ่งรักในฟุตบอลไทย และอยากจะเห็นฟุตบอลไทยลีก กลับมาถูกพูดถึงกันอย่างกว้างขวางอีกครั้งเหมือนเมื่อหลายปีที่ผ่านมา</summary></entry></feed>
+แต่สิ่งที่ได้กลับมาคือ เห้ย มันมีคนมาดูบล็อกเรามากขึ้นหวะ แล้วไม่ใช่แค่คนดูบล็อกเรานะ เราก็ไปดูบล็อกคนอื่นด้วย มันเป็นคอมมิวนิตี้อย่างนึงเลย&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="work" /><summary type="html">ยังไงหละ ไม่ศึกษา Requirement มาให้ดีก่อน ดีนะที่งานเล็ก ๆ แต่อย่างน้อย เขียนโปรแกรมได้ขนาดนี้ เราแม่งก็ไม่ธรรมดา Pure PHP เนี่ย น่าจะเป็นงานสุดท้ายแล้วด้วย</summary></entry></feed>
