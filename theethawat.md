@@ -17,7 +17,7 @@ created_year: 2020
     <p class="content is-medium">
         <li> You Can commonly call me <b>Tin</b>   </li>
         <li> Birthday - 07/02/1998   </li>
-        <li> Student - 5th Year at Computer Engineering, Prince of Songkla University  </li>
+        <li> Jounior  Full Stack Developer - Intelligent Automation Research Center, Prince of Songkla University </li>
         <li> Hometown - Yala / Songkhla  Thailand </li>
         <li> Email  - <a href="mailto:theethawat.s@outlook.co.th"> theethawat.s@outlook.co.th</a>  </li>
     </p>
@@ -35,7 +35,7 @@ Hello, my name is Theethawat Savastham, 22 years old Computer Engineering Studen
 
 - 2010 - 2012 Grade 7 - 8 at Mahavajiravudh Songkhla School
 - 2012 - 2016 Grade 9 - 12 at Benjamarachutit School Nakhonsithammarat
-- 2016 - Present - Bachelor Degree - Computer Engineering, Faculty of Engineering, Prince of Songkla University Hatyai Campus
+- 2016 - 2020 - Bachelor Degree - Computer Engineering, Faculty of Engineering, Prince of Songkla University Hatyai Campus
 
 ## Project
 
@@ -54,6 +54,7 @@ I prefer try and playing a lot of work type!
 - [Thaileague Unofficial Web Application](/work/2019/06/28/thaileagueapp.html) - PHP with Laravel programing about football program system and Fail again but it make a lot of programing techniques.
 - [QR Code Congratulation Project](#) - make on PHP with Laravel to map a good wish with a random number.
 - Join **Windows Insider Program** to try a beta release version of Microsoft Windows on fast ring.
+- Joing one of Fandom campaign website
 
 ##### 2019
 
@@ -63,16 +64,21 @@ I prefer try and playing a lot of work type!
 - Demo the frontend page about [HA and FT Subject Register System](#) - co working with by collegue for Internet Programing course mini project.
 - [Ehealth For Personal Sensor Application](/it-blog/2020/06/05/senior-project-talk.html) - **Android**, ReactiveX and **Cloud Firestore** application with Kotlin as my senior graduation project furthermore it has Web App Monitor With **React** and **TypeScript**.
 
+##### 2020
+
+- Joing [Intelligent Automation Research Center](https://iarc.psu.ac.th) at Prince of Songkla University on July 2020, First Page of my working life as Software Developer
+- Co-Developer of [E-OnlineShop](https://eonlineshop.net) online your-own-business e-commerce platform, [E-Accom](https://eaccom.net) Accomodation management and [E-Salesman](https://esalesman.net) platform
+
 ## Development Skill
 
 - Android (Kotlin)
-  <progress class="progress is-primary" value="30" max="100"></progress>
+  <progress class="progress is-primary" value="25" max="100"></progress>
 - PHP
   <progress class="progress is-primary" value="30" max="100"></progress>
 - React
-  <progress class="progress is-primary" value="45" max="100"></progress>
+  <progress class="progress is-primary" value="50" max="100"></progress>
 - Node.js (With both Javascript and TypeScript)
-  <progress class="progress is-primary" value="30" max="100"></progress>
+  <progress class="progress is-primary" value="45" max="100"></progress>
 - DevOps
   <progress class="progress is-primary" value="30" max="100"></progress>
   <!-- - .NET and C#
@@ -100,7 +106,7 @@ I prefer try and playing a lot of work type!
 - **Cooking** is the reason why my weight get more and more.
 - **Culture**, **History** or sometimes soft politic thinking.
 - **Bloging** is why this page is avaliable to you.
-- **BNK48** and AKB48 group is one of my motivation.
+- **BNK48**, **CGM48** and AKB48 group is one of my motivation.
 
 ## Certificate
 
