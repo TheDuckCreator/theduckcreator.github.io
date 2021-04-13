@@ -125,7 +125,7 @@ Define Data ให้เรียบร้อย ตาม Format จาก Offi
 ```
  const requestOption = {
     method: 'POST',
-    header: { 'content-type': 'application/x-www-form-urlencoded' },
+    headers: { 'content-type': 'application/x-www-form-urlencoded' },
     data: qs.stringify(jsonData),
     url,
   }
