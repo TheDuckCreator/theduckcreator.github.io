@@ -17,9 +17,10 @@ created_year: 2020
     <p class="content is-medium">
         <li> You Can commonly call me <b>Tin</b>   </li>
         <li> Birthday - 07/02/1998   </li>
-        <li> Jounior  Full Stack Developer - Intelligent Automation Research Center, Prince of Songkla University </li>
+        <li> Master Degree Student </li>
         <li> Hometown - Yala / Songkhla  Thailand </li>
-        <li> Email  - <a href="mailto:theethawat.s@outlook.co.th"> theethawat.s@outlook.co.th</a>  </li>
+        <li> Email  - <a href="mailto:theethawat.s@outlook.co.th"> theethawat.s@outlook.co.th</a> , <a href="mailto:theethawat.sa@one.th"> theethawat.sa@one.th</a>  </li>
+        <li> Personal Website - <a href="https://theethawat.dev"> theethawat.dev</a></li>
     </p>
 
 </div>
@@ -29,13 +30,18 @@ created_year: 2020
 
 ## About Myself
 
-Hello, my name is Theethawat Savastham, 22 years old Computer Engineering Student from Prince of Songkla University Hatyai Songkhla Thailand. I have just coded basic C before but I come to the working coding world since 2017. I had try to code a lot of program with C,Javascript, and PHP. In 2019 I had learned a new skill about OOP in Java, Kotlin and taking intermeiate on JavaScript like Frontend Programing with React, Firebase and API providing with Express. Furthermore I had learned coding Android application by using Kotlin , Android MVVM and the new fancy of writing Android app to fullfilling my senoir graduation project.
+Theethawat Savastham is a master's degree student in the engineering faculty, at Prince of Songkla University. Theethawat got a bachelor’s degree in computer engineering at this university, he had been invited by his advisor to work with the Intelligent Automation Research Center as a full stack developer from 2020-2023, his duty was about developing, deploying, and supporting the research center’s academic service on software development.
 
 ## Education
 
 - 2010 - 2012 Grade 7 - 8 at Mahavajiravudh Songkhla School
 - 2012 - 2016 Grade 9 - 12 at Benjamarachutit School Nakhonsithammarat
 - 2016 - 2020 - Bachelor Degree - Computer Engineering, Faculty of Engineering, Prince of Songkla University Hatyai Campus
+- 2022 - Present - Graduated School, Prince of Songkla University
+
+## Work
+
+- 2020 - 2023 - Full stack developer, [Intelligent Automation Research Center](https://iarc.psu.ac.th) Prince of Songkla University
 
 ## Project
 
@@ -71,27 +77,8 @@ I prefer try and playing a lot of work type!
 
 ## Development Skill
 
-- Android (Kotlin)
-  <progress class="progress is-primary" value="25" max="100"></progress>
-- PHP
-  <progress class="progress is-primary" value="30" max="100"></progress>
-- React
-  <progress class="progress is-primary" value="50" max="100"></progress>
-- Node.js (With both Javascript and TypeScript)
-  <progress class="progress is-primary" value="45" max="100"></progress>
-- DevOps
-  <progress class="progress is-primary" value="30" max="100"></progress>
-  <!-- - .NET and C#
-    <progress class="progress is-primary" value="5" max="100"></progress> -->
-  <!-- - Python
-    <progress class="progress is-primary" value="15" max="100"></progress> -->
-- Network Configurations
-  <progress class="progress is-primary" value="20" max="100"></progress>
-
-## Programing Language
-
-- **Prefer** JavaScript, TypeScript, Kotlin
-- **Alternative** C, PHP, Java, Python
+- **Prefer** JavaScript (Node.js, React),Python
+- **Alternative** PHP, Kotlin
 
 ## Interested
 

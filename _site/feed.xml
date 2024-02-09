@@ -1,4 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-17T13:26:49+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space</subtitle><entry><title type="html">มาสร้างการแจ้งเตือนไปที่ Line Notify กัน</title><link href="http://localhost:4000/it-blog/2021/02/21/line-notify-to-nodejs-app.html" rel="alternate" type="text/html" title="มาสร้างการแจ้งเตือนไปที่ Line Notify กัน" /><published>2021-02-21T00:00:00+07:00</published><updated>2021-02-21T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2021/02/21/line-notify-to-nodejs-app</id><content type="html" xml:base="http://localhost:4000/it-blog/2021/02/21/line-notify-to-nodejs-app.html">&lt;p&gt;Line Notify จะเป็นอะไร ที่ค่อนข้างจะแตกต่างกับ Service ตัวอื่น ๆ ของ line developer เพราะ line notify อาจจะไม่ได้อยู่ใน line developer platform ดังนั้น จึงไม่จำเป็นต้องมี Developer Account ก็สามารถทำได้ โดยเข้าไปที่เว็บไซต์ &lt;a href=&quot;https://notify-bot.line.me&quot;&gt;https://notify-bot.line.me&lt;/a&gt; แล้ว Login ด้วยบัญชี Line ของเรา&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-09T09:08:52+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space</subtitle><entry><title type="html">สร้าง Monorepo ของ JavaScript ด้วย Lerna กัน</title><link href="http://localhost:4000/it-blog/2024/01/28/create-monorepo-with-lerna.html" rel="alternate" type="text/html" title="สร้าง Monorepo ของ JavaScript ด้วย Lerna กัน" /><published>2024-01-28T00:00:00+07:00</published><updated>2024-01-28T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2024/01/28/create-monorepo-with-lerna</id><content type="html" xml:base="http://localhost:4000/it-blog/2024/01/28/create-monorepo-with-lerna.html">&lt;p&gt;เคยมั้ยที่รู้สึกว่างานของเราเริ่มจะมีความใหญ่เกินไป การทำงานของระบบที่เป็น Client-Server ธรรมดาอาจไม่สามารถ Handle งานได้อย่างมีประสิทธิภาพ เราอยากจะขยายโปรเจกต์ แยกออกไปเป็น Service ต่างๆ แต่เราก็ไม่อยากเขียนโค้ดหลายชุด อยากใช้อะไรร่วมกัน วันนี้จะมาแนะนำกับ Tools ตัวหนึ่งที่ช่วยงานด้านนี้ได้ ก็คือ Lerna&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;เริ่มต้นกลับมาเขียนอีกครั้งในรอบ 3 ปี แทบจะรันเว็บนี้ไม่เป็นแล้ว เนื่องจากว่าเมื่อวันเสาร์ที่ผ่านมา (27 มกราคม 2024) ผมได้มีโอกาสไปร่วม Bar Camp Songkhla ครั้งที่ 8 ที่ตึก LRC มหาวิทยาลัยสงขลานครินทร์มาครับ จริงๆ เตรียมเรื่องนี้ไว้ว่าจะไปเป็น Speaker แต่ไม่ค่อยชัวร์ว่าเรื่องมันเก่าแล้วหรือเปล่า รวมถึงไปครั้งแรก ยังทำตัวอะไรไม่ค่อยถูก เลยไม่ได้ยื่นไป แล้วเอามาใส่ไว้ในนี้แทน&lt;/p&gt;
+
+&lt;h2 id=&quot;monorepo-คืออะไร&quot;&gt;Monorepo คืออะไร&lt;/h2&gt;
+
+&lt;p&gt;Monorepo ก็คือ Monorepository นี่แหละครับ มันคือการเขียนโค้ดหลายหลายๆ ส่วนไว้ใน Repository เดียวกัน เช่นอาจจะมีทั้ง frontend, backend และ service ตัวนู้นตัวนี้รวมไว้ด้วยกัน ถ้าเป็น JavaScript ก็จะเป็นหลายๆ Packages รวมไว้ด้วยกัน จากที่กล่าวไว้ข้างต้น ในการเขียนโปรเจกต์ที่เริ่มใหญ่ขึ้น บางทีระบบอย่างผมทำเป็น Client-server อาจจะไม่สามารถทำงานได้เต็มที่แล้ว เช่น ระบบ HTTP มันอาจจะเป็น Short Job ซึ่งชอบทำงานสั้นๆ แต่หลายๆ Request ได้ แต่บางทีงานของเราอาจจะยาวจนระบบมันไม่พร้อมให้บริการตัวอื่นๆ ดังนั้นแอพแบบ Monolith อาจไม่เพียงพอต่อการจัดการ เราอาจจะต้องมี Service ที่มาจัดการตัวที่ทำงานยาวๆ มีให้มันต่อคิวต่าง ๆ นา ๆ ดังนั้นเราจำเป็นต้องสเกลแอพให้มันเป็น Microservices มากขึ้น&lt;/p&gt;
+
+&lt;p&gt;การขยายเป็น Microservice ต่างๆ แล้ว เราสามารถเลือกได้ว่าเราจะขยายเป็นหลายๆ Repository สำหรับทำก็ได้นะ หรือ เราจะรวมอยู่ใน Repository เดียวก็ได้ แล้วแต่ความถนัดและขนาดของระบบเลยครับ ใน Opensource งานใหญ่ๆ ก็จะเห็นว่าเขาก็แยกเป็นหลายๆ Repository เหมือนกัน แต่ถ้างานอยู่ในระดับไม่ใหญ่มาก คนทำไม่ได้เยอะมาก แล้วอยากเขียนให้เราใช้โค้ดบางส่วนด้วยกันได้โดยบริหารจัดการไม่ยาก การทำ Monorepo ก็เป็นหนึ่งในคำตอบที่หน้าสนใจเหมือนกัน&lt;/p&gt;
+
+&lt;p&gt;Monorepo มี Tools หลายๆ ตัวขึ้นอยู่กับแต่ละภาษาเช่น &lt;a href=&quot;https://gradle.org/&quot;&gt;Gradle&lt;/a&gt; ถ้าใครเคยเขียน Android ก็จะเคยได้ยินมันอยู่ ตัวนี้เป็นของ Java, &lt;a href=&quot;https://bazel.build/&quot;&gt;Bazel&lt;/a&gt; จะเป็นของ Google เขียนได้หลายภาษา, ตัว JavaScript ก็จะมี &lt;a href=&quot;https://lerna.js.org&quot;&gt;Lerna&lt;/a&gt; ที่เป็นตัวเก่าแก่, &lt;a href=&quot;https://nx.dev/&quot;&gt;Nx&lt;/a&gt; ซึ่งเป็นลูก และเป็นเจ้าของ Lerna อีกที หรือ &lt;a href=&quot;https://turbo.build/repo/docs&quot;&gt;Turborepo&lt;/a&gt; ซึ่งผมยังไม่ได้ลอง ซึ่งทุกคนสามารถเข้าไปหา Tools อื่นๆ เกี่ยวกับ Monorepo ได้ที่ &lt;a href=&quot;https://monorepo.tools/&quot;&gt;monorepo.tools&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;lerna&quot;&gt;Lerna&lt;/h2&gt;
+
+&lt;p&gt;Lerna เป็น Libary ที่ค่อนข้าง Original มีมานานอยู่พอสมควร สำหรับการทำ Monorepo ใน JavaScript แต่ส่วนตัว ผมชอบมันมากกว่า Nx นะ ซึ่งเป็นอีกตัวที่ตอนนี้ก็เจ้าของเดียวกัน แต่ตัวอื่นยังไม่ได้ลอง Official Document ของมันอยู้ที่ &lt;a href=&quot;https://lerna.js.org&quot;&gt;lerna.js.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ทดลองใช้กันเถอะ&quot;&gt;ทดลองใช้กันเถอะ&lt;/h2&gt;
+
+&lt;p&gt;เราจะมาทดลองใช้งานกัน โดยจะเป็น Frontend กับ Backend โดยเราจะใช้ Library Constant ที่เราสร้างร่วมกัน จะเป็นตัวอย่างง่ายๆ ในทางปฏิบัติจริงที่ผมใช้ ผมจะใช้เป็น Library หรือเป็น Code ของแต่ละ Module แยกจากกันเช่น โค้ดของ Manufacturing อยู่ Package หนึ่ง Code ของ Inventory อยู่อีก Package หนึ่งเป็นต้น แล้วก็ค่อยมีโค้ดตัวหลักที่อ่านจาก Library ตัวนี้มากอีกที เราจะมาเริ่มจากพื้นที่ปล่าวๆ กันเลย&lt;/p&gt;
+
+&lt;h3 id=&quot;initial-project&quot;&gt;Initial Project&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;เราจะเริ่มจากการสร้าง Folder เปล่าๆ มาโฟลเดอร์หนึ่ง จากนั้นเราจะ Initial ด้วย &lt;code class=&quot;highlighter-rouge&quot;&gt;npm init -y&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;เริ่ม Install Lerna ด้วยคำสั่ง&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npx lerna init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;หลังจากนั้น มันก็จะมี packages ที่ชื่อว่า Lerna ขึ้นมาใน dependencies&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ระบุ Workspace ของเรา ว่าโฟลเดอร์ไหนที่เราจะให้เป็นโฟลเดอร์ที่เก็บแพคเกจต่างๆ ผมจะระบุว่าเป็นโฟลเดอร์ &lt;code class=&quot;highlighter-rouge&quot;&gt;packges/&lt;/code&gt; โดยระบุเข้าไปใน Package.json ได้เลย&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;workspaces&quot;:[
+  &quot;packages/*
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;เราจะสร้าง Package ขึ้่นมา 2 Packages ก่อน โดยจะเป็น Frontend และ Backend โดยสองอันนี้จะไม่ได้ขึ้นต่อกันก่อนนะ โดย Frontend ผมจะใช้ React ส่วน Backend ผมจะใช้ Express.js โดยผมเข้าไปใน packages แล้วสร้าง react ด้วย vite&lt;/p&gt;
+
+    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;packages
+  npm create vite@latest frontend &lt;span class=&quot;nt&quot;&gt;--template&lt;/span&gt; react
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;เมื่อเรียบร้อยแล้วต่อด้วย&lt;code class=&quot;highlighter-rouge&quot;&gt;cd frontend&lt;/code&gt; และ &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;เลื่อนเคอร์เซอร์ออกมาข้างนอก แล้วเราจะสร้างแพคเกจสำหรับ Backend กัน โดยเราจะลง Express กับ Nodemon ซึ่งเป็นตัวที่ทำให้ Package ของเรารันแบบ demon ในขณะที่เรา Development นั่นเอง
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  cd ..
+  mkdir backend
+  cd backend
+  npm init -y
+  npm install --save express nodemon
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;สร้างไฟล์แรก ผมจะตั้งชื่อว่า index.js ขึ้นมาสำหรับการ Handle API ธรรมดาเลย โดยผมจะใช้เป็น ES Module (แบบ import/export) นะครับ ดังนั้นผมจะตั้งใน package.json เป็น type: module ด้วย แต่ถ้าใครสะดวกจะเขียนเป็น commonjs ก็สามารถทำได้เลยนะครับ&lt;/p&gt;
+
+    &lt;script src=&quot;https://gist.github.com/theethawat/0a45f0bbb18d7739a969035b41292249.js&quot;&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;เรามาดูใน package.json เราตั้งค่า script ตรงที่ dev ให้รัน &lt;code class=&quot;highlighter-rouge&quot;&gt;node index.js&lt;/code&gt; ที่ผมตั้งไว้ที่ dev เพราะว่าจะให้มัน Script เดียวกันกับ frontend ที่ development ของระบบไว้ที่ dev เหมือนกัน (ลองเข้าไปในดูในไฟล์ package.json ของ frontend ได้ครับ) ลืมบอกไปครับว่า ชื่อใน name จะเป็นชื่อใน package ที่เราจะเรียกใช้โดย package อื่นๆ ได้นะครับ แต่อันนี้ผมไม่ได้ตั้งใจให้มันเป็น package library&lt;/p&gt;
+
+    &lt;script src=&quot;https://gist.github.com/theethawat/5a24e3916e2d7b1a5c406ff7d89adbdb.js&quot;&gt;&lt;/script&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><category term="monorepo" /><category term="lerna" /><category term="javascript" /><summary type="html">เคยมั้ยที่รู้สึกว่างานของเราเริ่มจะมีความใหญ่เกินไป การทำงานของระบบที่เป็น Client-Server ธรรมดาอาจไม่สามารถ Handle งานได้อย่างมีประสิทธิภาพ เราอยากจะขยายโปรเจกต์ แยกออกไปเป็น Service ต่างๆ แต่เราก็ไม่อยากเขียนโค้ดหลายชุด อยากใช้อะไรร่วมกัน วันนี้จะมาแนะนำกับ Tools ตัวหนึ่งที่ช่วยงานด้านนี้ได้ ก็คือ Lerna</summary></entry><entry><title type="html">มาสร้างการแจ้งเตือนไปที่ Line Notify กัน</title><link href="http://localhost:4000/it-blog/2021/02/21/line-notify-to-nodejs-app.html" rel="alternate" type="text/html" title="มาสร้างการแจ้งเตือนไปที่ Line Notify กัน" /><published>2021-02-21T00:00:00+07:00</published><updated>2021-02-21T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2021/02/21/line-notify-to-nodejs-app</id><content type="html" xml:base="http://localhost:4000/it-blog/2021/02/21/line-notify-to-nodejs-app.html">&lt;p&gt;Line Notify จะเป็นอะไร ที่ค่อนข้างจะแตกต่างกับ Service ตัวอื่น ๆ ของ line developer เพราะ line notify อาจจะไม่ได้อยู่ใน line developer platform ดังนั้น จึงไม่จำเป็นต้องมี Developer Account ก็สามารถทำได้ โดยเข้าไปที่เว็บไซต์ &lt;a href=&quot;https://notify-bot.line.me&quot;&gt;https://notify-bot.line.me&lt;/a&gt; แล้ว Login ด้วยบัญชี Line ของเรา&lt;/p&gt;
 
 &lt;h2 id=&quot;รู้จักกับ-line-notify-service&quot;&gt;รู้จักกับ Line Notify Service&lt;/h2&gt;
 
@@ -738,62 +807,7 @@ binding.nicknameShow.text = binding.nicknameInput.text&lt;/li&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The name of the variable you can define but link to your data class or Any structure class.&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">Kotlin the new 1st class language in Android. And today the trend name databinding is so amazing more than using findViewById right? it handle Smoother.</summary></entry><entry><title type="html">วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica</title><link href="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html" rel="alternate" type="text/html" title="วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/mongoreplica</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html">&lt;p&gt;ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT&lt;/p&gt;
-
-&lt;h2 id=&quot;mongodb-replica&quot;&gt;MongoDB Replica&lt;/h2&gt;
-
-&lt;p&gt;MongoDB Replica เป็นการทำ Replication ของฐานข้อมูลแบบ NoSQL อันหนึ่งก็คือ MongoDB โดยเราจะต้องเตรียมโหนดสำหรับ MongoDB ไว้ เป็นจำนวนเลขคี่ หรือ เริ่มต้นก็คือ 3 Node , 5 Node เป็นต้น เราสามารถจำลองสร้างขึ้นมาทั้งอยู่บนเซิร์ฟเวอร์เดียวกัน คนละพอร์ต อยู่คนละเซิร์ฟเวอร์กัน หรือ อย่างไรก็ได้ โดยหลักการทำงานของ MongoDB Replica นั้น Client คือผู้เขียนหรือผู้อ่านข้อมูล ในที่นี้ก็รวมถึงแอดมินที่เขียนข้อมูลลงในดาตาเบสด้วย จะ Read and Write ไปที่ Primary Node ก่อนที่ระบบมันจะทำ Replication ไปยัง Secondary Node ทั้งสอง หรือ 4 โหนด และมีการทำ Heartbeat คุยกัน&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://docs.mongodb.com/manual/_images/replica-set-read-write-operations-primary.bakedsvg.svg&quot; alt=&quot;Mongo DB Replica Working Model&quot; /&gt;
-รูปจาก Official Documents ของ MongoDB&lt;/p&gt;
-
-&lt;!-- ### ทำไมจำนวนโหนดต้องเป็นเลขคี่ด้วยหละ
-
-นี่คือสิ่งที่อธิบายต่อไป เนื่องจากโอเค เพื่อทำการให้ระบบของเราทนต่อความขัดข้อง หรือ จัดการเพื่อตอบสนอง Fault Tolerance โหนดที่เป็น Secondary จะมีการทำ Replication อยู่ตลอดจาก Primary อยู่แล้ว และทันทีที่ Primary Node เกิดการล่มสลายไป Secondary Node พวกนี้จะต้องทำการ Vote เพื่อเลือกว่าตัวไหน จะเป็น Primary ตัวต่อไป โดยการที่จะโหวตกันได้เนี่ยจำนวนโหนดที่เหลืออยู่ จะต้องเกินกึ่งหนึ่ง (ครึ่งหนึ่ง) ของสมาชิกทั้งหมดที่เราประกาศไว้ เช่น เราเล่น 3 Nodes มีโหนดหนึ่งตายไป เหลือ 2 Node ที่ Avaliable อยู่ ซึ่งมากกว่าครึ่งของ 3 Nodes จึงโหวตกันได้
-
-กรณีถ้าเรามี 4 Nodes   --&gt;
-
-&lt;h3 id=&quot;ลองเล่น-mongodb-replica-กัน-บน-docker&quot;&gt;ลองเล่น MongoDB Replica กัน บน Docker&lt;/h3&gt;
-
-&lt;p&gt;เนื่องจากมีทรัพยากรไม่มาก ผมจะเล่น 3 Module Replica set แล้วกันนะครับ ผมขี้เกียจจะเปิด Linux มาแล้ว ผมจะเข้าไปสร้างบน Server ผม ซึ่งเป็น Linux อยู่แล้ว โดยสร้าง Docker Compose ไว้ สร้าง 3 Node ผมจะสร้าง Directory ขึ้นมา แล้วใน Directory นั้น จะสร้างไฟล์ &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; ขึ้น&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo1.jpg&quot; alt=&quot;Docker Compose.yml File&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ในรูปผิดอยู่ เอาตาม โค้ดใน Gist ของ Github ข้างล่างนะ&lt;/p&gt;
-
-&lt;p&gt;ในที่นี้ผมสร้างใน IP เดียวกันก่อน ยังไม่ได้ตั้ง Private Network แต่เอามันมาลงที่คนละพอร์ต คือ Forward Default Port ของ MongoDB คือ 27017 มาที่พอร์ต 4041,4042 และ 4043 โดยที่ผมเองจะให้ Volumn กับมันไป พอร์ตละ Folder ละกัน โดย By default ของ MongoDB บน Docker Ubuntu Bionic จะอยู่ที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/mongodb&lt;/code&gt; ซึ่งรู้สึกว่ามันก็ต่างกันอยู่นะ กับการลง MongoDB Native บนเครื่อง Ubuntu หรือ Directory เดียวกัน อันนี้ไม่มั่นใจ แล้วเราจะสร้าง Config File เอาตามชื่อของมันแล้วกัน ก็คือ &lt;code class=&quot;highlighter-rouge&quot;&gt;mongod.conf&lt;/code&gt; ซึ่งผมจะให้มันไปอยู่ที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/mongod.conf&lt;/code&gt; ซึ่งอันนี้รู้สึกว่าเหมือนกันทั้งค่า Default ของเครื่อง Linux และ Linux บน Docker&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=docker-compose.yml&quot;&gt;&lt;/script&gt;
-
-&lt;h3 id=&quot;สร้างไฟล์-และ-โฟลเดอร์-ก่อนที่จะให้-docker-access&quot;&gt;สร้างไฟล์ และ โฟลเดอร์ ก่อนที่จะให้ Docker Access&lt;/h3&gt;
-
-&lt;p&gt;แน่นอนครับ แม้ว่าเราจะมีไฟล์คอนฟิกแล้ว แต่เราบอกให้ Pass Volumn และ Pass File ไป แต่เรายังไม่ได้สร้างไฟล์ที่จะให้ Pass ไปเลย ไฟล์ที่เราจะไปกำหนดการ Replication จะอยู่ใน &lt;code class=&quot;highlighter-rouge&quot;&gt;mongod.conf&lt;/code&gt; ครับ ถ้าใครลง MongoDB ใน Linux ตัวเองลองเปิด ไม่ว่าจะ GUI,CLI ดูก็ได้ครับ ซึ่งตอนนี้ผมไม่ได้ลง ผมเลยไป Search ดูใน Google ไฟล์ก็จะเป็นตามนี้ครับ &lt;a href=&quot;https://github.com/mongodb/mongo/blob/master/rpm/mongod.conf&quot;&gt;MongoDB conf.d Original from GitHub &lt;/a&gt;
-่
-&lt;img src=&quot;/assets/internetprograming/mongo2.jpg&quot; alt=&quot;Folder Making&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;จากเดิมที่ไม่มีอะไร เราสร้าง Directory ขึ้นมา 3 Directory ก่อนที่จะสร้างไฟล์ conf.d แล้ว copy โครงพื้นฐานของมัน จากลิงค์ที่ให้ไปข้างบนนี้มาใส่ได้เลยย เราจะได้ไฟล์ของเรามา อย่างนี้เลย&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo3.jpg&quot; alt=&quot;File Making&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ทีนี้ เราจะโฟกัสที่ สองตัวคือ storage ซึ่งเป็นสีขาว ๆ เลยกับ replication ซึ่งมัน comment อยู่ ดังรูปด้านบน อย่างแรกเลย คือใน docker-compose.yml เราส่ง Storage ไปที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/mongodb&lt;/code&gt; ใช่มั้ยหละ แต่ตรงนี้เป็น mongo โอเค แก้ให้มันเหมือนกันครับ จะแก้ที่ docker-compose file หรือ แก้ที่นี่ก็ได้เหมือนกัน ตัวผมแก้ที่นี่แล้วกันนะ&lt;/p&gt;
-
-&lt;h3 id=&quot;การตั้งค่า-replicaset&quot;&gt;การตั้งค่า ReplicaSet&lt;/h3&gt;
-
-&lt;p&gt;ทีนี้คือจุดสำคัญที่เราเฝ้ารอมานานคือการตั้ง replica set เรา uncomment ที่ replication ออกได้เลย และ เราก็เขียนเป็นชื่อ &lt;code class=&quot;highlighter-rouge&quot;&gt;replSetName:&quot;อะไรก็ได้&quot;&lt;/code&gt; แค่ทั้ง 3 Nodes นี่ต้องตั้งให้เหมือนกันนะ ส่วนตัวเราจะใช้เป็น rs0 แล้วกัน&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo4.jpg&quot; alt=&quot;Replication Setting&quot; /&gt;&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=mongod.conf&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;และเราก็ทำแบบนี้กับทั้ง 3 อัน ก่อนที่เราจะมา up compose กัน&lt;/p&gt;
-
-&lt;h3 id=&quot;docker-compose-up&quot;&gt;Docker-compose up&lt;/h3&gt;
-
-&lt;p&gt;รันคำสั่ง &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo docker-compose up&lt;/code&gt; หรือ &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose up&lt;/code&gt; ก็ได้ถ้าเป็น root อยู่แล้ว&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo5.jpg&quot; alt=&quot;Docker Compose Up&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;จากนั้นจะพบว่าของผม Error เต็มเลย น่าจะผิดตรงตั้งค่า Docker อะไรซักอย่างเนี่ย เดี๋ยวมาเขียนต่อละกัน วันนี้หยุดก่อน&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT</summary></entry><entry><title type="html">ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)</title><link href="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html" rel="alternate" type="text/html" title="ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/whytoscaleweb</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html">&lt;p&gt;บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง
+&lt;p&gt;The name of the variable you can define but link to your data class or Any structure class.&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">Kotlin the new 1st class language in Android. And today the trend name databinding is so amazing more than using findViewById right? it handle Smoother.</summary></entry><entry><title type="html">ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)</title><link href="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html" rel="alternate" type="text/html" title="ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/whytoscaleweb</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html">&lt;p&gt;บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง
 การสเกลคืออะไร เตรียมการสเกลไว้ดีมั้ย ทำไมต้องทำด้วย ไม่ทำได้มั้ย&lt;/p&gt;
 
 &lt;p&gt;คำตอบทั้งหมดคงจะตอบว่า ได้ครับ แน่นอนว่าทุกอย่างถ้าเราอยู่ในทรัพยากรที่จำกัดมาก ๆ บางทีการวางโครงสร้างของเราอาจจะไม่ต้องทำให้มันรองรับการ Scale Up ก็ได้ แต่ถ้าเราสามารถที่จะเขียนได้หละ สามารถเขียนเปิดทางแอพพลิเคชั่นให้มันเปิดทางการสเกล หรือ การขยายได้หละ มันจะดีกว่ามั้ย&lt;/p&gt;
@@ -895,7 +909,62 @@ binding.nicknameShow.text = binding.nicknameInput.text&lt;/li&gt;
 &lt;hr /&gt;
 
 &lt;p&gt;เอกสารอ้างอิง
-Fernando Doglio. Scaling Your Node.js Apps. Appress,2018 - &lt;a href=&quot;https://books.google.co.th/books/about/Scaling_Your_Node_js_Apps.html?id=noF8DwAAQBAJ&amp;amp;source=kp_cover&amp;amp;redir_esc=y&quot;&gt;Scaling Your Node.js App in Google Books&lt;/a&gt;&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง การสเกลคืออะไร เตรียมการสเกลไว้ดีมั้ย ทำไมต้องทำด้วย ไม่ทำได้มั้ย</summary></entry><entry><title type="html">Kotlin In My Note</title><link href="http://localhost:4000/it-blog/2019/09/27/introtokotlin.html" rel="alternate" type="text/html" title="Kotlin In My Note" /><published>2019-09-27T00:00:00+07:00</published><updated>2019-09-27T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/09/27/introtokotlin</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/09/27/introtokotlin.html">&lt;p&gt;นี่คือโน้ตที่ผมเขียนไว้ตอนผมเรียนคอทลิน ประกอบกับแอนดรอยด์ไปด้วย เพื่อที่จะทำโปรเจกต์ของผม ผมเองก็โน้ตเก็บเป็น Markdown ไว้ แล้วก็มาเผยแพร่ให้ดู เป็นภาษาอังกฤษนะครับ ว่าง ๆ จะมาแปลไทยให้อ่าน&lt;/p&gt;
+Fernando Doglio. Scaling Your Node.js Apps. Appress,2018 - &lt;a href=&quot;https://books.google.co.th/books/about/Scaling_Your_Node_js_Apps.html?id=noF8DwAAQBAJ&amp;amp;source=kp_cover&amp;amp;redir_esc=y&quot;&gt;Scaling Your Node.js App in Google Books&lt;/a&gt;&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง การสเกลคืออะไร เตรียมการสเกลไว้ดีมั้ย ทำไมต้องทำด้วย ไม่ทำได้มั้ย</summary></entry><entry><title type="html">วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica</title><link href="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html" rel="alternate" type="text/html" title="วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/mongoreplica</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html">&lt;p&gt;ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT&lt;/p&gt;
+
+&lt;h2 id=&quot;mongodb-replica&quot;&gt;MongoDB Replica&lt;/h2&gt;
+
+&lt;p&gt;MongoDB Replica เป็นการทำ Replication ของฐานข้อมูลแบบ NoSQL อันหนึ่งก็คือ MongoDB โดยเราจะต้องเตรียมโหนดสำหรับ MongoDB ไว้ เป็นจำนวนเลขคี่ หรือ เริ่มต้นก็คือ 3 Node , 5 Node เป็นต้น เราสามารถจำลองสร้างขึ้นมาทั้งอยู่บนเซิร์ฟเวอร์เดียวกัน คนละพอร์ต อยู่คนละเซิร์ฟเวอร์กัน หรือ อย่างไรก็ได้ โดยหลักการทำงานของ MongoDB Replica นั้น Client คือผู้เขียนหรือผู้อ่านข้อมูล ในที่นี้ก็รวมถึงแอดมินที่เขียนข้อมูลลงในดาตาเบสด้วย จะ Read and Write ไปที่ Primary Node ก่อนที่ระบบมันจะทำ Replication ไปยัง Secondary Node ทั้งสอง หรือ 4 โหนด และมีการทำ Heartbeat คุยกัน&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://docs.mongodb.com/manual/_images/replica-set-read-write-operations-primary.bakedsvg.svg&quot; alt=&quot;Mongo DB Replica Working Model&quot; /&gt;
+รูปจาก Official Documents ของ MongoDB&lt;/p&gt;
+
+&lt;!-- ### ทำไมจำนวนโหนดต้องเป็นเลขคี่ด้วยหละ
+
+นี่คือสิ่งที่อธิบายต่อไป เนื่องจากโอเค เพื่อทำการให้ระบบของเราทนต่อความขัดข้อง หรือ จัดการเพื่อตอบสนอง Fault Tolerance โหนดที่เป็น Secondary จะมีการทำ Replication อยู่ตลอดจาก Primary อยู่แล้ว และทันทีที่ Primary Node เกิดการล่มสลายไป Secondary Node พวกนี้จะต้องทำการ Vote เพื่อเลือกว่าตัวไหน จะเป็น Primary ตัวต่อไป โดยการที่จะโหวตกันได้เนี่ยจำนวนโหนดที่เหลืออยู่ จะต้องเกินกึ่งหนึ่ง (ครึ่งหนึ่ง) ของสมาชิกทั้งหมดที่เราประกาศไว้ เช่น เราเล่น 3 Nodes มีโหนดหนึ่งตายไป เหลือ 2 Node ที่ Avaliable อยู่ ซึ่งมากกว่าครึ่งของ 3 Nodes จึงโหวตกันได้
+
+กรณีถ้าเรามี 4 Nodes   --&gt;
+
+&lt;h3 id=&quot;ลองเล่น-mongodb-replica-กัน-บน-docker&quot;&gt;ลองเล่น MongoDB Replica กัน บน Docker&lt;/h3&gt;
+
+&lt;p&gt;เนื่องจากมีทรัพยากรไม่มาก ผมจะเล่น 3 Module Replica set แล้วกันนะครับ ผมขี้เกียจจะเปิด Linux มาแล้ว ผมจะเข้าไปสร้างบน Server ผม ซึ่งเป็น Linux อยู่แล้ว โดยสร้าง Docker Compose ไว้ สร้าง 3 Node ผมจะสร้าง Directory ขึ้นมา แล้วใน Directory นั้น จะสร้างไฟล์ &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; ขึ้น&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo1.jpg&quot; alt=&quot;Docker Compose.yml File&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ในรูปผิดอยู่ เอาตาม โค้ดใน Gist ของ Github ข้างล่างนะ&lt;/p&gt;
+
+&lt;p&gt;ในที่นี้ผมสร้างใน IP เดียวกันก่อน ยังไม่ได้ตั้ง Private Network แต่เอามันมาลงที่คนละพอร์ต คือ Forward Default Port ของ MongoDB คือ 27017 มาที่พอร์ต 4041,4042 และ 4043 โดยที่ผมเองจะให้ Volumn กับมันไป พอร์ตละ Folder ละกัน โดย By default ของ MongoDB บน Docker Ubuntu Bionic จะอยู่ที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/mongodb&lt;/code&gt; ซึ่งรู้สึกว่ามันก็ต่างกันอยู่นะ กับการลง MongoDB Native บนเครื่อง Ubuntu หรือ Directory เดียวกัน อันนี้ไม่มั่นใจ แล้วเราจะสร้าง Config File เอาตามชื่อของมันแล้วกัน ก็คือ &lt;code class=&quot;highlighter-rouge&quot;&gt;mongod.conf&lt;/code&gt; ซึ่งผมจะให้มันไปอยู่ที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/mongod.conf&lt;/code&gt; ซึ่งอันนี้รู้สึกว่าเหมือนกันทั้งค่า Default ของเครื่อง Linux และ Linux บน Docker&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=docker-compose.yml&quot;&gt;&lt;/script&gt;
+
+&lt;h3 id=&quot;สร้างไฟล์-และ-โฟลเดอร์-ก่อนที่จะให้-docker-access&quot;&gt;สร้างไฟล์ และ โฟลเดอร์ ก่อนที่จะให้ Docker Access&lt;/h3&gt;
+
+&lt;p&gt;แน่นอนครับ แม้ว่าเราจะมีไฟล์คอนฟิกแล้ว แต่เราบอกให้ Pass Volumn และ Pass File ไป แต่เรายังไม่ได้สร้างไฟล์ที่จะให้ Pass ไปเลย ไฟล์ที่เราจะไปกำหนดการ Replication จะอยู่ใน &lt;code class=&quot;highlighter-rouge&quot;&gt;mongod.conf&lt;/code&gt; ครับ ถ้าใครลง MongoDB ใน Linux ตัวเองลองเปิด ไม่ว่าจะ GUI,CLI ดูก็ได้ครับ ซึ่งตอนนี้ผมไม่ได้ลง ผมเลยไป Search ดูใน Google ไฟล์ก็จะเป็นตามนี้ครับ &lt;a href=&quot;https://github.com/mongodb/mongo/blob/master/rpm/mongod.conf&quot;&gt;MongoDB conf.d Original from GitHub &lt;/a&gt;
+่
+&lt;img src=&quot;/assets/internetprograming/mongo2.jpg&quot; alt=&quot;Folder Making&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;จากเดิมที่ไม่มีอะไร เราสร้าง Directory ขึ้นมา 3 Directory ก่อนที่จะสร้างไฟล์ conf.d แล้ว copy โครงพื้นฐานของมัน จากลิงค์ที่ให้ไปข้างบนนี้มาใส่ได้เลยย เราจะได้ไฟล์ของเรามา อย่างนี้เลย&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo3.jpg&quot; alt=&quot;File Making&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ทีนี้ เราจะโฟกัสที่ สองตัวคือ storage ซึ่งเป็นสีขาว ๆ เลยกับ replication ซึ่งมัน comment อยู่ ดังรูปด้านบน อย่างแรกเลย คือใน docker-compose.yml เราส่ง Storage ไปที่ &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/mongodb&lt;/code&gt; ใช่มั้ยหละ แต่ตรงนี้เป็น mongo โอเค แก้ให้มันเหมือนกันครับ จะแก้ที่ docker-compose file หรือ แก้ที่นี่ก็ได้เหมือนกัน ตัวผมแก้ที่นี่แล้วกันนะ&lt;/p&gt;
+
+&lt;h3 id=&quot;การตั้งค่า-replicaset&quot;&gt;การตั้งค่า ReplicaSet&lt;/h3&gt;
+
+&lt;p&gt;ทีนี้คือจุดสำคัญที่เราเฝ้ารอมานานคือการตั้ง replica set เรา uncomment ที่ replication ออกได้เลย และ เราก็เขียนเป็นชื่อ &lt;code class=&quot;highlighter-rouge&quot;&gt;replSetName:&quot;อะไรก็ได้&quot;&lt;/code&gt; แค่ทั้ง 3 Nodes นี่ต้องตั้งให้เหมือนกันนะ ส่วนตัวเราจะใช้เป็น rs0 แล้วกัน&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo4.jpg&quot; alt=&quot;Replication Setting&quot; /&gt;&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=mongod.conf&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;และเราก็ทำแบบนี้กับทั้ง 3 อัน ก่อนที่เราจะมา up compose กัน&lt;/p&gt;
+
+&lt;h3 id=&quot;docker-compose-up&quot;&gt;Docker-compose up&lt;/h3&gt;
+
+&lt;p&gt;รันคำสั่ง &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo docker-compose up&lt;/code&gt; หรือ &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose up&lt;/code&gt; ก็ได้ถ้าเป็น root อยู่แล้ว&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/internetprograming/mongo5.jpg&quot; alt=&quot;Docker Compose Up&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;จากนั้นจะพบว่าของผม Error เต็มเลย น่าจะผิดตรงตั้งค่า Docker อะไรซักอย่างเนี่ย เดี๋ยวมาเขียนต่อละกัน วันนี้หยุดก่อน&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html">ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT</summary></entry><entry><title type="html">Kotlin In My Note</title><link href="http://localhost:4000/it-blog/2019/09/27/introtokotlin.html" rel="alternate" type="text/html" title="Kotlin In My Note" /><published>2019-09-27T00:00:00+07:00</published><updated>2019-09-27T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/09/27/introtokotlin</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/09/27/introtokotlin.html">&lt;p&gt;นี่คือโน้ตที่ผมเขียนไว้ตอนผมเรียนคอทลิน ประกอบกับแอนดรอยด์ไปด้วย เพื่อที่จะทำโปรเจกต์ของผม ผมเองก็โน้ตเก็บเป็น Markdown ไว้ แล้วก็มาเผยแพร่ให้ดู เป็นภาษาอังกฤษนะครับ ว่าง ๆ จะมาแปลไทยให้อ่าน&lt;/p&gt;
 
 &lt;h2 id=&quot;คุยกันก่อน&quot;&gt;คุยกันก่อน&lt;/h2&gt;
 
@@ -1214,15 +1283,4 @@ field and Constructor) and can use argument &lt;code class=&quot;highlighter-rou
 
 &lt;h2 id=&quot;ทำนู่นทำนี่ไม่เก่งไม่เป็นไร-แต่ความเสถียร-จำเป็นนะ&quot;&gt;ทำนู่นทำนี่ไม่เก่งไม่เป็นไร แต่ความเสถียร จำเป็นนะ&lt;/h2&gt;
 
-&lt;p&gt;คนเป็นเรื่องที่เถียงไม่ขึ้นสำหรับคนเป็ด ๆ อย่างผม ก็คือ แล้วถ้าเราได้รับโจทย์ที่ต้องการเสถียรภาพสูงหละ เราจะทำยังไง เราจะลองนู่นลองนี่อ่ะ เป็นเรื่องดี แต่สุดท้าย มันต้องมีซักภาษาป่าวว่ะ หรือ ซักเรื่องป่าววะ ที่เราสามารถทำให้เป็นระดับ Enterprise ได้ เขาสามารถจ้างเราทำได้ ทุกคนว่าจริงมั้ย ยังไงก็เป็นกำลังใจให้ผมด้วยละกันนะครับ น้อ ฝากติดตามผลงานด้วย จบดื้อ ๆ แบบนี้เลยเหรอ เออ ใช่สิ&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="life" /><summary type="html">ผมเป็นคนนึงที่ใช้ชีวิตแบบ Duck Learning มาก จึงเป็นที่มาของไอ เดอะดักส์ครีเอเตอร์นี่ไง ดักส์คืออะไรนั่นเหรอ คือทำนุ่นทำนี่เล็ก ๆ น้อย ๆ ได้หลายอย่าง แต่ไม่เก่งซักอย่าง บทความนี้สาระไม่ค่อยมีนะครับ เน้นระบาย อ่านรู้เรื่องก็อ่านนะครับ</summary></entry><entry><title type="html">Thailand Blog Hub เว็บรวมบล็อกคนไทย ในยุคที่คนใช้โซเชี่ยล</title><link href="http://localhost:4000/work/2019/07/17/thailandbloghub.html" rel="alternate" type="text/html" title="Thailand Blog Hub เว็บรวมบล็อกคนไทย ในยุคที่คนใช้โซเชี่ยล" /><published>2019-07-17T00:00:00+07:00</published><updated>2019-07-17T00:00:00+07:00</updated><id>http://localhost:4000/work/2019/07/17/thailandbloghub</id><content type="html" xml:base="http://localhost:4000/work/2019/07/17/thailandbloghub.html">&lt;p&gt;ยังไงหละ ไม่ศึกษา Requirement มาให้ดีก่อน ดีนะที่งานเล็ก ๆ แต่อย่างน้อย เขียนโปรแกรมได้ขนาดนี้ เราแม่งก็ไม่ธรรมดา
-Pure PHP เนี่ย น่าจะเป็นงานสุดท้ายแล้วด้วย&lt;/p&gt;
-
-&lt;p&gt;เราจะเขียนบล็อก และ Doc ในแบบที่ว่า เหมือนมีใครมาสัมภาษณ์&lt;/p&gt;
-
-&lt;h2 id=&quot;คิดยังไงถึงมาทำ-thailand-blog-hub-ครับ&quot;&gt;คิดยังไงถึงมาทำ Thailand Blog Hub ครับ&lt;/h2&gt;
-
-&lt;p&gt;ก็คือว่า ผมก็เป็นคนหนึ่งครับที่ทำบล็อกอยู่ครับ ตอนนั้นถ้าจำกันได้ ก็คือเว็บไซต์บิ๊กเอเชีย ที่ bigasia.in.th ซึ่งตอนนี้ปิดไปแล้ว ซึ่งเว็บมันไม่มีคนดูครับ ผมเองก็คิดว่าบล็อกเกอร์ในปัจจุบันอาจจะประสบปัญหาแบบนี้เหมือนกัน
-เลยคิดว่า เห้ย มันน่าจะมีคอมมิวนิตี้ สำหรับคนเขียนบล็อกด้วยกันนะ เหมือนอย่างตอนผมเคยเขียนบล็อก ในปีประมาณ 2011-2012
-มันมีโครงการหนึ่งชื่อว่า &lt;b&gt;ไทยแลนด์บล็อกอวอร์ด&lt;/b&gt; ซึ่งเป็นอะไรที่ยิ่งใหญ่มาก เพราะตอนนั้นบล็อกเกอร์กำลังได้รับความนิยม
-คือผมก็ ซับมิทบทความในเว็บบล็อกของผม ในบล็อก SKIT หรือ สะกิด (ปิดตัวไปแล้ว) ถึงผมจะไม่ได้รางวัลอะไรเลย
-แต่สิ่งที่ได้กลับมาคือ เห้ย มันมีคนมาดูบล็อกเรามากขึ้นหวะ แล้วไม่ใช่แค่คนดูบล็อกเรานะ เราก็ไปดูบล็อกคนอื่นด้วย มันเป็นคอมมิวนิตี้อย่างนึงเลย&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="work" /><summary type="html">ยังไงหละ ไม่ศึกษา Requirement มาให้ดีก่อน ดีนะที่งานเล็ก ๆ แต่อย่างน้อย เขียนโปรแกรมได้ขนาดนี้ เราแม่งก็ไม่ธรรมดา Pure PHP เนี่ย น่าจะเป็นงานสุดท้ายแล้วด้วย</summary></entry></feed>
+&lt;p&gt;คนเป็นเรื่องที่เถียงไม่ขึ้นสำหรับคนเป็ด ๆ อย่างผม ก็คือ แล้วถ้าเราได้รับโจทย์ที่ต้องการเสถียรภาพสูงหละ เราจะทำยังไง เราจะลองนู่นลองนี่อ่ะ เป็นเรื่องดี แต่สุดท้าย มันต้องมีซักภาษาป่าวว่ะ หรือ ซักเรื่องป่าววะ ที่เราสามารถทำให้เป็นระดับ Enterprise ได้ เขาสามารถจ้างเราทำได้ ทุกคนว่าจริงมั้ย ยังไงก็เป็นกำลังใจให้ผมด้วยละกันนะครับ น้อ ฝากติดตามผลงานด้วย จบดื้อ ๆ แบบนี้เลยเหรอ เออ ใช่สิ&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="life" /><summary type="html">ผมเป็นคนนึงที่ใช้ชีวิตแบบ Duck Learning มาก จึงเป็นที่มาของไอ เดอะดักส์ครีเอเตอร์นี่ไง ดักส์คืออะไรนั่นเหรอ คือทำนุ่นทำนี่เล็ก ๆ น้อย ๆ ได้หลายอย่าง แต่ไม่เก่งซักอย่าง บทความนี้สาระไม่ค่อยมีนะครับ เน้นระบาย อ่านรู้เรื่องก็อ่านนะครับ</summary></entry></feed>

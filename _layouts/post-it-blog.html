@@ -17,10 +17,14 @@
     <meta property="og:type" content="text/html" />
     <meta property="og:locale" content="th_TH" />
     <meta property="og:description" content="{{page.subtitle}}" />
+    {% if page.ogimage %}
+    <meta property="og:image" content="{{page.ogimage}}" />
+    {% else %}
     <meta
       property="og:image"
-      content="https://www.theduckcreator.in.th/assets/ogtag.jpg"
+      content="https://www.theduckcreator.in.th/assets/Logo2021/Banner2021.png"
     />
+    {% endif %}
     <link
       rel="icon"
       href="https://www.theduckcreator.in.th/assets/web logo.png"
@@ -143,14 +147,14 @@ this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL va
 this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 */
-              ;(function () {
+              (function () {
                 // DON'T EDIT BELOW THIS LINE
                 var d = document,
-                  s = d.createElement("script")
-                s.src = "https://the-duck-creator.disqus.com/embed.js"
-                s.setAttribute("data-timestamp", +new Date())
-                ;(d.head || d.body).appendChild(s)
-              })()
+                  s = d.createElement("script");
+                s.src = "https://the-duck-creator.disqus.com/embed.js";
+                s.setAttribute("data-timestamp", +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
             </script>
             <noscript
               >Please enable JavaScript to view the
@@ -190,9 +194,7 @@ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pag
               {% for post in site.posts limit:5 %}
 
               <li class="kanit">
-                <a href="{{ post.url }}">
-                  {{ post.title }}
-                </a>
+                <a href="{{ post.url }}"> {{ post.title }} </a>
               </li>
 
               {% endfor %}
@@ -211,13 +213,13 @@ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pag
       src="https://www.googletagmanager.com/gtag/js?id=UA-104473772-5"
     ></script>
     <script>
-      window.dataLayer = window.dataLayer || []
+      window.dataLayer = window.dataLayer || [];
       function gtag() {
-        dataLayer.push(arguments)
+        dataLayer.push(arguments);
       }
-      gtag("js", new Date())
+      gtag("js", new Date());
 
-      gtag("config", "UA-104473772-5")
+      gtag("config", "UA-104473772-5");
     </script>
   </body>
 </html>
