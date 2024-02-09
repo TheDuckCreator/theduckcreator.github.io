@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-09T09:08:52+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space</subtitle><entry><title type="html">สร้าง Monorepo ของ JavaScript ด้วย Lerna กัน</title><link href="http://localhost:4000/it-blog/2024/01/28/create-monorepo-with-lerna.html" rel="alternate" type="text/html" title="สร้าง Monorepo ของ JavaScript ด้วย Lerna กัน" /><published>2024-01-28T00:00:00+07:00</published><updated>2024-01-28T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2024/01/28/create-monorepo-with-lerna</id><content type="html" xml:base="http://localhost:4000/it-blog/2024/01/28/create-monorepo-with-lerna.html">&lt;p&gt;เคยมั้ยที่รู้สึกว่างานของเราเริ่มจะมีความใหญ่เกินไป การทำงานของระบบที่เป็น Client-Server ธรรมดาอาจไม่สามารถ Handle งานได้อย่างมีประสิทธิภาพ เราอยากจะขยายโปรเจกต์ แยกออกไปเป็น Service ต่างๆ แต่เราก็ไม่อยากเขียนโค้ดหลายชุด อยากใช้อะไรร่วมกัน วันนี้จะมาแนะนำกับ Tools ตัวหนึ่งที่ช่วยงานด้านนี้ได้ ก็คือ Lerna&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-09T23:01:21+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space</subtitle><entry><title type="html">สร้าง Monorepo ของ JavaScript ด้วย Lerna กัน</title><link href="http://localhost:4000/it-blog/2024/01/28/create-monorepo-with-lerna.html" rel="alternate" type="text/html" title="สร้าง Monorepo ของ JavaScript ด้วย Lerna กัน" /><published>2024-01-28T00:00:00+07:00</published><updated>2024-01-28T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2024/01/28/create-monorepo-with-lerna</id><content type="html" xml:base="http://localhost:4000/it-blog/2024/01/28/create-monorepo-with-lerna.html">&lt;p&gt;เคยมั้ยที่รู้สึกว่างานของเราเริ่มจะมีความใหญ่เกินไป การทำงานของระบบที่เป็น Client-Server ธรรมดาอาจไม่สามารถ Handle งานได้อย่างมีประสิทธิภาพ เราอยากจะขยายโปรเจกต์ แยกออกไปเป็น Service ต่างๆ แต่เราก็ไม่อยากเขียนโค้ดหลายชุด อยากใช้อะไรร่วมกัน วันนี้จะมาแนะนำกับ Tools ตัวหนึ่งที่ช่วยงานด้านนี้ได้ ก็คือ Lerna&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
@@ -67,7 +67,68 @@
 
     &lt;script src=&quot;https://gist.github.com/theethawat/5a24e3916e2d7b1a5c406ff7d89adbdb.js&quot;&gt;&lt;/script&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><category term="monorepo" /><category term="lerna" /><category term="javascript" /><summary type="html">เคยมั้ยที่รู้สึกว่างานของเราเริ่มจะมีความใหญ่เกินไป การทำงานของระบบที่เป็น Client-Server ธรรมดาอาจไม่สามารถ Handle งานได้อย่างมีประสิทธิภาพ เราอยากจะขยายโปรเจกต์ แยกออกไปเป็น Service ต่างๆ แต่เราก็ไม่อยากเขียนโค้ดหลายชุด อยากใช้อะไรร่วมกัน วันนี้จะมาแนะนำกับ Tools ตัวหนึ่งที่ช่วยงานด้านนี้ได้ ก็คือ Lerna</summary></entry><entry><title type="html">มาสร้างการแจ้งเตือนไปที่ Line Notify กัน</title><link href="http://localhost:4000/it-blog/2021/02/21/line-notify-to-nodejs-app.html" rel="alternate" type="text/html" title="มาสร้างการแจ้งเตือนไปที่ Line Notify กัน" /><published>2021-02-21T00:00:00+07:00</published><updated>2021-02-21T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2021/02/21/line-notify-to-nodejs-app</id><content type="html" xml:base="http://localhost:4000/it-blog/2021/02/21/line-notify-to-nodejs-app.html">&lt;p&gt;Line Notify จะเป็นอะไร ที่ค่อนข้างจะแตกต่างกับ Service ตัวอื่น ๆ ของ line developer เพราะ line notify อาจจะไม่ได้อยู่ใน line developer platform ดังนั้น จึงไม่จำเป็นต้องมี Developer Account ก็สามารถทำได้ โดยเข้าไปที่เว็บไซต์ &lt;a href=&quot;https://notify-bot.line.me&quot;&gt;https://notify-bot.line.me&lt;/a&gt; แล้ว Login ด้วยบัญชี Line ของเรา&lt;/p&gt;
+  &lt;li&gt;
+    &lt;p&gt;ทีนี้กลับมาที่ package.json หลัก ใน project root ตั้งค่าสคริปต์ dev โดยให้สั่งไปที่ lerna run dev จากนั้นลองรันคำสั่ง npm run dev ดูครับ ทั้ง 2 แพ็คเกจก็จะเริ่มทำทั้งสองอันเลย&lt;/p&gt;
+
+    &lt;script src=&quot;https://gist.github.com/theethawat/25f3202553e74c7813c590c1f02d417e.js&quot;&gt;&lt;/script&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;ทดลองสร้าง-constant-package&quot;&gt;ทดลองสร้าง Constant package&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;เราจะมาสร้าง constant package โดยสร้างโฟลเดอร์เข้าไปใน packages
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   cd packages
+   mkdir constant
+   cd constant
+   npm init -y
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;สร้างไฟล์ Constant แรกขึ้นมา ผมจะสร้างไฟล์ชื่อ workingStatus.js แล้ว import เข้าไปใน index.js (โดยผมจะใช้เป็น ES Module เหมือนกัน)&lt;/p&gt;
+
+    &lt;script src=&quot;https://gist.github.com/theethawat/722996f9a59623f598485f9a41f59c0c.js&quot;&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;เข้าไปใน package.json ตั้งชือ package ที่เราต้องการ&lt;/p&gt;
+
+    &lt;script src=&quot;https://gist.github.com/theethawat/cfbf7c3733d8847e28e9e384f0bd560f.js&quot;&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;เราจะ import เข้าไปใน frontend และ backend เราจะใส่ package ตังนี้ที่ผมตั้งชื่อว่า &lt;code class=&quot;highlighter-rouge&quot;&gt;@theethawat/lerna-demo-constant&lt;/code&gt; เข้าไปใน package.json ของ frontend และ backend โดยใน backend ผมจะใส่ nodemonConfig ให้มัน watch ข้อมูลบน constant ด้วย เมื่อมีการเปลี่ยนแปลงโค้ดใน constant จากนั้นเรา &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install&lt;/code&gt; อีกครั้ง (ถ้ายังไม่ได้ให้ลองเข้าไปใน frontend และ install ทีนึง backend อีกทีนึง)&lt;/p&gt;
+
+    &lt;script src=&quot;https://gist.github.com/theethawat/e4a3e64a5f36b1c185b91988d057eba2.js&quot;&gt;&lt;/script&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;เราลองตั้ง import จาก package ของเราเข้าไปใน backend ดูนะครับ อันนี้ผมใช้ VS Code ถ้าผมเคาะ Ctrl+Space bar ดูจะมี Hint ขึ้นมาช่วยแล้ว&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/lerna/1.png&quot; alt=&quot;Hint ของ Lerna&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;เราจะมา Log ดูว่า import ได้มั้ย&lt;/p&gt;
+
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Working Status List&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;WORKING_STATUS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello World!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;จะเห็นออกมาประมาณนี้ครับ&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/lerna/2.png&quot; alt=&quot;Output of backend&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;เช่นเดียวกัน เราจะลอง Import เข้าไปใน frontend ดูแล้วเราจะใช้ JSON.stringnify แสดง&lt;/p&gt;
+
+    &lt;script src=&quot;https://gist.github.com/theethawat/e5e6d7dc9b6585a3e5072630471f2318.js&quot;&gt;&lt;/script&gt;
+
+    &lt;p&gt;ภาพมันก็จะประมาณนี้&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/lerna/3.png&quot; alt=&quot;Frontend import lerna&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;นี่ก็จะเป็นคร่าวๆ ของการ Implement Lerna ที่เป็น Monorepo นะครับ จริงๆ แล้วยังมีเรื่องของการ Deploy Package ลงบน NPM หรือ Package Manager อื่นๆ อีก แต่สำหรับบทความนี้ คงจะแค่นี้ก่อน ส่วนสไลด์ที่ผมเตรียมไว้ แต่ยังไม่ได้ใช้ สามารถดาวน์โหลดสไลด์ได้ที่นี่เลย &lt;a href=&quot;/assets/lerna/Monorepo JS Using Lerna.pdf&quot;&gt;ดาวน์โหลด Slide&lt;/a&gt; สำหรับโค้ดที่ใช้ในบทความนี้ คลิกที่ Source Code ข้างล่างได้เลยนะครับ&lt;/p&gt;</content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><category term="monorepo" /><category term="lerna" /><category term="javascript" /><summary type="html">เคยมั้ยที่รู้สึกว่างานของเราเริ่มจะมีความใหญ่เกินไป การทำงานของระบบที่เป็น Client-Server ธรรมดาอาจไม่สามารถ Handle งานได้อย่างมีประสิทธิภาพ เราอยากจะขยายโปรเจกต์ แยกออกไปเป็น Service ต่างๆ แต่เราก็ไม่อยากเขียนโค้ดหลายชุด อยากใช้อะไรร่วมกัน วันนี้จะมาแนะนำกับ Tools ตัวหนึ่งที่ช่วยงานด้านนี้ได้ ก็คือ Lerna</summary></entry><entry><title type="html">มาสร้างการแจ้งเตือนไปที่ Line Notify กัน</title><link href="http://localhost:4000/it-blog/2021/02/21/line-notify-to-nodejs-app.html" rel="alternate" type="text/html" title="มาสร้างการแจ้งเตือนไปที่ Line Notify กัน" /><published>2021-02-21T00:00:00+07:00</published><updated>2021-02-21T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2021/02/21/line-notify-to-nodejs-app</id><content type="html" xml:base="http://localhost:4000/it-blog/2021/02/21/line-notify-to-nodejs-app.html">&lt;p&gt;Line Notify จะเป็นอะไร ที่ค่อนข้างจะแตกต่างกับ Service ตัวอื่น ๆ ของ line developer เพราะ line notify อาจจะไม่ได้อยู่ใน line developer platform ดังนั้น จึงไม่จำเป็นต้องมี Developer Account ก็สามารถทำได้ โดยเข้าไปที่เว็บไซต์ &lt;a href=&quot;https://notify-bot.line.me&quot;&gt;https://notify-bot.line.me&lt;/a&gt; แล้ว Login ด้วยบัญชี Line ของเรา&lt;/p&gt;
 
 &lt;h2 id=&quot;รู้จักกับ-line-notify-service&quot;&gt;รู้จักกับ Line Notify Service&lt;/h2&gt;
 

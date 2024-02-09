@@ -2,7 +2,7 @@
   link: /blog.html
 - name: แฟ้มผลงาน
   link: /portfolio.html
-- name: Server
-  link: https://dev.theduckcreator.in.th/
+# - name: Server
+#   link: https://dev.theduckcreator.in.th/
 # - name: Directory
 #   link: https://dev.theduckcreator.in.th/theethawat
