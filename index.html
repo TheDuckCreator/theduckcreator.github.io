@@ -14,28 +14,26 @@ layout: default
           <figure>
             <img
               class="image piccenter"
-              style="height: 120px"
-              src="assets/Logo2021/TDC-CBT-Full-Dicut-White.png"
+              style="height: 100px"
+              src="assets/Logo-TDC-CBT.png"
+              alt="The Duck Creator - Create For Better"
             />
           </figure>
-
-          <div>
-            <h1 class="subtitle is-4 kanit acenter has-text-light">
-              The Duck Creator เดอะดักส์ครีเอเตอร์
-            </h1>
-          </div>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <h3 class="subtitle is-3 kanit acenter">
-          จากการทำอะไรเล่น ๆ ในงานที่ใครไม่ต้องการแต่เราต้องการ
+        <h3 class="subtitle is-3 firacode acenter">
+          TDC x Tin - Start Creating Since 2017
         </h3>
-        <p class="subtitle is-5 kanitlight acenter">
-          สู่การนำความรู้ มาสร้างสิ่งดี ๆ ให้เกิดกับสังคม
-          ตอนนี้เป็นตัวเดิมยังคงอยู่ แต่โตขึ้น และจะปล่อยทุกอย่างไว้ที่นี่
+        <p class="subtitle is-5 mb-1 kanitlight acenter">
+          เราไม่ได้เป็นบริษัท เราเป็นพื้นที่สำหรับการสร้างสรรค์ และทดลองสิ่งใหม่
+          ๆ รวมถึงเล่าเรื่องราวที่เราอยากจะเล่า
+        </p>
+        <p class="subtitle is-5 mt-1 kanitlight acenter">
+          เพื่อพัฒนาประสบการณ์ตัวเอง และ แชร์สิ่งที่สวยงามต่อสังคม
         </p>
 
         <a href="/about">
@@ -44,17 +42,22 @@ layout: default
           </button>
         </a>
 
-        <!-- <div class="columns">
+        <div class="columns mt-6">
           <div class="column">
             <div class="card">
-              <div class="card-image">
+              <!-- <div class="card-image">
                 <figure class="image is-1by1">
                   <img src="assets/tdc-word/1.png" alt="TDC-Motto" />
                 </figure>
-              </div>
+              </div> -->
               <div class="card-content">
                 <div class="content">
-                  <h3 class="kanit acenter">Try</h3>
+                  <div class="is-flex">
+                    <h3 class="firacode is-3 title has-text-primary is-bold">
+                      Try
+                    </h3>
+                    <h4 class="firacode my-2 mx-2">- Tin is Trying</h4>
+                  </div>
                   <p>
                     ทดลองเรียนรู้ ทั้งทางเรื่อง Coding เรื่องเทคโนโลยีใหม่ ๆ
                     ทั้ง React, Node.js, Cloud Computing และอื่น ๆ
@@ -66,14 +69,19 @@ layout: default
           </div>
           <div class="column">
             <div class="card">
-              <div class="card-image">
+              <!-- <div class="card-image">
                 <figure class="image is-1by1">
                   <img src="assets/tdc-word/2.png" alt="TDC-Motto" />
                 </figure>
-              </div>
+              </div> -->
               <div class="card-content">
                 <div class="content">
-                  <h3 class="kanit acenter">Down</h3>
+                  <div class="is-flex">
+                    <h3 class="firacode is-3 title has-text-primary is-bold">
+                      Down
+                    </h3>
+                    <h4 class="firacode my-2 mx-2">- Doing even we're down</h4>
+                  </div>
                   <p>
                     ในการทดลอง ไม่ว่าใครก็เคยประสบความล้มเหลว TDC
                     ไม่ปฏิเสธความล้มเหลวเหล่านั้น
@@ -85,14 +93,19 @@ layout: default
           </div>
           <div class="column">
             <div class="card">
-              <div class="card-image">
+              <!-- <div class="card-image">
                 <figure class="image is-1by1">
                   <img src="assets/tdc-word/3.png" alt="TDC-Motto" />
                 </figure>
-              </div>
+              </div> -->
               <div class="card-content">
                 <div class="content">
-                  <h3 class="kanit acenter">Create</h3>
+                  <div class="is-flex">
+                    <h3 class="firacode is-3 title has-text-primary is-bold">
+                      Create
+                    </h3>
+                    <h4 class="firacode my-2 mx-2">- Continues to get!</h4>
+                  </div>
                   <p>
                     การทดลอง ความสำเร็จ และ ความล้มเหลว ล้วนนำมาสู่การสร้างสรรค์
                     สร้างสิ่งใหม่ หรือ สร้างสิ่งเก่าให้ดีกว่าเดิม
@@ -102,7 +115,7 @@ layout: default
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
     </section>
     <!-- <br />    </section>
@@ -143,13 +156,17 @@ layout: default
       <section class="section">
         <div class="columns">
           <div class="column is-three-quarters">
-            <h3 class="title is-3 kanit mb-3">>>> Wrap Up</h3>
-            {% for post in site.posts limit:4 %}
+            <h3 class="title is-3 firacode has-text-primary mb-3">
+              > wraped up();
+            </h3>
+            {% for post in site.posts limit:6 %}
 
             <div class="mb-3 pb-3">
               <h5 class="subtitle is-4 kanit pb-1 mb-1">
-                <span class="has-text-danger"> # </span
-                ><a href="{{ post.url }}"> {{ post.title }} </a>
+                <span class="has-text-primary"> # </span
+                ><a href="{{ post.url }}" class="has-text-dark">
+                  {{ post.title }}
+                </a>
               </h5>
               <p class="">{{ post.excerpt | truncate: 300 }}</p>
               <div class="field is-grouped kanitlight">
@@ -208,18 +225,31 @@ layout: default
         </div>
       </section>
       <section class="section">
-        <h3 class="title is-3 kanit mb-3">>>> What we have done?</h3>
+        <h3 class="title is-3 firacode has-text-primary mb-3">
+          > categorized();
+        </h3>
         <blockquote
-          class="is-5 subtitle kanit is-italic"
+          class="is-5 subtitle kanit has-text-grey"
           style="margin-top: 0.2em"
         >
-          "ตราบใดที่มีแรงก็คงจะทำ แต่ถ้าขี้เกียจก็คงไม่ทำ ขอเพียงแต่ว่า
-          เราจะพยายามไม่ขี้เกียจ"
+          ตราบใดที่มีแรงก็คงจะทำ แต่ถ้าขี้เกียจก็คงไม่ทำ ขอเพียงแต่ว่า
+          เราจะพยายามไม่ขี้เกียจ
         </blockquote>
 
         <br />
 
         <div class="columns">
+          <div class="column is-3 piccenter">
+            <div class="panel is-warning">
+              <p class="panel-heading kanit is-italic"># JavaScript</p>
+
+              {% for post in site.posts %} {% if post.language == "Javascript"%}
+
+              <a href="{{ post.url }}" class="panel-block">{{post.title}} </a>
+
+              {%endif%} {%endfor%}
+            </div>
+          </div>
           <div class="column is-3 piccenter">
             <div class="panel is-link">
               <p class="panel-heading kanit is-italic"># PHP</p>
@@ -242,17 +272,6 @@ layout: default
           </div>
 
           <div class="column is-3 piccenter">
-            <div class="panel is-warning">
-              <p class="panel-heading kanit is-italic"># JavaScript</p>
-
-              {% for post in site.posts %} {% if post.language == "Javascript"%}
-
-              <a href="{{ post.url }}" class="panel-block">{{post.title}} </a>
-
-              {%endif%} {%endfor%}
-            </div>
-          </div>
-          <div class="column is-3 piccenter">
             <div class="panel is-primary">
               <p class="panel-heading kanit is-italic"># Other</p>
 
@@ -265,14 +284,6 @@ layout: default
               {%endif%} {%endfor%}
             </div>
           </div>
-        </div>
-
-        <br />
-        <div>
-          <a href="/portfolio.html"
-            ><button class="button is-rounded is-outlined is-danger kanitlight">
-              อ่านเพิ่มเติม <i class="fas fa-arrow-right"></i></button
-          ></a>
         </div>
       </section>
     </div>

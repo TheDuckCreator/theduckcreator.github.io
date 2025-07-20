@@ -34,3 +34,5 @@ gem "base64"
 gem "bigdecimal"
 gem "rexml"
 gem "webrick"
+
+gem "jekyll-paginate"

@@ -1,0 +1,75 @@
+---
+title: Blog
+layout: page
+---
+
+<body>
+  <div class="mx-4">
+    {% for post in paginator.posts %}
+    <div class="mb-1">
+      <h5 class="subtitle is-4 kanit pb-1 mb-1">
+        <span class="has-text-primary"> # </span
+        ><a href="{{ post.url }}" class="has-text-link"> {{ post.title }} </a>
+      </h5>
+      <p class="">{{ post.excerpt | truncate: 300 }}</p>
+      <div class="field is-grouped kanitlight">
+        <p class="control">
+          <a class="tag is-small is-rounded is-bold is-primary">
+            {{post.created_year}}
+          </a>
+        </p>
+        <p class="control">
+          <a class="tag is-small is-rounded is-bold is-warning">
+            <span class="icon">
+              <i class="fas fa-code"></i>
+            </span>
+            <span> {{post.language}} </span>
+          </a>
+        </p>
+        <p class="control">
+          <a class="tag is-small is-rounded is-bold" href="{{post.git}} ">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>GitHub</span>
+          </a>
+        </p>
+      </div>
+    </div>
+    <hr />
+    {% endfor %}
+  </div>
+
+  <!-- Pagination Controls -->
+  <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+    {% if paginator.previous_page %}
+    <a
+      class="pagination-previous is-rounded"
+      href="{{ paginator.previous_page_path }}"
+      >Previous</a
+    >
+    {% else %}
+    <a class="button pagination-previous is-rounded" disabled>Previous</a>
+    {% endif %} {% if paginator.next_page %}
+    <a
+      class="button pagination-next is-rounded"
+      href="{{ paginator.next_page_path }}"
+      >Next</a
+    >
+    {% else %}
+    <a class="button pagination-next is-rounded" disabled>Next</a>
+    {% endif %}
+
+    <ul class="pagination-list">
+      {% for page in (1..paginator.total_pages) %}
+      <li>
+        <a
+          class="pagination-link {% if page == paginator.page %}is-current{% endif %}"
+          href="{{ site.paginate_path | replace: ':num', page }}"
+          >{{ page }}</a
+        >
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</body>
