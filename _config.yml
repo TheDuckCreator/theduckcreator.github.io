@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: The Duck Creator 
-email: theethawat@theduckcreator.in.th
+email: theethawat.s@outlook.co.th
 
-description: "The Duck Creator | เดอะดักส์ ครีเอเตอร์ Nobody-Wanted Creativing Studio , Not A Company It's Only A Space"
+description: "The Duck Creator | เดอะดักส์ ครีเอเตอร์ Create For Better - Crafting and Creating Studio"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "www.theduckcreator.in.th" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tinsavastham

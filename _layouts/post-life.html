@@ -17,14 +17,15 @@
     <meta property="og:type" content="text/html" />
     <meta property="og:locale" content="th_TH" />
     <meta property="og:description" content="{{page.subtitle}}" />
+    {% if page.ogimage %}
+    <meta property="og:image" content="{{page.ogimage}}" />
+    {% else %}
     <meta
       property="og:image"
-      content="https://www.theduckcreator.in.th/assets/ogtag.jpg"
+      content="https://www.theduckcreator.in.th/assets/Logo2021/Banner2021.png"
     />
-    <link
-      rel="icon"
-      href="https://www.theduckcreator.in.th/assets/web logo.png"
-    />
+    {% endif %}
+    <link rel="icon" href="/assets/web logo.png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
@@ -102,17 +103,18 @@
 
   <body>
     {% include navigation.html %}
-    <section class="hero tdc-hero-green is-bold">
+    <section class="hero tdc-hero is-bold">
       <div class="hero-body">
         <div class="container">
-          <h1
-            class="subtitle is-3 kanit has-text-dark acenter tdc-remove-margin-bt"
-          >
+          <h1 class="subtitle is-3 kanit acenter tdc-remove-margin-bt">
             {{ page.title }}
             <br />
-            <span class="subtitle has-text-dark kanitlight is-5">
-              <b>{{ page.author }}</b> {{ page.date | date_to_string }}
+            {% if page.author %}
+            <span class="subtitle has-text-dark firacode is-5">
+              Post Written By <b>{{ page.author }}</b> {{ page.date |
+              date_to_string }}
             </span>
+            {% endif %}
           </h1>
         </div>
       </div>
@@ -126,14 +128,7 @@
           <div class="content">
             {{ content }}
             <hr />
-            <p class="control">
-              <a class="button is-rounded" href="{{ page.git }} ">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
-                </span>
-                <span>Source Code - GitHub</span>
-              </a>
-            </p>
+
             {% if page.comments %}
             <div id="disqus_thread"></div>
             <script>

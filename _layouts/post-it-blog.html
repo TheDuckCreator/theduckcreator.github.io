@@ -25,10 +25,8 @@
       content="https://www.theduckcreator.in.th/assets/Logo2021/Banner2021.png"
     />
     {% endif %}
-    <link
-      rel="icon"
-      href="https://www.theduckcreator.in.th/assets/Logo2021/TDC-ICON.png"
-    />
+    <link rel="icon" href="/assets/web logo.png" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
@@ -43,7 +41,6 @@
       rel="stylesheet"
     />
     <link href="/assets/css/main.css" rel="stylesheet" />
-    <link rel="icon" href="/assets/Logo2021/TDC-ICON.png" />
 
     <style>
       h1,
@@ -107,16 +104,14 @@
 
   <body>
     {% include navigation.html %}
-    <section class="hero tdc-hero-blue is-bold">
+    <section class="hero tdc-hero">
       <div class="hero-body">
         <div class="container">
-          <h1
-            class="subtitle is-3 has-text-light kanit acenter tdc-remove-margin-bt"
-          >
+          <h1 class="subtitle is-3 kanit acenter tdc-remove-margin-bt">
             {{ page.title }}
             <br />
-            <span class="subtitle kanitlight is-5 has-text-light"
-              >Post Written By <b class="has-text-light">{{ page.author }}</b> -
+            <span class="subtitle firacode is-5"
+              >Post Written By <b class="has-text-dark">{{ page.author }}</b> -
               {{ page.date | date_to_string }}
             </span>
           </h1>
@@ -132,6 +127,7 @@
           <div class="content">
             {{ content }}
             <hr />
+            {% include author.html%} {% if page.git %}
             <p class="control">
               <a class="button is-rounded" href="{{ page.git }} ">
                 <span class="icon">
@@ -140,7 +136,7 @@
                 <span>Source Code - GitHub</span>
               </a>
             </p>
-            {% if page.comments %}
+            {% endif %} {% if page.comments %}
             <div id="disqus_thread"></div>
             <script>
               /**
