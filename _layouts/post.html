@@ -34,6 +34,11 @@
       href="https://fonts.googleapis.com/css?family=Kanit:300,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <link href="/assets/css/main.css" rel="stylesheet" />
     <link rel="icon" href="/assets/Logo2021/TDC-ICON.png" />
 
@@ -99,7 +104,7 @@
 
   <body>
     {% include navigation.html %}
-    <section class="hero tdc-hero-yellow is-bold">
+    <section class="hero tdc-hero is-bold">
       <div class="hero-body">
         <div class="container">
           <h1
@@ -107,7 +112,7 @@
           >
             {{ page.title }}
             <br />
-            <span class="subtitle has-text-dark kanitlight is-5"
+            <span class="subtitle has-text-dark firacode is-5"
               >Post Written By <b>{{ page.author }}</b> - {{ page.date |
               date_to_string }}
             </span>
@@ -124,6 +129,7 @@
           <div class="content">
             {{ content }}
             <hr />
+            {% include author.html%} {% if page.git %}
             <p class="control">
               <a class="button is-rounded" href="{{ page.git }} ">
                 <span class="icon">
@@ -132,7 +138,7 @@
                 <span>Source Code - GitHub</span>
               </a>
             </p>
-            {% if page.comments %}
+            {% endif %} {% if page.comments %}
             <div id="disqus_thread"></div>
             <script>
               /**
