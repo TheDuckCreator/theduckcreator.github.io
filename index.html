@@ -175,6 +175,7 @@ layout: default
                     {{post.created_year}}
                   </a>
                 </p>
+                {% if post.language %}
                 <p class="control">
                   <a class="tag is-small is-rounded is-bold is-warning">
                     <span class="icon">
@@ -183,6 +184,18 @@ layout: default
                     <span> {{post.language}} </span>
                   </a>
                 </p>
+                {% endif %} {% if post.category %}
+                <p class="control">
+                  <a
+                    class="tag is-small is-rounded is-bold is-info is-uppercase"
+                  >
+                    <span class="icon">
+                      <i class="fas fa-folder"></i>
+                    </span>
+                    <span> {{post.category}} </span>
+                  </a>
+                </p>
+                {% endif %} {% if post.git %}
                 <p class="control">
                   <a
                     class="tag is-small is-rounded is-bold"
@@ -194,6 +207,7 @@ layout: default
                     <span>GitHub</span>
                   </a>
                 </p>
+                {% endif %}
               </div>
             </div>
             <hr />

@@ -127,9 +127,22 @@
 
           <div class="content">
             {{ content }}
-            <hr />
-
-            {% if page.comments %}
+            <hr class="mb-0 pb-0" />
+            <div class="is-flex is-justify-content-space-between my-0 mt-2">
+              {% if page.git %}
+              <p class="control">
+                <a class="button is-rounded is-small" href="{{ page.git }} ">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Source Code - GitHub</span>
+                </a>
+              </p>
+              {% endif %} {% for tag in page.tags %}
+              <a class="tag is-light kanitlight mx-1 my-1">{{ tag }}</a>
+              {% endfor %}
+            </div>
+            {% include author.html%} {% if page.comments %}
             <div id="disqus_thread"></div>
             <script>
               /**

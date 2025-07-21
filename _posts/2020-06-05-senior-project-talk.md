@@ -1,7 +1,7 @@
 ---
 title: 1 ปีกว่ากับโปรเจกต์ที่ไม่รู้ว่ามีอะไร และ ไม่รู้ว่าจะออกมายังไง
 subtitle: จากการเริ่มต้นที่ไม่รู้ว่าจะต้องทำอะไร จนอยากจะส่งจดหมายหาตัวเองในวันงานเสร็จ
-layout: post-it-blog
+layout: post-life
 author: Theethawat Savastham
 category: it-blog
 git: https://github.com/cnrpsu-2019/cnrphr-open
