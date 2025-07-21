@@ -1,7 +1,7 @@
 ---
 title: First Time on React | Card Game BNK48
 subtitle: Card-Game งานแรกที่ได้ทำกับ Javascript Library อย่าง React เข้าสู่ภาษาสมัยใหม่
-layout: post
+layout: post-it-blog
 author: Theethawat Savastham
 category: work
 language: Javascript

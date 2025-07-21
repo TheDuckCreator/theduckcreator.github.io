@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-20T20:52:32+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Create For Better - Crafting and Creating Studio</subtitle><entry><title type="html">สร้าง Monorepo ของ JavaScript ด้วย Lerna กัน</title><link href="http://localhost:4000/it-blog/2024/01/28/create-monorepo-with-lerna.html" rel="alternate" type="text/html" title="สร้าง Monorepo ของ JavaScript ด้วย Lerna กัน" /><published>2024-01-28T00:00:00+07:00</published><updated>2024-01-28T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2024/01/28/create-monorepo-with-lerna</id><content type="html" xml:base="http://localhost:4000/it-blog/2024/01/28/create-monorepo-with-lerna.html"><![CDATA[<p>เคยมั้ยที่รู้สึกว่างานของเราเริ่มจะมีความใหญ่เกินไป การทำงานของระบบที่เป็น Client-Server ธรรมดาอาจไม่สามารถ Handle งานได้อย่างมีประสิทธิภาพ เราอยากจะขยายโปรเจกต์ แยกออกไปเป็น Service ต่างๆ แต่เราก็ไม่อยากเขียนโค้ดหลายชุด อยากใช้อะไรร่วมกัน วันนี้จะมาแนะนำกับ Tools ตัวหนึ่งที่ช่วยงานด้านนี้ได้ ก็คือ Lerna</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-21T22:21:12+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">The Duck Creator</title><subtitle>The Duck Creator | เดอะดักส์ ครีเอเตอร์ Create For Better - Crafting and Creating Studio</subtitle><entry><title type="html">สร้าง Monorepo ของ JavaScript ด้วย Lerna กัน</title><link href="http://localhost:4000/it-blog/2024/01/28/create-monorepo-with-lerna.html" rel="alternate" type="text/html" title="สร้าง Monorepo ของ JavaScript ด้วย Lerna กัน" /><published>2024-01-28T00:00:00+07:00</published><updated>2024-01-28T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2024/01/28/create-monorepo-with-lerna</id><content type="html" xml:base="http://localhost:4000/it-blog/2024/01/28/create-monorepo-with-lerna.html"><![CDATA[<p>เคยมั้ยที่รู้สึกว่างานของเราเริ่มจะมีความใหญ่เกินไป การทำงานของระบบที่เป็น Client-Server ธรรมดาอาจไม่สามารถ Handle งานได้อย่างมีประสิทธิภาพ เราอยากจะขยายโปรเจกต์ แยกออกไปเป็น Service ต่างๆ แต่เราก็ไม่อยากเขียนโค้ดหลายชุด อยากใช้อะไรร่วมกัน วันนี้จะมาแนะนำกับ Tools ตัวหนึ่งที่ช่วยงานด้านนี้ได้ ก็คือ Lerna</p>
 
 <h2 id="introduction">Introduction</h2>
 
@@ -128,7 +128,121 @@
   </li>
 </ol>
 
-<p>นี่ก็จะเป็นคร่าวๆ ของการ Implement Lerna ที่เป็น Monorepo นะครับ จริงๆ แล้วยังมีเรื่องของการ Deploy Package ลงบน NPM หรือ Package Manager อื่นๆ อีก แต่สำหรับบทความนี้ คงจะแค่นี้ก่อน ส่วนสไลด์ที่ผมเตรียมไว้ แต่ยังไม่ได้ใช้ สามารถดาวน์โหลดสไลด์ได้ที่นี่เลย <a href="/assets/lerna/Monorepo JS Using Lerna.pdf">ดาวน์โหลด Slide</a> สำหรับโค้ดที่ใช้ในบทความนี้ คลิกที่ Source Code ข้างล่างได้เลยนะครับ</p>]]></content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><category term="monorepo" /><category term="lerna" /><category term="javascript" /><summary type="html"><![CDATA[เคยมั้ยที่รู้สึกว่างานของเราเริ่มจะมีความใหญ่เกินไป การทำงานของระบบที่เป็น Client-Server ธรรมดาอาจไม่สามารถ Handle งานได้อย่างมีประสิทธิภาพ เราอยากจะขยายโปรเจกต์ แยกออกไปเป็น Service ต่างๆ แต่เราก็ไม่อยากเขียนโค้ดหลายชุด อยากใช้อะไรร่วมกัน วันนี้จะมาแนะนำกับ Tools ตัวหนึ่งที่ช่วยงานด้านนี้ได้ ก็คือ Lerna]]></summary></entry><entry><title type="html">มาสร้างการแจ้งเตือนไปที่ Line Notify กัน</title><link href="http://localhost:4000/it-blog/2021/02/21/line-notify-to-nodejs-app.html" rel="alternate" type="text/html" title="มาสร้างการแจ้งเตือนไปที่ Line Notify กัน" /><published>2021-02-21T00:00:00+07:00</published><updated>2021-02-21T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2021/02/21/line-notify-to-nodejs-app</id><content type="html" xml:base="http://localhost:4000/it-blog/2021/02/21/line-notify-to-nodejs-app.html"><![CDATA[<p>Line Notify จะเป็นอะไร ที่ค่อนข้างจะแตกต่างกับ Service ตัวอื่น ๆ ของ line developer เพราะ line notify อาจจะไม่ได้อยู่ใน line developer platform ดังนั้น จึงไม่จำเป็นต้องมี Developer Account ก็สามารถทำได้ โดยเข้าไปที่เว็บไซต์ <a href="https://notify-bot.line.me">https://notify-bot.line.me</a> แล้ว Login ด้วยบัญชี Line ของเรา</p>
+<p>นี่ก็จะเป็นคร่าวๆ ของการ Implement Lerna ที่เป็น Monorepo นะครับ จริงๆ แล้วยังมีเรื่องของการ Deploy Package ลงบน NPM หรือ Package Manager อื่นๆ อีก แต่สำหรับบทความนี้ คงจะแค่นี้ก่อน ส่วนสไลด์ที่ผมเตรียมไว้ แต่ยังไม่ได้ใช้ สามารถดาวน์โหลดสไลด์ได้ที่นี่เลย <a href="/assets/lerna/Monorepo JS Using Lerna.pdf">ดาวน์โหลด Slide</a> สำหรับโค้ดที่ใช้ในบทความนี้ คลิกที่ Source Code ข้างล่างได้เลยนะครับ</p>]]></content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><category term="monorepo" /><category term="lerna" /><category term="javascript" /><summary type="html"><![CDATA[เคยมั้ยที่รู้สึกว่างานของเราเริ่มจะมีความใหญ่เกินไป การทำงานของระบบที่เป็น Client-Server ธรรมดาอาจไม่สามารถ Handle งานได้อย่างมีประสิทธิภาพ เราอยากจะขยายโปรเจกต์ แยกออกไปเป็น Service ต่างๆ แต่เราก็ไม่อยากเขียนโค้ดหลายชุด อยากใช้อะไรร่วมกัน วันนี้จะมาแนะนำกับ Tools ตัวหนึ่งที่ช่วยงานด้านนี้ได้ ก็คือ Lerna]]></summary></entry><entry><title type="html">BNK48 ตั้งแต่วันแรกจนถึงวันที่รุ่นหนึ่งได้ออกไปหาความฝัน</title><link href="http://localhost:4000/life/2022/12/21/bnk48firstgen.html" rel="alternate" type="text/html" title="BNK48 ตั้งแต่วันแรกจนถึงวันที่รุ่นหนึ่งได้ออกไปหาความฝัน" /><published>2022-12-21T00:00:00+07:00</published><updated>2022-12-21T00:00:00+07:00</updated><id>http://localhost:4000/life/2022/12/21/bnk48firstgen</id><content type="html" xml:base="http://localhost:4000/life/2022/12/21/bnk48firstgen.html"><![CDATA[<p>ตั้งแต่จำได้ จริงๆ ตอนแรกก็ไม่ได้ตามอะไร ช่วงปีหนึ่ง เห็นเพื่อนแชร์รูปของน้ำใส BNK48 มาในแบบสาวแว่น ก็เอ้ย น่ารักดี เข้าไปดู แล้วก็ไป Follow จากนั้นเหรอ BNK เหรอ ด้วยเคยได้ยินคนชื่อเฌอปรางอ่ะ ลองไปกดหาดู จากนั้นก็ไปดู เขามีเพลงอะไรเหรอ ตอนนั้นคือ Aitakatta ซึ่งมันแปลก ๆ ไม่ค่อยถูกโฉลกเท่าไหร่ แต่มีครั้งหนึ่งได้ไปฟังเพลง 365 วันกับเครื่องบินกระดาษ เอ้ย มันเพราะ</p>
+
+<p>บวกกับได้ดูรายการ BNK48 Senpai ตอนนึง คือตอนนั้นมีของพี่เฌอ, เมษา ไข่มุก แล้วก็…. จำไม่ได้ ก็เลยฟอลโลว์ 4 คนนี้ จากนั้นเขาพูดว่าอะไรนะ เซ็นเตอร์ ผมก็ไม่รู้หรอกว่ามันคืออะไร แต่ใครนะ มิวสิค เจนนิษฐ์ ไม่รู้แต่ฟอลก่อน 555 ไปมาๆ ตามจากที่แทกๆ กันไป จนวันนี้คิดว่าโฟลโลวอยู่ทุกคนแล้วแหละ 55555</p>
+
+<p><img src="/assets/bnk48first/20240405_000041.jpg" alt="Guitar Mag" /></p>
+
+<h2 id="เริ่มเข้ามาได้ยังไง">เริ่มเข้ามาได้ยังไง</h2>
+
+<p>ผมว่าผมมาเริ่มตาม BNK จริงๆ ตอนที่ผมนั่งอยู่บนโซฟา ที่กำลังนั่งเขียนบทความนี้อยู่แหละ ด้วยความว่าตอนนั้นเป็นเวลาประมาณเดือนตุลาคม 2560 ตอนนั้นผมเริ่มอยู่คนเดียววันแรกๆ ที่พ่อแม่ย้ายไปทำงายที่ต่างจังหวัด ด้วยความที่เหงา แฟนก็ไม่มี ก็เลยหาอะไรดู ด้วยความว่าตอนนั้นเน็ตไอดอลเยอะมาก มีทั้งดีๆ และไม่ดี ผมเลยคิดว่า มาดูไอดอลที่แบบ ถูกสร้างขึ้นมาดีกว่า ผมเริ่มดู Live แรกของ BNK48 ประมาณวันจันทร์ที่ 1,3 … ตุลาคม นี่แหละ ซึ่งเป็นไลฟ์ของ เมษา แล้วเมษาก็เป็นโอชิ และคามิโอชิคนแรกของผม ถึงจะจบการศึกษาไปก่อนแล้วก็ตาม</p>
+
+<p><img src="/assets/bnk48first/IMG20250721211749.jpg" alt="Maysa BNK48 Photoset" /></p>
+
+<h2 id="โมบายล์-คามิโอชิคนปัจจุบัน">โมบายล์ คามิโอชิคนปัจจุบัน</h2>
+
+<p>ส่วนโมบายล์ มันเกิดขึ้นมาจากผมได้ดูบันทึกไลฟ์ของ BNK48 Mini live and Handshake วันที่ 23 ก.ย. 60 คือมันมีการประกาศเซมบัตสึเพลง ซึ่งประกาศแบบเซอร์ไพรซ์ ซึ่งผมเองก็ไม่รู้หรอกว่ามันคืออะไร แล้วมีการประกาศสมาชิกเพลงใหม่ คุกกี้เสี่ยงทาย กับ ประกาศเซนเตอร์ ซึ่งก็คือน้องโมบายล์ (จริงๆ น้องบอกให้เขียน โมบาย แต่ผมกลับชอบเขียบแบบนั้นอ่ะ 5555) แต่แบบส่วนตัว ผมไม่ชอบเลยอะไรแบบนี้ ไม่ชอบการแข่งขัน ไม่ชอบอะไรที่แบบ มันดูพีค หรือแบบบีบหัวใจไป แต่ว่าประมาณเดือนสองเดือนผมดันชอบน้องโมบายล์ 555 ด้วยความที่น้องเป็นคนที่ซื่ออ่ะ ซื่อสัตย์ต่อตัวเอง ไม่มีอะไรปิดบัง เป็นตัวของตัวเองเต็มที่ ซึ่งมันตรงข้ามกับผมทุกอย่าง โดยเฉพาะผมในตอนนั้น แต่นอกจากโมบายล์จะเป็นโอชิและคามิโอชิคนที่ 2 และคนปัจจุบันแล้ว โมบายล์สอนอะไรผมหลายอย่างมาก</p>
+
+<p><img src="/assets/bnk48first/IMG20250721211435.jpg" alt="Mobile BNK48 Photoset" /></p>
+
+<h2 id="จากคนที่ไม่ชอบการแข่งขัน-เป็นคนที่มองการแข่งขันเป็นเรื่องธรรมดา">จากคนที่ไม่ชอบการแข่งขัน เป็นคนที่มองการแข่งขันเป็นเรื่องธรรมดา</h2>
+
+<p>จากที่ผมเป็นคนไม่ชอบการแข่งขัน ไม่ชอบเลยกับการเอาลนะ หรืออะไรต่างๆ ผมก็ยังไม่ชอบมันเหมือนเดิมนั่นแหละ แต่ผมก็ยอมรับ และ เข้าใจมันมากขึ้น คือเราก็ต้องเป็นส่วนหนึ่งของมันอย่างหลีกเลี่ยงไม่ได้ แล้วเราก็ไปมองถึงความพบาบามที่น้องพยายามถีบตัวเองขึ้นมาจาก Undergirl ท้ายๆ มาเป็นเซ็นเตอร์เพลงหลักได้ แล้วก็ผมมองการแข่งขันในมุมที่ดีขึ้น แล้วก็แบบไปดูสิ่งที่ข้างๆ การแข่งขันแทน ผมเลยชอบมากๆ เวลาเห็นโมบายล์ กับ มิวสิค แสดงด้วยกัน อยู่ด้วยกัน หรือแบบ สิตา หรือ คนิ้ง อยู่ด้วยกัน คือเราก็รู้ว่าเขาก็เป็นคู่แข่งกันชัดเจน แต่ก็เป็นเพื่อนกัน แล้วก็ยินดีซึ่งกันและกัน ซึ่งผมมองมันในมุมนี้แทน ซึ่งสุดท้ายก็คือกินกันไม่ลงอ่ะ 2 คนนี้ ไม่เป็นไร เพราะผมนี่ก็ตัวเชียร์โมมิวเลย 55555</p>
+
+<p>ช่วงปี 2 ปี 3 หลายครั้งที่ผมเอารูปของโมบายล์ตั้งหน้าคอมอยู่ แล้วก็มองไปเป็นกำลังใจและแรงบันดาลใจ และที่สำคัญที่ ผมมาตามแบบนี้ ผมเรียนดรอปลงไม่ได้นะ ผมโดนว่าตายแน่ๆ 5555 และผมก็เชื่อว่า BNK48 เป็นหนึ่งในส่วนสำคัญที่ทำให้ผลการเรียนผมดีขึ้นในเทอม 1 ของปี 2 เพราะผมดรอป ไป 2 วิชา 5555 (อ่าว เกือบสวย) แต่ปี 2 เทอม 2 ผมไม่ติด E โดยที่ไม่ดรอปนะ ผมเชื่อว่า BNK48 มีส่วนในการจบ ป.ตรีของผม ไม่มากก็น้อยแหละ BNK ส่งแรงบันดาลใจหลายๆ ด้านนะ แม้แต่ใน MV Shonichi / วันแรก ดูแล้วยังแบบฮึกเหิมเลย ถ้าสมมติว่า BNK ผมอาจจะไม่ได้อยู่ตรงนี้ก็ได้ เอาจริงๆ 5555 มันเป็นเรื่องของช่วงเวลาและโอกาส</p>
+
+<p><img src="/assets/bnk48first/20240405_000105.jpg" alt="Preaw" /></p>
+
+<h2 id="colorful">Colorful</h2>
+
+<p>นอกจากนี้ BNK ยังให้แนวคิดใหม่ ๆ กับผม อย่างเมษา ที่โดนพักงานไปเป็นคนแรกของวง ตอนแรกก็เคยคิดว่าจะเลิกโอชิดีมั้ย สุดท้ายคือพอมันโอชิไปแล้ว มันถอนไม่ออกอ่ะ และเมษาก็ทำให้ผมคิดและเรียนรู้ข้อนึงว่า ชีวิตคนเรามันไม่ได้มีด้านเดียวอ่ะ คนเรามันสามารถมีหลายรูปแบบหรือหลายด้านได้ ซึ่งมันไม่ใช่แบบเรื่องที่แบบว่าเอ้ยด้านนี้คือด้านจริง ด้านนี้แอ๊บ หรือ ไม่จริง มันไม่ใช่ จริงๆ แล้วชีวิตคนเรามัน Colorful มันมีได้หลายทางมากๆ คือเราอาจจะชอบเขาที่เขาเป็นตรงนี้ แบบ Mode นี้ แต่ในโหมดอื่น เราไม่ได้จำเป็นต้องชอบเขา แต่ว่าเราก็ควร Respect ในแบบที่เขาเป็น ถ้ามันไม่ได้ผิดอะไร เพราะเราไม่ได้จำเป็นต้องชอบเขาทุกด้านหนิ</p>
+
+<p><img src="/assets/bnk48first/20201219_173331.jpg" alt="Heavy Rotation" /></p>
+
+<h2 id="เหมือนและแตกต่าง">เหมือนและแตกต่าง</h2>
+
+<p>นอกจากนั้น BNK ก็มีทั้งคนที่เหมือนและแตกต่าง ที่เหมือนๆก็เช่น อุ้ม นี่คือแบบเหมือนในหลายๆ ด้านมาก กับ ไข่มุก ยิ่งไข่มุกที่เกิดปีไล่ๆ กันเนี่ย รู้สึกเหมือนเป็นเพื่อนอ่ะ บางทีก็แอบไปฝันนะ ว่าเราเป็นเพื่อนที่รู้จักกัน 5555 หรือแบบต่างเช่น มิวสิค หรือ คนอื่นๆ ซึ่งมันก็ทำให้เราเข้าใจความคิดใน Mindset แบบอื่นๆ มากขึ้น จากที่เราจะตัดสิน ว่า Mindset แบบนี้ไม่ดี ต้องแบบเราสิดี กลายเป็นว่า มันก็เป็น Mindset ที่ดีในแบบของเขา เราก็เป็น Mindset ที่ดีและไม่ดีในแบบของเรา ซึ่งเราเองก็มีที่ไม่ดีเช่น เราไม่ค่อยจะมี open หรือ growth mindset เท่าไหร่</p>
+
+<p>จริงๆ ผมเองเคยร่วมงานกับทาง Mobile BNK48 Thailand Fanclub หรือบ้านชาวเหรียญหยอดตู้ บ้านแรกของโมบายล์เลยด้วยแหละ ประมาณปลายๆ ปี 2561 และก็เคยเจอตัว BNK จริงๆ 2 ครั้งคือที่ไดอาน่า หาดใหญ่ 1 ครั้งแล้วก็ที่เซ็นทรัล หาดใหญ่อีก 1 ครั้ง ที่เซ็นทรัลนี่คือไฮทัชด้วบนะ</p>
+
+<p><img src="/assets/bnk48first/20201219_173711.jpg" alt="Mobile Gift" /></p>
+
+<h2 id="thank-you-ขอบคุณที่เราได้พบเจอกัน">Thank you ขอบคุณที่เราได้พบเจอกัน</h2>
+
+<p>ก็ตลอด 5 ปีที่ตามมา หรือ 6 ปีของ BNK ทั้งหมด ได้เห็นการเติบโตของเมมเบอร์ ได้เห็นการผ่าน Coming of Age ของแต่ละคน ได้เห็นการเติบโตของสังคม รวมถึงการเติบโตของตัวเองด้วย เหมือนกับแบบจะบอกว่าเติบโตไปด้วยกันก็ไม่เชิง แต่ว่าแบบมีการเติบโตที่คู่ขนานกันไป ตั้งแต่มีเพลงแค่ 5 เพลง ฟังวันซ้ำกันไปสิ จนตอนนี้มีเป็น 100 กว่าเพลง บางเพลงผมยังเคยฟังสักครั้งด้วยซ้ำ 555</p>
+
+<p>อยู่มาตั้งแต่ซัทจังอายุ 13 เป็นน้องเล็ก จนตอนนี้น้อง 19 แล้ว นานเหมือนกันนะ ก็วันนี้ 19 คนจาก 22 ของรุ่น 1 กำลังจะแยกย้ายออกไปแล้ว ซึ่งรวมโมบายล์ คามิโอชิของผมด้วย</p>
+
+<p>ขอให้เมมเบอร์ทุกคนมีเส้นทางที่สดใสในเส้นที่ตัวเองเลือกนะครับ ผมเองก็ยังตามต่อแหละ ถึงแม้จะไม่มีได้หวีดโมบายล์ มิวสิค ไข่มุก แล้วก็ตาม ผมจะตั้งน้องโยเกิร์ตเป็นคามิโอชิคนถัดไป รวมถึงก็จะตอดตามผลงานของทั้งโมบายล์เอง และเมมเบอร์ที่จบการศึกษาไปแล้วนะครับ</p>
+
+<p>Thank you ขอบคุณที่เราได้พบเจอกัน</p>
+
+<p><img src="/assets/bnk48first/20240405_000540.jpg" alt="Jiwaru Day 1" /></p>
+
+<p><img src="/assets/bnk48first/20240405_000636.jpg" alt="Jiwaru Day 2" /></p>
+
+<hr />
+
+<ul>
+  <li><strong>First Publish</strong> blog.theethawat.dev : วันที่ 21 ธันวาคม 2022</li>
+  <li><strong>Move to</strong>  TheDuckCreator.in.th : 21 กรกฎาคม 2025</li>
+  <li>อัพเดทรูปภาพล่าสุด กรกฎาคม 2025</li>
+</ul>]]></content><author><name>Theethawat Savastham</name></author><category term="life" /><category term="bnk48" /><summary type="html"><![CDATA[ตั้งแต่จำได้ จริงๆ ตอนแรกก็ไม่ได้ตามอะไร ช่วงปีหนึ่ง เห็นเพื่อนแชร์รูปของน้ำใส BNK48 มาในแบบสาวแว่น ก็เอ้ย น่ารักดี เข้าไปดู แล้วก็ไป Follow จากนั้นเหรอ BNK เหรอ ด้วยเคยได้ยินคนชื่อเฌอปรางอ่ะ ลองไปกดหาดู จากนั้นก็ไปดู เขามีเพลงอะไรเหรอ ตอนนั้นคือ Aitakatta ซึ่งมันแปลก ๆ ไม่ค่อยถูกโฉลกเท่าไหร่ แต่มีครั้งหนึ่งได้ไปฟังเพลง 365 วันกับเครื่องบินกระดาษ เอ้ย มันเพราะ]]></summary></entry><entry><title type="html">ครูนงเยาวน์ กับอีกหนึ่งจุดเปลี่ยนสำคัญของชีวิต</title><link href="http://localhost:4000/life/2021/12/05/krunongyao.html" rel="alternate" type="text/html" title="ครูนงเยาวน์ กับอีกหนึ่งจุดเปลี่ยนสำคัญของชีวิต" /><published>2021-12-05T00:00:00+07:00</published><updated>2021-12-05T00:00:00+07:00</updated><id>http://localhost:4000/life/2021/12/05/krunongyao</id><content type="html" xml:base="http://localhost:4000/life/2021/12/05/krunongyao.html"><![CDATA[<p>ผมหน้าหงอย ด้วยความสำนึกผิด และคิดว่าเออ เราทำอะไรลงไป พร้อมกลับกล่าวคำขอโทษ ณ ชั้นสามของอาคารหนึ่ง คาดว่าเป็นอาคาร 5</p>
+
+<blockquote>
+  <p>“เนม เนม เนม เข้ามา ห้องนี้”</p>
+</blockquote>
+
+<p>เสียงของผมดังขึ้น</p>
+
+<blockquote>
+  <p>“ธีร์ธวัช ธีร์ธวัช เธอเรียกใคร ครูอยู่ในห้อง เธอต้องเกรงใจครูด้วย”</p>
+</blockquote>
+
+<p>ผมหน้าหงอย ด้วยความสำนึกผิด และคิดว่าเออ เราทำอะไรลงไป พร้อมกลับกล่าวคำขอโทษ</p>
+
+<p>นี่น่าจะเป็นความทรงจำที่ชัดเจนที่สุดของผม ต่อคุณครูนงเยาว์ มาศมาลัย คุณครูภาษาไทย ที่สอนผมในชั้น ม.4</p>
+
+<h2 id="จุดเปลี่ยนสำคัญในชีวิต">จุดเปลี่ยนสำคัญในชีวิต</h2>
+
+<p>ผม กับ คุณครู เรามีโอกาสได้เข้าร่วมค่ายเขียนบทกวีภาษาไทยด้วยกัน ในภาคเรียนที่ 1 ของปี 2556 ค่ายนี้ถือเป็นหนึ่งจุดเปลี่ยนสำคัญในชีวิต ที่ผมเองก็คงไม่ลืม</p>
+
+<p>เพราะค่ายนี้สอนให้รู้ว่า ความที่เราคิดว่าเราเก่งแล้ว บางทีมันเป็นแค่การภูมิใจในตัวเองมากเกินไป หรือ อาจจะเป็นอีโก้ของเรา ผมเองที่หยิ่งในตัวเองเหลือเกิน กลับมาเป็นคนที่อ่อนโยนลง และเข้าใจโลกมากขึ้น</p>
+
+<p>ในการสอนนักเรียนที่เป็นห้องวิทย์คณิต มันก็แน่นอนว่าเด็กอาจจะไม่ได้สนใจเนื้อหาวิชามากนัก และมันก็คงอาจจะเป็น Challenge</p>
+
+<p>บางอย่างให้กับคุณครู คุณครูบางท่านอาจจะใช้วิธีบังคับให้สนใจ หรือ อะไร แต่สำหรับครูนงเยาว์ ไม่ คุณครูยอมรับ Challenge นั้น คุณพยายามสอน พยายามมีเทคนิค เชื่อมโยง พยายามให้นักเรียนมาสนใจ และมีเรื่องราวหรือประสบการณ์ต่าง ๆ มาบอกแก่นักเรียนเสมอ ๆ ต่อให้ใคร ๆ ไม่ได้สังเกตุ แต่อยากให้คุณครูรู้ไว้นะครับ ว่าผมคนนี้รับรู้อยู่</p>
+
+<h2 id="คุณครูยังคงจำลูกศิษย์คนนี้ได้">คุณครูยังคงจำลูกศิษย์คนนี้ได้</h2>
+
+<p>ไม่ว่าผมจะโตขึ้นอยู่ ม.5 หรือ ม.6 คุณครูก็ยังคงอยู่ตรงนั้น ที่เดิม ที่ห้องสมุดภาษาไทย อาคาร 1 ชั้น 2 ทุก ๆ ครั้งที่ผมเดินเข้าไป อาจจะไปหาคุณครูคนอื่น สิ่งที่ผมเองจะทำทุกครั้งก็คือ ไปสวัสดีคุณครู แล้วคุณครูก็จะบอกว่า “มาหาใคร” อาจารย์คนนี้นั่งโต๊ะนี้ อาจารย์คนนี้ไม่อยู่</p>
+
+<p>คุณครูยังคงจำลูกศิษย์คนนี้ได้ ไม่สิครูจำลูกศิษย์ทุกคนได้ คุณครูจะคอยถามตลอดว่า เป็นยังไงบ้าง ช่วงนี้เรียนเป็นยังไง สอบได้ที่ไหน คุณครูเองก็มีความผูกพันกับห้องเรียนของผม มีงานอะไรครูก็จะมาตลอด</p>
+
+<p>ผมเองจำไม่ได้แล้วว่าผมเจอคุณครูครั้งสุดท้ายเมื่อไหร่ คุ้นๆ ว่าเจอกันที่หน้าห้องสมุดนั่นแหละ ช่วง ม.6 ปลาย ๆ หรือ อาจจะเจอกันตอนงานพรอม ม.6</p>
+
+<p>ผมเองก็เป็นเด็กที่จบมาแล้ว 4 ปี ยังไม่ได้กลับไปเยี่ยมโรงเรียนที่ผมจากมาเลย ทำให้ครั้งนั้นคงเป็นครั้งสุดท้าย ที่เราได้เจอกัน เพราะตอนนี้คุณครูได้จากผมและพวกเราไปแล้ว</p>
+
+<p>สิ่งใดที่ผมเองเคยล่วงเกินคุณครูนงเยาว์เอาไว้ ผมเองยังคงนึกอยู่ในใจ และจะพยายามไม่ทำแบบนั้นกับคนอื่นอีก ผมเองคงจะต้องขอโทษอีกครั้งหนึ่ง ถึงแม้ผมเองจะรู้ดีกว่าคุณครูไม่เคยโกรธอะไรผมอยู่แล้ว</p>
+
+<h2 id="ผมดีใจมาก-ๆ-ที่ได้เรียน-ได้เป็นลูกศิษย์">ผมดีใจมาก ๆ ที่ได้เรียน ได้เป็นลูกศิษย์</h2>
+
+<p>ผมดีใจมาก ๆ ที่ได้เรียน ได้เป็นลูกศิษย์คุณครูทั้งวิชาภาษาไทย และ วิชาชีวิตนะครับ ผมหวังว่าคุณครูจะภูมิใจกับผมเช่นกันนะครับ</p>
+
+<p>ขอส่วนบุญส่วนกุศลที่ผมเคยได้ทำมา ได้เป็นส่วนหนุนแม้เพียงเล็ก ๆ น้อย ๆ ได้อุทิศ ไปรวมกับคุณพระรัตนตรัย และสิ่งศักดิ์สิทธิทั่วสากลโลก ที่จะพาคุณครูไปยังสรวงสวรรค์นะครับ หลับให้สบายนะครับคุณครู</p>
+
+<p>ด้วยความเคารพอย่างสูง</p>
+
+<p>ธีร์ธวัช สวาสดิ์ธรรม
+นักเรียนที่เรียนชั้น ม. 4/1 ปีการศึกษา 2556</p>
+
+<hr />
+
+<ul>
+  <li><strong>First Publish</strong> blog.theethawat.dev : วันที่ 5 ธันวาคม 2021</li>
+  <li><strong>Move to</strong>  TheDuckCreator.in.th : 21 กรกฎาคม 2025</li>
+</ul>]]></content><author><name>Theethawat Savastham</name></author><category term="life" /><category term="เรื่องราว" /><summary type="html"><![CDATA[ผมหน้าหงอย ด้วยความสำนึกผิด และคิดว่าเออ เราทำอะไรลงไป พร้อมกลับกล่าวคำขอโทษ ณ ชั้นสามของอาคารหนึ่ง คาดว่าเป็นอาคาร 5]]></summary></entry><entry><title type="html">มาสร้างการแจ้งเตือนไปที่ Line Notify กัน</title><link href="http://localhost:4000/it-blog/2021/02/21/line-notify-to-nodejs-app.html" rel="alternate" type="text/html" title="มาสร้างการแจ้งเตือนไปที่ Line Notify กัน" /><published>2021-02-21T00:00:00+07:00</published><updated>2021-02-21T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2021/02/21/line-notify-to-nodejs-app</id><content type="html" xml:base="http://localhost:4000/it-blog/2021/02/21/line-notify-to-nodejs-app.html"><![CDATA[<p>Line Notify จะเป็นอะไร ที่ค่อนข้างจะแตกต่างกับ Service ตัวอื่น ๆ ของ line developer เพราะ line notify อาจจะไม่ได้อยู่ใน line developer platform ดังนั้น จึงไม่จำเป็นต้องมี Developer Account ก็สามารถทำได้ โดยเข้าไปที่เว็บไซต์ <a href="https://notify-bot.line.me">https://notify-bot.line.me</a> แล้ว Login ด้วยบัญชี Line ของเรา</p>
 
 <h2 id="รู้จักกับ-line-notify-service">รู้จักกับ Line Notify Service</h2>
 
@@ -868,7 +982,62 @@ binding.nicknameShow.text = binding.nicknameInput.text</li>
   </li>
 </ul>
 
-<p>The name of the variable you can define but link to your data class or Any structure class.</p>]]></content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html"><![CDATA[Kotlin the new 1st class language in Android. And today the trend name databinding is so amazing more than using findViewById right? it handle Smoother.]]></summary></entry><entry><title type="html">ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)</title><link href="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html" rel="alternate" type="text/html" title="ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/whytoscaleweb</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html"><![CDATA[<p>บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง
+<p>The name of the variable you can define but link to your data class or Any structure class.</p>]]></content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html"><![CDATA[Kotlin the new 1st class language in Android. And today the trend name databinding is so amazing more than using findViewById right? it handle Smoother.]]></summary></entry><entry><title type="html">วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica</title><link href="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html" rel="alternate" type="text/html" title="วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/mongoreplica</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html"><![CDATA[<p>ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT</p>
+
+<h2 id="mongodb-replica">MongoDB Replica</h2>
+
+<p>MongoDB Replica เป็นการทำ Replication ของฐานข้อมูลแบบ NoSQL อันหนึ่งก็คือ MongoDB โดยเราจะต้องเตรียมโหนดสำหรับ MongoDB ไว้ เป็นจำนวนเลขคี่ หรือ เริ่มต้นก็คือ 3 Node , 5 Node เป็นต้น เราสามารถจำลองสร้างขึ้นมาทั้งอยู่บนเซิร์ฟเวอร์เดียวกัน คนละพอร์ต อยู่คนละเซิร์ฟเวอร์กัน หรือ อย่างไรก็ได้ โดยหลักการทำงานของ MongoDB Replica นั้น Client คือผู้เขียนหรือผู้อ่านข้อมูล ในที่นี้ก็รวมถึงแอดมินที่เขียนข้อมูลลงในดาตาเบสด้วย จะ Read and Write ไปที่ Primary Node ก่อนที่ระบบมันจะทำ Replication ไปยัง Secondary Node ทั้งสอง หรือ 4 โหนด และมีการทำ Heartbeat คุยกัน</p>
+
+<p><img src="https://docs.mongodb.com/manual/_images/replica-set-read-write-operations-primary.bakedsvg.svg" alt="Mongo DB Replica Working Model" />
+รูปจาก Official Documents ของ MongoDB</p>
+
+<!-- ### ทำไมจำนวนโหนดต้องเป็นเลขคี่ด้วยหละ
+
+นี่คือสิ่งที่อธิบายต่อไป เนื่องจากโอเค เพื่อทำการให้ระบบของเราทนต่อความขัดข้อง หรือ จัดการเพื่อตอบสนอง Fault Tolerance โหนดที่เป็น Secondary จะมีการทำ Replication อยู่ตลอดจาก Primary อยู่แล้ว และทันทีที่ Primary Node เกิดการล่มสลายไป Secondary Node พวกนี้จะต้องทำการ Vote เพื่อเลือกว่าตัวไหน จะเป็น Primary ตัวต่อไป โดยการที่จะโหวตกันได้เนี่ยจำนวนโหนดที่เหลืออยู่ จะต้องเกินกึ่งหนึ่ง (ครึ่งหนึ่ง) ของสมาชิกทั้งหมดที่เราประกาศไว้ เช่น เราเล่น 3 Nodes มีโหนดหนึ่งตายไป เหลือ 2 Node ที่ Avaliable อยู่ ซึ่งมากกว่าครึ่งของ 3 Nodes จึงโหวตกันได้
+
+กรณีถ้าเรามี 4 Nodes   -->
+
+<h3 id="ลองเล่น-mongodb-replica-กัน-บน-docker">ลองเล่น MongoDB Replica กัน บน Docker</h3>
+
+<p>เนื่องจากมีทรัพยากรไม่มาก ผมจะเล่น 3 Module Replica set แล้วกันนะครับ ผมขี้เกียจจะเปิด Linux มาแล้ว ผมจะเข้าไปสร้างบน Server ผม ซึ่งเป็น Linux อยู่แล้ว โดยสร้าง Docker Compose ไว้ สร้าง 3 Node ผมจะสร้าง Directory ขึ้นมา แล้วใน Directory นั้น จะสร้างไฟล์ <code class="highlighter-rouge">docker-compose.yml</code> ขึ้น</p>
+
+<p><img src="/assets/internetprograming/mongo1.jpg" alt="Docker Compose.yml File" /></p>
+
+<p>ในรูปผิดอยู่ เอาตาม โค้ดใน Gist ของ Github ข้างล่างนะ</p>
+
+<p>ในที่นี้ผมสร้างใน IP เดียวกันก่อน ยังไม่ได้ตั้ง Private Network แต่เอามันมาลงที่คนละพอร์ต คือ Forward Default Port ของ MongoDB คือ 27017 มาที่พอร์ต 4041,4042 และ 4043 โดยที่ผมเองจะให้ Volumn กับมันไป พอร์ตละ Folder ละกัน โดย By default ของ MongoDB บน Docker Ubuntu Bionic จะอยู่ที่ <code class="highlighter-rouge">/var/lib/mongodb</code> ซึ่งรู้สึกว่ามันก็ต่างกันอยู่นะ กับการลง MongoDB Native บนเครื่อง Ubuntu หรือ Directory เดียวกัน อันนี้ไม่มั่นใจ แล้วเราจะสร้าง Config File เอาตามชื่อของมันแล้วกัน ก็คือ <code class="highlighter-rouge">mongod.conf</code> ซึ่งผมจะให้มันไปอยู่ที่ <code class="highlighter-rouge">/etc/mongod.conf</code> ซึ่งอันนี้รู้สึกว่าเหมือนกันทั้งค่า Default ของเครื่อง Linux และ Linux บน Docker</p>
+
+<script src="https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=docker-compose.yml"></script>
+
+<h3 id="สร้างไฟล์-และ-โฟลเดอร์-ก่อนที่จะให้-docker-access">สร้างไฟล์ และ โฟลเดอร์ ก่อนที่จะให้ Docker Access</h3>
+
+<p>แน่นอนครับ แม้ว่าเราจะมีไฟล์คอนฟิกแล้ว แต่เราบอกให้ Pass Volumn และ Pass File ไป แต่เรายังไม่ได้สร้างไฟล์ที่จะให้ Pass ไปเลย ไฟล์ที่เราจะไปกำหนดการ Replication จะอยู่ใน <code class="highlighter-rouge">mongod.conf</code> ครับ ถ้าใครลง MongoDB ใน Linux ตัวเองลองเปิด ไม่ว่าจะ GUI,CLI ดูก็ได้ครับ ซึ่งตอนนี้ผมไม่ได้ลง ผมเลยไป Search ดูใน Google ไฟล์ก็จะเป็นตามนี้ครับ <a href="https://github.com/mongodb/mongo/blob/master/rpm/mongod.conf">MongoDB conf.d Original from GitHub </a>
+่
+<img src="/assets/internetprograming/mongo2.jpg" alt="Folder Making" /></p>
+
+<p>จากเดิมที่ไม่มีอะไร เราสร้าง Directory ขึ้นมา 3 Directory ก่อนที่จะสร้างไฟล์ conf.d แล้ว copy โครงพื้นฐานของมัน จากลิงค์ที่ให้ไปข้างบนนี้มาใส่ได้เลยย เราจะได้ไฟล์ของเรามา อย่างนี้เลย</p>
+
+<p><img src="/assets/internetprograming/mongo3.jpg" alt="File Making" /></p>
+
+<p>ทีนี้ เราจะโฟกัสที่ สองตัวคือ storage ซึ่งเป็นสีขาว ๆ เลยกับ replication ซึ่งมัน comment อยู่ ดังรูปด้านบน อย่างแรกเลย คือใน docker-compose.yml เราส่ง Storage ไปที่ <code class="highlighter-rouge">/var/lib/mongodb</code> ใช่มั้ยหละ แต่ตรงนี้เป็น mongo โอเค แก้ให้มันเหมือนกันครับ จะแก้ที่ docker-compose file หรือ แก้ที่นี่ก็ได้เหมือนกัน ตัวผมแก้ที่นี่แล้วกันนะ</p>
+
+<h3 id="การตั้งค่า-replicaset">การตั้งค่า ReplicaSet</h3>
+
+<p>ทีนี้คือจุดสำคัญที่เราเฝ้ารอมานานคือการตั้ง replica set เรา uncomment ที่ replication ออกได้เลย และ เราก็เขียนเป็นชื่อ <code class="highlighter-rouge">replSetName:"อะไรก็ได้"</code> แค่ทั้ง 3 Nodes นี่ต้องตั้งให้เหมือนกันนะ ส่วนตัวเราจะใช้เป็น rs0 แล้วกัน</p>
+
+<p><img src="/assets/internetprograming/mongo4.jpg" alt="Replication Setting" /></p>
+
+<script src="https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=mongod.conf"></script>
+
+<p>และเราก็ทำแบบนี้กับทั้ง 3 อัน ก่อนที่เราจะมา up compose กัน</p>
+
+<h3 id="docker-compose-up">Docker-compose up</h3>
+
+<p>รันคำสั่ง <code class="highlighter-rouge">sudo docker-compose up</code> หรือ <code class="highlighter-rouge">docker-compose up</code> ก็ได้ถ้าเป็น root อยู่แล้ว</p>
+
+<p><img src="/assets/internetprograming/mongo5.jpg" alt="Docker Compose Up" /></p>
+
+<p>จากนั้นจะพบว่าของผม Error เต็มเลย น่าจะผิดตรงตั้งค่า Docker อะไรซักอย่างเนี่ย เดี๋ยวมาเขียนต่อละกัน วันนี้หยุดก่อน</p>]]></content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html"><![CDATA[ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT]]></summary></entry><entry><title type="html">ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)</title><link href="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html" rel="alternate" type="text/html" title="ทำไมเราต้องสเกลแอพ และเตรียมพร้อมแอพสำหรับสเกล ? (Internet Programing 2019)" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/whytoscaleweb</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/whytoscaleweb.html"><![CDATA[<p>บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง
 การสเกลคืออะไร เตรียมการสเกลไว้ดีมั้ย ทำไมต้องทำด้วย ไม่ทำได้มั้ย</p>
 
 <p>คำตอบทั้งหมดคงจะตอบว่า ได้ครับ แน่นอนว่าทุกอย่างถ้าเราอยู่ในทรัพยากรที่จำกัดมาก ๆ บางทีการวางโครงสร้างของเราอาจจะไม่ต้องทำให้มันรองรับการ Scale Up ก็ได้ แต่ถ้าเราสามารถที่จะเขียนได้หละ สามารถเขียนเปิดทางแอพพลิเคชั่นให้มันเปิดทางการสเกล หรือ การขยายได้หละ มันจะดีกว่ามั้ย</p>
@@ -970,378 +1139,4 @@ binding.nicknameShow.text = binding.nicknameInput.text</li>
 <hr />
 
 <p>เอกสารอ้างอิง
-Fernando Doglio. Scaling Your Node.js Apps. Appress,2018 - <a href="https://books.google.co.th/books/about/Scaling_Your_Node_js_Apps.html?id=noF8DwAAQBAJ&amp;source=kp_cover&amp;redir_esc=y">Scaling Your Node.js App in Google Books</a></p>]]></content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html"><![CDATA[บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง การสเกลคืออะไร เตรียมการสเกลไว้ดีมั้ย ทำไมต้องทำด้วย ไม่ทำได้มั้ย]]></summary></entry><entry><title type="html">วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica</title><link href="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html" rel="alternate" type="text/html" title="วิเคราะห์ High Availability และ Fault Tolerance บนกรณีศึกษา MongoDB Replica" /><published>2019-10-03T00:00:00+07:00</published><updated>2019-10-03T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/10/03/mongoreplica</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/10/03/mongoreplica.html"><![CDATA[<p>ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT</p>
-
-<h2 id="mongodb-replica">MongoDB Replica</h2>
-
-<p>MongoDB Replica เป็นการทำ Replication ของฐานข้อมูลแบบ NoSQL อันหนึ่งก็คือ MongoDB โดยเราจะต้องเตรียมโหนดสำหรับ MongoDB ไว้ เป็นจำนวนเลขคี่ หรือ เริ่มต้นก็คือ 3 Node , 5 Node เป็นต้น เราสามารถจำลองสร้างขึ้นมาทั้งอยู่บนเซิร์ฟเวอร์เดียวกัน คนละพอร์ต อยู่คนละเซิร์ฟเวอร์กัน หรือ อย่างไรก็ได้ โดยหลักการทำงานของ MongoDB Replica นั้น Client คือผู้เขียนหรือผู้อ่านข้อมูล ในที่นี้ก็รวมถึงแอดมินที่เขียนข้อมูลลงในดาตาเบสด้วย จะ Read and Write ไปที่ Primary Node ก่อนที่ระบบมันจะทำ Replication ไปยัง Secondary Node ทั้งสอง หรือ 4 โหนด และมีการทำ Heartbeat คุยกัน</p>
-
-<p><img src="https://docs.mongodb.com/manual/_images/replica-set-read-write-operations-primary.bakedsvg.svg" alt="Mongo DB Replica Working Model" />
-รูปจาก Official Documents ของ MongoDB</p>
-
-<!-- ### ทำไมจำนวนโหนดต้องเป็นเลขคี่ด้วยหละ
-
-นี่คือสิ่งที่อธิบายต่อไป เนื่องจากโอเค เพื่อทำการให้ระบบของเราทนต่อความขัดข้อง หรือ จัดการเพื่อตอบสนอง Fault Tolerance โหนดที่เป็น Secondary จะมีการทำ Replication อยู่ตลอดจาก Primary อยู่แล้ว และทันทีที่ Primary Node เกิดการล่มสลายไป Secondary Node พวกนี้จะต้องทำการ Vote เพื่อเลือกว่าตัวไหน จะเป็น Primary ตัวต่อไป โดยการที่จะโหวตกันได้เนี่ยจำนวนโหนดที่เหลืออยู่ จะต้องเกินกึ่งหนึ่ง (ครึ่งหนึ่ง) ของสมาชิกทั้งหมดที่เราประกาศไว้ เช่น เราเล่น 3 Nodes มีโหนดหนึ่งตายไป เหลือ 2 Node ที่ Avaliable อยู่ ซึ่งมากกว่าครึ่งของ 3 Nodes จึงโหวตกันได้
-
-กรณีถ้าเรามี 4 Nodes   -->
-
-<h3 id="ลองเล่น-mongodb-replica-กัน-บน-docker">ลองเล่น MongoDB Replica กัน บน Docker</h3>
-
-<p>เนื่องจากมีทรัพยากรไม่มาก ผมจะเล่น 3 Module Replica set แล้วกันนะครับ ผมขี้เกียจจะเปิด Linux มาแล้ว ผมจะเข้าไปสร้างบน Server ผม ซึ่งเป็น Linux อยู่แล้ว โดยสร้าง Docker Compose ไว้ สร้าง 3 Node ผมจะสร้าง Directory ขึ้นมา แล้วใน Directory นั้น จะสร้างไฟล์ <code class="highlighter-rouge">docker-compose.yml</code> ขึ้น</p>
-
-<p><img src="/assets/internetprograming/mongo1.jpg" alt="Docker Compose.yml File" /></p>
-
-<p>ในรูปผิดอยู่ เอาตาม โค้ดใน Gist ของ Github ข้างล่างนะ</p>
-
-<p>ในที่นี้ผมสร้างใน IP เดียวกันก่อน ยังไม่ได้ตั้ง Private Network แต่เอามันมาลงที่คนละพอร์ต คือ Forward Default Port ของ MongoDB คือ 27017 มาที่พอร์ต 4041,4042 และ 4043 โดยที่ผมเองจะให้ Volumn กับมันไป พอร์ตละ Folder ละกัน โดย By default ของ MongoDB บน Docker Ubuntu Bionic จะอยู่ที่ <code class="highlighter-rouge">/var/lib/mongodb</code> ซึ่งรู้สึกว่ามันก็ต่างกันอยู่นะ กับการลง MongoDB Native บนเครื่อง Ubuntu หรือ Directory เดียวกัน อันนี้ไม่มั่นใจ แล้วเราจะสร้าง Config File เอาตามชื่อของมันแล้วกัน ก็คือ <code class="highlighter-rouge">mongod.conf</code> ซึ่งผมจะให้มันไปอยู่ที่ <code class="highlighter-rouge">/etc/mongod.conf</code> ซึ่งอันนี้รู้สึกว่าเหมือนกันทั้งค่า Default ของเครื่อง Linux และ Linux บน Docker</p>
-
-<script src="https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=docker-compose.yml"></script>
-
-<h3 id="สร้างไฟล์-และ-โฟลเดอร์-ก่อนที่จะให้-docker-access">สร้างไฟล์ และ โฟลเดอร์ ก่อนที่จะให้ Docker Access</h3>
-
-<p>แน่นอนครับ แม้ว่าเราจะมีไฟล์คอนฟิกแล้ว แต่เราบอกให้ Pass Volumn และ Pass File ไป แต่เรายังไม่ได้สร้างไฟล์ที่จะให้ Pass ไปเลย ไฟล์ที่เราจะไปกำหนดการ Replication จะอยู่ใน <code class="highlighter-rouge">mongod.conf</code> ครับ ถ้าใครลง MongoDB ใน Linux ตัวเองลองเปิด ไม่ว่าจะ GUI,CLI ดูก็ได้ครับ ซึ่งตอนนี้ผมไม่ได้ลง ผมเลยไป Search ดูใน Google ไฟล์ก็จะเป็นตามนี้ครับ <a href="https://github.com/mongodb/mongo/blob/master/rpm/mongod.conf">MongoDB conf.d Original from GitHub </a>
-่
-<img src="/assets/internetprograming/mongo2.jpg" alt="Folder Making" /></p>
-
-<p>จากเดิมที่ไม่มีอะไร เราสร้าง Directory ขึ้นมา 3 Directory ก่อนที่จะสร้างไฟล์ conf.d แล้ว copy โครงพื้นฐานของมัน จากลิงค์ที่ให้ไปข้างบนนี้มาใส่ได้เลยย เราจะได้ไฟล์ของเรามา อย่างนี้เลย</p>
-
-<p><img src="/assets/internetprograming/mongo3.jpg" alt="File Making" /></p>
-
-<p>ทีนี้ เราจะโฟกัสที่ สองตัวคือ storage ซึ่งเป็นสีขาว ๆ เลยกับ replication ซึ่งมัน comment อยู่ ดังรูปด้านบน อย่างแรกเลย คือใน docker-compose.yml เราส่ง Storage ไปที่ <code class="highlighter-rouge">/var/lib/mongodb</code> ใช่มั้ยหละ แต่ตรงนี้เป็น mongo โอเค แก้ให้มันเหมือนกันครับ จะแก้ที่ docker-compose file หรือ แก้ที่นี่ก็ได้เหมือนกัน ตัวผมแก้ที่นี่แล้วกันนะ</p>
-
-<h3 id="การตั้งค่า-replicaset">การตั้งค่า ReplicaSet</h3>
-
-<p>ทีนี้คือจุดสำคัญที่เราเฝ้ารอมานานคือการตั้ง replica set เรา uncomment ที่ replication ออกได้เลย และ เราก็เขียนเป็นชื่อ <code class="highlighter-rouge">replSetName:"อะไรก็ได้"</code> แค่ทั้ง 3 Nodes นี่ต้องตั้งให้เหมือนกันนะ ส่วนตัวเราจะใช้เป็น rs0 แล้วกัน</p>
-
-<p><img src="/assets/internetprograming/mongo4.jpg" alt="Replication Setting" /></p>
-
-<script src="https://gist.github.com/theethawat/45b5c5eb98dece35a77623df23bbf836.js?file=mongod.conf"></script>
-
-<p>และเราก็ทำแบบนี้กับทั้ง 3 อัน ก่อนที่เราจะมา up compose กัน</p>
-
-<h3 id="docker-compose-up">Docker-compose up</h3>
-
-<p>รันคำสั่ง <code class="highlighter-rouge">sudo docker-compose up</code> หรือ <code class="highlighter-rouge">docker-compose up</code> ก็ได้ถ้าเป็น root อยู่แล้ว</p>
-
-<p><img src="/assets/internetprograming/mongo5.jpg" alt="Docker Compose Up" /></p>
-
-<p>จากนั้นจะพบว่าของผม Error เต็มเลย น่าจะผิดตรงตั้งค่า Docker อะไรซักอย่างเนี่ย เดี๋ยวมาเขียนต่อละกัน วันนี้หยุดก่อน</p>]]></content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html"><![CDATA[ยังไม่เสร็จนะ หลังจากที่เราพูดถึง HA หรือ High Availability และ FT หรือ Fault Tolerance กันแล้ว เราจะมาทดลองสร้างระบบดูกันว่า เออการทำงานมันเป็นอย่างไร กับระบบที่มันบอกว่าตัวเองเป็น High Availability และ Fault Tolerance ว่าตรงไหนคือ HA ตรงไหนคือ FT]]></summary></entry><entry><title type="html">Kotlin In My Note</title><link href="http://localhost:4000/it-blog/2019/09/27/introtokotlin.html" rel="alternate" type="text/html" title="Kotlin In My Note" /><published>2019-09-27T00:00:00+07:00</published><updated>2019-09-27T00:00:00+07:00</updated><id>http://localhost:4000/it-blog/2019/09/27/introtokotlin</id><content type="html" xml:base="http://localhost:4000/it-blog/2019/09/27/introtokotlin.html"><![CDATA[<p>นี่คือโน้ตที่ผมเขียนไว้ตอนผมเรียนคอทลิน ประกอบกับแอนดรอยด์ไปด้วย เพื่อที่จะทำโปรเจกต์ของผม ผมเองก็โน้ตเก็บเป็น Markdown ไว้ แล้วก็มาเผยแพร่ให้ดู เป็นภาษาอังกฤษนะครับ ว่าง ๆ จะมาแปลไทยให้อ่าน</p>
-
-<h2 id="คุยกันก่อน">คุยกันก่อน</h2>
-
-<p>Kotlin เป็นภาษาตัวหนึ่งที่รันอยู่บน Java Virtual Machine(JVM) ได้ พัฒนาโดยกลุ่มที่ได้รับการสนับสนุนจากบริษัท Jetbrains ผู้พััฒนา IntelliJ Idea และ Android Studio ซึ่งผมเองต้องเขียน Android ดังนั้นผมจึงต้องมีพื้นฐาน Kotlin หน่อย ๆ Kotlin ตอนแรกเนี่ยเขาคิดว่าจะทำมาเป็น Library ของ Java แต่ตอนหลังแล้ว พอเขาคิดว่าการทำ Library พวกนี้มันต้อง Compatible กับอะไรแบบเดิม ก็เลยเขียนภาษาขึ้นมาใหม่ดีกว่า ชื่อภาษา Kotlin เป็นที่นิยม และ ตัวที่ Google เองก็เชียร์ให้เขียน Android กับ Kotlin ด้วย ถ้าใครเขียนพวก OOP อย่าง Java, C# มาก่อน Kotlin ไม่ยากครับ ง่ายกว่าแน่นอน หรือถ้าใครไม่เคยเขียน มันก็ไม่ยากนะ แค่มันอาจจะงง ๆ หน่อย ตามประสาของภาษาโปรแกรมมิ่งสมัยใหม่</p>
-
-<h2 id="เริ่มต้นกับคอทลิน">เริ่มต้นกับคอทลิน</h2>
-
-<p>ถ้ามว่าจะเริ่มต้นยังไงเหรอ ลองไปดูที่ https://kotlinlang.org ก็ได้ แนะนำเลยคือ ติดตั้ง IntelliJ Idea ครับ จบ หรือถ้าใช้ Ecilipse ก็ใช้ได้นะ ตอนแรกผมก็ทำกับ Ecilipse ซึ่งอาจจะต้องลง JRE หรือ JDK หรือเปล่านั้น จำไม่ได้ เพราะตอนนั้นรู้สึกว่าเครื่องผมอ่ะพร้อมอยู่แล้ว แต่ถ้ามัน Require อะไร มันคงแจ้งเตือนเรามาเองแหละครับ แต่ส่วนใหญ่ก็ไม่ค่อยมีคนเขียน Native Kotlin นะ จะเป็นการฝึกหน่อย ๆ แล้วนำไปใช้ต่อในการเขียนพวก Android หรือเว็บแอพ อะไรอย่างนี้ครับ</p>
-
-<p>โอเค เริ่มละนะ ว่างเมื่อไหร่ เดี๋ยวมาแปลเป็นภาษาไทยให้</p>
-
-<hr />
-
-<h1 id="intro-to-kotlin">Intro To Kotlin</h1>
-
-<p><b>Learn Kotlin: </b> <a href="https://kotlinlang.org/docs/reference">Official Kotlin Doc</a></p>
-
-<p>This is only my note during learning and coding something may be mistake. At first I cannot typing in Thai in Ecilipse IDE Now I learn in IntelliJ IDEA it can type in Thai but I’m idle.</p>
-
-<h2 id="structure">Structure</h2>
-
-<ol>
-  <li>Don’t Need a Pre-processor because Kotlin is initial itself at the begining from IDE</li>
-  <li>Don’t worry about package name, It nescessory only to show that it are in the same domain. In file system they don’t show in class view but in IDE it will show you the structure of class</li>
-  <li>Function Initial run with main</li>
-  <li>No Semicolon needed in Kotlin</li>
-</ol>
-
-<h2 id="table-of-content">Table of Content</h2>
-
-<ol>
-  <li><a href="#basic-syntax">Basic Syntax</a></li>
-  <li><a href="#function">Function</a></li>
-  <li><a href="#variable">Variable</a></li>
-  <li><a href="#string-management">String Management</a></li>
-  <li><a href="#array">Array</a></li>
-  <li><a href="#class">Class</a></li>
-</ol>
-
-<hr />
-
-<h2 id="basic-syntax">Basic Syntax</h2>
-
-<h3 id="printing-out-the-word">printing out the word</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>//using print or println
-print("Hello World")
-</code></pre></div></div>
-
-<h3 id="printing-out-the-value-of-variable">printing out the value of variable</h3>
-
-<p>It can be inside the double quote with $ sign using variable Name</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print(" $variablename ")
-//If have any calculating
-print(" ${variableName1 + variableName2}")
-</code></pre></div></div>
-
-<hr />
-
-<h2 id="function">Function</h2>
-
-<ul>
-  <li>To call using like in C Language</li>
-  <li>Using <b>fun</b> to initial the function</li>
-</ul>
-
-<h3 id="function-prototype">Function Prototype</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fun functionName(parameterName:ParameterType): Returntype{
-}
-</code></pre></div></div>
-
-<p>Example for Very Basic Function (don’t have return)</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fun sum(a:Int,b:Int){
-	println("a is $a  b is $b")
-}
-</code></pre></div></div>
-
-<h3 id="call-function-to-use-return-value">Call function to use Return Value</h3>
-
-<p>In variable define or redefine</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	var x = functionName(Parameter)
-	var y:Int
-	y = functionName(Parameter)
-</code></pre></div></div>
-
-<p>Beware Function and Properties are not the same</p>
-
-<h3 id="using-the-properties">Using the properties</h3>
-
-<p>In Properties we use to get something from variable you can using Kotlin Library properties</p>
-
-<h4 id="calling-properties">Calling Properties</h4>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	var testLengthVariable = "Theethawat"
-	var theethawatLength ="Theethawat".length
-</code></pre></div></div>
-
-<h4 id="or-calling-in-print-statement">Or calling in print statement</h4>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	println("Variable of testLengthVariable is ${testLengthVariable.length}")
-</code></pre></div></div>
-
-<hr />
-
-<h2 id="variable">Variable</h2>
-
-<ul>
-  <li>Using <b>val</b> can be assign a value only once</li>
-  <li>Using <b>var</b> can be reassign</li>
-  <li>Can use both Type define or not, if you not define a type you must initial value in the declare variable part and Kotlin will assign the type automatically</li>
-  <li>Type Define and value Define is optional All are correct</li>
-</ul>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var a:Int =1
-var a = 2
-var a:Int
-</code></pre></div></div>
-
-<ul>
-  <li>This is example that <b>Incorrect</b></li>
-</ul>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var a
-</code></pre></div></div>
-
-<ul>
-  <li>Variable can define both in global and local (Private to function) if it be global it can be modify by any function without re parameter-initial like</li>
-</ul>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var x = 0
-fun incrementX() {
-   x += 1
-}
-</code></pre></div></div>
-
-<hr />
-
-<h2 id="string-management">String Management</h2>
-
-<h3 id="triming-margin">Triming Margin</h3>
-
-<table>
-  <tbody>
-    <tr>
-      <td>Can use trimMargin using with prefix ‘</td>
-      <td>’ only if use another prefix using trimMargin(‘Prefix’)</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>val str3 = """ #Hello World""".trimMargin()
-val str4 = """ #Hello World """.trimMargin("#")
-</code></pre></div></div>
-
-<p>Can use <code class="highlighter-rouge">.trimIndent</code> for trim white space before text like a white space
-and Can use triple quote “”” for let string in the string can be multiple line as we code</p>
-
-<hr />
-
-<h2 id="array">Array</h2>
-
-<h3 id="array-declaring">Array Declaring</h3>
-
-<p>Can Creating Array with Initial Value , Initial Value Using Function or Uninitialized using normal form <code class="highlighter-rouge">arrayOf</code>
-if you initial value</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>val a = intArrayOf(11,13,15,17,12)
-</code></pre></div></div>
-
-<p>or using Specific type of Array</p>
-
-<ol>
-  <li>BooleanArray <code class="highlighter-rouge">booleanArrayOf(true, false)</code></li>
-  <li>ByteArray <code class="highlighter-rouge">byteArrayOf(1, 2, 3)</code></li>
-  <li>CharArray <code class="highlighter-rouge">charArrayOf('a', 'b', 'c')</code></li>
-  <li>DoubleArray <code class="highlighter-rouge">doubleArrayOf(1.2, 5.0)</code></li>
-  <li>FloatArray <code class="highlighter-rouge">floatArrayOf(1.2, 5.0)</code></li>
-  <li>IntArray <code class="highlighter-rouge">intArrayOf(1, 2, 3)</code></li>
-  <li>LongArray <code class="highlighter-rouge">longArrayOf(1, 2, 3)</code></li>
-  <li>ShortArray <code class="highlighter-rouge">shortArrayOf(1, 2, 3)</code></li>
-</ol>
-
-<p>or can design array by using function like</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>val asc = Array(5,init = {i-&gt;i+1})
- for (b in asc){
-     println(b)
- }
-</code></pre></div></div>
-
-<h3 id="array-properties">Array Properties</h3>
-
-<ol>
-  <li>Properties that can use when declare an Array
-<code class="highlighter-rouge">sortedArray(), sortedArrayDescending()</code></li>
-  <li>Properties that can use when we using function
-<code class="highlighter-rouge">sort(), sortDescending() , min(), max(),first(), last()</code> it will return a view of the things
-that you want in array (some only for Int or Number Variables)
-for example
-println(“List of Array B is ${b.sorted()}”)</li>
-</ol>
-
-<h3 id="collection">Collection</h3>
-
-<p>Collection is like array but it’s the tool that can easier management</p>
-
-<ul>
-  <li>
-    <p>List use <code class="highlighter-rouge">Listof()</code> (Can replace string with other type)</p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>val  myList = listOf&lt;String&gt;("Theethawat","Songpon")
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Map use <code class="highlighter-rouge">mapOf()</code></p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> val myMap = mapOf&lt;Int,String&gt;(Pair(1,"Theethawat"), Pair(2,"Theematach"))
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Set use <code class="highlighter-rouge">setOf()</code></p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>val mySet = setOf&lt;String&gt;("Theethawat","Sirinuch")
-</code></pre></div>    </div>
-
-    <p>using 3 types of collection and other type of Array can be random access</p>
-  </li>
-</ul>
-
-<hr />
-
-<h2 id="class">Class</h2>
-
-<h3 id="basic-concept-of-class">Basic Concept of Class</h3>
-
-<ul>
-  <li>It’s like class in Java and sometime it’s like stucture in C
-in my own opinion</li>
-  <li>Use function (main or any) to call a class</li>
-  <li>If Compare to Java it has 3 part
-    <ul>
-      <li>Field for variable declare and initial (Java divide into
-field and Constructor) and can use argument <code class="highlighter-rouge">also()</code> to make this variable call the function like <code class="highlighter-rouge">val nameInput = "The Input value is $name".also(::println)</code></li>
-      <li><code class="highlighter-rouge">init()</code> can use for initial, set value and call function in class</li>
-      <li>function <code class="highlighter-rouge">fun()</code></li>
-    </ul>
-  </li>
-  <li>Everythings contain public, protected, private same like other OOP</li>
-  <li>Can use dot(.) for go to the attribute like in C or Java</li>
-  <li>For Example in file Address.kt</li>
-</ul>
-
-<hr />
-
-<h2 id="object">Object</h2>
-
-<h3 id="companion-object">Companion object</h3>
-
-<p>If your class have a Companion object show that you can implement or adding the function to that object like</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class MyClass {
-	companion object { }  // will be called "Companion"
-	}
-
-	fun MyClass.Companion.printCompanion() { println("theethawat") }
-
-	fun main() {
-	MyClass.printCompanion()
-	}
-</code></pre></div></div>
-
-<p>You will got an output “Theethawat”, i pick it from official Document at <a href="https://kotlinlang.org/docs/reference/object-declarations.html#companion-objects">Object Documents in Kotlin</a></p>
-
-<hr />
-
-<h2 id="basic-function-and-library">Basic Function and library</h2>
-
-<ul>
-  <li>Kotlin will add Basic Library name kotlin.* if you use IDE or compiler</li>
-  <li>There include many function inside</li>
-  <li>String Function Reference is located at <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">Kotlin Function Reference</a></li>
-</ul>]]></content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html"><![CDATA[นี่คือโน้ตที่ผมเขียนไว้ตอนผมเรียนคอทลิน ประกอบกับแอนดรอยด์ไปด้วย เพื่อที่จะทำโปรเจกต์ของผม ผมเองก็โน้ตเก็บเป็น Markdown ไว้ แล้วก็มาเผยแพร่ให้ดู เป็นภาษาอังกฤษนะครับ ว่าง ๆ จะมาแปลไทยให้อ่าน]]></summary></entry><entry><title type="html">ชีวิตแบบเป็ด ๆ ของโปรแกรมเมอร์บ้า ๆ บอ ๆ คนนี้</title><link href="http://localhost:4000/life/2019/09/14/programingday.html" rel="alternate" type="text/html" title="ชีวิตแบบเป็ด ๆ ของโปรแกรมเมอร์บ้า ๆ บอ ๆ คนนี้" /><published>2019-09-14T00:00:00+07:00</published><updated>2019-09-14T00:00:00+07:00</updated><id>http://localhost:4000/life/2019/09/14/programingday</id><content type="html" xml:base="http://localhost:4000/life/2019/09/14/programingday.html"><![CDATA[<p>ผมเป็นคนนึงที่ใช้ชีวิตแบบ Duck Learning มาก จึงเป็นที่มาของไอ เดอะดักส์ครีเอเตอร์นี่ไง ดักส์คืออะไรนั่นเหรอ คือทำนุ่นทำนี่เล็ก ๆ น้อย ๆ ได้หลายอย่าง แต่ไม่เก่งซักอย่าง บทความนี้สาระไม่ค่อยมีนะครับ เน้นระบาย อ่านรู้เรื่องก็อ่านนะครับ</p>
-
-<h2 id="ไหน-ๆ-แล้วก็รู้จักผมซะเลย">ไหน ๆ แล้วก็รู้จักผมซะเลย</h2>
-
-<p><img src="/assets/profile/tin.jpg" alt="รูปผมเองแหละ" /></p>
-
-<p>ผมชื่อตินครับ ธีร์ธวัช สวาสดิ์ธรรม ครับ อายุ 21 ปี ตอนนี้เรียนอยู่วิศวะคอมปี 4 วิชาโท Network Engineering ซึ่งผมบอกเลยว่า <i>“ผมคอนฟิกส์เน็ตเวิร์คไม่ค่อยเป็น TTT 5555”</i> มาเข้าสายนี้ทำไมเนี่ย แต่จริง ๆ มันก็สนุกดีนะ ผมเองก็เป็นคนสนใจการทำโปรแกรมแบบ Micro Service เช่นพวก Javascript,TypeScript พวก MongoDB, Firebase, ElectronJS อะไรพวกนี้ ยิ่งไอ Electron + TypeScript เป็น Stack ที่ผมอยากทำมาก
-แล้วก็พวก Cloud ต่าง ๆ แล้วมีแอบสนใจสาย .NET Framework ของ Microsoft ด้วย ผมยังชอบการทำ Server ด้วยนะ ตอนนี้ผมมี Digital Ocean อยู่ 1 Droplet เป็น Ubuntu และเคยมี VM Windows Server ที่ Azure อยู่ มันเป็นของฟรีที่มหาวิทยาลัยให้มา แต่ตอนนี้ลบไปละ เพราะไม่ได้ใช้ และถึงจะให้ใช้ฟรีแบบไม่ต้องกรอกบัตรเครดิต แต่มันก็ให้เราในรูปแบบเครดิต คือ ให้เครดิตเราประมาณ 100USD มั้ง คนที่ใช้ Cloud พวกนี้น่าจะรู้ดี ก็ถ้าเราปล่อย Virtual Machine (จำไม่ได้แล้วเขาเรียกว่ายังไงใน Azure) มันก็จะกินเครดิตไปด้วย โดยที่เราไม่ได้ใช้ ดังนั้นเบรกไว้ก่อน ใน Digital Ocean ผมคอนฟิก DNS เองนะคร้าบ (เออ แล้วไงมันยากตรงไหนเหรอ 5555) ใน Windows Server ก็เหมือนกัน เคยใช้มาหมดแล้วทั้ง Apache, Nginx, IIS แต่นั่นแหละ รู้แค่พื้น ๆ กลับมาที่หัวข้อ ก็ยังคงเป็นเป็ดเหมือนเดิม</p>
-
-<h2 id="ก็มัน-distributed-อ่ะ">ก็มัน Distributed อ่ะ</h2>
-
-<p>มันคือการทำโปรแกรมแบบ Distributed Computing การประมวลผลแบบ Client-Server หรือ Distributed อื่นๆ และผมรู้สึกว่ามันยิ่งใหญ่ดี ถึงแม้จะต้องทำอะไรที่ยากกว่าสาย Infomation Engineering เพราะผมเองไม่ถนัดการทำงานให้มันมี Performance สูง ๆ ขนาดนั้น ผมรู้สึกว่าเน็ตเวิร์ค ซึ่งมีวิชาเลือกในสายแค่ 4 + 1 ถึง 2 ตัว แล้วผมก็ได้ความรู้ด้านโปรแกรมมิ่งจากวิชาอื่นมาพอสมควรละ มันเป็นเรื่อง ๆ ที่เป็น Core เพราะถ้าจะให้เขาสอนเราทุกเรื่อง มันเป็นไปไม่ได้ ภาษาคอมพิวเตอร์มันจะออกใหม่ทุก ๆ สัปดาห์อยู่แล้ว อันนี้ที่เขียนอยู่นี่ก็ทำบน Ruby Stack ทั้ง ๆ ที่ผมเองไม่รู้เรื่อง Ruby เลย แต่ก็เอา Jekyll ซึ่งเป็นเฟรมเวิร์คการเขียนบล็อกตัวหนึ่งซึ่งได้รับความนิยมมากพอสมควรมาใช้ แล้วก็ทำตามคอมมานด์ ตาม Doc, Tutorial ไป เออ ได้</p>
-
-<p>แต่พอจะมา deploy บน Server ตัวเอง เอ้าาา ทำไงวะ จะ deploy แบบไหนดี แบบ Docker Container หรือ สร้าง Ruby Server แต่เหนือสิ่งอื่นใดคือผมยังจัดการไอ Reverse Proxy ของไอ nginx ไม่เป็นเลยเนี่ย จะทำนู่นทำนี่ ล่มเพราะ Reverse Proxy Nginx ไม่ได้เนี่ยแหละ คือไงอะ โอเคเราไม่พูดในเทอมเทคนิคมากแล้วกัน สุดท้ายก็ใช้ GitHub Page เอาแล้วกันง่ายสุด</p>
-
-<p><b><i>Reverse Proxy คือการเปลี่ยนจากการปล่อยแอพพลิเคชั่นที่พอร์ตอื่น ๆ เช่น dev.theduckcreator.in.th:3000 มาเป็นพารามิเตอร์ในโดเมนแทน เช่น dev.theduckcreator.in.th/serv3 อะไรอย่างงี้</i></b></p>
-
-<p>จริง ๆ Reverse Proxy ไม่ใช่มีหน้าที่ หรือ Feature แค่นี้นะ มันมีตั้งหลายแบบ เช่น handle file ตามนามสกุล อะไรหลาย ๆ อย่าง ถ้าสนใจไปลองอ่านที่เว็บของ Nginx หรือ Apache Webserver ดูนะครับ ผมก็ตอบไม่ได้ ต้องการคำตอบเหมือนกัน</p>
-
-<h2 id="เนี่ยนอกเรื่องไปไกลแล้ว-กลับๆๆ">เนี่ยนอกเรื่องไปไกลแล้ว กลับๆๆ</h2>
-
-<p>ถ้าให้นิยามตัวเอง ผมว่าผมเองเป็นคนที่ไม่เก่งนะ ไม่ขยันด้วย แต่ทำอะไรด้วย Passion ได้ดี ผมว่ามันน่าจะเป็นอะไรหลาย ๆ อย่างที่ Developer (นี่กล้าเรียกตัวเองว่า Dev แล้วเหรอนี่) เป็นมั้ง ผมมักจะคิดอะไรใหม่ ๆ แปลก ๆ ได้เสมอ เช่น ผมทำ QR Code Random Congrat หรือ แม้ตอนหลัง Server เก่าผม Inodes เต็มซะก่อนสุดท้ายก็ต้องมาใช้ HTML ธรรมดา แต่คนที่ได้รับเขาก็มีความสุขและประทับใจอยู่นะ ดู ๆ จริง ๆ แล้วผมเป็น Network Engineer Student นะ แต่ Config ห่าอะไรไม่เป็นเลย…… ล้อเล่น มันก็พอเป็นบ้างแหละ สิ่งที่ผมชอบจริง ๆ น่าจะเป็น Software in Networking ประมาณนี้มากกว่า</p>
-
-<h2 id="duck-หรือ-เป็ด-คือ-ทำเป็นได้หลายอย่าง-แต่อาจจะไม่โดดเด่นซักอย่าง">Duck หรือ เป็ด คือ ทำเป็นได้หลายอย่าง แต่อาจจะไม่โดดเด่นซักอย่าง</h2>
-
-<p>ถ้าเปรียบผมเหมือนโนบิตะ ผมก็คล้าย ๆ อยู่นะ คือเออก็ไม่เก่ง กีฬาเนี่ยยิ่งห่วยเลย แต่ไอโนบิตะมันยังมีความรัก แล้วก็มีพลังอยู่ แต่ผมเป็นแบบถ้าเรื่องนี้ผมชอบ ผมทำ ยาว ๆ ก็ได้นะ ผมทำทั้ง Arduino, Raspberry Pi, NodeMCU คือเคยเอามาทำ IoT ที่บ้านครับ แล้วก็มาต่อไฟ เพื่ออำนวยความสะดวกให้กับตัวเอง เอ้า เจ๋งป่าวหละ แต่ในทางกลับก็เขียน พอเขียนได้ หลายภาษาอยู่นะ (พอเปิด Doc) อ่านรู้เรื่องอ่ะ แต่นั่นแหละ ไม่เก่งซักเรื่อง Python ก็ไม่เป็น (ภาษาอะไรวะ โคตรฮิตเลย) , ภาษาตระกูล OOP พวก Java, Kotlin, C# ก็พอเป็นบางส่วน เน็ตเวิร์ค คลาวด์คอมพิวติ้ง ก็รู้บางส่วน เออ แล้วอยากทำอะไรก็ทำ นั่นสิ แล้วไม่ให้เรียกว่าเป็ดแล้วเรียกอะไรหละครับ</p>
-
-<h2 id="โอกาสไม่ได้มาหลายคลั้ง-บางทีต้องตอนนั้นเท่านั้น">โอกาสไม่ได้มาหลายคลั้ง บางทีต้องตอนนั้นเท่านั้น</h2>
-
-<p>เป็นสิ่งที่ผมพบมาจริงเลยคีอบางทีโอกาสมันมา แต่เราทำให้ไม่ทัน เช่น ตอนทำ Congrat ปี 2562 ที่ผ่านมาเตรียมดอกไม้มาอย่างดี มน้ำดืมให้คนละขวด แล้วก็เออ ว่าจะทำกับ Firebase ครั้งนี้ดีไซด์ UI ก่อนด้วย ทำกับ React ซึ่งเป็นการแก้เข็ดงานที่ตอนทำ QR Code Congrat แรก ๆ ปัญหามีอยู่ว่า มันเป็นงานรับปริญญาเว้ย แล้วมันอาจจะ เข้าใจมั้ยว่าบางทีนั้น ความพิเศษมันก็อยู๋ในวันนั้นนั่่นแหละ แล้วไม่เสร็จ เรามีพี่ ๆ หลายคนที่รู้จัก คืนก่อนนั่งทำถึงประมาณตี 2 แล้วนอน ตื่นมา 7 โมง ทำต่อ ซึ่งจริง ๆ เนี่ย วันรับปริญญาเนี่ยถ้าจะไปแสดงความยินดีเขาให้ไปเช้า ๆ แต่สุดท้าย ยังไงมันก็ไม่เสร็จอยู่ดี ก็เลยโอเค ตัดสินใจเลิก ประมาณซัก 9 โมงกว่า ๆ แต่ไปถึงก็สิบโมงได้ ซึ่งก็ไม่ค่อยทันแล้ว พอจะไปถ่ายรูปได้แค่กับพี่รหัส และ พี่เทคกรุ๊ปแค่นั้น ดังนั้นเนี่ย การทำงานในเวลาเร่งด่วน บางทีการเรียนรู้ใหม่ หรือการลองของใหม่มันก็อาจจะไม่ถูกต้องซะทีเดียว</p>
-
-<h2 id="ทำนู่นทำนี่ไม่เก่งไม่เป็นไร-แต่ความเสถียร-จำเป็นนะ">ทำนู่นทำนี่ไม่เก่งไม่เป็นไร แต่ความเสถียร จำเป็นนะ</h2>
-
-<p>คนเป็นเรื่องที่เถียงไม่ขึ้นสำหรับคนเป็ด ๆ อย่างผม ก็คือ แล้วถ้าเราได้รับโจทย์ที่ต้องการเสถียรภาพสูงหละ เราจะทำยังไง เราจะลองนู่นลองนี่อ่ะ เป็นเรื่องดี แต่สุดท้าย มันต้องมีซักภาษาป่าวว่ะ หรือ ซักเรื่องป่าววะ ที่เราสามารถทำให้เป็นระดับ Enterprise ได้ เขาสามารถจ้างเราทำได้ ทุกคนว่าจริงมั้ย ยังไงก็เป็นกำลังใจให้ผมด้วยละกันนะครับ น้อ ฝากติดตามผลงานด้วย จบดื้อ ๆ แบบนี้เลยเหรอ เออ ใช่สิ</p>]]></content><author><name>Theethawat Savastham</name></author><category term="life" /><summary type="html"><![CDATA[ผมเป็นคนนึงที่ใช้ชีวิตแบบ Duck Learning มาก จึงเป็นที่มาของไอ เดอะดักส์ครีเอเตอร์นี่ไง ดักส์คืออะไรนั่นเหรอ คือทำนุ่นทำนี่เล็ก ๆ น้อย ๆ ได้หลายอย่าง แต่ไม่เก่งซักอย่าง บทความนี้สาระไม่ค่อยมีนะครับ เน้นระบาย อ่านรู้เรื่องก็อ่านนะครับ]]></summary></entry></feed>
+Fernando Doglio. Scaling Your Node.js Apps. Appress,2018 - <a href="https://books.google.co.th/books/about/Scaling_Your_Node_js_Apps.html?id=noF8DwAAQBAJ&amp;source=kp_cover&amp;redir_esc=y">Scaling Your Node.js App in Google Books</a></p>]]></content><author><name>Theethawat Savastham</name></author><category term="it-blog" /><summary type="html"><![CDATA[บทความนี้เป็นการสรุปเนื้อหาจากที่เรียนนะครับ ปนความคิดเห็นผู้เขียนไปด้วย อาจจะมึน ๆ บ้าง การสเกลคืออะไร เตรียมการสเกลไว้ดีมั้ย ทำไมต้องทำด้วย ไม่ทำได้มั้ย]]></summary></entry></feed>

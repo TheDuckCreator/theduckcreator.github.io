@@ -1,7 +1,7 @@
 ---
 title: Android with Databinding in Kotlin (Note)
 subtitle: Android With Kotlin Note use Databinding
-layout: post
+layout: post-it-blog
 author: Theethawat Savastham
 category: it-blog
 language: Kotlin

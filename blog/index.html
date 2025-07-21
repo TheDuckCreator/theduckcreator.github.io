@@ -18,6 +18,7 @@ layout: page
             {{post.created_year}}
           </a>
         </p>
+        {% if post.language %}
         <p class="control">
           <a class="tag is-small is-rounded is-bold is-warning">
             <span class="icon">
@@ -26,6 +27,16 @@ layout: page
             <span> {{post.language}} </span>
           </a>
         </p>
+        {% endif %} {% if post.category %}
+        <p class="control">
+          <a class="tag is-small is-rounded is-bold is-info is-uppercase">
+            <span class="icon">
+              <i class="fas fa-folder"></i>
+            </span>
+            <span> {{post.category}} </span>
+          </a>
+        </p>
+        {% endif %} {% if post.git %}
         <p class="control">
           <a class="tag is-small is-rounded is-bold" href="{{post.git}} ">
             <span class="icon">
@@ -34,6 +45,7 @@ layout: page
             <span>GitHub</span>
           </a>
         </p>
+        {% endif %}
       </div>
     </div>
     <hr />
@@ -41,33 +53,45 @@ layout: page
   </div>
 
   <!-- Pagination Controls -->
-  <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+  <nav
+    class="pagination is-centered kanitlight"
+    role="navigation"
+    aria-label="pagination"
+  >
     {% if paginator.previous_page %}
     <a
-      class="pagination-previous is-rounded"
+      class="button pagination-previous is-rounded"
       href="{{ paginator.previous_page_path }}"
-      >Previous</a
+      >ก่อนหน้า</a
     >
     {% else %}
-    <a class="button pagination-previous is-rounded" disabled>Previous</a>
+    <a class="button pagination-previous is-rounded" disabled>ก่อนหน้า</a>
     {% endif %} {% if paginator.next_page %}
     <a
       class="button pagination-next is-rounded"
       href="{{ paginator.next_page_path }}"
-      >Next</a
+      >ถัดไป</a
     >
     {% else %}
-    <a class="button pagination-next is-rounded" disabled>Next</a>
+    <a class="button pagination-next is-rounded" disabled>ถัดไป</a>
     {% endif %}
 
     <ul class="pagination-list">
       {% for page in (1..paginator.total_pages) %}
       <li>
+        {% if page == 1 %}
+        <a
+          class="pagination-link {% if page == paginator.page %}is-current{% endif %}"
+          href="/blog/"
+          >{{ page }}</a
+        >
+        {% else %}
         <a
           class="pagination-link {% if page == paginator.page %}is-current{% endif %}"
           href="{{ site.paginate_path | replace: ':num', page }}"
           >{{ page }}</a
         >
+        {% endif %}
       </li>
       {% endfor %}
     </ul>

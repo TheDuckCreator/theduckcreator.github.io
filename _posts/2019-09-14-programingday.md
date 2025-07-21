@@ -1,7 +1,7 @@
 ---
 title: ชีวิตแบบเป็ด ๆ ของโปรแกรมเมอร์บ้า ๆ บอ ๆ คนนี้
 subtitle: ไหน ๆ วันนี้ก็เป็นวันโปรแกรมเมอร์สากลแล้ว ขอระบายอะไรหน่อย 5555
-layout: post-life
+layout: post
 author: Theethawat Savastham
 category: life
 created_year: 2019
